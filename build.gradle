@@ -1,18 +1,32 @@
 //file:noinspection all
 
-plugins {
-    id 'fabric-loom' version '1.3-SNAPSHOT'
-    id 'maven-publish'
-    id "org.jetbrains.kotlin.jvm" version "1.9.+"
+buildscript {
+  dependencies {
+    classpath 'org.kohsuke:github-api:1.+'
+  }
 }
 
-version = project.mod_version
-group = project.maven_group
+plugins {
+    id "fabric-loom" version "1.3-SNAPSHOT"
+    id "maven-publish"
+    id "org.jetbrains.kotlin.jvm" version "1.9.+"
+
+    id 'com.matthewprenger.cursegradle' version '1.+'
+    id 'com.modrinth.minotaur' version '2.+'
+}
+
+
+import com.modrinth.minotaur.dependencies.DependencyType
+import com.modrinth.minotaur.dependencies.ModDependency
+import org.kohsuke.github.GHReleaseBuilder
+
+version = mod_version
+group = maven_group
 
 repositories {
     maven {
-        name = 'Terraformers'
-        url  = 'https://maven.terraformersmc.com/releases/'
+        name = "Terraformers"
+        url  = "https://maven.terraformersmc.com/releases/"
     }
 }
 
@@ -56,7 +70,7 @@ sourceSets {
     main {
         resources {
             srcDirs += [
-                    'src/generated/resources'
+                    "src/generated/resources"
             ]
         }
     }
@@ -101,4 +115,74 @@ publishing {
 
     repositories {
     }
+}
+
+
+/* Releasing */
+
+def environment = System.getenv()
+def versionText = "[$major_version] $mod_name $version"
+def changelogText = new File("./gradle", "CHANGELOG.md").text
+def supportedVersions = Arrays.asList(supported_versions.split(","))
+
+tasks.register("github") {
+  onlyIf { environment.GITHUB_TOKEN }
+  dependsOn(build)
+  doLast {
+    def github = GitHub.connectUsingOAuth(environment.GITHUB_TOKEN)
+    def repository = github.getRepository(github_repository)
+
+    def builder = new GHReleaseBuilder(repository, version)
+    builder.name(versionText)
+    builder.body(changelogText)
+    builder.commitish(github_branch)
+    builder.prerelease(release_type == "beta")
+    builder.create().uploadAsset(file("${buildDir}/libs/${archivesBaseName}-${version}.jar"), "application/java-archive");
+  }
+}
+
+if (environment.MODRINTH_TOKEN) modrinth {
+  token = environment.MODRINTH_TOKEN
+  projectId = modrinth_id
+  versionNumber = version
+  versionName = versionText
+  versionType = release_type
+  changelog = changelogText
+  uploadFile = remapJar
+  gameVersions = supportedVersions
+  dependencies = [
+          new ModDependency("fabric-api", DependencyType.REQUIRED),
+          new ModDependency("fabric-language-kotlin", DependencyType.REQUIRED),
+  ]
+}
+
+if (environment.CURSEFORGE_API_KEY) curseforge {
+  apiKey = environment.CURSEFORGE_API_KEY
+
+  project {
+    id = curseforge_id
+
+    addGameVersion "Fabric"
+
+    for (final def cf_ver in supportedVersions) addGameVersion cf_ver
+
+    changelog   = changelogText
+    releaseType = release_type
+
+    mainArtifact(remapJar) {
+      displayName = versionText
+      relations {
+        requiredDependency "fabric-api"
+        requiredDependency "fabric-language-kotlin"
+      }
+    }
+
+    afterEvaluate { uploadTask.dependsOn(remapJar) }
+  }
+
+  options { forgeGradleIntegration = false }
+}
+
+tasks.register("releaseVersion").configure {
+  dependsOn("build", "modrinth", "github", "curseforge")
 }
