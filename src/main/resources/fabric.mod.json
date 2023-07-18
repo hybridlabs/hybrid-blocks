@@ -48,7 +48,7 @@
     ],
     "accessWidener": "hybrid-blocks.accesswidener",
     "depends": {
-        "minecraft": "~1.20.1",
+        "minecraft": "1.20.x",
         "java": ">=17",
         "fabric-api": "*",
         "fabric-language-kotlin": "*"
