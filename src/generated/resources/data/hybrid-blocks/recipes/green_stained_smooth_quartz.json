@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_smooth_quartz",
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_quartz"
+    },
+    "X": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid-blocks:green_stained_smooth_quartz"
+  },
+  "show_notification": true
+}

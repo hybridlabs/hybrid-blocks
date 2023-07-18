@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "id": "hybrid-blocks",
+    "version": "${version}",
+    "name": "Hybrid Blocks",
+    "description": "A Minecraft mod that adds new blocks",
+    "authors": [
+        "Ragno",
+        "MysticKoko",
+        "Andante"
+    ],
+    "contact": {
+        "homepage": "https://hybridlabs.dev/hybrid-blocks",
+        "sources": "https://github.com/hybridlabs/hybrid-blocks",
+        "issues": "https://github.com/hybridlabs/hybrid-blocks/issues"
+    },
+    "license": "ARR (Assets), MIT (Code)",
+    "icon": "assets/hybrid-blocks/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            {
+                "value": "dev.hybridlabs.blocks.HybridBlocks",
+                "adapter": "kotlin"
+            }
+        ],
+        "client": [
+            {
+                "value": "dev.hybridlabs.blocks.client.HybridBlocksClient",
+                "adapter": "kotlin"
+            }
+        ],
+        "fabric-datagen": [
+            {
+                "value": "dev.hybridlabs.blocks.data.HybridBlocksDataGenerator",
+                "adapter": "kotlin"
+            }
+        ]
+    },
+    "mixins": [
+        "hybrid-blocks.mixins.json",
+        {
+            "config": "hybrid-blocks.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "accessWidener": "hybrid-blocks.accesswidener",
+    "depends": {
+        "minecraft": "~1.20.1",
+        "java": ">=17",
+        "fabric-api": "*",
+        "fabric-language-kotlin": "*"
+    }
+}

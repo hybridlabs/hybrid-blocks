@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hybrid-blocks:block/magenta_stained_smooth_quartz"
+  }
+}
