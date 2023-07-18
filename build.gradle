@@ -88,9 +88,8 @@ java {
 }
 
 jar {
-    from("LICENSE") {
-        rename { "${it}_$archivesBaseName"}
-    }
+    from ("LICENSE", "LICENSE_ASSETS")
+    exclude (".cache")
 }
 
 publishing {
