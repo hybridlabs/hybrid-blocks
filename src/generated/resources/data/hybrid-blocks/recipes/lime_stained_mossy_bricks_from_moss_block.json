@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_mossy_bricks",
+  "ingredients": [
+    {
+      "item": "hybrid-blocks:lime_stained_bricks"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "item": "hybrid-blocks:lime_stained_mossy_bricks"
+  }
+}

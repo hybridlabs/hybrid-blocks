@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_mossy_bricks",
+  "ingredients": [
+    {
+      "item": "hybrid-blocks:yellow_stained_bricks"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "hybrid-blocks:yellow_stained_mossy_bricks"
+  }
+}

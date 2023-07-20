@@ -13,7 +13,7 @@ object HybridBlocksItemGroups {
     val ALL = register("item_group",
         FabricItemGroup.builder()
             .displayName(Text.translatable("itemGroup.${HybridBlocks.MOD_ID}"))
-            .icon { ItemStack(HybridBlocksItems.WHITE_STAINED_SMOOTH_QUARTZ) }
+            .icon { ItemStack(HybridBlocksItems.CRACKED_BRICKS) }
             .entries { _, entries ->
                 Registries.BLOCK.filter { block ->
                     val identifier = Registries.BLOCK.getId(block)
