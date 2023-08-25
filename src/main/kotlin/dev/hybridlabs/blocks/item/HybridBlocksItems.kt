@@ -30,6 +30,23 @@ object HybridBlocksItems {
     val RED_STAINED_SMOOTH_QUARTZ = register("red_stained_smooth_quartz") { BlockItem(HybridBlocksBlocks.RED_STAINED_SMOOTH_QUARTZ, it) }
     val BLACK_STAINED_SMOOTH_QUARTZ = register("black_stained_smooth_quartz") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_SMOOTH_QUARTZ, it) }
 
+    val WHITE_STAINED_QUARTZ_PILLAR = register("white_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_QUARTZ_PILLAR, it) }
+    val ORANGE_STAINED_QUARTZ_PILLAR = register("orange_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_QUARTZ_PILLAR, it) }
+    val MAGENTA_STAINED_QUARTZ_PILLAR = register("magenta_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_QUARTZ_PILLAR, it) }
+    val LIGHT_BLUE_STAINED_QUARTZ_PILLAR = register("light_blue_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_QUARTZ_PILLAR, it) }
+    val YELLOW_STAINED_QUARTZ_PILLAR = register("yellow_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_QUARTZ_PILLAR, it) }
+    val LIME_STAINED_QUARTZ_PILLAR = register("lime_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIME_STAINED_QUARTZ_PILLAR, it) }
+    val PINK_STAINED_QUARTZ_PILLAR = register("pink_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.PINK_STAINED_QUARTZ_PILLAR, it) }
+    val GRAY_STAINED_QUARTZ_PILLAR = register("gray_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_QUARTZ_PILLAR, it) }
+    val LIGHT_GRAY_STAINED_QUARTZ_PILLAR = register("light_gray_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_QUARTZ_PILLAR, it) }
+    val CYAN_STAINED_QUARTZ_PILLAR = register("cyan_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_QUARTZ_PILLAR, it) }
+    val PURPLE_STAINED_QUARTZ_PILLAR = register("purple_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_QUARTZ_PILLAR, it) }
+    val BLUE_STAINED_QUARTZ_PILLAR = register("blue_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_QUARTZ_PILLAR, it) }
+    val BROWN_STAINED_QUARTZ_PILLAR = register("brown_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_QUARTZ_PILLAR, it) }
+    val GREEN_STAINED_QUARTZ_PILLAR = register("green_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_QUARTZ_PILLAR, it) }
+    val RED_STAINED_QUARTZ_PILLAR = register("red_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.RED_STAINED_QUARTZ_PILLAR, it) }
+    val BLACK_STAINED_QUARTZ_PILLAR = register("black_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR, it) }
+
     val WHITE_STAINED_BRICKS = register("white_stained_bricks") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_BRICKS, it) }
     val ORANGE_STAINED_BRICKS = register("orange_stained_bricks") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_BRICKS, it) }
     val MAGENTA_STAINED_BRICKS = register("magenta_stained_bricks") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_BRICKS, it) }

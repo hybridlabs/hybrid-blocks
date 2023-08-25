@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "hybrid-blocks:block/purple_stained_quartz_pillar_top",
+    "side": "hybrid-blocks:block/purple_stained_quartz_pillar"
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
 import net.minecraft.data.client.BlockStateModelGenerator
 import net.minecraft.data.client.ItemModelGenerator
+import net.minecraft.data.client.TexturedModel
 
 /**
  * Generates all models.
@@ -83,6 +84,26 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.RED_STAINED_MOSSY_BRICKS,
             HybridBlocksBlocks.BLACK_STAINED_MOSSY_BRICKS,
         ).forEach(generator::registerSimpleCubeAll)
+
+        // axis rotated pillars
+        setOf(
+            HybridBlocksBlocks.WHITE_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.ORANGE_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.MAGENTA_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.LIGHT_BLUE_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.YELLOW_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.LIME_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.PINK_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.GRAY_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.LIGHT_GRAY_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.CYAN_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.PURPLE_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.BLUE_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.BROWN_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.GREEN_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.RED_STAINED_QUARTZ_PILLAR,
+            HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR,
+        ).forEach { block -> generator.registerAxisRotated(block, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL) }
     }
 
     override fun generateItemModels(generator: ItemModelGenerator) {

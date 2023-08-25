@@ -4,6 +4,7 @@ import dev.hybridlabs.blocks.HybridBlocks
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
 import net.minecraft.block.Blocks
+import net.minecraft.block.PillarBlock
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.DyeColor
@@ -29,6 +30,23 @@ object HybridBlocksBlocks {
     val GREEN_STAINED_SMOOTH_QUARTZ = register("green_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.GREEN)))
     val RED_STAINED_SMOOTH_QUARTZ = register("red_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.RED)))
     val BLACK_STAINED_SMOOTH_QUARTZ = register("black_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.BLACK)))
+
+    val WHITE_STAINED_QUARTZ_PILLAR = register("white_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)))
+    val ORANGE_STAINED_QUARTZ_PILLAR = register("orange_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.ORANGE)))
+    val MAGENTA_STAINED_QUARTZ_PILLAR = register("magenta_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.MAGENTA)))
+    val LIGHT_BLUE_STAINED_QUARTZ_PILLAR = register("light_blue_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE)))
+    val YELLOW_STAINED_QUARTZ_PILLAR = register("yellow_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.YELLOW)))
+    val LIME_STAINED_QUARTZ_PILLAR = register("lime_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIME)))
+    val PINK_STAINED_QUARTZ_PILLAR = register("pink_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.PINK)))
+    val GRAY_STAINED_QUARTZ_PILLAR = register("gray_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.GRAY)))
+    val LIGHT_GRAY_STAINED_QUARTZ_PILLAR = register("light_gray_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_GRAY)))
+    val CYAN_STAINED_QUARTZ_PILLAR = register("cyan_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.CYAN)))
+    val PURPLE_STAINED_QUARTZ_PILLAR = register("purple_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.PURPLE)))
+    val BLUE_STAINED_QUARTZ_PILLAR = register("blue_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BLUE)))
+    val BROWN_STAINED_QUARTZ_PILLAR = register("brown_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BROWN)))
+    val GREEN_STAINED_QUARTZ_PILLAR = register("green_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.GREEN)))
+    val RED_STAINED_QUARTZ_PILLAR = register("red_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.RED)))
+    val BLACK_STAINED_QUARTZ_PILLAR = register("black_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BLACK)))
 
     val WHITE_STAINED_BRICKS = register("white_stained_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE)))
     val ORANGE_STAINED_BRICKS = register("orange_stained_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE)))

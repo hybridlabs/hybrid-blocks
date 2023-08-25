@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_quartz_pillar",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_pillar"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid-blocks:blue_stained_quartz_pillar"
+  },
+  "show_notification": true
+}

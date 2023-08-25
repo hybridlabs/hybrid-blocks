@@ -38,6 +38,24 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksBlocks.WHITE_STAINED_SMOOTH_QUARTZ, Items.WHITE_DYE)
         offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksBlocks.YELLOW_STAINED_SMOOTH_QUARTZ, Items.YELLOW_DYE)
 
+        // stained quartz pillar
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR, Items.BLACK_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.BLUE_STAINED_QUARTZ_PILLAR, Items.BLUE_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.BROWN_STAINED_QUARTZ_PILLAR, Items.BROWN_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.CYAN_STAINED_QUARTZ_PILLAR, Items.CYAN_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.GRAY_STAINED_QUARTZ_PILLAR, Items.GRAY_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.GREEN_STAINED_QUARTZ_PILLAR, Items.GREEN_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.LIGHT_BLUE_STAINED_QUARTZ_PILLAR, Items.LIGHT_BLUE_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.LIGHT_GRAY_STAINED_QUARTZ_PILLAR, Items.LIGHT_GRAY_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.LIME_STAINED_QUARTZ_PILLAR, Items.LIME_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.MAGENTA_STAINED_QUARTZ_PILLAR, Items.MAGENTA_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.ORANGE_STAINED_QUARTZ_PILLAR, Items.ORANGE_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.PINK_STAINED_QUARTZ_PILLAR, Items.PINK_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.PURPLE_STAINED_QUARTZ_PILLAR, Items.PURPLE_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.RED_STAINED_QUARTZ_PILLAR, Items.RED_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.WHITE_STAINED_QUARTZ_PILLAR, Items.WHITE_DYE)
+        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksBlocks.YELLOW_STAINED_QUARTZ_PILLAR, Items.YELLOW_DYE)
+
         // stained bricks
         offerBricksDyeingRecipe(exporter, HybridBlocksBlocks.BLACK_STAINED_BRICKS, Items.BLACK_DYE)
         offerBricksDyeingRecipe(exporter, HybridBlocksBlocks.BLUE_STAINED_BRICKS, Items.BLUE_DYE)
@@ -124,6 +142,21 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 .criterion(criterion, conditionsFromItem(base))
 
                 .offerTo(exporter)
+        }
+
+        private fun offerQuartzPillarDyeingRecipe(
+            exporter: Consumer<RecipeJsonProvider>,
+            output: ItemConvertible,
+            input: ItemConvertible
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Blocks.QUARTZ_PILLAR,
+                "has_quartz_pillar",
+                "stained_quartz_pillar",
+                output,
+                input
+            )
         }
 
         private fun offerSmoothQuartzDyeingRecipe(
