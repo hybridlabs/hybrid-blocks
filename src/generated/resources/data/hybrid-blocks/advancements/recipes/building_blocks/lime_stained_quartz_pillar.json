@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_quartz_pillar",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_quartz_pillar"
     ]
   ],
   "rewards": {
     "recipes": [
       "hybrid-blocks:lime_stained_quartz_pillar"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

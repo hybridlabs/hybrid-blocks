@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.block.Blocks
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder
-import net.minecraft.data.server.recipe.RecipeJsonProvider
+import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
 import net.minecraft.item.ItemConvertible
@@ -13,13 +13,12 @@ import net.minecraft.item.Items
 import net.minecraft.recipe.Ingredient
 import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.registry.Registries
-import java.util.function.Consumer
 
 /**
  * Generates all recipes.
  */
 class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
-    override fun generate(exporter: Consumer<RecipeJsonProvider>) {
+    override fun generate(exporter: RecipeExporter) {
         // stained smooth quartz
         offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksBlocks.BLACK_STAINED_SMOOTH_QUARTZ, Items.BLACK_DYE)
         offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksBlocks.BLUE_STAINED_SMOOTH_QUARTZ, Items.BLUE_DYE)
@@ -123,7 +122,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerDyeingRecipe(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             base: ItemConvertible,
             criterion: String,
             group: String,
@@ -145,7 +144,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerQuartzPillarDyeingRecipe(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             output: ItemConvertible,
             input: ItemConvertible
         ) {
@@ -160,7 +159,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerSmoothQuartzDyeingRecipe(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             output: ItemConvertible,
             input: ItemConvertible
         ) {
@@ -175,7 +174,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerBricksDyeingRecipe(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             output: ItemConvertible,
             input: ItemConvertible
         ) {
@@ -190,7 +189,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerBricksSmeltingRecipe(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             base: ItemConvertible,
             criterion: String,
             group: String,
@@ -210,7 +209,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerStainedCrackedBricksRecipes(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             base: ItemConvertible,
             cracked: ItemConvertible,
             dye: ItemConvertible
@@ -235,7 +234,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerStainedMossyBricksRecipes(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             base: ItemConvertible,
             mossy: ItemConvertible,
             dye: ItemConvertible
@@ -258,7 +257,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         }
 
         private fun offerMossingRecipes(
-            exporter: Consumer<RecipeJsonProvider>,
+            exporter: RecipeExporter,
             group: String,
             output: ItemConvertible,
             input: ItemConvertible

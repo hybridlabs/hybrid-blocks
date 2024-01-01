@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_cracked_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cracked_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "hybrid-blocks:black_stained_cracked_bricks_from_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

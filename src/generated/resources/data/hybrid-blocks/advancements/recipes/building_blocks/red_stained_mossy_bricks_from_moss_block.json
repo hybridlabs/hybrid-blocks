@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_moss_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_moss_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "hybrid-blocks:red_stained_mossy_bricks_from_moss_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

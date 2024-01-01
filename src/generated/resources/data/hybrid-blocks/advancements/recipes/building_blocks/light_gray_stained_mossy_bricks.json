@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_mossy_bricks",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mossy_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
       "hybrid-blocks:light_gray_stained_mossy_bricks"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
