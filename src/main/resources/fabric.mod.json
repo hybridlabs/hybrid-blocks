@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "hybrid-blocks",
+    "id": "hybrid_blocks",
     "version": "${version}",
     "name": "Hybrid Blocks",
     "description": "A mod that adds a variety of decorative and colorful blocks to the game.",
@@ -17,7 +17,7 @@
         "issues": "https://github.com/hybridlabs/hybrid-blocks/issues"
     },
     "license": "ARR (Assets), MIT (Code)",
-    "icon": "assets/hybrid-blocks/icon.png",
+    "icon": "assets/hybrid_blocks/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
@@ -50,7 +50,7 @@
     "depends": {
         "minecraft": "1.20.x",
         "java": ">=17",
-        "fabric-api": "*",
+        "fabric-api": ">=0.92",
         "fabric-language-kotlin": "*"
     }
 }
