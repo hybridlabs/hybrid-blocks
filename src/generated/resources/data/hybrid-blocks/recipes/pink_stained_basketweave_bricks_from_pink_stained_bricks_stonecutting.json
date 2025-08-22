@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:pink_stained_bricks"
+  },
+  "result": "hybrid-blocks:pink_stained_basketweave_bricks"
+}

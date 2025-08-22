@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:yellow_stained_bricks"
+  },
+  "result": "hybrid-blocks:yellow_stained_basketweave_bricks"
+}
