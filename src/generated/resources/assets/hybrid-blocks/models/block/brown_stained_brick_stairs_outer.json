@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "hybrid-blocks:block/brown_stained_bricks",
-    "side": "hybrid-blocks:block/brown_stained_bricks",
-    "top": "hybrid-blocks:block/brown_stained_bricks"
-  }
-}

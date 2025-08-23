@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hybrid-blocks:block/light_gray_quartz_slab"
+    },
+    "type=double": {
+      "model": "hybrid-blocks:block/light_gray_quartz"
+    },
+    "type=top": {
+      "model": "hybrid-blocks:block/light_gray_quartz_slab_top"
+    }
+  }
+}

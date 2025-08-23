@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "hybrid-blocks:block/white_stained_bricks",
-    "side": "hybrid-blocks:block/white_stained_bricks",
-    "top": "hybrid-blocks:block/white_stained_bricks"
-  }
-}
