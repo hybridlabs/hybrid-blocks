@@ -74,6 +74,9 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerBricksDyeingRecipe(exporter, HybridBlocksBlocks.WHITE_STAINED_BRICKS, Items.WHITE_DYE)
         offerBricksDyeingRecipe(exporter, HybridBlocksBlocks.YELLOW_STAINED_BRICKS, Items.YELLOW_DYE)
 
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.WHITE_STAINED_BRICK_SLAB, HybridBlocksBlocks.WHITE_STAINED_BRICKS)
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.WHITE_STAINED_BRICK_WALL, HybridBlocksBlocks.WHITE_STAINED_BRICKS)
+
         // cracked bricks
         offerBricksSmeltingRecipe(exporter, Blocks.BRICKS, "has_bricks", "bricks", HybridBlocksBlocks.CRACKED_BRICKS, Blocks.BRICKS)
 

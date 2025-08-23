@@ -1,6 +1,7 @@
 package dev.hybridlabs.blocks.data.client
 
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
+import dev.hybridlabs.blocks.block.HybridBlocksFamilies
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
 import net.minecraft.data.client.BlockStateModelGenerator
@@ -12,7 +13,7 @@ import net.minecraft.data.client.TexturedModel
  */
 class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
     override fun generateBlockStateModels(generator: BlockStateModelGenerator) {
-        // generate simple cube alls
+        // generate simple cube all
         setOf(
             HybridBlocksBlocks.WHITE_STAINED_SMOOTH_QUARTZ,
             HybridBlocksBlocks.ORANGE_STAINED_SMOOTH_QUARTZ,
@@ -30,23 +31,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.GREEN_STAINED_SMOOTH_QUARTZ,
             HybridBlocksBlocks.RED_STAINED_SMOOTH_QUARTZ,
             HybridBlocksBlocks.BLACK_STAINED_SMOOTH_QUARTZ,
-
-            HybridBlocksBlocks.WHITE_STAINED_BRICKS,
-            HybridBlocksBlocks.ORANGE_STAINED_BRICKS,
-            HybridBlocksBlocks.MAGENTA_STAINED_BRICKS,
-            HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICKS,
-            HybridBlocksBlocks.YELLOW_STAINED_BRICKS,
-            HybridBlocksBlocks.LIME_STAINED_BRICKS,
-            HybridBlocksBlocks.PINK_STAINED_BRICKS,
-            HybridBlocksBlocks.GRAY_STAINED_BRICKS,
-            HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICKS,
-            HybridBlocksBlocks.CYAN_STAINED_BRICKS,
-            HybridBlocksBlocks.PURPLE_STAINED_BRICKS,
-            HybridBlocksBlocks.BLUE_STAINED_BRICKS,
-            HybridBlocksBlocks.BROWN_STAINED_BRICKS,
-            HybridBlocksBlocks.GREEN_STAINED_BRICKS,
-            HybridBlocksBlocks.RED_STAINED_BRICKS,
-            HybridBlocksBlocks.BLACK_STAINED_BRICKS,
 
             HybridBlocksBlocks.CRACKED_BRICKS,
             HybridBlocksBlocks.WHITE_STAINED_CRACKED_BRICKS,
@@ -85,7 +69,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.BLACK_STAINED_MOSSY_BRICKS,
         ).forEach(generator::registerSimpleCubeAll)
 
-
         mapOf(
             HybridBlocksBlocks.AQUARIUM_GLASS to HybridBlocksBlocks.AQUARIUM_GLASS_PANE,
             HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS_PANE,
@@ -107,7 +90,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         ).forEach { (glass, pane) ->
             generator.registerGlassPane(glass, pane)
         }
-
 
         // axis rotated pillars
         setOf(
@@ -134,6 +116,39 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL
             )
         }
+
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.WHITE_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.ORANGE_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.ORANGE_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MAGENTA_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.MAGENTA_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.LIGHT_BLUE_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.YELLOW_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.YELLOW_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIME_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.LIME_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PINK_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.PINK_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GRAY_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.GRAY_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.LIGHT_GRAY_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CYAN_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.CYAN_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PURPLE_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.PURPLE_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLUE_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.BLUE_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BROWN_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.BROWN_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GREEN_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.GREEN_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.RED_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.RED_STAINED_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLACK_STAINED_BRICKS)
+            .family(HybridBlocksFamilies.BLACK_STAINED_BRICKS)
     }
 
     override fun generateItemModels(generator: ItemModelGenerator) {

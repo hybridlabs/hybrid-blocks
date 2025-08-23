@@ -48,21 +48,85 @@ object HybridBlocksItems {
     val BLACK_STAINED_QUARTZ_PILLAR = register("black_stained_quartz_pillar") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR, it) }
 
     val WHITE_STAINED_BRICKS = register("white_stained_bricks") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_BRICKS, it) }
+    val WHITE_STAINED_BRICK_STAIRS = register("white_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_BRICK_STAIRS, it) }
+    val WHITE_STAINED_BRICK_SLAB = register("white_stained_brick_slab") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_BRICK_SLAB, it) }
+    val WHITE_STAINED_BRICK_WALL = register("white_stained_brick_wall") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_BRICK_WALL, it) }
+
     val ORANGE_STAINED_BRICKS = register("orange_stained_bricks") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_BRICKS, it) }
+    val ORANGE_STAINED_BRICK_STAIRS = register("orange_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_BRICK_STAIRS, it) }
+    val ORANGE_STAINED_BRICK_SLAB = register("orange_stained_brick_slab") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_BRICK_SLAB, it) }
+    val ORANGE_STAINED_BRICK_WALL = register("orange_stained_brick_wall") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_BRICK_WALL, it) }
+
     val MAGENTA_STAINED_BRICKS = register("magenta_stained_bricks") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_BRICKS, it) }
+    val MAGENTA_STAINED_BRICK_STAIRS = register("magenta_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_BRICK_STAIRS, it) }
+    val MAGENTA_STAINED_BRICK_SLAB = register("magenta_stained_brick_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_BRICK_SLAB, it) }
+    val MAGENTA_STAINED_BRICK_WALL = register("magenta_stained_brick_wall") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_BRICK_WALL, it) }
+
     val LIGHT_BLUE_STAINED_BRICKS = register("light_blue_stained_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICKS, it) }
+    val LIGHT_BLUE_STAINED_BRICK_STAIRS = register("light_blue_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICK_STAIRS, it) }
+    val LIGHT_BLUE_STAINED_BRICK_SLAB = register("light_blue_stained_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICK_SLAB, it) }
+    val LIGHT_BLUE_STAINED_BRICK_WALL = register("light_blue_stained_brick_wall") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_BRICK_WALL, it) }
+
     val YELLOW_STAINED_BRICKS = register("yellow_stained_bricks") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_BRICKS, it) }
+    val YELLOW_STAINED_BRICK_STAIRS = register("yellow_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_BRICK_STAIRS, it) }
+    val YELLOW_STAINED_BRICK_SLAB = register("yellow_stained_brick_slab") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_BRICK_SLAB, it) }
+    val YELLOW_STAINED_BRICK_WALL = register("yellow_stained_brick_wall") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_BRICK_WALL, it) }
+
     val LIME_STAINED_BRICKS = register("lime_stained_bricks") { BlockItem(HybridBlocksBlocks.LIME_STAINED_BRICKS, it) }
+    val LIME_STAINED_BRICK_STAIRS = register("lime_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.LIME_STAINED_BRICK_STAIRS, it) }
+    val LIME_STAINED_BRICK_SLAB = register("lime_stained_brick_slab") { BlockItem(HybridBlocksBlocks.LIME_STAINED_BRICK_SLAB, it) }
+    val LIME_STAINED_BRICK_WALL = register("lime_stained_brick_wall") { BlockItem(HybridBlocksBlocks.LIME_STAINED_BRICK_WALL, it) }
+
     val PINK_STAINED_BRICKS = register("pink_stained_bricks") { BlockItem(HybridBlocksBlocks.PINK_STAINED_BRICKS, it) }
+    val PINK_STAINED_BRICK_STAIRS = register("pink_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.PINK_STAINED_BRICK_STAIRS, it) }
+    val PINK_STAINED_BRICK_SLAB = register("pink_stained_brick_slab") { BlockItem(HybridBlocksBlocks.PINK_STAINED_BRICK_SLAB, it) }
+    val PINK_STAINED_BRICK_WALL = register("pink_stained_brick_wall") { BlockItem(HybridBlocksBlocks.PINK_STAINED_BRICK_WALL, it) }
+
     val GRAY_STAINED_BRICKS = register("gray_stained_bricks") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_BRICKS, it) }
+    val GRAY_STAINED_BRICK_STAIRS = register("gray_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_BRICK_STAIRS, it) }
+    val GRAY_STAINED_BRICK_SLAB = register("gray_stained_brick_slab") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_BRICK_SLAB, it) }
+    val GRAY_STAINED_BRICK_WALL = register("gray_stained_brick_wall") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_BRICK_WALL, it) }
+
     val LIGHT_GRAY_STAINED_BRICKS = register("light_gray_stained_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICKS, it) }
+    val LIGHT_GRAY_STAINED_BRICK_STAIRS = register("light_gray_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICK_STAIRS, it) }
+    val LIGHT_GRAY_STAINED_BRICK_SLAB = register("light_gray_stained_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICK_SLAB, it) }
+    val LIGHT_GRAY_STAINED_BRICK_WALL = register("light_gray_stained_brick_wall") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_BRICK_WALL, it) }
+
     val CYAN_STAINED_BRICKS = register("cyan_stained_bricks") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_BRICKS, it) }
+    val CYAN_STAINED_BRICK_STAIRS = register("cyan_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_BRICK_STAIRS, it) }
+    val CYAN_STAINED_BRICK_SLAB = register("cyan_stained_brick_slab") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_BRICK_SLAB, it) }
+    val CYAN_STAINED_BRICK_WALL = register("cyan_stained_brick_wall") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_BRICK_WALL, it) }
+
     val PURPLE_STAINED_BRICKS = register("purple_stained_bricks") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_BRICKS, it) }
+    val PURPLE_STAINED_BRICK_STAIRS = register("purple_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_BRICK_STAIRS, it) }
+    val PURPLE_STAINED_BRICK_SLAB = register("purple_stained_brick_slab") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_BRICK_SLAB, it) }
+    val PURPLE_STAINED_BRICK_WALL = register("purple_stained_brick_wall") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_BRICK_WALL, it) }
+
     val BLUE_STAINED_BRICKS = register("blue_stained_bricks") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_BRICKS, it) }
+    val BLUE_STAINED_BRICK_STAIRS = register("blue_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_BRICK_STAIRS, it) }
+    val BLUE_STAINED_BRICK_SLAB = register("blue_stained_brick_slab") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_BRICK_SLAB, it) }
+    val BLUE_STAINED_BRICK_WALL = register("blue_stained_brick_wall") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_BRICK_WALL, it) }
+
     val BROWN_STAINED_BRICKS = register("brown_stained_bricks") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_BRICKS, it) }
+    val BROWN_STAINED_BRICK_STAIRS = register("brown_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_BRICK_STAIRS, it) }
+    val BROWN_STAINED_BRICK_SLAB = register("brown_stained_brick_slab") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_BRICK_SLAB, it) }
+    val BROWN_STAINED_BRICK_WALL = register("brown_stained_brick_wall") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_BRICK_WALL, it) }
+
     val GREEN_STAINED_BRICKS = register("green_stained_bricks") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_BRICKS, it) }
+    val GREEN_STAINED_BRICK_STAIRS = register("green_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_BRICK_STAIRS, it) }
+    val GREEN_STAINED_BRICK_SLAB = register("green_stained_brick_slab") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_BRICK_SLAB, it) }
+    val GREEN_STAINED_BRICK_WALL = register("green_stained_brick_wall") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_BRICK_WALL, it) }
+
     val RED_STAINED_BRICKS = register("red_stained_bricks") { BlockItem(HybridBlocksBlocks.RED_STAINED_BRICKS, it) }
+    val RED_STAINED_BRICK_STAIRS = register("red_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.RED_STAINED_BRICK_STAIRS, it) }
+    val RED_STAINED_BRICK_SLAB = register("red_stained_brick_slab") { BlockItem(HybridBlocksBlocks.RED_STAINED_BRICK_SLAB, it) }
+    val RED_STAINED_BRICK_WALL = register("red_stained_brick_wall") { BlockItem(HybridBlocksBlocks.RED_STAINED_BRICK_WALL, it) }
+
     val BLACK_STAINED_BRICKS = register("black_stained_bricks") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_BRICKS, it) }
+    val BLACK_STAINED_BRICK_STAIRS = register("black_stained_brick_stairs") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_BRICK_STAIRS, it) }
+    val BLACK_STAINED_BRICK_SLAB = register("black_stained_brick_slab") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_BRICK_SLAB, it) }
+    val BLACK_STAINED_BRICK_WALL = register("black_stained_brick_wall") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_BRICK_WALL, it) }
+
 
     val CRACKED_BRICKS = register("cracked_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_BRICKS, it) }
     val WHITE_STAINED_CRACKED_BRICKS = register("white_stained_cracked_bricks") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_CRACKED_BRICKS, it) }
