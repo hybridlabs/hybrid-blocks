@@ -85,6 +85,30 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.BLACK_STAINED_MOSSY_BRICKS,
         ).forEach(generator::registerSimpleCubeAll)
 
+
+        mapOf(
+            HybridBlocksBlocks.AQUARIUM_GLASS to HybridBlocksBlocks.AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.ORANGE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.ORANGE_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.MAGENTA_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.MAGENTA_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.LIGHT_BLUE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.LIGHT_BLUE_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.YELLOW_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.YELLOW_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.LIME_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.LIME_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.PINK_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.PINK_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.GRAY_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.GRAY_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.LIGHT_GRAY_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.LIGHT_GRAY_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.CYAN_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.CYAN_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.PURPLE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.PURPLE_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.BLUE_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.BLUE_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.BROWN_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.BROWN_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.GREEN_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.GREEN_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.RED_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.RED_STAINED_AQUARIUM_GLASS_PANE,
+            HybridBlocksBlocks.BLACK_STAINED_AQUARIUM_GLASS to HybridBlocksBlocks.BLACK_STAINED_AQUARIUM_GLASS_PANE,
+        ).forEach { (glass, pane) ->
+            generator.registerGlassPane(glass, pane)
+        }
+
+
         // axis rotated pillars
         setOf(
             HybridBlocksBlocks.WHITE_STAINED_QUARTZ_PILLAR,
@@ -103,7 +127,13 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.GREEN_STAINED_QUARTZ_PILLAR,
             HybridBlocksBlocks.RED_STAINED_QUARTZ_PILLAR,
             HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR,
-        ).forEach { block -> generator.registerAxisRotated(block, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL) }
+        ).forEach { block ->
+            generator.registerAxisRotated(
+                block,
+                TexturedModel.END_FOR_TOP_CUBE_COLUMN,
+                TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL
+            )
+        }
     }
 
     override fun generateItemModels(generator: ItemModelGenerator) {

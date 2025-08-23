@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside",
+  "textures": {
+    "pane": "hybrid-blocks:block/green_stained_aquarium_glass"
+  }
+}

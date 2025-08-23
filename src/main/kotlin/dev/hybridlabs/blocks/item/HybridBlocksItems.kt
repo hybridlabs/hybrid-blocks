@@ -100,6 +100,42 @@ object HybridBlocksItems {
     val RED_STAINED_MOSSY_BRICKS = register("red_stained_mossy_bricks") { BlockItem(HybridBlocksBlocks.RED_STAINED_MOSSY_BRICKS, it) }
     val BLACK_STAINED_MOSSY_BRICKS = register("black_stained_mossy_bricks") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_MOSSY_BRICKS, it) }
 
+    val AQUARIUM_GLASS = register("aquarium_glass") { BlockItem(HybridBlocksBlocks.AQUARIUM_GLASS, it) }
+    val WHITE_STAINED_AQUARIUM_GLASS = register("white_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS, it) }
+    val ORANGE_STAINED_AQUARIUM_GLASS = register("orange_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_AQUARIUM_GLASS, it) }
+    val MAGENTA_STAINED_AQUARIUM_GLASS = register("magenta_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_AQUARIUM_GLASS, it) }
+    val LIGHT_BLUE_STAINED_AQUARIUM_GLASS = register("light_blue_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_AQUARIUM_GLASS, it) }
+    val YELLOW_STAINED_AQUARIUM_GLASS = register("yellow_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_AQUARIUM_GLASS, it) }
+    val LIME_STAINED_AQUARIUM_GLASS = register("lime_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.LIME_STAINED_AQUARIUM_GLASS, it) }
+    val PINK_STAINED_AQUARIUM_GLASS = register("pink_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.PINK_STAINED_AQUARIUM_GLASS, it) }
+    val GRAY_STAINED_AQUARIUM_GLASS = register("gray_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_AQUARIUM_GLASS, it) }
+    val LIGHT_GRAY_STAINED_AQUARIUM_GLASS = register("light_gray_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_AQUARIUM_GLASS, it) }
+    val CYAN_STAINED_AQUARIUM_GLASS = register("cyan_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_AQUARIUM_GLASS, it) }
+    val PURPLE_STAINED_AQUARIUM_GLASS = register("purple_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_AQUARIUM_GLASS, it) }
+    val BLUE_STAINED_AQUARIUM_GLASS = register("blue_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_AQUARIUM_GLASS, it) }
+    val BROWN_STAINED_AQUARIUM_GLASS = register("brown_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_AQUARIUM_GLASS, it) }
+    val GREEN_STAINED_AQUARIUM_GLASS = register("green_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_AQUARIUM_GLASS, it) }
+    val RED_STAINED_AQUARIUM_GLASS = register("red_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.RED_STAINED_AQUARIUM_GLASS, it) }
+    val BLACK_STAINED_AQUARIUM_GLASS = register("black_stained_aquarium_glass") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_AQUARIUM_GLASS, it) }
+
+    val AQUARIUM_GLASS_PANE = register("aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.AQUARIUM_GLASS_PANE, it) }
+    val WHITE_STAINED_AQUARIUM_GLASS_PANE = register("white_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val ORANGE_STAINED_AQUARIUM_GLASS_PANE = register("orange_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val MAGENTA_STAINED_AQUARIUM_GLASS_PANE = register("magenta_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.MAGENTA_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val LIGHT_BLUE_STAINED_AQUARIUM_GLASS_PANE = register("light_blue_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val YELLOW_STAINED_AQUARIUM_GLASS_PANE = register("yellow_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.YELLOW_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val LIME_STAINED_AQUARIUM_GLASS_PANE = register("lime_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.LIME_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val PINK_STAINED_AQUARIUM_GLASS_PANE = register("pink_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.PINK_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val GRAY_STAINED_AQUARIUM_GLASS_PANE = register("gray_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.GRAY_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val LIGHT_GRAY_STAINED_AQUARIUM_GLASS_PANE = register("light_gray_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val CYAN_STAINED_AQUARIUM_GLASS_PANE = register("cyan_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.CYAN_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val PURPLE_STAINED_AQUARIUM_GLASS_PANE = register("purple_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.PURPLE_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val BLUE_STAINED_AQUARIUM_GLASS_PANE = register("blue_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.BLUE_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val BROWN_STAINED_AQUARIUM_GLASS_PANE = register("brown_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.BROWN_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val GREEN_STAINED_AQUARIUM_GLASS_PANE = register("green_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val RED_STAINED_AQUARIUM_GLASS_PANE = register("red_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.RED_STAINED_AQUARIUM_GLASS_PANE, it) }
+    val BLACK_STAINED_AQUARIUM_GLASS_PANE = register("black_stained_aquarium_glass_pane") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_AQUARIUM_GLASS_PANE, it) }
+
     private fun register(id: String, item: (settings: Item.Settings) -> Item): Item {
         return Registry.register(Registries.ITEM, Identifier(HybridBlocks.MOD_ID, id), item(Item.Settings()))
     }

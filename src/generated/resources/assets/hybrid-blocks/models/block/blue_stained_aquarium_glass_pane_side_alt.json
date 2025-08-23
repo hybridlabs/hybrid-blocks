@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "hybrid-blocks:block/blue_stained_aquarium_glass_pane_top",
+    "pane": "hybrid-blocks:block/blue_stained_aquarium_glass"
+  }
+}

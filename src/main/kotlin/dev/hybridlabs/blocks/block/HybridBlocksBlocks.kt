@@ -2,9 +2,9 @@ package dev.hybridlabs.blocks.block
 
 import dev.hybridlabs.blocks.HybridBlocks
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
-import net.minecraft.block.Block
-import net.minecraft.block.Blocks
-import net.minecraft.block.PillarBlock
+import net.minecraft.block.*
+import net.minecraft.block.MapColor.WHITE
+import net.minecraft.block.piston.PistonBehavior
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.DyeColor
@@ -14,6 +14,9 @@ import net.minecraft.util.Identifier
  * All Hybrid Blocks blocks.
  */
 object HybridBlocksBlocks {
+
+    // region Quartz
+
     val WHITE_STAINED_SMOOTH_QUARTZ = register("white_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.WHITE)))
     val ORANGE_STAINED_SMOOTH_QUARTZ = register("orange_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.ORANGE)))
     val MAGENTA_STAINED_SMOOTH_QUARTZ = register("magenta_stained_smooth_quartz", Block(FabricBlockSettings.copy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.MAGENTA)))
@@ -47,6 +50,10 @@ object HybridBlocksBlocks {
     val GREEN_STAINED_QUARTZ_PILLAR = register("green_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.GREEN)))
     val RED_STAINED_QUARTZ_PILLAR = register("red_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.RED)))
     val BLACK_STAINED_QUARTZ_PILLAR = register("black_stained_quartz_pillar", PillarBlock(FabricBlockSettings.copy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BLACK)))
+
+    // endregion
+
+    // region Bricks
 
     val WHITE_STAINED_BRICKS = register("white_stained_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE)))
     val ORANGE_STAINED_BRICKS = register("orange_stained_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE)))
@@ -100,6 +107,47 @@ object HybridBlocksBlocks {
     val GREEN_STAINED_MOSSY_BRICKS = register("green_stained_mossy_bricks", Block(FabricBlockSettings.copy(GREEN_STAINED_BRICKS)))
     val RED_STAINED_MOSSY_BRICKS = register("red_stained_mossy_bricks", Block(FabricBlockSettings.copy(RED_STAINED_BRICKS)))
     val BLACK_STAINED_MOSSY_BRICKS = register("black_stained_mossy_bricks", Block(FabricBlockSettings.copy(BLACK_STAINED_BRICKS)))
+
+    //endregion
+
+    // region Aquarium Glass
+    val AQUARIUM_GLASS = register("aquarium_glass", GlassBlock(FabricBlockSettings.copy(Blocks.GLASS)))
+    val WHITE_STAINED_AQUARIUM_GLASS = register("white_stained_aquarium_glass", StainedGlassBlock(DyeColor.WHITE, FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS)))
+    val ORANGE_STAINED_AQUARIUM_GLASS = register("orange_stained_aquarium_glass", StainedGlassBlock(DyeColor.ORANGE, FabricBlockSettings.copy(Blocks.ORANGE_STAINED_GLASS)))
+    val MAGENTA_STAINED_AQUARIUM_GLASS = register("magenta_stained_aquarium_glass", StainedGlassBlock(DyeColor.MAGENTA, FabricBlockSettings.copy(Blocks.MAGENTA_STAINED_GLASS)))
+    val LIGHT_BLUE_STAINED_AQUARIUM_GLASS = register("light_blue_stained_aquarium_glass", StainedGlassBlock(DyeColor.LIGHT_BLUE, FabricBlockSettings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS)))
+    val YELLOW_STAINED_AQUARIUM_GLASS = register("yellow_stained_aquarium_glass", StainedGlassBlock(DyeColor.YELLOW, FabricBlockSettings.copy(Blocks.YELLOW_STAINED_GLASS)))
+    val LIME_STAINED_AQUARIUM_GLASS = register("lime_stained_aquarium_glass", StainedGlassBlock(DyeColor.LIME, FabricBlockSettings.copy(Blocks.LIME_STAINED_GLASS)))
+    val PINK_STAINED_AQUARIUM_GLASS = register("pink_stained_aquarium_glass", StainedGlassBlock(DyeColor.PINK, FabricBlockSettings.copy(Blocks.PINK_STAINED_GLASS)))
+    val GRAY_STAINED_AQUARIUM_GLASS = register("gray_stained_aquarium_glass", StainedGlassBlock(DyeColor.GRAY, FabricBlockSettings.copy(Blocks.GRAY_STAINED_GLASS)))
+    val LIGHT_GRAY_STAINED_AQUARIUM_GLASS = register("light_gray_stained_aquarium_glass", StainedGlassBlock(DyeColor.LIGHT_GRAY, FabricBlockSettings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS)))
+    val CYAN_STAINED_AQUARIUM_GLASS = register("cyan_stained_aquarium_glass", StainedGlassBlock(DyeColor.CYAN, FabricBlockSettings.copy(Blocks.CYAN_STAINED_GLASS)))
+    val PURPLE_STAINED_AQUARIUM_GLASS = register("purple_stained_aquarium_glass", StainedGlassBlock(DyeColor.PURPLE, FabricBlockSettings.copy(Blocks.PURPLE_STAINED_GLASS)))
+    val BLUE_STAINED_AQUARIUM_GLASS = register("blue_stained_aquarium_glass", StainedGlassBlock(DyeColor.BLUE, FabricBlockSettings.copy(Blocks.BLUE_STAINED_GLASS)))
+    val BROWN_STAINED_AQUARIUM_GLASS = register("brown_stained_aquarium_glass", StainedGlassBlock(DyeColor.BROWN, FabricBlockSettings.copy(Blocks.BROWN_STAINED_GLASS)))
+    val GREEN_STAINED_AQUARIUM_GLASS = register("green_stained_aquarium_glass", StainedGlassBlock(DyeColor.GREEN, FabricBlockSettings.copy(Blocks.GREEN_STAINED_GLASS)))
+    val RED_STAINED_AQUARIUM_GLASS = register("red_stained_aquarium_glass", StainedGlassBlock(DyeColor.RED, FabricBlockSettings.copy(Blocks.RED_STAINED_GLASS)))
+    val BLACK_STAINED_AQUARIUM_GLASS = register("black_stained_aquarium_glass", StainedGlassBlock(DyeColor.BLACK, FabricBlockSettings.copy(Blocks.BLACK_STAINED_GLASS)))
+
+    val AQUARIUM_GLASS_PANE = register("aquarium_glass_pane", PaneBlock(FabricBlockSettings.copy(Blocks.GLASS_PANE)))
+    val WHITE_STAINED_AQUARIUM_GLASS_PANE = register("white_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.WHITE, FabricBlockSettings.copy(Blocks.WHITE_STAINED_GLASS_PANE)))
+    val ORANGE_STAINED_AQUARIUM_GLASS_PANE = register("orange_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.ORANGE, FabricBlockSettings.copy(Blocks.ORANGE_STAINED_GLASS_PANE)))
+    val MAGENTA_STAINED_AQUARIUM_GLASS_PANE = register("magenta_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.MAGENTA, FabricBlockSettings.copy(Blocks.MAGENTA_STAINED_GLASS_PANE)))
+    val LIGHT_BLUE_STAINED_AQUARIUM_GLASS_PANE = register("light_blue_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, FabricBlockSettings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE)))
+    val YELLOW_STAINED_AQUARIUM_GLASS_PANE = register("yellow_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.YELLOW, FabricBlockSettings.copy(Blocks.YELLOW_STAINED_GLASS_PANE)))
+    val LIME_STAINED_AQUARIUM_GLASS_PANE = register("lime_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.LIME, FabricBlockSettings.copy(Blocks.LIME_STAINED_GLASS_PANE)))
+    val PINK_STAINED_AQUARIUM_GLASS_PANE = register("pink_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.PINK, FabricBlockSettings.copy(Blocks.PINK_STAINED_GLASS_PANE)))
+    val GRAY_STAINED_AQUARIUM_GLASS_PANE = register("gray_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.GRAY, FabricBlockSettings.copy(Blocks.GRAY_STAINED_GLASS_PANE)))
+    val LIGHT_GRAY_STAINED_AQUARIUM_GLASS_PANE = register("light_gray_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, FabricBlockSettings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE)))
+    val CYAN_STAINED_AQUARIUM_GLASS_PANE = register("cyan_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.CYAN, FabricBlockSettings.copy(Blocks.CYAN_STAINED_GLASS_PANE)))
+    val PURPLE_STAINED_AQUARIUM_GLASS_PANE = register("purple_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.PURPLE, FabricBlockSettings.copy(Blocks.PURPLE_STAINED_GLASS_PANE)))
+    val BLUE_STAINED_AQUARIUM_GLASS_PANE = register("blue_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.BLUE, FabricBlockSettings.copy(Blocks.BLUE_STAINED_GLASS_PANE)))
+    val BROWN_STAINED_AQUARIUM_GLASS_PANE = register("brown_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.BROWN, FabricBlockSettings.copy(Blocks.BROWN_STAINED_GLASS_PANE)))
+    val GREEN_STAINED_AQUARIUM_GLASS_PANE = register("green_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.GREEN, FabricBlockSettings.copy(Blocks.GREEN_STAINED_GLASS_PANE)))
+    val RED_STAINED_AQUARIUM_GLASS_PANE = register("red_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.RED, FabricBlockSettings.copy(Blocks.RED_STAINED_GLASS_PANE)))
+    val BLACK_STAINED_AQUARIUM_GLASS_PANE = register("black_stained_aquarium_glass_pane", StainedGlassPaneBlock(DyeColor.BLACK, FabricBlockSettings.copy(Blocks.BLACK_STAINED_GLASS_PANE)))
+
+    // endregion
 
     private fun register(id: String, block: Block): Block {
         return Registry.register(Registries.BLOCK, Identifier(HybridBlocks.MOD_ID, id), block)
