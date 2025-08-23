@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "hybrid-blocks:block/lime_stained_aquarium_glass"
-  }
-}

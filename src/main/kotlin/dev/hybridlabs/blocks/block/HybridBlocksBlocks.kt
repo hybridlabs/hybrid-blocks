@@ -100,6 +100,9 @@ object HybridBlocksBlocks {
     // region Bricks
 
     val CRACKED_BRICKS = register("cracked_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS)))
+    val CRACKED_BRICK_STAIRS = register("cracked_brick_stairs", StairsBlock(CRACKED_BRICKS.defaultState, FabricBlockSettings.copy(CRACKED_BRICKS).mapColor(DyeColor.WHITE)))
+    val CRACKED_BRICK_SLAB = register("cracked_brick_slab", SlabBlock(FabricBlockSettings.copy(CRACKED_BRICKS).mapColor(DyeColor.WHITE)))
+    val CRACKED_BRICK_WALL = register("cracked_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.WHITE)))
 
     val WHITE_STAINED_BRICKS = register("white_stained_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE)))
     val WHITE_STAINED_CRACKED_BRICKS = register("white_stained_cracked_bricks", Block(FabricBlockSettings.copy(WHITE_STAINED_BRICKS)))
@@ -197,23 +200,90 @@ object HybridBlocksBlocks {
     val BLACK_STAINED_BRICK_SLAB = register("black_stained_brick_slab", SlabBlock(FabricBlockSettings.copy(BLACK_STAINED_BRICKS).mapColor(DyeColor.BLACK)))
     val BLACK_STAINED_BRICK_WALL = register("black_stained_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK)))
 
-    val MOSSY_BRICKS = register("mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS)))
-    val WHITE_STAINED_MOSSY_BRICKS = register("white_stained_mossy_bricks", Block(FabricBlockSettings.copy(WHITE_STAINED_BRICKS)))
-    val ORANGE_STAINED_MOSSY_BRICKS = register("orange_stained_mossy_bricks", Block(FabricBlockSettings.copy(ORANGE_STAINED_BRICKS)))
-    val MAGENTA_STAINED_MOSSY_BRICKS = register("magenta_stained_mossy_bricks", Block(FabricBlockSettings.copy(MAGENTA_STAINED_BRICKS)))
-    val LIGHT_BLUE_STAINED_MOSSY_BRICKS = register("light_blue_stained_mossy_bricks", Block(FabricBlockSettings.copy(LIGHT_BLUE_STAINED_BRICKS)))
-    val YELLOW_STAINED_MOSSY_BRICKS = register("yellow_stained_mossy_bricks", Block(FabricBlockSettings.copy(YELLOW_STAINED_BRICKS)))
-    val LIME_STAINED_MOSSY_BRICKS = register("lime_stained_mossy_bricks", Block(FabricBlockSettings.copy(LIME_STAINED_BRICKS)))
-    val PINK_STAINED_MOSSY_BRICKS = register("pink_stained_mossy_bricks", Block(FabricBlockSettings.copy(PINK_STAINED_BRICKS)))
-    val GRAY_STAINED_MOSSY_BRICKS = register("gray_stained_mossy_bricks", Block(FabricBlockSettings.copy(GRAY_STAINED_BRICKS)))
-    val LIGHT_GRAY_STAINED_MOSSY_BRICKS = register("light_gray_stained_mossy_bricks", Block(FabricBlockSettings.copy(LIGHT_GRAY_STAINED_BRICKS)))
-    val CYAN_STAINED_MOSSY_BRICKS = register("cyan_stained_mossy_bricks", Block(FabricBlockSettings.copy(CYAN_STAINED_BRICKS)))
-    val PURPLE_STAINED_MOSSY_BRICKS = register("purple_stained_mossy_bricks", Block(FabricBlockSettings.copy(PURPLE_STAINED_BRICKS)))
-    val BLUE_STAINED_MOSSY_BRICKS = register("blue_stained_mossy_bricks", Block(FabricBlockSettings.copy(BLUE_STAINED_BRICKS)))
-    val BROWN_STAINED_MOSSY_BRICKS = register("brown_stained_mossy_bricks", Block(FabricBlockSettings.copy(BROWN_STAINED_BRICKS)))
-    val GREEN_STAINED_MOSSY_BRICKS = register("green_stained_mossy_bricks", Block(FabricBlockSettings.copy(GREEN_STAINED_BRICKS)))
-    val RED_STAINED_MOSSY_BRICKS = register("red_stained_mossy_bricks", Block(FabricBlockSettings.copy(RED_STAINED_BRICKS)))
-    val BLACK_STAINED_MOSSY_BRICKS = register("black_stained_mossy_bricks", Block(FabricBlockSettings.copy(BLACK_STAINED_BRICKS)))
+    val MOSSY_BRICKS = register("mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK)))
+    val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs", StairsBlock(Blocks.BRICKS.defaultState, FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK)))
+    val MOSSY_BRICK_SLAB = register("mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK)))
+    val MOSSY_BRICK_WALL = register("mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK)))
+
+    val WHITE_STAINED_MOSSY_BRICKS = register("white_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE)))
+    val WHITE_STAINED_MOSSY_BRICK_STAIRS = register("white_stained_mossy_brick_stairs", StairsBlock(WHITE_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(WHITE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.WHITE)))
+    val WHITE_STAINED_MOSSY_BRICK_SLAB = register("white_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(WHITE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.WHITE)))
+    val WHITE_STAINED_MOSSY_BRICK_WALL = register("white_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.WHITE)))
+
+    val ORANGE_STAINED_MOSSY_BRICKS = register("orange_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE)))
+    val ORANGE_STAINED_MOSSY_BRICK_STAIRS = register("orange_stained_mossy_brick_stairs", StairsBlock(ORANGE_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(ORANGE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.ORANGE)))
+    val ORANGE_STAINED_MOSSY_BRICK_SLAB = register("orange_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(ORANGE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.ORANGE)))
+    val ORANGE_STAINED_MOSSY_BRICK_WALL = register("orange_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.ORANGE)))
+
+    val MAGENTA_STAINED_MOSSY_BRICKS = register("magenta_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA)))
+    val MAGENTA_STAINED_MOSSY_BRICK_STAIRS = register("magenta_stained_mossy_brick_stairs", StairsBlock(MAGENTA_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(MAGENTA_STAINED_MOSSY_BRICKS).mapColor(DyeColor.MAGENTA)))
+    val MAGENTA_STAINED_MOSSY_BRICK_SLAB = register("magenta_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(MAGENTA_STAINED_MOSSY_BRICKS).mapColor(DyeColor.MAGENTA)))
+    val MAGENTA_STAINED_MOSSY_BRICK_WALL = register("magenta_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.MAGENTA)))
+
+    val LIGHT_BLUE_STAINED_MOSSY_BRICKS = register("light_blue_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE)))
+    val LIGHT_BLUE_STAINED_MOSSY_BRICK_STAIRS = register("light_blue_stained_mossy_brick_stairs", StairsBlock(LIGHT_BLUE_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(LIGHT_BLUE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIGHT_BLUE)))
+    val LIGHT_BLUE_STAINED_MOSSY_BRICK_SLAB = register("light_blue_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(LIGHT_BLUE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIGHT_BLUE)))
+    val LIGHT_BLUE_STAINED_MOSSY_BRICK_WALL = register("light_blue_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.LIGHT_BLUE)))
+
+    val YELLOW_STAINED_MOSSY_BRICKS = register("yellow_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW)))
+    val YELLOW_STAINED_MOSSY_BRICK_STAIRS = register("yellow_stained_mossy_brick_stairs", StairsBlock(YELLOW_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(YELLOW_STAINED_MOSSY_BRICKS).mapColor(DyeColor.YELLOW)))
+    val YELLOW_STAINED_MOSSY_BRICK_SLAB = register("yellow_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(YELLOW_STAINED_MOSSY_BRICKS).mapColor(DyeColor.YELLOW)))
+    val YELLOW_STAINED_MOSSY_BRICK_WALL = register("yellow_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.YELLOW)))
+
+    val LIME_STAINED_MOSSY_BRICKS = register("lime_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.LIME)))
+    val LIME_STAINED_MOSSY_BRICK_STAIRS = register("lime_stained_mossy_brick_stairs", StairsBlock(LIME_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(LIME_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIME)))
+    val LIME_STAINED_MOSSY_BRICK_SLAB = register("lime_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(LIME_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIME)))
+    val LIME_STAINED_MOSSY_BRICK_WALL = register("lime_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.LIME)))
+
+    val PINK_STAINED_MOSSY_BRICKS = register("pink_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.PINK)))
+    val PINK_STAINED_MOSSY_BRICK_STAIRS = register("pink_stained_mossy_brick_stairs", StairsBlock(PINK_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(PINK_STAINED_MOSSY_BRICKS).mapColor(DyeColor.PINK)))
+    val PINK_STAINED_MOSSY_BRICK_SLAB = register("pink_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(PINK_STAINED_MOSSY_BRICKS).mapColor(DyeColor.PINK)))
+    val PINK_STAINED_MOSSY_BRICK_WALL = register("pink_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.PINK)))
+
+    val GRAY_STAINED_MOSSY_BRICKS = register("gray_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY)))
+    val GRAY_STAINED_MOSSY_BRICK_STAIRS = register("gray_stained_mossy_brick_stairs", StairsBlock(GRAY_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(GRAY_STAINED_MOSSY_BRICKS).mapColor(DyeColor.GRAY)))
+    val GRAY_STAINED_MOSSY_BRICK_SLAB = register("gray_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(GRAY_STAINED_MOSSY_BRICKS).mapColor(DyeColor.GRAY)))
+    val GRAY_STAINED_MOSSY_BRICK_WALL = register("gray_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.GRAY)))
+
+    val LIGHT_GRAY_STAINED_MOSSY_BRICKS = register("light_gray_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY)))
+    val LIGHT_GRAY_STAINED_MOSSY_BRICK_STAIRS = register("light_gray_stained_mossy_brick_stairs", StairsBlock(LIGHT_GRAY_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(LIGHT_GRAY_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIGHT_GRAY)))
+    val LIGHT_GRAY_STAINED_MOSSY_BRICK_SLAB = register("light_gray_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(LIGHT_GRAY_STAINED_MOSSY_BRICKS).mapColor(DyeColor.LIGHT_GRAY)))
+    val LIGHT_GRAY_STAINED_MOSSY_BRICK_WALL = register("light_gray_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.LIGHT_GRAY)))
+
+    val CYAN_STAINED_MOSSY_BRICKS = register("cyan_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN)))
+    val CYAN_STAINED_MOSSY_BRICK_STAIRS = register("cyan_stained_mossy_brick_stairs", StairsBlock(CYAN_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(CYAN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.CYAN)))
+    val CYAN_STAINED_MOSSY_BRICK_SLAB = register("cyan_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(CYAN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.CYAN)))
+    val CYAN_STAINED_MOSSY_BRICK_WALL = register("cyan_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.CYAN)))
+
+    val PURPLE_STAINED_MOSSY_BRICKS = register("purple_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE)))
+    val PURPLE_STAINED_MOSSY_BRICK_STAIRS = register("purple_stained_mossy_brick_stairs", StairsBlock(PURPLE_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(PURPLE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.PURPLE)))
+    val PURPLE_STAINED_MOSSY_BRICK_SLAB = register("purple_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(PURPLE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.PURPLE)))
+    val PURPLE_STAINED_MOSSY_BRICK_WALL = register("purple_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.PURPLE)))
+
+    val BLUE_STAINED_MOSSY_BRICKS = register("blue_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE)))
+    val BLUE_STAINED_MOSSY_BRICK_STAIRS = register("blue_stained_mossy_brick_stairs", StairsBlock(BLUE_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(BLUE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BLUE)))
+    val BLUE_STAINED_MOSSY_BRICK_SLAB = register("blue_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(BLUE_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BLUE)))
+    val BLUE_STAINED_MOSSY_BRICK_WALL = register("blue_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLUE)))
+
+    val BROWN_STAINED_MOSSY_BRICKS = register("brown_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN)))
+    val BROWN_STAINED_MOSSY_BRICK_STAIRS = register("brown_stained_mossy_brick_stairs", StairsBlock(BROWN_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(BROWN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BROWN)))
+    val BROWN_STAINED_MOSSY_BRICK_SLAB = register("brown_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(BROWN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BROWN)))
+    val BROWN_STAINED_MOSSY_BRICK_WALL = register("brown_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BROWN)))
+
+    val GREEN_STAINED_MOSSY_BRICKS = register("green_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN)))
+    val GREEN_STAINED_MOSSY_BRICK_STAIRS = register("green_stained_mossy_brick_stairs", StairsBlock(GREEN_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(GREEN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.GREEN)))
+    val GREEN_STAINED_MOSSY_BRICK_SLAB = register("green_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(GREEN_STAINED_MOSSY_BRICKS).mapColor(DyeColor.GREEN)))
+    val GREEN_STAINED_MOSSY_BRICK_WALL = register("green_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.GREEN)))
+
+    val RED_STAINED_MOSSY_BRICKS = register("red_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.RED)))
+    val RED_STAINED_MOSSY_BRICK_STAIRS = register("red_stained_mossy_brick_stairs", StairsBlock(RED_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(RED_STAINED_MOSSY_BRICKS).mapColor(DyeColor.RED)))
+    val RED_STAINED_MOSSY_BRICK_SLAB = register("red_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(RED_STAINED_MOSSY_BRICKS).mapColor(DyeColor.RED)))
+    val RED_STAINED_MOSSY_BRICK_WALL = register("red_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.RED)))
+
+    val BLACK_STAINED_MOSSY_BRICKS = register("black_stained_mossy_bricks", Block(FabricBlockSettings.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK)))
+    val BLACK_STAINED_MOSSY_BRICK_STAIRS = register("black_stained_mossy_brick_stairs", StairsBlock(BLACK_STAINED_MOSSY_BRICKS.defaultState, FabricBlockSettings.copy(BLACK_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BLACK)))
+    val BLACK_STAINED_MOSSY_BRICK_SLAB = register("black_stained_mossy_brick_slab", SlabBlock(FabricBlockSettings.copy(BLACK_STAINED_MOSSY_BRICKS).mapColor(DyeColor.BLACK)))
+    val BLACK_STAINED_MOSSY_BRICK_WALL = register("black_stained_mossy_brick_wall", WallBlock(FabricBlockSettings.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK)))
 
     //endregion
 
