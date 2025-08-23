@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "hybrid-blocks:block/gray_stained_smooth_quartz",
+    "side": "hybrid-blocks:block/gray_stained_smooth_quartz",
+    "top": "hybrid-blocks:block/gray_stained_smooth_quartz"
+  }
+}

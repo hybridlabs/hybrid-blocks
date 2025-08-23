@@ -15,41 +15,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
     override fun generateBlockStateModels(generator: BlockStateModelGenerator) {
         // generate simple cube all
         setOf(
-            HybridBlocksBlocks.WHITE_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.ORANGE_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.MAGENTA_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.LIGHT_BLUE_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.YELLOW_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.LIME_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.PINK_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.GRAY_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.LIGHT_GRAY_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.CYAN_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.PURPLE_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.BLUE_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.BROWN_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.GREEN_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.RED_STAINED_SMOOTH_QUARTZ,
-            HybridBlocksBlocks.BLACK_STAINED_SMOOTH_QUARTZ,
-
             HybridBlocksBlocks.CRACKED_BRICKS,
-            HybridBlocksBlocks.WHITE_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.ORANGE_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.MAGENTA_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.LIGHT_BLUE_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.YELLOW_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.LIME_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.PINK_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.GRAY_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.LIGHT_GRAY_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.CYAN_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.PURPLE_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.BLUE_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.BROWN_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.GREEN_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.RED_STAINED_CRACKED_BRICKS,
-            HybridBlocksBlocks.BLACK_STAINED_CRACKED_BRICKS,
-
             HybridBlocksBlocks.MOSSY_BRICKS,
             HybridBlocksBlocks.WHITE_STAINED_MOSSY_BRICKS,
             HybridBlocksBlocks.ORANGE_STAINED_MOSSY_BRICKS,
@@ -149,6 +115,39 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             .family(HybridBlocksFamilies.RED_STAINED_BRICKS)
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLACK_STAINED_BRICKS)
             .family(HybridBlocksFamilies.BLACK_STAINED_BRICKS)
+
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.WHITE_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.ORANGE_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.ORANGE_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MAGENTA_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.MAGENTA_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_BLUE_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.LIGHT_BLUE_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.YELLOW_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.YELLOW_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIME_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.LIME_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PINK_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.PINK_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GRAY_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.GRAY_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_GRAY_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.LIGHT_GRAY_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CYAN_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.CYAN_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PURPLE_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.PURPLE_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLUE_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.BLUE_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BROWN_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.BROWN_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GREEN_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.GREEN_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.RED_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.RED_STAINED_SMOOTH_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLACK_STAINED_SMOOTH_QUARTZ)
+            .family(HybridBlocksFamilies.BLACK_STAINED_SMOOTH_QUARTZ)
     }
 
     override fun generateItemModels(generator: ItemModelGenerator) {

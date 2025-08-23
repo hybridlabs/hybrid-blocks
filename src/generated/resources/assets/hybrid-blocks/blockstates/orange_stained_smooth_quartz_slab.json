@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hybrid-blocks:block/orange_stained_smooth_quartz_slab"
+    },
+    "type=double": {
+      "model": "hybrid-blocks:block/orange_stained_smooth_quartz"
+    },
+    "type=top": {
+      "model": "hybrid-blocks:block/orange_stained_smooth_quartz_slab_top"
+    }
+  }
+}
