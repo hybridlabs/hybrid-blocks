@@ -48,40 +48,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.RED_STAINED_BRICKS,
             HybridBlocksBlocks.BLACK_STAINED_BRICKS,
 
-            HybridBlocksBlocks.WHITE_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.ORANGE_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.MAGENTA_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.LIGHT_BLUE_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.YELLOW_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.LIME_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.PINK_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.GRAY_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.LIGHT_GRAY_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.CYAN_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.PURPLE_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.BLUE_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.BROWN_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.GREEN_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.RED_STAINED_PINWHEEL_BRICKS,
-            HybridBlocksBlocks.BLACK_STAINED_PINWHEEL_BRICKS,
-
-            HybridBlocksBlocks.WHITE_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.ORANGE_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.MAGENTA_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.LIGHT_BLUE_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.YELLOW_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.LIME_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.PINK_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.GRAY_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.LIGHT_GRAY_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.CYAN_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.PURPLE_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.BLUE_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.BROWN_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.GREEN_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.RED_STAINED_BASKETWEAVE_BRICKS,
-            HybridBlocksBlocks.BLACK_STAINED_BASKETWEAVE_BRICKS,
-
             HybridBlocksBlocks.CRACKED_BRICKS,
             HybridBlocksBlocks.WHITE_STAINED_CRACKED_BRICKS,
             HybridBlocksBlocks.ORANGE_STAINED_CRACKED_BRICKS,
@@ -137,13 +103,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.GREEN_STAINED_QUARTZ_PILLAR,
             HybridBlocksBlocks.RED_STAINED_QUARTZ_PILLAR,
             HybridBlocksBlocks.BLACK_STAINED_QUARTZ_PILLAR,
-        ).forEach { block ->
-            generator.registerAxisRotated(
-                block,
-                TexturedModel.END_FOR_TOP_CUBE_COLUMN,
-                TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL
-            )
-        }
+        ).forEach { block -> generator.registerAxisRotated(block, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL) }
     }
 
     override fun generateItemModels(generator: ItemModelGenerator) {
