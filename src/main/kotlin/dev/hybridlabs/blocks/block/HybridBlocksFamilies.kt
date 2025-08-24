@@ -116,6 +116,16 @@ object HybridBlocksFamilies {
         .cracked(HybridBlocksBlocks.CRACKED_BLACK_BRICKS)
         .build()
 
+    val MIXED_NETHER_BRICKS = BlockFamilies.register(HybridBlocksBlocks.MIXED_NETHER_BRICKS)
+        .stairs(HybridBlocksBlocks.MIXED_NETHER_BRICK_STAIRS)
+        .slab(HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB)
+        .wall(HybridBlocksBlocks.MIXED_NETHER_BRICK_WALL).build()
+
+    val MIXED_RED_NETHER_BRICKS = BlockFamilies.register(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS)
+        .stairs(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_STAIRS)
+        .slab(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_SLAB)
+        .wall(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_WALL)
+        .build()
 
     val CRACKED_BRICKS = BlockFamilies.register(HybridBlocksBlocks.CRACKED_BRICKS)
         .stairs(HybridBlocksBlocks.CRACKED_BRICK_STAIRS)

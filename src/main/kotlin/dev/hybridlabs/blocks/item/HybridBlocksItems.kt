@@ -178,96 +178,160 @@ object HybridBlocksItems {
     val WHITE_BRICK_STAIRS = register("white_brick_stairs") { BlockItem(HybridBlocksBlocks.WHITE_BRICK_STAIRS, it) }
     val WHITE_BRICK_SLAB = register("white_brick_slab") { BlockItem(HybridBlocksBlocks.WHITE_BRICK_SLAB, it) }
     val WHITE_BRICK_WALL = register("white_brick_wall") { BlockItem(HybridBlocksBlocks.WHITE_BRICK_WALL, it) }
+    val BASKETWEAVE_WHITE_BRICKS = register("basketweave_white_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_WHITE_BRICKS, it) }
+    val PINWHEEL_WHITE_BRICKS = register("pinwheel_white_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_WHITE_BRICKS, it) }
+    val JACK_ON_JACK_WHITE_BRICKS = register("jack_on_jack_white_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_WHITE_BRICKS, it) }
+    val MIXED_WHITE_BRICKS = register("mixed_white_bricks") { BlockItem(HybridBlocksBlocks.MIXED_WHITE_BRICKS, it) }
 
     val ORANGE_BRICKS = register("orange_bricks") { BlockItem(HybridBlocksBlocks.ORANGE_BRICKS, it) }
     val CRACKED_ORANGE_BRICKS = register("cracked_orange_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_ORANGE_BRICKS, it) }
     val ORANGE_BRICK_STAIRS = register("orange_brick_stairs") { BlockItem(HybridBlocksBlocks.ORANGE_BRICK_STAIRS, it) }
     val ORANGE_BRICK_SLAB = register("orange_brick_slab") { BlockItem(HybridBlocksBlocks.ORANGE_BRICK_SLAB, it) }
     val ORANGE_BRICK_WALL = register("orange_brick_wall") { BlockItem(HybridBlocksBlocks.ORANGE_BRICK_WALL, it) }
+    val BASKETWEAVE_ORANGE_BRICKS = register("basketweave_orange_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_ORANGE_BRICKS, it) }
+    val PINWHEEL_ORANGE_BRICKS = register("pinwheel_orange_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_ORANGE_BRICKS, it) }
+    val JACK_ON_JACK_ORANGE_BRICKS = register("jack_on_jack_orange_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_ORANGE_BRICKS, it) }
+    val MIXED_ORANGE_BRICKS = register("mixed_orange_bricks") { BlockItem(HybridBlocksBlocks.MIXED_ORANGE_BRICKS, it) }
 
     val MAGENTA_BRICKS = register("magenta_bricks") { BlockItem(HybridBlocksBlocks.MAGENTA_BRICKS, it) }
     val CRACKED_MAGENTA_BRICKS = register("cracked_magenta_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_MAGENTA_BRICKS, it) }
     val MAGENTA_BRICK_STAIRS = register("magenta_brick_stairs") { BlockItem(HybridBlocksBlocks.MAGENTA_BRICK_STAIRS, it) }
     val MAGENTA_BRICK_SLAB = register("magenta_brick_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_BRICK_SLAB, it) }
     val MAGENTA_BRICK_WALL = register("magenta_brick_wall") { BlockItem(HybridBlocksBlocks.MAGENTA_BRICK_WALL, it) }
+    val BASKETWEAVE_MAGENTA_BRICKS = register("basketweave_magenta_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_MAGENTA_BRICKS, it) }
+    val PINWHEEL_MAGENTA_BRICKS = register("pinwheel_magenta_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_MAGENTA_BRICKS, it) }
+    val JACK_ON_JACK_MAGENTA_BRICKS = register("jack_on_jack_magenta_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_MAGENTA_BRICKS, it) }
+    val MIXED_MAGENTA_BRICKS = register("mixed_magenta_bricks") { BlockItem(HybridBlocksBlocks.MIXED_MAGENTA_BRICKS, it) }
 
     val LIGHT_BLUE_BRICKS = register("light_blue_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_BRICKS, it) }
     val CRACKED_LIGHT_BLUE_BRICKS = register("cracked_light_blue_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_BRICKS, it) }
     val LIGHT_BLUE_BRICK_STAIRS = register("light_blue_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_BRICK_STAIRS, it) }
     val LIGHT_BLUE_BRICK_SLAB = register("light_blue_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_BRICK_SLAB, it) }
     val LIGHT_BLUE_BRICK_WALL = register("light_blue_brick_wall") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_BRICK_WALL, it) }
+    val BASKETWEAVE_LIGHT_BLUE_BRICKS = register("basketweave_light_blue_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_LIGHT_BLUE_BRICKS, it) }
+    val PINWHEEL_LIGHT_BLUE_BRICKS = register("pinwheel_light_blue_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_LIGHT_BLUE_BRICKS, it) }
+    val JACK_ON_JACK_LIGHT_BLUE_BRICKS = register("jack_on_jack_light_blue_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_LIGHT_BLUE_BRICKS, it) }
+    val MIXED_LIGHT_BLUE_BRICKS = register("mixed_light_blue_bricks") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_BLUE_BRICKS, it) }
 
     val YELLOW_BRICKS = register("yellow_bricks") { BlockItem(HybridBlocksBlocks.YELLOW_BRICKS, it) }
     val CRACKED_YELLOW_BRICKS = register("cracked_yellow_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_YELLOW_BRICKS, it) }
     val YELLOW_BRICK_STAIRS = register("yellow_brick_stairs") { BlockItem(HybridBlocksBlocks.YELLOW_BRICK_STAIRS, it) }
     val YELLOW_BRICK_SLAB = register("yellow_brick_slab") { BlockItem(HybridBlocksBlocks.YELLOW_BRICK_SLAB, it) }
     val YELLOW_BRICK_WALL = register("yellow_brick_wall") { BlockItem(HybridBlocksBlocks.YELLOW_BRICK_WALL, it) }
+    val BASKETWEAVE_YELLOW_BRICKS = register("basketweave_yellow_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_YELLOW_BRICKS, it) }
+    val PINWHEEL_YELLOW_BRICKS = register("pinwheel_yellow_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_YELLOW_BRICKS, it) }
+    val JACK_ON_JACK_YELLOW_BRICKS = register("jack_on_jack_yellow_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_YELLOW_BRICKS, it) }
+    val MIXED_YELLOW_BRICKS = register("mixed_yellow_bricks") { BlockItem(HybridBlocksBlocks.MIXED_YELLOW_BRICKS, it) }
 
     val LIME_BRICKS = register("lime_bricks") { BlockItem(HybridBlocksBlocks.LIME_BRICKS, it) }
     val CRACKED_LIME_BRICKS = register("cracked_lime_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_LIME_BRICKS, it) }
     val LIME_BRICK_STAIRS = register("lime_brick_stairs") { BlockItem(HybridBlocksBlocks.LIME_BRICK_STAIRS, it) }
     val LIME_BRICK_SLAB = register("lime_brick_slab") { BlockItem(HybridBlocksBlocks.LIME_BRICK_SLAB, it) }
     val LIME_BRICK_WALL = register("lime_brick_wall") { BlockItem(HybridBlocksBlocks.LIME_BRICK_WALL, it) }
+    val BASKETWEAVE_LIME_BRICKS = register("basketweave_lime_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_LIME_BRICKS, it) }
+    val PINWHEEL_LIME_BRICKS = register("pinwheel_lime_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_LIME_BRICKS, it) }
+    val JACK_ON_JACK_LIME_BRICKS = register("jack_on_jack_lime_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_LIME_BRICKS, it) }
+    val MIXED_LIME_BRICKS = register("mixed_lime_bricks") { BlockItem(HybridBlocksBlocks.MIXED_LIME_BRICKS, it) }
 
     val PINK_BRICKS = register("pink_bricks") { BlockItem(HybridBlocksBlocks.PINK_BRICKS, it) }
     val CRACKED_PINK_BRICKS = register("cracked_pink_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_PINK_BRICKS, it) }
     val PINK_BRICK_STAIRS = register("pink_brick_stairs") { BlockItem(HybridBlocksBlocks.PINK_BRICK_STAIRS, it) }
     val PINK_BRICK_SLAB = register("pink_brick_slab") { BlockItem(HybridBlocksBlocks.PINK_BRICK_SLAB, it) }
     val PINK_BRICK_WALL = register("pink_brick_wall") { BlockItem(HybridBlocksBlocks.PINK_BRICK_WALL, it) }
+    val BASKETWEAVE_PINK_BRICKS = register("basketweave_pink_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_PINK_BRICKS, it) }
+    val PINWHEEL_PINK_BRICKS = register("pinwheel_pink_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_PINK_BRICKS, it) }
+    val JACK_ON_JACK_PINK_BRICKS = register("jack_on_jack_pink_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_PINK_BRICKS, it) }
+    val MIXED_PINK_BRICKS = register("mixed_pink_bricks") { BlockItem(HybridBlocksBlocks.MIXED_PINK_BRICKS, it) }
 
     val GRAY_BRICKS = register("gray_bricks") { BlockItem(HybridBlocksBlocks.GRAY_BRICKS, it) }
     val CRACKED_GRAY_BRICKS = register("cracked_gray_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_GRAY_BRICKS, it) }
     val GRAY_BRICK_STAIRS = register("gray_brick_stairs") { BlockItem(HybridBlocksBlocks.GRAY_BRICK_STAIRS, it) }
     val GRAY_BRICK_SLAB = register("gray_brick_slab") { BlockItem(HybridBlocksBlocks.GRAY_BRICK_SLAB, it) }
     val GRAY_BRICK_WALL = register("gray_brick_wall") { BlockItem(HybridBlocksBlocks.GRAY_BRICK_WALL, it) }
+    val BASKETWEAVE_GRAY_BRICKS = register("basketweave_gray_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_GRAY_BRICKS, it) }
+    val PINWHEEL_GRAY_BRICKS = register("pinwheel_gray_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_GRAY_BRICKS, it) }
+    val JACK_ON_JACK_GRAY_BRICKS = register("jack_on_jack_gray_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_GRAY_BRICKS, it) }
+    val MIXED_GRAY_BRICKS = register("mixed_gray_bricks") { BlockItem(HybridBlocksBlocks.MIXED_GRAY_BRICKS, it) }
 
     val LIGHT_GRAY_BRICKS = register("light_gray_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_BRICKS, it) }
     val CRACKED_LIGHT_GRAY_BRICKS = register("cracked_light_gray_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_BRICKS, it) }
     val LIGHT_GRAY_BRICK_STAIRS = register("light_gray_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_BRICK_STAIRS, it) }
     val LIGHT_GRAY_BRICK_SLAB = register("light_gray_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_BRICK_SLAB, it) }
     val LIGHT_GRAY_BRICK_WALL = register("light_gray_brick_wall") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_BRICK_WALL, it) }
+    val BASKETWEAVE_LIGHT_GRAY_BRICKS = register("basketweave_light_gray_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_LIGHT_GRAY_BRICKS, it) }
+    val PINWHEEL_LIGHT_GRAY_BRICKS = register("pinwheel_light_gray_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_LIGHT_GRAY_BRICKS, it) }
+    val JACK_ON_JACK_LIGHT_GRAY_BRICKS = register("jack_on_jack_light_gray_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_LIGHT_GRAY_BRICKS, it) }
+    val MIXED_LIGHT_GRAY_BRICKS = register("mixed_light_gray_bricks") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_GRAY_BRICKS, it) }
 
     val CYAN_BRICKS = register("cyan_bricks") { BlockItem(HybridBlocksBlocks.CYAN_BRICKS, it) }
     val CRACKED_CYAN_BRICKS = register("cracked_cyan_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_CYAN_BRICKS, it) }
     val CYAN_BRICK_STAIRS = register("cyan_brick_stairs") { BlockItem(HybridBlocksBlocks.CYAN_BRICK_STAIRS, it) }
     val CYAN_BRICK_SLAB = register("cyan_brick_slab") { BlockItem(HybridBlocksBlocks.CYAN_BRICK_SLAB, it) }
     val CYAN_BRICK_WALL = register("cyan_brick_wall") { BlockItem(HybridBlocksBlocks.CYAN_BRICK_WALL, it) }
+    val BASKETWEAVE_CYAN_BRICKS = register("basketweave_cyan_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_CYAN_BRICKS, it) }
+    val PINWHEEL_CYAN_BRICKS = register("pinwheel_cyan_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_CYAN_BRICKS, it) }
+    val JACK_ON_JACK_CYAN_BRICKS = register("jack_on_jack_cyan_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_CYAN_BRICKS, it) }
+    val MIXED_CYAN_BRICKS = register("mixed_cyan_bricks") { BlockItem(HybridBlocksBlocks.MIXED_CYAN_BRICKS, it) }
 
     val PURPLE_BRICKS = register("purple_bricks") { BlockItem(HybridBlocksBlocks.PURPLE_BRICKS, it) }
     val CRACKED_PURPLE_BRICKS = register("cracked_purple_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_PURPLE_BRICKS, it) }
     val PURPLE_BRICK_STAIRS = register("purple_brick_stairs") { BlockItem(HybridBlocksBlocks.PURPLE_BRICK_STAIRS, it) }
     val PURPLE_BRICK_SLAB = register("purple_brick_slab") { BlockItem(HybridBlocksBlocks.PURPLE_BRICK_SLAB, it) }
     val PURPLE_BRICK_WALL = register("purple_brick_wall") { BlockItem(HybridBlocksBlocks.PURPLE_BRICK_WALL, it) }
+    val BASKETWEAVE_PURPLE_BRICKS = register("basketweave_purple_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_PURPLE_BRICKS, it) }
+    val PINWHEEL_PURPLE_BRICKS = register("pinwheel_purple_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_PURPLE_BRICKS, it) }
+    val JACK_ON_JACK_PURPLE_BRICKS = register("jack_on_jack_purple_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_PURPLE_BRICKS, it) }
+    val MIXED_PURPLE_BRICKS = register("mixed_purple_bricks") { BlockItem(HybridBlocksBlocks.MIXED_PURPLE_BRICKS, it) }
 
     val BLUE_BRICKS = register("blue_bricks") { BlockItem(HybridBlocksBlocks.BLUE_BRICKS, it) }
     val CRACKED_BLUE_BRICKS = register("cracked_blue_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_BLUE_BRICKS, it) }
     val BLUE_BRICK_STAIRS = register("blue_brick_stairs") { BlockItem(HybridBlocksBlocks.BLUE_BRICK_STAIRS, it) }
     val BLUE_BRICK_SLAB = register("blue_brick_slab") { BlockItem(HybridBlocksBlocks.BLUE_BRICK_SLAB, it) }
     val BLUE_BRICK_WALL = register("blue_brick_wall") { BlockItem(HybridBlocksBlocks.BLUE_BRICK_WALL, it) }
+    val BASKETWEAVE_BLUE_BRICKS = register("basketweave_blue_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_BLUE_BRICKS, it) }
+    val PINWHEEL_BLUE_BRICKS = register("pinwheel_blue_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_BLUE_BRICKS, it) }
+    val JACK_ON_JACK_BLUE_BRICKS = register("jack_on_jack_blue_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_BLUE_BRICKS, it) }
+    val MIXED_BLUE_BRICKS = register("mixed_blue_bricks") { BlockItem(HybridBlocksBlocks.MIXED_BLUE_BRICKS, it) }
 
     val BROWN_BRICKS = register("brown_bricks") { BlockItem(HybridBlocksBlocks.BROWN_BRICKS, it) }
     val CRACKED_BROWN_BRICKS = register("cracked_brown_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_BROWN_BRICKS, it) }
     val BROWN_BRICK_STAIRS = register("brown_brick_stairs") { BlockItem(HybridBlocksBlocks.BROWN_BRICK_STAIRS, it) }
     val BROWN_BRICK_SLAB = register("brown_brick_slab") { BlockItem(HybridBlocksBlocks.BROWN_BRICK_SLAB, it) }
     val BROWN_BRICK_WALL = register("brown_brick_wall") { BlockItem(HybridBlocksBlocks.BROWN_BRICK_WALL, it) }
+    val BASKETWEAVE_BROWN_BRICKS = register("basketweave_brown_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_BROWN_BRICKS, it) }
+    val PINWHEEL_BROWN_BRICKS = register("pinwheel_brown_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_BROWN_BRICKS, it) }
+    val JACK_ON_JACK_BROWN_BRICKS = register("jack_on_jack_brown_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_BROWN_BRICKS, it) }
+    val MIXED_BROWN_BRICKS = register("mixed_brown_bricks") { BlockItem(HybridBlocksBlocks.MIXED_BROWN_BRICKS, it) }
 
     val GREEN_BRICKS = register("green_bricks") { BlockItem(HybridBlocksBlocks.GREEN_BRICKS, it) }
     val CRACKED_GREEN_BRICKS = register("cracked_green_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_GREEN_BRICKS, it) }
     val GREEN_BRICK_STAIRS = register("green_brick_stairs") { BlockItem(HybridBlocksBlocks.GREEN_BRICK_STAIRS, it) }
     val GREEN_BRICK_SLAB = register("green_brick_slab") { BlockItem(HybridBlocksBlocks.GREEN_BRICK_SLAB, it) }
     val GREEN_BRICK_WALL = register("green_brick_wall") { BlockItem(HybridBlocksBlocks.GREEN_BRICK_WALL, it) }
+    val BASKETWEAVE_GREEN_BRICKS = register("basketweave_green_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_GREEN_BRICKS, it) }
+    val PINWHEEL_GREEN_BRICKS = register("pinwheel_green_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_GREEN_BRICKS, it) }
+    val JACK_ON_JACK_GREEN_BRICKS = register("jack_on_jack_green_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_GREEN_BRICKS, it) }
+    val MIXED_GREEN_BRICKS = register("mixed_green_bricks") { BlockItem(HybridBlocksBlocks.MIXED_GREEN_BRICKS, it) }
 
     val RED_BRICKS = register("red_bricks") { BlockItem(HybridBlocksBlocks.RED_BRICKS, it) }
     val CRACKED_RED_BRICKS = register("cracked_red_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_RED_BRICKS, it) }
     val RED_BRICK_STAIRS = register("red_brick_stairs") { BlockItem(HybridBlocksBlocks.RED_BRICK_STAIRS, it) }
     val RED_BRICK_SLAB = register("red_brick_slab") { BlockItem(HybridBlocksBlocks.RED_BRICK_SLAB, it) }
     val RED_BRICK_WALL = register("red_brick_wall") { BlockItem(HybridBlocksBlocks.RED_BRICK_WALL, it) }
+    val BASKETWEAVE_RED_BRICKS = register("basketweave_red_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_RED_BRICKS, it) }
+    val PINWHEEL_RED_BRICKS = register("pinwheel_red_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_RED_BRICKS, it) }
+    val JACK_ON_JACK_RED_BRICKS = register("jack_on_jack_red_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_RED_BRICKS, it) }
+    val MIXED_RED_BRICKS = register("mixed_red_bricks") { BlockItem(HybridBlocksBlocks.MIXED_RED_BRICKS, it) }
 
     val BLACK_BRICKS = register("black_bricks") { BlockItem(HybridBlocksBlocks.BLACK_BRICKS, it) }
     val CRACKED_BLACK_BRICKS = register("cracked_black_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_BLACK_BRICKS, it) }
     val BLACK_BRICK_STAIRS = register("black_brick_stairs") { BlockItem(HybridBlocksBlocks.BLACK_BRICK_STAIRS, it) }
     val BLACK_BRICK_SLAB = register("black_brick_slab") { BlockItem(HybridBlocksBlocks.BLACK_BRICK_SLAB, it) }
     val BLACK_BRICK_WALL = register("black_brick_wall") { BlockItem(HybridBlocksBlocks.BLACK_BRICK_WALL, it) }
+    val BASKETWEAVE_BLACK_BRICKS = register("basketweave_black_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_BLACK_BRICKS, it) }
+    val PINWHEEL_BLACK_BRICKS = register("pinwheel_black_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_BLACK_BRICKS, it) }
+    val JACK_ON_JACK_BLACK_BRICKS = register("jack_on_jack_black_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_BLACK_BRICKS, it) }
+    val MIXED_BLACK_BRICKS = register("mixed_black_bricks") { BlockItem(HybridBlocksBlocks.MIXED_BLACK_BRICKS, it) }
 
     val MOSSY_WHITE_BRICKS = register("mossy_white_bricks") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICKS, it) }
     val MOSSY_WHITE_BRICK_STAIRS = register("mossy_white_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICK_STAIRS, it) }
@@ -353,6 +417,26 @@ object HybridBlocksItems {
     val CRACKED_BRICK_STAIRS = register("cracked_brick_stairs") { BlockItem(HybridBlocksBlocks.CRACKED_BRICK_STAIRS, it) }
     val CRACKED_BRICK_SLAB = register("cracked_brick_slab") { BlockItem(HybridBlocksBlocks.CRACKED_BRICK_SLAB, it) }
     val CRACKED_BRICK_WALL = register("cracked_brick_wall") { BlockItem(HybridBlocksBlocks.CRACKED_BRICK_WALL, it) }
+    val BASKETWEAVE_BRICKS = register("basketweave_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_BRICKS, it) }
+    val PINWHEEL_BRICKS = register("pinwheel_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_BRICKS, it) }
+    val JACK_ON_JACK_BRICKS = register("jack_on_jack_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_BRICKS, it) }
+    val MIXED_BRICKS = register("mixed_bricks") { BlockItem(HybridBlocksBlocks.MIXED_BRICKS, it) }
+
+    val MIXED_NETHER_BRICKS = register("mixed_nether_bricks") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_BRICKS, it) }
+    val MIXED_NETHER_BRICK_STAIRS = register("mixed_nether_brick_stairs") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_BRICK_STAIRS, it) }
+    val MIXED_NETHER_BRICK_SLAB = register("mixed_nether_brick_slab") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB, it) }
+    val MIXED_NETHER_BRICK_WALL = register("mixed_nether_brick_wall") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_BRICK_WALL, it) }
+    val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS, it) }
+    val PINWHEEL_NETHER_BRICKS = register("pinwheel_nether_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS, it) }
+    val JACK_ON_JACK_NETHER_BRICKS = register("jack_on_jack_nether_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS, it) }
+
+    val MIXED_RED_NETHER_BRICKS = register("mixed_red_nether_bricks") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS, it) }
+    val MIXED_RED_NETHER_BRICK_STAIRS = register("mixed_red_nether_brick_stairs") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_STAIRS, it) }
+    val MIXED_RED_NETHER_BRICK_SLAB = register("mixed_red_nether_brick_slab") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_SLAB, it) }
+    val MIXED_RED_NETHER_BRICK_WALL = register("mixed_red_nether_brick_wall") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_WALL, it) }
+    val BASKETWEAVE_RED_NETHER_BRICKS = register("basketweave_red_nether_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS, it) }
+    val PINWHEEL_RED_NETHER_BRICKS = register("pinwheel_red_nether_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS, it) }
+    val JACK_ON_JACK_RED_NETHER_BRICKS = register("jack_on_jack_red_nether_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS, it) }
 
     val MOSSY_BRICKS = register("mossy_bricks") { BlockItem(HybridBlocksBlocks.MOSSY_BRICKS, it) }
     val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_STAIRS, it) }

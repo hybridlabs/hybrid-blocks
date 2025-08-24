@@ -80,9 +80,103 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.GREEN_QUARTZ_BRICKS,
             HybridBlocksBlocks.RED_QUARTZ_BRICKS,
             HybridBlocksBlocks.BLACK_QUARTZ_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_WHITE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_WHITE_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_WHITE_BRICKS,
+            HybridBlocksBlocks.MIXED_WHITE_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_ORANGE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_ORANGE_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_ORANGE_BRICKS,
+            HybridBlocksBlocks.MIXED_ORANGE_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_MAGENTA_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_MAGENTA_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_MAGENTA_BRICKS,
+            HybridBlocksBlocks.MIXED_MAGENTA_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_LIGHT_BLUE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_LIGHT_BLUE_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_LIGHT_BLUE_BRICKS,
+            HybridBlocksBlocks.MIXED_LIGHT_BLUE_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_YELLOW_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_YELLOW_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_YELLOW_BRICKS,
+            HybridBlocksBlocks.MIXED_YELLOW_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_LIME_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_LIME_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_LIME_BRICKS,
+            HybridBlocksBlocks.MIXED_LIME_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_PINK_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_PINK_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_PINK_BRICKS,
+            HybridBlocksBlocks.MIXED_PINK_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_GRAY_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_GRAY_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_GRAY_BRICKS,
+            HybridBlocksBlocks.MIXED_GRAY_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_LIGHT_GRAY_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_LIGHT_GRAY_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_LIGHT_GRAY_BRICKS,
+            HybridBlocksBlocks.MIXED_LIGHT_GRAY_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_CYAN_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_CYAN_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_CYAN_BRICKS,
+            HybridBlocksBlocks.MIXED_CYAN_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_PURPLE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_PURPLE_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_PURPLE_BRICKS,
+            HybridBlocksBlocks.MIXED_PURPLE_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_BLUE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_BLUE_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_BLUE_BRICKS,
+            HybridBlocksBlocks.MIXED_BLUE_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_BROWN_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_BROWN_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_BROWN_BRICKS,
+            HybridBlocksBlocks.MIXED_BROWN_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_GREEN_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_GREEN_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_GREEN_BRICKS,
+            HybridBlocksBlocks.MIXED_GREEN_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_RED_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_RED_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_RED_BRICKS,
+            HybridBlocksBlocks.MIXED_RED_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_BLACK_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_BLACK_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_BLACK_BRICKS,
+            HybridBlocksBlocks.MIXED_BLACK_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_BRICKS,
+            HybridBlocksBlocks.MIXED_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS,
+
+            HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS,
+            HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS,
+            HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS,
         ).forEach { block ->
             generator.registerSimpleCubeAll(block)
         }
+
 
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_BRICKS)
             .family(HybridBlocksFamilies.WHITE_BRICKS)
@@ -149,10 +243,17 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             .family(HybridBlocksFamilies.MOSSY_RED_BRICKS)
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MOSSY_BLACK_BRICKS)
             .family(HybridBlocksFamilies.MOSSY_BLACK_BRICKS)
+
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MOSSY_BRICKS)
             .family(HybridBlocksFamilies.MOSSY_BRICKS)
+
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CRACKED_BRICKS)
             .family(HybridBlocksFamilies.CRACKED_BRICKS)
+
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MIXED_NETHER_BRICKS)
+            .family(HybridBlocksFamilies.MIXED_NETHER_BRICKS)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS)
+            .family(HybridBlocksFamilies.MIXED_RED_NETHER_BRICKS)
 
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK)
             .family(HybridBlocksFamilies.WHITE_QUARTZ_BLOCK)
