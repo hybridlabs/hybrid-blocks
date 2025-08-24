@@ -98,6 +98,23 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStainedCrackedBricksRecipes(exporter, HybridBlocksBlocks.WHITE_BRICKS, HybridBlocksBlocks.CRACKED_WHITE_BRICKS, Items.WHITE_DYE)
         offerStainedCrackedBricksRecipes(exporter, HybridBlocksBlocks.YELLOW_BRICKS, HybridBlocksBlocks.CRACKED_YELLOW_BRICKS, Items.YELLOW_DYE)
 
+        offerStainedClearGlassRecipes(exporter, Blocks.BLACK_STAINED_GLASS, HybridBlocksBlocks.BLACK_STAINED_CLEAR_GLASS, Items.BLACK_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.BLUE_STAINED_GLASS, HybridBlocksBlocks.BLUE_STAINED_CLEAR_GLASS, Items.BLUE_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.BROWN_STAINED_GLASS, HybridBlocksBlocks.BROWN_STAINED_CLEAR_GLASS, Items.BROWN_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.CYAN_STAINED_GLASS, HybridBlocksBlocks.CYAN_STAINED_CLEAR_GLASS, Items.CYAN_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.GRAY_STAINED_GLASS, HybridBlocksBlocks.GRAY_STAINED_CLEAR_GLASS, Items.GRAY_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.GREEN_STAINED_GLASS, HybridBlocksBlocks.GREEN_STAINED_CLEAR_GLASS, Items.GREEN_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.LIGHT_BLUE_STAINED_GLASS, HybridBlocksBlocks.LIGHT_BLUE_STAINED_CLEAR_GLASS, Items.LIGHT_BLUE_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.LIGHT_GRAY_STAINED_GLASS, HybridBlocksBlocks.LIGHT_GRAY_STAINED_CLEAR_GLASS, Items.LIGHT_GRAY_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.LIME_STAINED_GLASS, HybridBlocksBlocks.LIME_STAINED_CLEAR_GLASS, Items.LIME_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.MAGENTA_STAINED_GLASS, HybridBlocksBlocks.MAGENTA_STAINED_CLEAR_GLASS, Items.MAGENTA_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.ORANGE_STAINED_GLASS, HybridBlocksBlocks.ORANGE_STAINED_CLEAR_GLASS, Items.ORANGE_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.PINK_STAINED_GLASS, HybridBlocksBlocks.PINK_STAINED_CLEAR_GLASS, Items.PINK_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.PURPLE_STAINED_GLASS, HybridBlocksBlocks.PURPLE_STAINED_CLEAR_GLASS, Items.PURPLE_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.RED_STAINED_GLASS, HybridBlocksBlocks.RED_STAINED_CLEAR_GLASS, Items.RED_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.WHITE_STAINED_GLASS, HybridBlocksBlocks.WHITE_STAINED_CLEAR_GLASS, Items.WHITE_DYE)
+        offerStainedClearGlassRecipes(exporter, Blocks.YELLOW_STAINED_GLASS, HybridBlocksBlocks.YELLOW_STAINED_CLEAR_GLASS, Items.YELLOW_DYE)
+
         // mossy bricks
         offerMossingRecipes(exporter, "mossy_bricks", HybridBlocksBlocks.MOSSY_BRICKS, Blocks.BRICKS)
 
@@ -232,6 +249,66 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 HybridBlocksBlocks.CRACKED_BRICKS,
                 "has_cracked_bricks",
                 "stained_cracked_bricks",
+                cracked,
+                base
+            )
+        }
+
+        private fun offerClearGlassSmeltingRecipe(
+            exporter: Consumer<RecipeJsonProvider>,
+            base: ItemConvertible,
+            criterion: String,
+            group: String,
+            output: ItemConvertible,
+            input: ItemConvertible
+        ) {
+            CookingRecipeJsonBuilder.createSmelting(
+                Ingredient.ofItems(input),
+                RecipeCategory.BUILDING_BLOCKS,
+                output,
+                0.1f,
+                200
+            )
+                .group(group)
+                .criterion(criterion, conditionsFromItem(base))
+                .offerTo(exporter, "${Registries.ITEM.getId(output.asItem())}_from_smelting")
+        }
+
+        private fun offerClearGlassDyeingRecipe(
+            exporter: Consumer<RecipeJsonProvider>,
+            output: ItemConvertible,
+            input: ItemConvertible
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksBlocks.CLEAR_GLASS,
+                "has_clear_glass",
+                "stained_clear_glass",
+                output,
+                input
+            )
+        }
+
+        private fun offerStainedClearGlassRecipes(
+            exporter: Consumer<RecipeJsonProvider>,
+            base: ItemConvertible,
+            cracked: ItemConvertible,
+            dye: ItemConvertible
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksBlocks.CLEAR_GLASS,
+                "has_clear_glass",
+                "stained_clear_glass",
+                cracked,
+                dye
+            )
+
+            offerClearGlassSmeltingRecipe(
+                exporter,
+                HybridBlocksBlocks.CLEAR_GLASS,
+                "has_clear_glass",
+                "stained_clear_glass",
                 cracked,
                 base
             )
