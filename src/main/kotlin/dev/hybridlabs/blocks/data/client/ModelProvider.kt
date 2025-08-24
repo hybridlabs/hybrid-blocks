@@ -62,6 +62,28 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             )
         }
 
+        // axis rotated pillars
+        setOf(
+            HybridBlocksBlocks.WHITE_QUARTZ_BRICKS,
+            HybridBlocksBlocks.ORANGE_QUARTZ_BRICKS,
+            HybridBlocksBlocks.MAGENTA_QUARTZ_BRICKS,
+            HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICKS,
+            HybridBlocksBlocks.YELLOW_QUARTZ_BRICKS,
+            HybridBlocksBlocks.LIME_QUARTZ_BRICKS,
+            HybridBlocksBlocks.PINK_QUARTZ_BRICKS,
+            HybridBlocksBlocks.GRAY_QUARTZ_BRICKS,
+            HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICKS,
+            HybridBlocksBlocks.CYAN_QUARTZ_BRICKS,
+            HybridBlocksBlocks.PURPLE_QUARTZ_BRICKS,
+            HybridBlocksBlocks.BLUE_QUARTZ_BRICKS,
+            HybridBlocksBlocks.BROWN_QUARTZ_BRICKS,
+            HybridBlocksBlocks.GREEN_QUARTZ_BRICKS,
+            HybridBlocksBlocks.RED_QUARTZ_BRICKS,
+            HybridBlocksBlocks.BLACK_QUARTZ_BRICKS,
+        ).forEach { block ->
+            generator.registerSimpleCubeAll(block)
+        }
+
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_BRICKS)
             .family(HybridBlocksFamilies.WHITE_BRICKS)
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.ORANGE_BRICKS)
@@ -132,38 +154,38 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CRACKED_BRICKS)
             .family(HybridBlocksFamilies.CRACKED_BRICKS)
 
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_QUARTZ)
-            .family(HybridBlocksFamilies.WHITE_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.ORANGE_QUARTZ)
-            .family(HybridBlocksFamilies.ORANGE_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MAGENTA_QUARTZ)
-            .family(HybridBlocksFamilies.MAGENTA_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ)
-            .family(HybridBlocksFamilies.LIGHT_BLUE_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.YELLOW_QUARTZ)
-            .family(HybridBlocksFamilies.YELLOW_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIME_QUARTZ)
-            .family(HybridBlocksFamilies.LIME_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PINK_QUARTZ)
-            .family(HybridBlocksFamilies.PINK_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GRAY_QUARTZ)
-            .family(HybridBlocksFamilies.GRAY_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ)
-            .family(HybridBlocksFamilies.LIGHT_GRAY_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CYAN_QUARTZ)
-            .family(HybridBlocksFamilies.CYAN_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PURPLE_QUARTZ)
-            .family(HybridBlocksFamilies.PURPLE_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLUE_QUARTZ)
-            .family(HybridBlocksFamilies.BLUE_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BROWN_QUARTZ)
-            .family(HybridBlocksFamilies.BROWN_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GREEN_QUARTZ)
-            .family(HybridBlocksFamilies.GREEN_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.RED_QUARTZ)
-            .family(HybridBlocksFamilies.RED_QUARTZ)
-        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLACK_QUARTZ)
-            .family(HybridBlocksFamilies.BLACK_QUARTZ)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.WHITE_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.ORANGE_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.ORANGE_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.MAGENTA_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.MAGENTA_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.LIGHT_BLUE_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.YELLOW_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.YELLOW_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIME_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.LIME_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PINK_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.PINK_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GRAY_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.GRAY_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.LIGHT_GRAY_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.CYAN_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.CYAN_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.PURPLE_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.PURPLE_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLUE_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.BLUE_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BROWN_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.BROWN_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.GREEN_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.GREEN_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.RED_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.RED_QUARTZ_BLOCK)
+        generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.BLACK_QUARTZ_BLOCK)
+            .family(HybridBlocksFamilies.BLACK_QUARTZ_BLOCK)
 
         generator.registerCubeAllModelTexturePool(HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ)
             .family(HybridBlocksFamilies.SMOOTH_WHITE_QUARTZ)
