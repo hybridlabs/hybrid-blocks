@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "hybrid-blocks:white_bricks"
+      "item": "hybrid-blocks:brown_bricks"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "hybrid-blocks:white_brick_wall"
+    "item": "hybrid-blocks:brown_brick_wall"
   },
   "show_notification": true
 }

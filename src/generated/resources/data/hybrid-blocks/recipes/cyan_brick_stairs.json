@@ -1,18 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
     "#": {
-      "item": "hybrid-blocks:white_bricks"
+      "item": "hybrid-blocks:cyan_bricks"
     }
   },
   "pattern": [
-    "###",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {
-    "count": 6,
-    "item": "hybrid-blocks:white_brick_wall"
+    "count": 4,
+    "item": "hybrid-blocks:cyan_brick_stairs"
   },
   "show_notification": true
 }
