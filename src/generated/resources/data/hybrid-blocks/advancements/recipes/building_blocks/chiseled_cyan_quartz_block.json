@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chiseled_cyan_quartz_block": {
+    "has_cyan_quartz_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "hybrid-blocks:chiseled_cyan_quartz_block"
+              "hybrid-blocks:cyan_quartz_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chiseled_cyan_quartz_block",
+      "has_cyan_quartz_block",
       "has_the_recipe"
     ]
   ],

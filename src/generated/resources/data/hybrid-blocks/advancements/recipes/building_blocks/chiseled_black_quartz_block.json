@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chiseled_black_quartz_block": {
+    "has_black_quartz_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "hybrid-blocks:chiseled_black_quartz_block"
+              "hybrid-blocks:black_quartz_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chiseled_black_quartz_block",
+      "has_black_quartz_block",
       "has_the_recipe"
     ]
   ],
