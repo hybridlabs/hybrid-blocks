@@ -19,12 +19,34 @@ class BlockTagProvider(output: FabricDataOutput, future: CompletableFuture<Regis
                 return@forEach
             }
 
-            val path = identifier.path
+            val wallPath = identifier.path
             if (setOf(
-                    "smooth_quartz",
+                    "wall"
+                ).any { wallPath.endsWith(it) }) {
+                getOrCreateTagBuilder(BlockTags.WALLS).add(block)
+            }
+
+            val slabPath = identifier.path
+            if (setOf(
+                    "slab"
+                ).any { slabPath.endsWith(it) }) {
+                getOrCreateTagBuilder(BlockTags.SLABS).add(block)
+            }
+
+            val stairsPath = identifier.path
+            if (setOf(
+                    "stairs"
+                ).any { stairsPath.endsWith(it) }) {
+                getOrCreateTagBuilder(BlockTags.STAIRS).add(block)
+            }
+
+            val pickaxePath = identifier.path
+            if (setOf(
+                    "quartz",
+                    "brick",
                     "bricks",
                     "pillar",
-                ).any { path.endsWith(it) }) {
+                ).any { pickaxePath.contains(it) }) {
                 getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block)
             }
         }
