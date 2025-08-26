@@ -121,6 +121,23 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ_SLAB, HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ)
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.SMOOTH_YELLOW_QUARTZ_SLAB, HybridBlocksBlocks.SMOOTH_YELLOW_QUARTZ)
 
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.BLACK_QUARTZ_BLOCK, HybridBlocksBlocks.BLACK_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.BLUE_QUARTZ_BLOCK, HybridBlocksBlocks.BLUE_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.BROWN_QUARTZ_BLOCK, HybridBlocksBlocks.BROWN_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.CYAN_QUARTZ_BLOCK, HybridBlocksBlocks.CYAN_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.GRAY_QUARTZ_BLOCK, HybridBlocksBlocks.GRAY_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.GREEN_QUARTZ_BLOCK, HybridBlocksBlocks.GREEN_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BLOCK, HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BLOCK, HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.LIME_QUARTZ_BLOCK, HybridBlocksBlocks.LIME_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.MAGENTA_QUARTZ_BLOCK, HybridBlocksBlocks.MAGENTA_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.ORANGE_QUARTZ_BLOCK, HybridBlocksBlocks.ORANGE_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.PINK_QUARTZ_BLOCK, HybridBlocksBlocks.PINK_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.PURPLE_QUARTZ_BLOCK, HybridBlocksBlocks.PURPLE_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.RED_QUARTZ_BLOCK, HybridBlocksBlocks.RED_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.WHITE_QUARTZ_BLOCK, HybridBlocksBlocks.WHITE_QUARTZ_BRICKS)
+        offerQuartzBricksRecipes(exporter, HybridBlocksBlocks.YELLOW_QUARTZ_BLOCK, HybridBlocksBlocks.YELLOW_QUARTZ_BRICKS)
+
         createStairsRecipe(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ_STAIRS, Ingredient.ofItems(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ))
             .criterion(hasItem(Blocks.SMOOTH_QUARTZ), conditionsFromItem(Blocks.SMOOTH_QUARTZ))
             .offerTo(exporter)
@@ -580,6 +597,26 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 .offerTo(exporter)
         }
 
+        private fun offerBrickRecipe(
+            exporter: Consumer<RecipeJsonProvider>,
+            base: ItemConvertible,
+            criterion: String,
+            group: String,
+            output: ItemConvertible
+        ) {
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
+                .input(Character.valueOf('#'), base)
+
+                .pattern(" ##")
+                .pattern(" ##")
+                .pattern("   ")
+
+                .group(group)
+                .criterion(criterion, conditionsFromItem(base))
+
+                .offerTo(exporter)
+        }
+
         private fun offerQuartzPillarDyeingRecipe(
             exporter: Consumer<RecipeJsonProvider>,
             output: ItemConvertible,
@@ -666,6 +703,27 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 "has_cracked_bricks",
                 "stained_cracked_bricks",
                 cracked,
+                base
+            )
+        }
+
+        private fun offerQuartzBricksRecipes(
+            exporter: Consumer<RecipeJsonProvider>,
+            base: ItemConvertible,
+            brick: ItemConvertible,
+        ) {
+            offerBrickRecipe(
+                exporter,
+                base,
+                "has_quartz_block",
+                "quartz_bricks",
+                brick
+            )
+
+            offerStonecuttingRecipe(
+                exporter,
+                RecipeCategory.BUILDING_BLOCKS,
+                brick,
                 base
             )
         }
