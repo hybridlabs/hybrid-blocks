@@ -3,13 +3,12 @@
     "id": "hybrid-blocks",
     "version": "${version}",
     "name": "Hybrid Blocks",
-    "description": "A mod that adds) a variety of decorative and colorful blocks to the game.",
+    "description": "A mod that adds a variety of decorative and colorful blocks to the game.",
     "authors": [
-        "TugkanDeMan",
         "Ragtime_Gal_",
         "Andante",
         "MysticKoko",
-        "dragoncommands"
+        "Eggo"
     ],
     "contact": {
         "homepage": "https://hybridlabs.dev/hybrid-blocks",
