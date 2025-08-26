@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:mixed_nether_brick_slab"
+  },
+  "result": "hybrid-blocks:mixed_nether_brick_wall"
+}
