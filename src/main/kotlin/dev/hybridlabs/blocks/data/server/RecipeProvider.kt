@@ -412,6 +412,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CRACKED_BRICK_STAIRS, HybridBlocksBlocks.CRACKED_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_NETHER_BRICK_STAIRS, HybridBlocksBlocks.MIXED_NETHER_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_STAIRS, HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLACK_BRICK_STAIRS, HybridBlocksBlocks.BLACK_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLUE_BRICK_STAIRS, HybridBlocksBlocks.BLUE_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BROWN_BRICK_STAIRS, HybridBlocksBlocks.BROWN_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CYAN_BRICK_STAIRS, HybridBlocksBlocks.CYAN_BRICKS)
@@ -429,6 +430,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.YELLOW_BRICK_STAIRS, HybridBlocksBlocks.YELLOW_BRICKS)
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_BRICKS)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLACK_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_BLACK_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLUE_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_BLUE_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BROWN_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_BROWN_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_CYAN_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_CYAN_BRICKS)
@@ -446,8 +448,9 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_YELLOW_BRICK_STAIRS, HybridBlocksBlocks.MOSSY_YELLOW_BRICKS)
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CRACKED_BRICK_WALL, HybridBlocksBlocks.CRACKED_BRICKS)
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_NETHER_BRICK_WALL, HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_NETHER_BRICK_WALL, HybridBlocksBlocks.MIXED_NETHER_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_WALL, HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLACK_BRICK_WALL, HybridBlocksBlocks.BLACK_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLUE_BRICK_WALL, HybridBlocksBlocks.BLUE_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BROWN_BRICK_WALL, HybridBlocksBlocks.BROWN_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CYAN_BRICK_WALL, HybridBlocksBlocks.CYAN_BRICKS)
@@ -465,6 +468,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.YELLOW_BRICK_WALL, HybridBlocksBlocks.YELLOW_BRICKS)
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BRICK_WALL, HybridBlocksBlocks.MOSSY_BRICKS)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLACK_BRICK_WALL, HybridBlocksBlocks.MOSSY_BLACK_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLUE_BRICK_WALL, HybridBlocksBlocks.MOSSY_BLUE_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BROWN_BRICK_WALL, HybridBlocksBlocks.MOSSY_BROWN_BRICKS)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_CYAN_BRICK_WALL, HybridBlocksBlocks.MOSSY_CYAN_BRICKS)
@@ -482,8 +486,9 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_YELLOW_BRICK_WALL, HybridBlocksBlocks.MOSSY_YELLOW_BRICKS)
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CRACKED_BRICK_SLAB, HybridBlocksBlocks.CRACKED_BRICKS, 2)
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB, HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB, 2)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_NETHER_BRICK_SLAB, HybridBlocksBlocks.MIXED_NETHER_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_SLAB, HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS, 2)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLACK_BRICK_SLAB, HybridBlocksBlocks.BLACK_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BLUE_BRICK_SLAB, HybridBlocksBlocks.BLUE_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.BROWN_BRICK_SLAB, HybridBlocksBlocks.BROWN_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.CYAN_BRICK_SLAB, HybridBlocksBlocks.CYAN_BRICKS, 2)
@@ -501,6 +506,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.YELLOW_BRICK_SLAB, HybridBlocksBlocks.YELLOW_BRICKS, 2)
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BRICK_SLAB, HybridBlocksBlocks.MOSSY_BRICKS, 2)
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLACK_BRICK_SLAB, HybridBlocksBlocks.MOSSY_BLACK_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BLUE_BRICK_SLAB, HybridBlocksBlocks.MOSSY_BLUE_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_BROWN_BRICK_SLAB, HybridBlocksBlocks.MOSSY_BROWN_BRICKS, 2)
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksBlocks.MOSSY_CYAN_BRICK_SLAB, HybridBlocksBlocks.MOSSY_CYAN_BRICKS, 2)

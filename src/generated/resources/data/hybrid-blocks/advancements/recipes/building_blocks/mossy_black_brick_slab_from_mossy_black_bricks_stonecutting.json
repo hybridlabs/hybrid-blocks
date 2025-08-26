@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mixed_nether_brick_slab": {
+    "has_mossy_black_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "hybrid-blocks:mixed_nether_brick_slab"
+              "hybrid-blocks:mossy_black_bricks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mixed_nether_brick_slab_from_mixed_nether_brick_slab_stonecutting"
+        "recipe": "minecraft:mossy_black_brick_slab_from_mossy_black_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_mixed_nether_brick_slab",
+      "has_mossy_black_bricks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mixed_nether_brick_slab_from_mixed_nether_brick_slab_stonecutting"
+      "minecraft:mossy_black_brick_slab_from_mossy_black_bricks_stonecutting"
     ]
   },
   "sends_telemetry_event": false
