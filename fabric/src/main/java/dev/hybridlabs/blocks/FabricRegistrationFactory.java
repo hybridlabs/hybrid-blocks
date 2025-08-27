@@ -1,4 +1,4 @@
-package dev.hybridlabs.blocks.platform;
+package dev.hybridlabs.blocks;
 
 import dev.hybridlabs.blocks.platform.registration.RegistrationProvider;
 import dev.hybridlabs.blocks.platform.registration.RegistryObject;
