@@ -172,7 +172,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS.get(),
         ).forEach { block ->
-            generator.createGenericCube(block)
+            generator.createTrivialCube(block)
         }
 
         generator.family(HybridBlocksBlocks.WHITE_BRICKS.get())

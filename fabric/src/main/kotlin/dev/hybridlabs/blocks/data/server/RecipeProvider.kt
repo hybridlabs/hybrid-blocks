@@ -644,7 +644,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
     companion object {
         private fun convertBetween(to: Item, from: Item): String {
-            return "${BuiltInRegistries.ITEM.getId(to.asItem())}_from_${from.asItem()}"
+            return "${BuiltInRegistries.ITEM.getKey(to.asItem())}_from_${from.asItem()}"
         }
 
         private fun offerDyeingRecipe(
@@ -751,7 +751,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             )
                 .group(group)
                 .unlockedBy(unlockedBy, InventoryChangeTrigger.TriggerInstance.hasItems(base))
-                .save(exporter, "${BuiltInRegistries.ITEM.getId(output.asItem())}_from_smelting")
+                .save(exporter, "${BuiltInRegistries.ITEM.getKey(output.asItem())}_from_smelting")
         }
 
         private fun offerStainedCrackedBricksRecipes(
@@ -817,7 +817,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             )
                 .group(group)
                 .unlockedBy(unlockedBy, InventoryChangeTrigger.TriggerInstance.hasItems(base))
-                .save(exporter, "${BuiltInRegistries.ITEM.getId(output.asItem())}_from_smelting")
+                .save(exporter, "${BuiltInRegistries.ITEM.getKey(output.asItem())}_from_smelting")
         }
 
         private fun offerStainedClearGlassRecipes(

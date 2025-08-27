@@ -16,8 +16,8 @@ object HybridBlocks : ModInitializer {
     override fun onInitialize() {
         logger.info("Initializing $MOD_NAME")
 
-        HybridBlocksFamilies
         HybridBlocksBlocks
+        HybridBlocksFamilies
 
         HybridBlocksItems
         HybridBlocksItemGroups

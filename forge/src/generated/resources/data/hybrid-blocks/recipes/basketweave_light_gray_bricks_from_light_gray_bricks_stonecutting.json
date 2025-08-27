@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:light_gray_bricks"
+  },
+  "result": "hybrid-blocks:basketweave_light_gray_bricks"
+}
