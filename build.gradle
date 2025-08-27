@@ -1,100 +1,14 @@
 //file:noinspection all
 
 plugins {
-    id "fabric-loom" version "1.10-SNAPSHOT"
+    id "fabric-loom" version "1.10-SNAPSHOT" apply(false)
     id "maven-publish"
-    id "org.jetbrains.kotlin.jvm"
+    id 'net.neoforged.moddev.legacyforge' version '2.0.77' apply(false)
+    id 'org.jetbrains.changelog' version '2.2.1'
 }
-
-version = mod_version
-group = maven_group
-
-repositories {
-    maven {
-        name = "KotlinX"
-        url = "https://maven.pkg.jetbrains.space/public/p/kotlinx/maven"
-    }
-
-    maven {
-        name = "Terraformers"
-        url = "https://maven.terraformersmc.com/"
-    }
-
-    maven {
-        name = "Jitpack"
-        url  = "https://jitpack.io/"
-    }
-
-    maven {
-        name = "JamiesWhiteShirt"
-        url  = "https://maven.jamieswhiteshirt.com/libs-release/"
-    }
-
-    maven {
-        name = "Modrinth"
-        url  = "https://api.modrinth.com/maven/"
-    }
-
-    maven {
-        name = "Debug Utils (GitLab)"
-        url  = "https://gitlab.com/api/v4/projects/21830712/packages/maven/"
-    }
-}
-
-fabricApi {
-    configureDataGeneration {
-        setModId("$mod_id")
-        outputDirectory = file("src/generated/resources")
-    }
-}
-
-dependencies {
-    minecraft "com.mojang:minecraft:$minecraft_version"
-    mappings "net.fabricmc:yarn:$minecraft_version+build.$yarn_build:v2"
-    modImplementation "net.fabricmc:fabric-loader:$loader_version"
-
-    modImplementation "net.fabricmc.fabric-api:fabric-api:$fabric_version"
-    modImplementation "net.fabricmc:fabric-language-kotlin:$fabric_kotlin_version+kotlin.$kotlin_version"
-
-    modImplementation "com.terraformersmc:modmenu:$mod_menu_version"
-
-    modRuntimeOnly "io.github.flemmli97:debugutils:$minecraft_version-$debug_utils_version-fabric"
-    modRuntimeOnly "maven.modrinth:carpet:$carpet_version"
-
-    include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:$reach_entity_attributes_version")
-}
-
-loom {
-    splitEnvironmentSourceSets()
-
-    mods {
-        mod_id {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
-    }
-}
-
-processResources {
-    inputs.property "version", version
-
-    filesMatching("fabric.mod.json") {
-        expand "version": version
-    }
-}
-
-java {
-    withSourcesJar()
-
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-
-kotlin {
-    jvmToolchain(17)
-}
-
-jar {
-    from("LICENSE", "LICENSE_ASSETS")
-    exclude(".cache")
+changelog {
+    version = version
+    path = file("CHANGELOG.md").canonicalPath
+    groups = ["Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"]
+    lineSeparator = "\n"
 }
