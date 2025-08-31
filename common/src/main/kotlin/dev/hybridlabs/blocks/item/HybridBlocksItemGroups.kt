@@ -12,7 +12,7 @@ import net.minecraft.world.item.ItemStack
 object HybridBlocksItemGroups {
     val HYBRID_BLOCKS = register(
         Constants.MOD_ID, CreativeModeTab.builder(CreativeModeTab.Row.TOP,0)
-            .title(Component.translatable("itemGroup.${Constants.MOD_ID}.spawn_eggs"))
+            .title(Component.translatable("itemGroup.${Constants.MOD_ID}.blocks"))
             .icon { ItemStack(HybridBlocksBlocks.YELLOW_BRICKS.get()) }
             .displayItems { _, entries ->
                 BuiltInRegistries.ITEM.forEach { item ->
@@ -26,6 +26,6 @@ object HybridBlocksItemGroups {
     )
 
     private fun register(id: String, itemGroup: CreativeModeTab): RegistryObject<CreativeModeTab> {
-        return HybridBlocksCommon.CREATIVE_MODE_TABS.register(id,{itemGroup})
+        return HybridBlocksCommon.CREATIVE_MODE_TABS.register(id) { itemGroup }
     }
 }

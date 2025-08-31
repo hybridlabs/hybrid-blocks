@@ -411,5 +411,5 @@
   "block.hybrid-blocks.yellow_quartz_stairs": "Yellow Quartz Stairs",
   "block.hybrid-blocks.yellow_stained_clear_glass": "Yellow Stained Clear Glass",
   "block.hybrid-blocks.yellow_stained_clear_glass_pane": "Yellow Stained Clear Glass Pane",
-  "itemGroup.hybrid-blocks.spawn_eggs": "Hybrid Blocks"
+  "itemGroup.hybrid-blocks.blocks": "Hybrid Blocks"
 }

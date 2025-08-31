@@ -4,21 +4,8 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
-configurations.create('fabricDatagen')
-dependencies {
-    fabricDatagen project(path: ':fabric', configuration: 'datagenOutput')
-}
-
-tasks.register('copyDatagen', Copy) {
-    group "build"
-    from configurations.fabricDatagen // this will create a task dependency
-    into "src/generated/resources"
-}
-
-tasks.processResources.dependsOn(copyDatagen)
-
 mixin {
-    add(sourceSets.main, "${mod_id}.refmap.json")
+    add(sourceSets.main, "${forge_mod_id}.refmap.json")
     config("${mod_id}.forge.mixins.json")
 }
 
@@ -27,16 +14,20 @@ legacyForge {
     apply plugin: 'kotlin'
     version = "${minecraft_version}-${forge_version}"
 
+
+    // AT validation is broken on Forge 1.20.1
     validateAccessTransformers = false
 
     def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
     if (at.exists()) {
         accessTransformers = ["src/main/resources/META-INF/accesstransformer.cfg"]
     }
+
     parchment {
         minecraftVersion = parchment_minecraft
         mappingsVersion = parchment_version
     }
+
     sourceSets {
         main.kotlin.srcDirs = ['src/main/java', 'src/main/kotlin']
     }
@@ -55,7 +46,8 @@ legacyForge {
             programArguments.addAll '--mod', 'hybrid_blocks', '--all',
                     '--output', file('src/generated/resources/').getAbsolutePath(),
                     '--existing', file('src/main/resources/').getAbsolutePath(),
-                    '--existing', file('src/generated/fabric/resources/').getAbsolutePath()        }
+                    '--existing', file('src/generated/fabric/resources/').getAbsolutePath()
+        }
         server {
             server()
         }
@@ -68,11 +60,7 @@ legacyForge {
     }
 }
 
-sourceSets.main.resources.srcDir 'src/generated/resources'
-sourceSets.main.resources.srcDir 'src/generated/fabric/resources'
-
 repositories {
-    maven { url "https://maven.shedaniel.me/" }
     maven {
         name = 'Kotlin for Forge'
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
@@ -80,13 +68,14 @@ repositories {
     mavenCentral()
 }
 
+sourceSets.main.resources.srcDirs += project(':fabric').file("src/generated/resources")
+sourceSets.main.java.srcDirs += project(":common").file('src/main/java')
+
 dependencies {
-    compileOnly project(":common")
-    implementation 'org.jetbrains:annotations:25.0.0'
-    annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
-    modApi("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
-    implementation 'thedarkcolour:kotlinforforge:4.11.0'
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
+    annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+    implementation 'org.jetbrains:annotations:25.0.0'
+    implementation 'thedarkcolour:kotlinforforge:4.11.0'
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.0"))
 }
 

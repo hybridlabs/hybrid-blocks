@@ -19,7 +19,9 @@ public class HybridBlocksCommon {
 
     public static void init() {
 
-        Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!", Services.PLATFORM.getPlatformName(), Services.PLATFORM.getEnvironmentName());
+        Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!",
+                Services.PLATFORM.getPlatformName(),
+                Services.PLATFORM.getEnvironmentName());
 
         if (Services.PLATFORM.isModLoaded(MOD_ID)) {
             Constants.LOG.info("Hybrid Blocks loaded.");
