@@ -11,9 +11,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 import thedarkcolour.kotlinforforge.forge.runForDist
 
+@Suppress("UnusedExpression")
 @Mod(Constants.FORGE_MOD_ID)
 object HybridBlocksForge {
     private val LOGGER = Constants.LOG
+
     init {
         HybridBlocksCommon.init()
 
@@ -23,7 +25,7 @@ object HybridBlocksForge {
         HybridBlocksItems
         HybridBlocksItemGroups
 
-        val obj = runForDist(
+        runForDist(
             clientTarget = {
                 MOD_BUS.addListener(HybridBlocksForge::onClientSetup)
                 "test"
@@ -31,9 +33,8 @@ object HybridBlocksForge {
             serverTarget = {
                 MOD_BUS.addListener(HybridBlocksForge::onServerSetup)
                 "test"
-            })
-
-        println(obj)
+            }
+        )
     }
 
     private fun onClientSetup(event: FMLClientSetupEvent) {
