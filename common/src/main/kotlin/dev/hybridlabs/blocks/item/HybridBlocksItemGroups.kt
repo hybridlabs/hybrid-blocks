@@ -6,8 +6,10 @@ import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.network.chat.Component
+import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.ItemStack
+import net.minecraft.world.item.SpawnEggItem
 
 object HybridBlocksItemGroups {
     val HYBRID_BLOCKS = register(
@@ -19,6 +21,9 @@ object HybridBlocksItemGroups {
                     val id = BuiltInRegistries.ITEM.getKey(item)
                     if (id.namespace != Constants.MOD_ID) {
                         return@forEach
+                    }
+                    if (item is BlockItem) {
+                        entries.accept(item)
                     }
                 }
             }
