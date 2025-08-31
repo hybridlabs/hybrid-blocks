@@ -15,6 +15,13 @@ class BlockLootTableProvider(output: FabricDataOutput) : FabricBlockLootTablePro
                 val id = BuiltInRegistries.BLOCK.getKey(block)
                 id.namespace == HybridBlocks.MOD_ID
             }
-            .forEach(::dropSelf)
+            .forEach { block ->
+                val id = BuiltInRegistries.BLOCK.getKey(block)
+                if (id.path.endsWith("slab")) {
+                    add(block, createSlabItemTable(block))
+                } else {
+                    dropSelf(block)
+                }
+            }
     }
 }
