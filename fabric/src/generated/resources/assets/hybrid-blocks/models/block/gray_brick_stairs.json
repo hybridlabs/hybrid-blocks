@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "hybrid-blocks:block/gray_bricks",
-    "side": "hybrid-blocks:block/gray_bricks",
-    "top": "hybrid-blocks:block/gray_bricks"
-  }
-}

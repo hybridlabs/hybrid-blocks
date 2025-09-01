@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:nether_bricks"
-  },
-  "result": "hybrid-blocks:jack_on_jack_nether_bricks"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "hybrid-blocks:block/magenta_bricks",
-    "side": "hybrid-blocks:block/magenta_bricks",
-    "top": "hybrid-blocks:block/magenta_bricks"
-  }
-}

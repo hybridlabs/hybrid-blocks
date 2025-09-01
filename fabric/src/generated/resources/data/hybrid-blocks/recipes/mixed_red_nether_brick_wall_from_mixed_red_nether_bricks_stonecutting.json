@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid-blocks:mixed_red_nether_bricks"
-  },
-  "result": "hybrid-blocks:mixed_red_nether_brick_wall"
-}

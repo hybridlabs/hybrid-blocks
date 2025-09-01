@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid-blocks:pink_quartz_block"
-  },
-  "result": "hybrid-blocks:pink_quartz_stairs"
-}

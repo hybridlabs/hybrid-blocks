@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_post",
-  "textures": {
-    "edge": "hybrid-blocks:block/white_stained_clear_glass_pane_top",
-    "pane": "hybrid-blocks:block/white_stained_clear_glass"
-  }
-}

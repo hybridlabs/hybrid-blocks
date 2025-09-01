@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "hybrid-blocks:block/orange_bricks",
-    "side": "hybrid-blocks:block/orange_bricks",
-    "top": "hybrid-blocks:block/orange_bricks"
-  }
-}
