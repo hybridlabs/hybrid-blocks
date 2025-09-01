@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "hybrid-blocks:block/mossy_orange_bricks"
+  }
+}

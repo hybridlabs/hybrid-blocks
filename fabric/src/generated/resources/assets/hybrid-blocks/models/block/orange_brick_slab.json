@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hybrid-blocks:block/orange_bricks",
+    "side": "hybrid-blocks:block/orange_bricks",
+    "top": "hybrid-blocks:block/orange_bricks"
+  }
+}

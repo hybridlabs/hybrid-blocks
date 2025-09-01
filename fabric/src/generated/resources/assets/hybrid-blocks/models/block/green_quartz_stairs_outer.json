@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "hybrid-blocks:block/green_quartz_block",
+    "side": "hybrid-blocks:block/green_quartz_block",
+    "top": "hybrid-blocks:block/green_quartz_block"
+  }
+}

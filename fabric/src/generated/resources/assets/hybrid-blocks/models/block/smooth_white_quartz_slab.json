@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hybrid-blocks:block/smooth_white_quartz",
+    "side": "hybrid-blocks:block/smooth_white_quartz",
+    "top": "hybrid-blocks:block/smooth_white_quartz"
+  }
+}

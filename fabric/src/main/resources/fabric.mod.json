@@ -1,9 +1,9 @@
 {
     "schemaVersion": 1,
-    "id": "tyromancy",
+    "id": "hybrid-blocks",
     "version": "${version}",
 
-    "name": "Tyromancy",
+    "name": "Hybrid Blocks",
     "description": "A mod that adds a variety of decorative and colorful blocks to the game.",
 
     "authors": [
@@ -14,30 +14,30 @@
     ],
 
     "contact": {
-        "sources": "https://github.com/hybridlabs/tyromancy",
-        "issues": "https://github.com/hybridlabs/tyromancy/issues"
+        "sources": "https://github.com/hybridlabs/hybrid-blocks",
+        "issues": "https://github.com/hybridlabs/hybrid-blocks/issues"
     },
 
     "license": "ARR (Assets), MIT (Code)",
-    "icon": "assets/tyromancy/icon.png",
+    "icon": "assets/hybrid-blocks/icon.png",
 
     "environment": "*",
     "entrypoints": {
         "main": [
             {
-                "value": "dev.hybridlabs.tyromancy.Tyromancy",
+                "value": "dev.hybridlabs.blocks.HybridBlocks",
                 "adapter": "kotlin"
             }
         ],
         "client": [
             {
-                "value": "dev.hybridlabs.tyromancy.TyromancyClient",
+                "value": "dev.hybridlabs.blocks.HybridBlocksClient",
                 "adapter": "kotlin"
             }
         ],
         "fabric-datagen": [
             {
-                "value": "dev.hybridlabs.tyromancy.data.TyromancyDataGenerator",
+                "value": "dev.hybridlabs.blocks.data.HybridBlocksDataGenerator",
                 "adapter": "kotlin"
             }
         ],
@@ -47,11 +47,11 @@
     },
 
     "mixins": [
-        "tyromancy.mixins.json",
-        "tyromancy.fabric.mixins.json"
+        "hybrid-blocks.mixins.json",
+        "hybrid-blocks.fabric.mixins.json"
     ],
 
-    "accessWidener": "tyromancy-blocks.accesswidener",
+    "accessWidener": "hybrid-blocks.accesswidener",
 
     "depends": {
         "minecraft": "1.20.x",

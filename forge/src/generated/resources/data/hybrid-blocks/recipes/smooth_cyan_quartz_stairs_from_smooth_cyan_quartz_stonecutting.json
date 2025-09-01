@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:smooth_cyan_quartz"
+  },
+  "result": "hybrid-blocks:smooth_cyan_quartz_stairs"
+}

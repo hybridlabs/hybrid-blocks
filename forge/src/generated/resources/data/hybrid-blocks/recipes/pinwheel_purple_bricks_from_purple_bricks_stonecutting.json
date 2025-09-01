@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:purple_bricks"
+  },
+  "result": "hybrid-blocks:pinwheel_purple_bricks"
+}

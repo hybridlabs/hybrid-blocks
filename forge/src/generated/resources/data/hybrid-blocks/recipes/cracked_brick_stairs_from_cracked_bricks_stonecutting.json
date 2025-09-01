@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid-blocks:cracked_bricks"
+  },
+  "result": "hybrid-blocks:cracked_brick_stairs"
+}

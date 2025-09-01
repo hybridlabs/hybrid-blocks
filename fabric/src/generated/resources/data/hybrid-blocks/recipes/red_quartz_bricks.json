@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "quartz_bricks",
+  "key": {
+    "#": {
+      "item": "hybrid-blocks:red_quartz_block"
+    }
+  },
+  "pattern": [
+    " ##",
+    " ##",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hybrid-blocks:red_quartz_bricks"
+  },
+  "show_notification": true
+}

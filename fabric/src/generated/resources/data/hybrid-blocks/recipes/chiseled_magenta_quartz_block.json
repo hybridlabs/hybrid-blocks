@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "hybrid-blocks:magenta_quartz_block"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "hybrid-blocks:chiseled_magenta_quartz_block"
+  },
+  "show_notification": true
+}
