@@ -13,6 +13,7 @@ import net.minecraft.data.recipes.SimpleCookingRecipeBuilder
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.Ingredient
+import net.minecraft.world.item.crafting.RecipeSerializer
 import net.minecraft.world.level.block.Blocks
 import java.util.function.Consumer
 
@@ -603,6 +604,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.CRACKED_WHITE_BRICKS.get(), Items.WHITE_DYE)
         offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.CRACKED_YELLOW_BRICKS.get(), Items.YELLOW_DYE)
 
+        simpleCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING_RECIPE, 200, Items.GLASS, HybridBlocksItems.CLEAR_GLASS.get(), 0.15f)
         offerStainedClearGlassRecipes(exporter, Items.BLACK_STAINED_GLASS, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
         offerStainedClearGlassRecipes(exporter, Items.BLUE_STAINED_GLASS, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.BLUE_DYE)
         offerStainedClearGlassRecipes(exporter, Items.BROWN_STAINED_GLASS, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.BROWN_DYE)
@@ -823,7 +825,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         private fun offerStainedClearGlassRecipes(
             exporter: Consumer<FinishedRecipe>,
             base: Item,
-            cracked: Item,
+            output: Item,
             dye: Item
         ) {
             offerDyeingRecipe(
@@ -831,7 +833,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 HybridBlocksItems.CLEAR_GLASS.get(),
                 "has_clear_glass",
                 "stained_clear_glass",
-                cracked,
+                output,
                 dye
             )
 
@@ -840,7 +842,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 HybridBlocksItems.CLEAR_GLASS.get(),
                 "has_clear_glass",
                 "stained_clear_glass",
-                cracked,
+                output,
                 base
             )
         }
