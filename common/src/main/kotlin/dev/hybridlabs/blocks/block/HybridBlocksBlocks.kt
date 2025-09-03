@@ -12,6 +12,8 @@ import java.util.function.Supplier
  */
 object HybridBlocksBlocks {
 
+    val DORIC_COLUMN = register("doric_column") { ColumnBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.RED))}
+
     // region Quartz
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
     val WHITE_QUARTZ_STAIRS = register("white_quartz_stairs") { HybridBlocksStairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)) }

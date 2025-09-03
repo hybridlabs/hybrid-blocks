@@ -51,6 +51,7 @@ class BlockTagProvider(
                     "brick",
                     "bricks",
                     "pillar",
+                    "column",
                 ).any { pickaxePath.contains(it) }) {
                 getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(block)
             }

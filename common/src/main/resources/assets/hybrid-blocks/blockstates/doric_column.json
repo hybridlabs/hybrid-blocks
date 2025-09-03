@@ -1,0 +1,13 @@
+  {
+  "variants": {
+    "thickness=base": {
+      "model": "hybrid-blocks:block/doric_column_shaft"
+    },
+    "thickness=middle": {
+      "model": "hybrid-blocks:block/doric_column_shaft"
+    },
+    "thickness=tip": {
+      "model": "hybrid-blocks:block/doric_column"
+    }
+  }
+}

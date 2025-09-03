@@ -12,6 +12,8 @@ import java.util.function.Supplier
  */
 @Suppress("unused")
 object HybridBlocksItems {
+    val DORIC_COLUMN = register("doric_column") { BlockItem(HybridBlocksBlocks.DORIC_COLUMN.get(), Item.Properties()) }
+
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val WHITE_QUARTZ_STAIRS = register("white_quartz_stairs") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_STAIRS.get(), Item.Properties()) }
     val WHITE_QUARTZ_SLAB = register("white_quartz_slab") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_SLAB.get(), Item.Properties()) }

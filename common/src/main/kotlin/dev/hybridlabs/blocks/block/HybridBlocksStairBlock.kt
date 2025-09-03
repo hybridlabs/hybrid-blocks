@@ -7,5 +7,5 @@ import net.minecraft.world.level.block.state.BlockState
 
 class HybridBlocksStairBlock(
     baseState: BlockState,
-    properties: BlockBehaviour.Properties
+    properties: Properties
 ) : StairBlock(baseState, properties)

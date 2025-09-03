@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "hybrid-blocks:doric_column",
     "hybrid-blocks:white_quartz_block",
     "hybrid-blocks:white_quartz_stairs",
     "hybrid-blocks:white_quartz_slab",

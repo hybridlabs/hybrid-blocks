@@ -430,6 +430,8 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_WHITE_QUARTZ_BLOCK.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_YELLOW_QUARTZ_BLOCK.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
 
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.DORIC_COLUMN.get(), Items.CALCITE)
+
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.CRACKED_BRICK_WALL.get(), HybridBlocksItems.CRACKED_BRICKS.get())
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.MIXED_NETHER_BRICK_WALL.get(), HybridBlocksItems.MIXED_NETHER_BRICKS.get())
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.MIXED_RED_NETHER_BRICK_WALL.get(), HybridBlocksItems.MIXED_RED_NETHER_BRICKS.get())
