@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "hybrid-blocks:block/white_quartz_pillar_top",
-    "side": "hybrid-blocks:block/white_quartz_pillar_side"
-  }
-}

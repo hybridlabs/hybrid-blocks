@@ -4,6 +4,11 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
+configurations.create('fabricDatagen')
+dependencies {
+    fabricDatagen project(path: ':fabric', configuration: 'datagenOutput')
+}
+
 legacyForge {
     apply plugin: 'org.jetbrains.kotlin.jvm'
     apply plugin: 'kotlin'
@@ -27,8 +32,14 @@ legacyForge {
         main.kotlin.srcDirs = ['src/main/java', 'src/main/kotlin']
     }
 
+    sourceSets.main.resources.srcDirs += 'src/generated/resources'
+
+    processResources {
+        from configurations.fabricDatagen.singleFile
+    }
+
     compileKotlin {
-        source(project(":common").sourceSets.main.kotlin)
+        source(project(":common").sourceSets.main.allSource)
         inputs.file "../gradle.properties"
     }
 
@@ -63,10 +74,9 @@ repositories {
     mavenCentral()
 }
 
-sourceSets.main.resources.srcDirs += project(':fabric').file("src/generated/resources")
-sourceSets.main.java.srcDirs += project(":common").file('src/main/java')
 
 dependencies {
+    compileOnly project(":common")
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
     implementation 'org.jetbrains:annotations:25.0.0'

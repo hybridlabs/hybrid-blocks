@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid-blocks:smooth_magenta_quartz"
-  },
-  "result": "hybrid-blocks:smooth_magenta_quartz_stairs"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid-blocks:cyan_quartz_block"
-  },
-  "result": "hybrid-blocks:chiseled_cyan_quartz_block"
-}

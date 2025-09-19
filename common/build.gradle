@@ -21,11 +21,9 @@ repositories {
 }
 
 configurations{
-    commonKotlin
     commonJava
 }
 
-configurations.create('commonKotlinOut')
 configurations.create('commonJavaOut')
 dependencies {
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
@@ -34,17 +32,11 @@ dependencies {
     implementation 'org.jetbrains:annotations:25.0.0'
 
     //We load the Forge version of any included mod dependencies
-    commonKotlinOut files("src/main/kotlin")
     commonJavaOut files("src/main/java/")
 }
 
 configurations {
     commonJava {
-        canBeResolved = false
-        canBeConsumed = true
-    }
-
-    commonKotlin {
         canBeResolved = false
         canBeConsumed = true
     }
@@ -56,11 +48,10 @@ configurations {
 }
 
 artifacts {
-    //commonJava sourceSets.main.java.sourceDirectories.singleFile
+    commonJava sourceSets.main.java.sourceDirectories.singleFile
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
 }
 
-/*
 subprojects {
     apply plugin: 'java'
     apply plugin: 'org.jetbrains.kotlin.jvm'
@@ -71,10 +62,6 @@ subprojects {
         mavenCentral()
     }
 
-    sourceSets {
-        main.kotlin.srcDirs = ['src/main/java', 'src/main/kotlin']
-    }
-
     compileKotlin {
         if (file("src/main/resources/META-INF/accesstransformer.cfg").exists()) {
             accessTransformers = ["src/main/resources/META-INF/accesstransformer.cfg"]
@@ -83,4 +70,3 @@ subprojects {
         inputs.file "../gradle.properties"
     }
 }
-*/
