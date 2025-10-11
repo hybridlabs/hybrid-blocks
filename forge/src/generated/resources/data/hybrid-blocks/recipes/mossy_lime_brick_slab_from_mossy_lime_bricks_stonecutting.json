@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "hybrid-blocks:mossy_lime_bricks"
-  },
-  "result": "hybrid-blocks:mossy_lime_brick_slab"
-}

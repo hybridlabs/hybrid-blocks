@@ -28,6 +28,7 @@ dependencies {
         parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
     }
 
+    implementation project(":common")
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
     modImplementation "net.fabricmc:fabric-language-kotlin:$fabric_kotlin_version+kotlin.$kotlin_version"
@@ -48,15 +49,15 @@ configurations {
 fabricApi {
     configureDataGeneration {
         outputDirectory = file("src/generated/resources")
+        client = true
+    }
+    dependencies {
+        datagenOutput files(runDatagen)
     }
 }
 
 
 loom {
-    dependencies {
-        //commonKotlinOut project(path: ':common', configuration: 'commonKotlinOut')
-        //commonJavaOut project(path: ':common', configuration: 'commonJavaOut')
-    }
     if (project(":common").file("src/main/resources/${mod_id}.accesswidener").exists()) {
         accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
     }
@@ -64,13 +65,10 @@ loom {
         defaultRefmapName.set("${mod_id}.refmap.json")
     }
 
-
     compileKotlin {
-        source(project(":common").sourceSets.main.kotlin)
+        source(project(":common").sourceSets.main.allSource)
         inputs.file "../gradle.properties"
     }
-
-    sourceSets.main.java.srcDirs += project(":common").file('src/main/java')
 
     runs {
         client {

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid-blocks:black_bricks"
-  },
-  "result": "hybrid-blocks:pinwheel_black_bricks"
-}
