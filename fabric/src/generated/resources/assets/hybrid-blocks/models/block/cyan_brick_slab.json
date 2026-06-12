@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "hybrid-blocks:block/cyan_bricks",
-    "side": "hybrid-blocks:block/cyan_bricks",
-    "top": "hybrid-blocks:block/cyan_bricks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "hybrid-blocks:block/smooth_green_quartz",
-    "side": "hybrid-blocks:block/smooth_green_quartz",
-    "top": "hybrid-blocks:block/smooth_green_quartz"
-  }
-}

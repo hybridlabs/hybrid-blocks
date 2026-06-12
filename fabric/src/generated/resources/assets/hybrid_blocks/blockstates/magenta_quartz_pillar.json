@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hybrid_blocks:block/magenta_quartz_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hybrid_blocks:block/magenta_quartz_pillar"
+    },
+    "axis=z": {
+      "model": "hybrid_blocks:block/magenta_quartz_pillar",
+      "x": 90
+    }
+  }
+}

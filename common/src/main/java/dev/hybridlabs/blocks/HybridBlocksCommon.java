@@ -16,7 +16,6 @@ public class HybridBlocksCommon {
     public static final RegistrationProvider<CreativeModeTab> CREATIVE_MODE_TABS =
             RegistrationProvider.get(BuiltInRegistries.CREATIVE_MODE_TAB, MOD_ID);
 
-
     public static void init() {
 
         Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!",

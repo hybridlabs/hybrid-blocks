@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:brown_bricks"
+  },
+  "result": "hybrid_blocks:brown_brick_wall"
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "hybrid-blocks:block/mossy_lime_bricks",
-    "side": "hybrid-blocks:block/mossy_lime_bricks",
-    "top": "hybrid-blocks:block/mossy_lime_bricks"
-  }
-}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "hybrid_blocks:block/mossy_purple_bricks",
+    "side": "hybrid_blocks:block/mossy_purple_bricks",
+    "top": "hybrid_blocks:block/mossy_purple_bricks"
+  }
+}

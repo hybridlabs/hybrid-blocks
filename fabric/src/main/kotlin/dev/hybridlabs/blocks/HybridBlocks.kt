@@ -8,7 +8,7 @@ import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
 object HybridBlocks : ModInitializer {
-    const val MOD_ID = "hybrid-blocks"
+    const val MOD_ID = "hybrid_blocks"
     const val MOD_NAME = "Hybrid Blocks"
 
     private val logger = LoggerFactory.getLogger(MOD_ID)

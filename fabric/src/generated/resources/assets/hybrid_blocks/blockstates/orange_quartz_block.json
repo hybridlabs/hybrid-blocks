@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "hybrid_blocks:block/orange_quartz_block"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "hybrid-blocks",
+    "id": "hybrid_blocks",
     "version": "${version}",
 
     "name": "Hybrid Blocks",
@@ -14,12 +14,12 @@
     ],
 
     "contact": {
-        "sources": "https://github.com/hybridlabs/hybrid-blocks",
-        "issues": "https://github.com/hybridlabs/hybrid-blocks/issues"
+        "sources": "https://github.com/hybridlabs/hybrid_blocks",
+        "issues": "https://github.com/hybridlabs/hybrid_blocks/issues"
     },
 
     "license": "ARR (Assets), MIT (Code)",
-    "icon": "assets/hybrid-blocks/icon.png",
+    "icon": "assets/hybrid_blocks/icon.png",
 
     "environment": "*",
     "entrypoints": {
@@ -47,11 +47,11 @@
     },
 
     "mixins": [
-        "hybrid-blocks.mixins.json",
-        "hybrid-blocks.fabric.mixins.json"
+        "hybrid_blocks.mixins.json",
+        "hybrid_blocks.fabric.mixins.json"
     ],
 
-    "accessWidener": "hybrid-blocks.accesswidener",
+    "accessWidener": "hybrid_blocks.accesswidener",
 
     "depends": {
         "minecraft": "1.20.x",

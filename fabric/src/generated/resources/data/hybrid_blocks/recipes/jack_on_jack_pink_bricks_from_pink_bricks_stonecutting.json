@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:pink_bricks"
+  },
+  "result": "hybrid_blocks:jack_on_jack_pink_bricks"
+}
