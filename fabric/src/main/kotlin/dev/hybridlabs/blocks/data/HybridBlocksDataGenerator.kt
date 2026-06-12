@@ -23,10 +23,10 @@ object HybridBlocksDataGenerator : DataGeneratorEntrypoint {
         pack.addProvider(::RecipeProvider)
     }
 
-    fun <T> filterHybridBlocks(registry: Registry<T>): (T) -> Boolean {
+    fun <T> filterHybridBlocks(registry: Registry<T>): (T & Any) -> Boolean {
         return { o ->
             val id = registry.getKey(o)
-            id?.namespace == Constants.MOD_ID
+            id!!.namespace == Constants.MOD_ID
         }
     }
 }
