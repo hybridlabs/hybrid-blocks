@@ -449,6 +449,25 @@ object HybridBlocksBlocks {
     val MOSSY_BLACK_BRICK_SLAB = register("mossy_black_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_WALL = register("mossy_black_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK))}
 
+    val SHINGLES = register("shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val WHITE_SHINGLES = register("white_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val ORANGE_SHINGLES = register("orange_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val MAGENTA_SHINGLES = register("magenta_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val LIGHT_BLUE_SHINGLES = register("light_blue_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val YELLOW_SHINGLES = register("yellow_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val LIME_SHINGLES = register("lime_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val PINK_SHINGLES = register("pink_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val GRAY_SHINGLES = register("gray_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val LIGHT_GRAY_SHINGLES = register("light_gray_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val CYAN_SHINGLES = register("cyan_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val PURPLE_SHINGLES = register("purple_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val BLUE_SHINGLES = register("blue_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val BROWN_SHINGLES = register("brown_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val GREEN_SHINGLES = register("green_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val RED_SHINGLES = register("red_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val BLACK_SHINGLES = register("black_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val NETHER_BRICK_SHINGLES = register("nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
+    val RED_NETHER_BRICK_SHINGLES = register("red_nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     //endregion
 
     // region Clear Glass

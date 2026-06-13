@@ -379,6 +379,25 @@
     "hybrid_blocks:mossy_black_bricks",
     "hybrid_blocks:mossy_black_brick_stairs",
     "hybrid_blocks:mossy_black_brick_slab",
-    "hybrid_blocks:mossy_black_brick_wall"
+    "hybrid_blocks:mossy_black_brick_wall",
+    "hybrid_blocks:shingles",
+    "hybrid_blocks:white_shingles",
+    "hybrid_blocks:orange_shingles",
+    "hybrid_blocks:magenta_shingles",
+    "hybrid_blocks:light_blue_shingles",
+    "hybrid_blocks:yellow_shingles",
+    "hybrid_blocks:lime_shingles",
+    "hybrid_blocks:pink_shingles",
+    "hybrid_blocks:gray_shingles",
+    "hybrid_blocks:light_gray_shingles",
+    "hybrid_blocks:cyan_shingles",
+    "hybrid_blocks:purple_shingles",
+    "hybrid_blocks:blue_shingles",
+    "hybrid_blocks:brown_shingles",
+    "hybrid_blocks:green_shingles",
+    "hybrid_blocks:red_shingles",
+    "hybrid_blocks:black_shingles",
+    "hybrid_blocks:nether_brick_shingles",
+    "hybrid_blocks:red_nether_brick_shingles"
   ]
 }
