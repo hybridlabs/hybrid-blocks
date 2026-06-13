@@ -179,6 +179,8 @@ object HybridBlocksBlocks {
 
     // region Bricks
 
+    val LARGE_BRICKS = register("large_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val SMALL_BRICKS = register("small_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val CRACKED_BRICKS = register("cracked_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val CRACKED_BRICK_STAIRS = register("cracked_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val CRACKED_BRICK_SLAB = register("cracked_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
@@ -187,7 +189,10 @@ object HybridBlocksBlocks {
     val PINWHEEL_BRICKS = register("pinwheel_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val JACK_ON_JACK_BRICKS = register("jack_on_jack_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val MIXED_BRICKS = register("mixed_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
+    val SHINGLES = register("shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
+    val LARGE_NETHER_BRICKS = register("large_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
+    val SMALL_NETHER_BRICKS = register("small_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
     val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
     val PINWHEEL_NETHER_BRICKS = register("pinwheel_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
     val JACK_ON_JACK_NETHER_BRICKS = register("jack_on_jack_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
@@ -195,7 +200,10 @@ object HybridBlocksBlocks {
     val MIXED_NETHER_BRICK_STAIRS = register("mixed_nether_brick_stairs") { HybridBlocksStairBlock(Blocks.NETHER_BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
     val MIXED_NETHER_BRICK_SLAB = register("mixed_nether_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
     val MIXED_NETHER_BRICK_WALL = register("mixed_nether_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_WALL))}
+    val NETHER_BRICK_SHINGLES = register("nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
 
+    val LARGE_RED_NETHER_BRICKS = register("large_red_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
+    val SMALL_RED_NETHER_BRICKS = register("small_red_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     val BASKETWEAVE_RED_NETHER_BRICKS = register("basketweave_red_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     val PINWHEEL_RED_NETHER_BRICKS = register("pinwheel_red_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     val JACK_ON_JACK_RED_NETHER_BRICKS = register("jack_on_jack_red_nether_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
@@ -203,8 +211,11 @@ object HybridBlocksBlocks {
     val MIXED_RED_NETHER_BRICK_STAIRS = register("mixed_red_nether_brick_stairs") { HybridBlocksStairBlock(Blocks.RED_NETHER_BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     val MIXED_RED_NETHER_BRICK_SLAB = register("mixed_red_nether_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     val MIXED_RED_NETHER_BRICK_WALL = register("mixed_red_nether_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICK_WALL))}
+    val RED_NETHER_BRICK_SHINGLES = register("red_nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
 
     val WHITE_BRICKS = register("white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
+    val LARGE_WHITE_BRICKS = register("large_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
+    val SMALL_WHITE_BRICKS = register("small_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
     val CRACKED_WHITE_BRICKS = register("cracked_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val WHITE_BRICK_STAIRS = register("white_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
     val WHITE_BRICK_SLAB = register("white_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
@@ -213,8 +224,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_WHITE_BRICKS = register("pinwheel_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
     val JACK_ON_JACK_WHITE_BRICKS = register("jack_on_jack_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
     val MIXED_WHITE_BRICKS = register("mixed_white_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.WHITE))}
+    val WHITE_SHINGLES = register("white_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val ORANGE_BRICKS = register("orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
+    val LARGE_ORANGE_BRICKS = register("large_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
+    val SMALL_ORANGE_BRICKS = register("small_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
     val CRACKED_ORANGE_BRICKS = register("cracked_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val ORANGE_BRICK_STAIRS = register("orange_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
     val ORANGE_BRICK_SLAB = register("orange_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
@@ -223,8 +237,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_ORANGE_BRICKS = register("pinwheel_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
     val JACK_ON_JACK_ORANGE_BRICKS = register("jack_on_jack_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
     val MIXED_ORANGE_BRICKS = register("mixed_orange_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.ORANGE))}
+    val ORANGE_SHINGLES = register("orange_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val MAGENTA_BRICKS = register("magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
+    val LARGE_MAGENTA_BRICKS = register("large_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
+    val SMALL_MAGENTA_BRICKS = register("small_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
     val CRACKED_MAGENTA_BRICKS = register("cracked_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val MAGENTA_BRICK_STAIRS = register("magenta_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
     val MAGENTA_BRICK_SLAB = register("magenta_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
@@ -233,8 +250,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_MAGENTA_BRICKS = register("pinwheel_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
     val JACK_ON_JACK_MAGENTA_BRICKS = register("jack_on_jack_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
     val MIXED_MAGENTA_BRICKS = register("mixed_magenta_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA))}
+    val MAGENTA_SHINGLES = register("magenta_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val LIGHT_BLUE_BRICKS = register("light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
+    val LARGE_LIGHT_BLUE_BRICKS = register("large_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
+    val SMALL_LIGHT_BLUE_BRICKS = register("small_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
     val CRACKED_LIGHT_BLUE_BRICKS = register("cracked_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val LIGHT_BLUE_BRICK_STAIRS = register("light_blue_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
     val LIGHT_BLUE_BRICK_SLAB = register("light_blue_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
@@ -243,8 +263,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_LIGHT_BLUE_BRICKS = register("pinwheel_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
     val JACK_ON_JACK_LIGHT_BLUE_BRICKS = register("jack_on_jack_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
     val MIXED_LIGHT_BLUE_BRICKS = register("mixed_light_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE))}
+    val LIGHT_BLUE_SHINGLES = register("light_blue_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val YELLOW_BRICKS = register("yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
+    val LARGE_YELLOW_BRICKS = register("large_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
+    val SMALL_YELLOW_BRICKS = register("small_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
     val CRACKED_YELLOW_BRICKS = register("cracked_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val YELLOW_BRICK_STAIRS = register("yellow_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
     val YELLOW_BRICK_SLAB = register("yellow_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
@@ -253,8 +276,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_YELLOW_BRICKS = register("pinwheel_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
     val JACK_ON_JACK_YELLOW_BRICKS = register("jack_on_jack_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
     val MIXED_YELLOW_BRICKS = register("mixed_yellow_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.YELLOW))}
+    val YELLOW_SHINGLES = register("yellow_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val LIME_BRICKS = register("lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
+    val LARGE_LIME_BRICKS = register("large_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
+    val SMALL_LIME_BRICKS = register("small_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
     val CRACKED_LIME_BRICKS = register("cracked_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val LIME_BRICK_STAIRS = register("lime_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
     val LIME_BRICK_SLAB = register("lime_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
@@ -263,8 +289,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_LIME_BRICKS = register("pinwheel_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
     val JACK_ON_JACK_LIME_BRICKS = register("jack_on_jack_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
     val MIXED_LIME_BRICKS = register("mixed_lime_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIME))}
+    val LIME_SHINGLES = register("lime_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val PINK_BRICKS = register("pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
+    val LARGE_PINK_BRICKS = register("large_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
+    val SMALL_PINK_BRICKS = register("small_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
     val CRACKED_PINK_BRICKS = register("cracked_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val PINK_BRICK_STAIRS = register("pink_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
     val PINK_BRICK_SLAB = register("pink_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
@@ -273,8 +302,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_PINK_BRICKS = register("pinwheel_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
     val JACK_ON_JACK_PINK_BRICKS = register("jack_on_jack_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
     val MIXED_PINK_BRICKS = register("mixed_pink_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PINK))}
+    val PINK_SHINGLES = register("pink_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val GRAY_BRICKS = register("gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
+    val LARGE_GRAY_BRICKS = register("large_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
+    val SMALL_GRAY_BRICKS = register("small_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
     val CRACKED_GRAY_BRICKS = register("cracked_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val GRAY_BRICK_STAIRS = register("gray_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
     val GRAY_BRICK_SLAB = register("gray_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
@@ -283,8 +315,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_GRAY_BRICKS = register("pinwheel_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
     val JACK_ON_JACK_GRAY_BRICKS = register("jack_on_jack_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
     val MIXED_GRAY_BRICKS = register("mixed_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GRAY))}
+    val GRAY_SHINGLES = register("gray_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val LIGHT_GRAY_BRICKS = register("light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
+    val LARGE_LIGHT_GRAY_BRICKS = register("large_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
+    val SMALL_LIGHT_GRAY_BRICKS = register("small_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
     val CRACKED_LIGHT_GRAY_BRICKS = register("cracked_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val LIGHT_GRAY_BRICK_STAIRS = register("light_gray_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
     val LIGHT_GRAY_BRICK_SLAB = register("light_gray_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
@@ -293,8 +328,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_LIGHT_GRAY_BRICKS = register("pinwheel_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
     val JACK_ON_JACK_LIGHT_GRAY_BRICKS = register("jack_on_jack_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
     val MIXED_LIGHT_GRAY_BRICKS = register("mixed_light_gray_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY))}
+    val LIGHT_GRAY_SHINGLES = register("light_gray_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val CYAN_BRICKS = register("cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
+    val LARGE_CYAN_BRICKS = register("large_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
+    val SMALL_CYAN_BRICKS = register("small_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
     val CRACKED_CYAN_BRICKS = register("cracked_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val CYAN_BRICK_STAIRS = register("cyan_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
     val CYAN_BRICK_SLAB = register("cyan_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
@@ -303,8 +341,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_CYAN_BRICKS = register("pinwheel_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
     val JACK_ON_JACK_CYAN_BRICKS = register("jack_on_jack_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
     val MIXED_CYAN_BRICKS = register("mixed_cyan_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.CYAN))}
+    val CYAN_SHINGLES = register("cyan_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val PURPLE_BRICKS = register("purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
+    val LARGE_PURPLE_BRICKS = register("large_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
+    val SMALL_PURPLE_BRICKS = register("small_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
     val CRACKED_PURPLE_BRICKS = register("cracked_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val PURPLE_BRICK_STAIRS = register("purple_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
     val PURPLE_BRICK_SLAB = register("purple_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
@@ -313,8 +354,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_PURPLE_BRICKS = register("pinwheel_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
     val JACK_ON_JACK_PURPLE_BRICKS = register("jack_on_jack_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
     val MIXED_PURPLE_BRICKS = register("mixed_purple_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.PURPLE))}
+    val PURPLE_SHINGLES = register("purple_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val BLUE_BRICKS = register("blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
+    val LARGE_BLUE_BRICKS = register("large_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
+    val SMALL_BLUE_BRICKS = register("small_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
     val CRACKED_BLUE_BRICKS = register("cracked_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val BLUE_BRICK_STAIRS = register("blue_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
     val BLUE_BRICK_SLAB = register("blue_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
@@ -323,8 +367,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_BLUE_BRICKS = register("pinwheel_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
     val JACK_ON_JACK_BLUE_BRICKS = register("jack_on_jack_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
     val MIXED_BLUE_BRICKS = register("mixed_blue_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLUE))}
+    val BLUE_SHINGLES = register("blue_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val BROWN_BRICKS = register("brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
+    val LARGE_BROWN_BRICKS = register("large_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
+    val SMALL_BROWN_BRICKS = register("small_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
     val CRACKED_BROWN_BRICKS = register("cracked_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val BROWN_BRICK_STAIRS = register("cracked_brown_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
     val BROWN_BRICK_SLAB = register("brown_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
@@ -333,8 +380,11 @@ object HybridBlocksBlocks {
     val PINWHEEL_BROWN_BRICKS = register("pinwheel_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
     val JACK_ON_JACK_BROWN_BRICKS = register("jack_on_jack_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
     val MIXED_BROWN_BRICKS = register("mixed_brown_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BROWN))}
+    val BROWN_SHINGLES = register("brown_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val GREEN_BRICKS = register("green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
+    val LARGE_GREEN_BRICKS = register("large_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
+    val SMALL_GREEN_BRICKS = register("small_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
     val CRACKED_GREEN_BRICKS = register("cracked_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val GREEN_BRICK_STAIRS = register("green_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
     val GREEN_BRICK_SLAB = register("green_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
@@ -343,18 +393,24 @@ object HybridBlocksBlocks {
     val PINWHEEL_GREEN_BRICKS = register("pinwheel_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
     val JACK_ON_JACK_GREEN_BRICKS = register("jack_on_jack_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
     val MIXED_GREEN_BRICKS = register("mixed_green_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
+    val GREEN_SHINGLES = register("green_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val RED_BRICKS = register("red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val LARGE_RED_BRICKS = register("large_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val SMALL_RED_BRICKS = register("small_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
     val CRACKED_RED_BRICKS = register("cracked_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val RED_BRICK_STAIRS = register("red_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
     val RED_BRICK_SLAB = register("red_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
     val RED_BRICK_WALL = register("red_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL).mapColor(DyeColor.RED))}
-    val BASKETWEAVE_RED_BRICKS = register("basketweave_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
-    val PINWHEEL_RED_BRICKS = register("pinwheel_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
-    val JACK_ON_JACK_RED_BRICKS = register("jack_on_jack_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
-    val MIXED_RED_BRICKS = register("mixed_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.GREEN))}
+    val BASKETWEAVE_RED_BRICKS = register("basketweave_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val PINWHEEL_RED_BRICKS = register("pinwheel_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val JACK_ON_JACK_RED_BRICKS = register("jack_on_jack_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val MIXED_RED_BRICKS = register("mixed_red_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.RED))}
+    val RED_SHINGLES = register("red_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val BLACK_BRICKS = register("black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
+    val LARGE_BLACK_BRICKS = register("large_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
+    val SMALL_BLACK_BRICKS = register("small_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val CRACKED_BLACK_BRICKS = register("cracked_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
     val BLACK_BRICK_STAIRS = register("black_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val BLACK_BRICK_SLAB = register("black_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
@@ -363,6 +419,7 @@ object HybridBlocksBlocks {
     val PINWHEEL_BLACK_BRICKS = register("pinwheel_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val JACK_ON_JACK_BLACK_BRICKS = register("jack_on_jack_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MIXED_BLACK_BRICKS = register("mixed_black_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
+    val BLACK_SHINGLES = register("black_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
 
     val MOSSY_BRICKS = register("mossy_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
@@ -448,26 +505,6 @@ object HybridBlocksBlocks {
     val MOSSY_BLACK_BRICK_STAIRS = register("mossy_black_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_SLAB = register("mossy_black_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_WALL = register("mossy_black_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK))}
-
-    val SHINGLES = register("shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val WHITE_SHINGLES = register("white_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val ORANGE_SHINGLES = register("orange_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val MAGENTA_SHINGLES = register("magenta_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val LIGHT_BLUE_SHINGLES = register("light_blue_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val YELLOW_SHINGLES = register("yellow_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val LIME_SHINGLES = register("lime_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val PINK_SHINGLES = register("pink_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val GRAY_SHINGLES = register("gray_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val LIGHT_GRAY_SHINGLES = register("light_gray_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val CYAN_SHINGLES = register("cyan_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val PURPLE_SHINGLES = register("purple_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val BLUE_SHINGLES = register("blue_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val BROWN_SHINGLES = register("brown_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val GREEN_SHINGLES = register("green_shingles") { Block( BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val RED_SHINGLES = register("red_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val BLACK_SHINGLES = register("black_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS))}
-    val NETHER_BRICK_SHINGLES = register("nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS))}
-    val RED_NETHER_BRICK_SHINGLES = register("red_nether_brick_shingles") { Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS))}
     //endregion
 
     // region Clear Glass
