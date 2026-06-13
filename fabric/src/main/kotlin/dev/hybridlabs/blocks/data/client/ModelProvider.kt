@@ -307,6 +307,27 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.BLACK_QUARTZ_BLOCK.get())
             .generateFor(HybridBlocksFamilies.BLACK_QUARTZ_BLOCK)
 
+        setOf(
+            HybridBlocksBlocks.CHISELED_WHITE_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_ORANGE_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_MAGENTA_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_YELLOW_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_LIME_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_PINK_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_GRAY_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_CYAN_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_PURPLE_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_BLUE_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_BROWN_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_GREEN_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_RED_QUARTZ_BLOCK.get(),
+            HybridBlocksBlocks.CHISELED_BLACK_QUARTZ_BLOCK.get(),
+        ).forEach { block ->
+            generator.createTrivialBlock(block, TexturedModel.COLUMN)
+        }
+
         generator.family(HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ.get())
             .generateFor(HybridBlocksFamilies.SMOOTH_WHITE_QUARTZ)
         generator.family(HybridBlocksBlocks.SMOOTH_ORANGE_QUARTZ.get())

@@ -313,7 +313,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.WHITE_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.WHITE_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_WHITE_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -321,7 +320,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.ORANGE_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.ORANGE_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.ORANGE_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_ORANGE_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -329,7 +327,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MAGENTA_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.MAGENTA_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.MAGENTA_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_MAGENTA_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -337,7 +334,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -345,7 +341,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.YELLOW_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.YELLOW_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.YELLOW_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_YELLOW_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -353,7 +348,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.LIME_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.LIME_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.LIME_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_LIME_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -361,7 +355,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.PINK_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.PINK_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.PINK_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_PINK_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -369,7 +362,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.GRAY_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.GRAY_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.GRAY_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_GRAY_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -377,7 +369,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -385,7 +376,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CYAN_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.CYAN_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.CYAN_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_CYAN_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -393,7 +383,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.PURPLE_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.PURPLE_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.PURPLE_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_PURPLE_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -401,7 +390,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.BLUE_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.BLUE_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.BLUE_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_BLUE_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -409,7 +397,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.BROWN_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.BROWN_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.BROWN_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_BROWN_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -417,7 +404,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.GREEN_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.GREEN_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.GREEN_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_GREEN_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -425,7 +411,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.RED_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.RED_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.RED_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_RED_QUARTZ_BLOCK.get())
         .family
     }
 
@@ -433,7 +418,6 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.BLACK_QUARTZ_BLOCK.get())
         .stairs(HybridBlocksBlocks.BLACK_QUARTZ_STAIRS.get())
         .slab(HybridBlocksBlocks.BLACK_QUARTZ_SLAB.get())
-        .chiseled(HybridBlocksBlocks.CHISELED_BLACK_QUARTZ_BLOCK.get())
         .family
     }
 

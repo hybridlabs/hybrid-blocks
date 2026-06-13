@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "hybrid_blocks:block/chiseled_light_gray_quartz_block"
+    "end": "hybrid_blocks:block/chiseled_light_gray_quartz_block_top",
+    "side": "hybrid_blocks:block/chiseled_light_gray_quartz_block_side"
   }
 }
