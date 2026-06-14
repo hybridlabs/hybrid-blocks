@@ -507,13 +507,6 @@ object HybridBlocksBlocks {
     }
 
     // nether brick variants
-    val CRACKED_NETHER_BRICKS = register("cracked_nether_bricks") {
-        Block(
-            BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
-        )
-    }
-
     val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") {
         Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
             .mapColor(DyeColor.RED)

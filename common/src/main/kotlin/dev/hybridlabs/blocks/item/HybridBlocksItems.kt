@@ -1049,7 +1049,6 @@ object HybridBlocksItems {
     val LARGE_MIXED_NETHER_BRICK_SLAB = register("large_mixed_nether_brick_slab") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_NETHER_BRICK_SLAB.get(), Item.Properties()) }
     val LARGE_MIXED_NETHER_BRICK_WALL = register("large_mixed_nether_brick_wall") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_NETHER_BRICK_WALL.get(), Item.Properties()) }
 
-    val CRACKED_NETHER_BRICKS = register("cracked_nether_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_NETHER_BRICKS.get(), Item.Properties()) }
     val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS.get(), Item.Properties()) }
     val PINWHEEL_NETHER_BRICKS = register("pinwheel_nether_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS.get(), Item.Properties()) }
     val JACK_ON_JACK_NETHER_BRICKS = register("jack_on_jack_nether_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS.get(), Item.Properties()) }
