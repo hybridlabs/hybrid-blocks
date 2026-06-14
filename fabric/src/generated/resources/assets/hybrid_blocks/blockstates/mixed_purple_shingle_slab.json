@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hybrid_blocks:block/mixed_purple_shingle_slab"
+    },
+    "type=double": {
+      "model": "hybrid_blocks:block/mixed_purple_shingles"
+    },
+    "type=top": {
+      "model": "hybrid_blocks:block/mixed_purple_shingle_slab_top"
+    }
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "hybrid_blocks:block/jack_on_jack_nether_bricks"
-  }
-}

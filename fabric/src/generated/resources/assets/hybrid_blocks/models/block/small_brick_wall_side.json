@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "hybrid_blocks:block/small_bricks"
+  }
+}

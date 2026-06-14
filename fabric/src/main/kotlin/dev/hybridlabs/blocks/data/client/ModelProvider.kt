@@ -4,11 +4,9 @@ import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.HybridBlocksFamilies
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
-import net.minecraft.data.BlockFamilies
 import net.minecraft.data.models.BlockModelGenerators
 import net.minecraft.data.models.ItemModelGenerators
 import net.minecraft.data.models.model.TexturedModel
-import net.minecraft.world.level.block.Blocks
 
 /**
  * Generates all models.
@@ -82,191 +80,401 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.RED_QUARTZ_BRICKS.get(),
             HybridBlocksBlocks.BLACK_QUARTZ_BRICKS.get(),
 
-            HybridBlocksBlocks.LARGE_WHITE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_WHITE_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_WHITE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_WHITE_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_WHITE_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_WHITE_BRICKS.get(),
-            HybridBlocksBlocks.WHITE_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_ORANGE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_ORANGE_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_ORANGE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_ORANGE_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_ORANGE_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_ORANGE_BRICKS.get(),
-            HybridBlocksBlocks.ORANGE_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_MAGENTA_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_MAGENTA_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_MAGENTA_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_MAGENTA_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_MAGENTA_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_MAGENTA_BRICKS.get(),
-            HybridBlocksBlocks.MAGENTA_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_LIGHT_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_LIGHT_BLUE_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_LIGHT_BLUE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_LIGHT_BLUE_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_LIGHT_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_LIGHT_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.LIGHT_BLUE_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_YELLOW_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_YELLOW_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_YELLOW_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_YELLOW_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_YELLOW_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_YELLOW_BRICKS.get(),
-            HybridBlocksBlocks.YELLOW_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_LIME_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_LIME_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_LIME_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_LIME_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_LIME_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_LIME_BRICKS.get(),
-            HybridBlocksBlocks.LIME_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_PINK_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_PINK_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_PINK_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_PINK_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_PINK_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_PINK_BRICKS.get(),
-            HybridBlocksBlocks.PINK_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_GRAY_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_GRAY_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_GRAY_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.GRAY_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_LIGHT_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_LIGHT_GRAY_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_LIGHT_GRAY_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_LIGHT_GRAY_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_LIGHT_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_LIGHT_GRAY_BRICKS.get(),
-            HybridBlocksBlocks.LIGHT_GRAY_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_CYAN_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_CYAN_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_CYAN_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_CYAN_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_CYAN_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_CYAN_BRICKS.get(),
-            HybridBlocksBlocks.CYAN_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_PURPLE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_PURPLE_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_PURPLE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_PURPLE_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_PURPLE_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_PURPLE_BRICKS.get(),
-            HybridBlocksBlocks.PURPLE_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_BLUE_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_BLUE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_BLUE_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_BLUE_BRICKS.get(),
-            HybridBlocksBlocks.BLUE_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_BROWN_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_BROWN_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_BROWN_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_BROWN_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BROWN_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_BROWN_BRICKS.get(),
-            HybridBlocksBlocks.BROWN_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_GREEN_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_GREEN_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_GREEN_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_GREEN_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_GREEN_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_GREEN_BRICKS.get(),
-            HybridBlocksBlocks.GREEN_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_RED_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_RED_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_RED_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_RED_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_RED_BRICKS.get(),
-            HybridBlocksBlocks.RED_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_BLACK_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_BLACK_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_BLACK_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_BLACK_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BLACK_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_BLACK_BRICKS.get(),
-            HybridBlocksBlocks.BLACK_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BRICKS.get(),
-            HybridBlocksBlocks.MIXED_BRICKS.get(),
-            HybridBlocksBlocks.SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_NETHER_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_NETHER_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS.get(),
-            HybridBlocksBlocks.NETHER_BRICK_SHINGLES.get(),
 
-            HybridBlocksBlocks.LARGE_RED_NETHER_BRICKS.get(),
-            HybridBlocksBlocks.SMALL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS.get(),
-            HybridBlocksBlocks.RED_NETHER_BRICK_SHINGLES.get(),
         ).forEach { block ->
             generator.createTrivialCube(block)
         }
+        
+        generator.family(HybridBlocksBlocks.MIXED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.NETHER_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.NETHER_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_NETHER_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_NETHER_SHINGLES)
+        
+        generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_RED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_RED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_RED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_RED_NETHER_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.RED_NETHER_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.RED_NETHER_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_SHINGLES)
+
+        generator.family(HybridBlocksBlocks.MIXED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_BRICKS)
+        generator.family(HybridBlocksBlocks.SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_SHINGLES)
 
         generator.family(HybridBlocksBlocks.WHITE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_WHITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_WHITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_WHITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_WHITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_WHITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.WHITE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.WHITE_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_WHITE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_WHITE_SHINGLES)
+
         generator.family(HybridBlocksBlocks.ORANGE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_ORANGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_ORANGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_ORANGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_ORANGE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.ORANGE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.ORANGE_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_ORANGE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_ORANGE_SHINGLES)
+
         generator.family(HybridBlocksBlocks.MAGENTA_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_MAGENTA_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MAGENTA_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_MAGENTA_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MAGENTA_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_MAGENTA_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.MAGENTA_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MAGENTA_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_MAGENTA_SHINGLES)
+
         generator.family(HybridBlocksBlocks.LIGHT_BLUE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_LIGHT_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_LIGHT_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_LIGHT_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_LIGHT_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_LIGHT_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.LIGHT_BLUE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.LIGHT_BLUE_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIGHT_BLUE_SHINGLES)
+
         generator.family(HybridBlocksBlocks.YELLOW_BRICKS.get())
             .generateFor(HybridBlocksFamilies.YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_YELLOW_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_YELLOW_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_YELLOW_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.YELLOW_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.YELLOW_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_YELLOW_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_YELLOW_SHINGLES)
+
         generator.family(HybridBlocksBlocks.LIME_BRICKS.get())
             .generateFor(HybridBlocksFamilies.LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_LIME_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_LIME_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_LIME_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_LIME_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_LIME_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.LIME_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.LIME_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_LIME_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIME_SHINGLES)
+
         generator.family(HybridBlocksBlocks.PINK_BRICKS.get())
             .generateFor(HybridBlocksFamilies.PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_PINK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_PINK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_PINK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_PINK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_PINK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.PINK_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.PINK_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_PINK_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_PINK_SHINGLES)
+
         generator.family(HybridBlocksBlocks.GRAY_BRICKS.get())
             .generateFor(HybridBlocksFamilies.GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.GRAY_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.GRAY_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_GRAY_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_GRAY_SHINGLES)
+
         generator.family(HybridBlocksBlocks.LIGHT_GRAY_BRICKS.get())
             .generateFor(HybridBlocksFamilies.LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_LIGHT_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_LIGHT_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_LIGHT_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_LIGHT_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_LIGHT_GRAY_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.LIGHT_GRAY_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.LIGHT_GRAY_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_LIGHT_GRAY_SHINGLES)
+
         generator.family(HybridBlocksBlocks.CYAN_BRICKS.get())
             .generateFor(HybridBlocksFamilies.CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_CYAN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_CYAN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_CYAN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_CYAN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_CYAN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.CYAN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.CYAN_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_CYAN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_CYAN_SHINGLES)
+
         generator.family(HybridBlocksBlocks.PURPLE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_PURPLE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_PURPLE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_PURPLE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_PURPLE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_PURPLE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.PURPLE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.PURPLE_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_PURPLE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_PURPLE_SHINGLES)
+
         generator.family(HybridBlocksBlocks.BLUE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_BLUE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.BLUE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.BLUE_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_BLUE_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BLUE_SHINGLES)
+
         generator.family(HybridBlocksBlocks.BROWN_BRICKS.get())
             .generateFor(HybridBlocksFamilies.BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_BROWN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_BROWN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_BROWN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_BROWN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_BROWN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.BROWN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.BROWN_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_BROWN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BROWN_SHINGLES)
+
         generator.family(HybridBlocksBlocks.GREEN_BRICKS.get())
             .generateFor(HybridBlocksFamilies.GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_GREEN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_GREEN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_GREEN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_GREEN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_GREEN_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.GREEN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.GREEN_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_GREEN_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_GREEN_SHINGLES)
+
         generator.family(HybridBlocksBlocks.RED_BRICKS.get())
             .generateFor(HybridBlocksFamilies.RED_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_RED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_RED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_RED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_RED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_RED_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.RED_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.RED_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_RED_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_RED_SHINGLES)
+
         generator.family(HybridBlocksBlocks.BLACK_BRICKS.get())
             .generateFor(HybridBlocksFamilies.BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.MIXED_BLACK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_BLACK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_BLACK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_BLACK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_BLACK_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_BLACK_BRICKS)
+        generator.family(HybridBlocksBlocks.BLACK_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.BLACK_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_BLACK_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_BLACK_SHINGLES)
 
         generator.family(HybridBlocksBlocks.MOSSY_WHITE_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MOSSY_WHITE_BRICKS)
@@ -306,11 +514,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
         generator.family(HybridBlocksBlocks.CRACKED_BRICKS.get())
             .generateFor(HybridBlocksFamilies.CRACKED_BRICKS)
-
-        generator.family(HybridBlocksBlocks.MIXED_NETHER_BRICKS.get())
-            .generateFor(HybridBlocksFamilies.MIXED_NETHER_BRICKS)
-        generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS.get())
-            .generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_BRICKS)
 
         generator.family(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get())
             .generateFor(HybridBlocksFamilies.WHITE_QUARTZ_BLOCK)

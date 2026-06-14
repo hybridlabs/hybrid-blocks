@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hybrid_blocks:block/mixed_brown_bricks",
+    "side": "hybrid_blocks:block/mixed_brown_bricks",
+    "top": "hybrid_blocks:block/mixed_brown_bricks"
+  }
+}

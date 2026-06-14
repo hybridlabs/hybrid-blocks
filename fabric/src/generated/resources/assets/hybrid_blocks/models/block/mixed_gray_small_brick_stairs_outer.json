@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "hybrid_blocks:block/small_mixed_gray_bricks",
+    "side": "hybrid_blocks:block/small_mixed_gray_bricks",
+    "top": "hybrid_blocks:block/small_mixed_gray_bricks"
+  }
+}

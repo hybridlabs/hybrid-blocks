@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "hybrid_blocks:block/large_yellow_bricks"
+  }
+}
