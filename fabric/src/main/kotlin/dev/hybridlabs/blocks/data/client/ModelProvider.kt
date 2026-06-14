@@ -148,10 +148,12 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.PINWHEEL_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BRICKS.get(),
 
+            HybridBlocksBlocks.CRACKED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS.get(),
 
+            HybridBlocksBlocks.CRACKED_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS.get(),
