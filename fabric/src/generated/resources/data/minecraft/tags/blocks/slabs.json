@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "hybrid_blocks:polished_calcite_slab",
+    "hybrid_blocks:polished_calcite_brick_slab",
+    "hybrid_blocks:polished_calcite_tile_slab",
     "hybrid_blocks:white_quartz_slab",
     "hybrid_blocks:smooth_white_quartz_slab",
     "hybrid_blocks:white_quartz_tile_slab",

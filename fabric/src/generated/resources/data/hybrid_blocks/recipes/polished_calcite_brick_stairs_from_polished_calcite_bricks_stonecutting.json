@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:polished_calcite_bricks"
+  },
+  "result": "hybrid_blocks:polished_calcite_brick_stairs"
+}

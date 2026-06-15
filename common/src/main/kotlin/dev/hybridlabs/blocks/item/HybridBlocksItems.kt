@@ -12,6 +12,16 @@ import java.util.function.Supplier
  */
 @Suppress("unused")
 object HybridBlocksItems {
+    //#region Quartz
+    val POLISHED_CALCITE = register("polished_calcite") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE.get(), Item.Properties()) }
+    val POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_STAIRS.get(), Item.Properties()) }
+    val POLISHED_CALCITE_SLAB = register("polished_calcite_slab") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_SLAB.get(), Item.Properties()) }
+    val POLISHED_CALCITE_BRICKS = register("polished_calcite_bricks") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_BRICKS.get(), Item.Properties()) }
+    val POLISHED_CALCITE_BRICK_STAIRS = register("polished_calcite_brick_stairs") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_BRICK_STAIRS.get(), Item.Properties()) }
+    val POLISHED_CALCITE_BRICK_SLAB = register("polished_calcite_brick_slab") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_BRICK_SLAB.get(), Item.Properties()) }
+    val POLISHED_CALCITE_TILES = register("polished_calcite_tiles") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_TILES.get(), Item.Properties()) }
+    val POLISHED_CALCITE_TILE_STAIRS = register("polished_calcite_tile_stairs") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_TILE_STAIRS.get(), Item.Properties()) }
+    val POLISHED_CALCITE_TILE_SLAB = register("polished_calcite_tile_slab") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_TILE_SLAB.get(), Item.Properties()) }
 
     //#region Quartz
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get(), Item.Properties()) }

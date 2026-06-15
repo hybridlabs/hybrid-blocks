@@ -165,6 +165,13 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         ).forEach { block ->
             generator.createTrivialCube(block)
         }
+
+        generator.family(HybridBlocksBlocks.POLISHED_CALCITE.get())
+            .generateFor(HybridBlocksFamilies.POLISHED_CALCITE)
+        generator.family(HybridBlocksBlocks.POLISHED_CALCITE_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.POLISHED_CALCITE_BRICKS)
+        generator.family(HybridBlocksBlocks.POLISHED_CALCITE_TILES.get())
+            .generateFor(HybridBlocksFamilies.POLISHED_CALCITE_TILES)
         
         generator.family(HybridBlocksBlocks.MIXED_NETHER_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MIXED_NETHER_BRICKS)

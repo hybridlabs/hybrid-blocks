@@ -12,6 +12,15 @@ import java.util.function.Supplier
  */
 object HybridBlocksBlocks {
     
+    val POLISHED_CALCITE = register("polished_calcite") { Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs") { HybridBlocksStairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE)) }
+    val POLISHED_CALCITE_SLAB = register("polished_calcite_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE)) }
+    val POLISHED_CALCITE_BRICKS = register("polished_calcite_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_BRICK_STAIRS = register("polished_calcite_brick_stairs") { HybridBlocksStairBlock(Blocks.CALCITE.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_BRICK_SLAB = register("polished_calcite_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_TILES = register("polished_calcite_tiles") { Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_TILE_STAIRS = register("polished_calcite_tile_stairs") { HybridBlocksStairBlock(Blocks.CALCITE.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
+    val POLISHED_CALCITE_TILE_SLAB = register("polished_calcite_tile_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
     
     // region Quartz
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}

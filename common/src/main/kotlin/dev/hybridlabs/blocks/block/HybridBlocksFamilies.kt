@@ -4,6 +4,27 @@ import net.minecraft.data.BlockFamily
 
 object HybridBlocksFamilies {
 
+    val POLISHED_CALCITE: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.POLISHED_CALCITE.get())
+            .stairs(HybridBlocksBlocks.POLISHED_CALCITE_STAIRS.get())
+            .slab(HybridBlocksBlocks.POLISHED_CALCITE_SLAB.get())
+            .family
+    }
+
+    val POLISHED_CALCITE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.POLISHED_CALCITE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.POLISHED_CALCITE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.POLISHED_CALCITE_BRICK_SLAB.get())
+            .family
+    }
+
+    val POLISHED_CALCITE_TILES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.POLISHED_CALCITE_TILES.get())
+            .stairs(HybridBlocksBlocks.POLISHED_CALCITE_TILE_STAIRS.get())
+            .slab(HybridBlocksBlocks.POLISHED_CALCITE_TILE_SLAB.get())
+            .family
+    }
+
     //#region Nether Bricks Families
     val MIXED_NETHER_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_NETHER_BRICKS.get())
