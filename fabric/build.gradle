@@ -58,9 +58,14 @@ fabricApi {
 
 
 loom {
-    if (project(":common").file("src/main/resources/${mod_id}.accesswidener").exists()) {
-        accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
+
+    var accessWidenerFile = file("src/main/resources/${mod_id}.accesswidener")
+    if (accessWidenerFile.exists()) {
+        accessWidenerPath.set(accessWidenerFile)
+    } else {
+        println "No access widener exists!"
     }
+
     mixin {
         defaultRefmapName.set("${mod_id}.refmap.json")
     }

@@ -199,6 +199,22 @@
     "hybrid_blocks:mossy_brown_brick_stairs",
     "hybrid_blocks:mossy_green_brick_stairs",
     "hybrid_blocks:mossy_red_brick_stairs",
-    "hybrid_blocks:mossy_black_brick_stairs"
+    "hybrid_blocks:mossy_black_brick_stairs",
+    "hybrid_blocks:white_wool_stairs",
+    "hybrid_blocks:light_gray_wool_stairs",
+    "hybrid_blocks:gray_wool_stairs",
+    "hybrid_blocks:black_wool_stairs",
+    "hybrid_blocks:red_wool_stairs",
+    "hybrid_blocks:orange_wool_stairs",
+    "hybrid_blocks:yellow_wool_stairs",
+    "hybrid_blocks:purple_wool_stairs",
+    "hybrid_blocks:magenta_wool_stairs",
+    "hybrid_blocks:pink_wool_stairs",
+    "hybrid_blocks:blue_wool_stairs",
+    "hybrid_blocks:light_blue_wool_stairs",
+    "hybrid_blocks:cyan_wool_stairs",
+    "hybrid_blocks:green_wool_stairs",
+    "hybrid_blocks:lime_wool_stairs",
+    "hybrid_blocks:brown_wool_stairs"
   ]
 }

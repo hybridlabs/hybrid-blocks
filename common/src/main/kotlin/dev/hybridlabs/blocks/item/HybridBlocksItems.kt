@@ -13,6 +13,7 @@ import java.util.function.Supplier
 @Suppress("unused")
 object HybridBlocksItems {
 
+    //#region Quartz
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val WHITE_QUARTZ_STAIRS = register("white_quartz_stairs") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_STAIRS.get(), Item.Properties()) }
     val WHITE_QUARTZ_SLAB = register("white_quartz_slab") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_SLAB.get(), Item.Properties()) }
@@ -172,7 +173,8 @@ object HybridBlocksItems {
     val SMOOTH_BLACK_QUARTZ = register("smooth_black_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_BLACK_QUARTZ_STAIRS = register("smooth_black_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ_STAIRS.get(), Item.Properties()) }
     val SMOOTH_BLACK_QUARTZ_SLAB = register("smooth_black_quartz_slab") { BlockItem(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ_SLAB.get(), Item.Properties()) }
-    
+    //#endregion
+
     //#region Bricks
     //  normal bricks
     val SMALL_BRICKS = register("small_bricks") { BlockItem(HybridBlocksBlocks.SMALL_BRICKS.get(), Item.Properties()) }
@@ -219,6 +221,8 @@ object HybridBlocksItems {
     val MIXED_SHINGLE_STAIRS = register("mixed_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_SHINGLE_SLAB = register("mixed_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_SHINGLE_WALL = register("mixed_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val BRICK_CHIMNEY = register("brick_chimney") { BlockItem(HybridBlocksBlocks.BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region White Bricks
@@ -258,7 +262,7 @@ object HybridBlocksItems {
     val BASKETWEAVE_WHITE_BRICKS = register("basketweave_white_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_WHITE_BRICKS.get(), Item.Properties()) }
     val PINWHEEL_WHITE_BRICKS = register("pinwheel_white_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_WHITE_BRICKS.get(), Item.Properties()) }
     val JACK_ON_JACK_WHITE_BRICKS = register("jack_on_jack_white_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_WHITE_BRICKS.get(), Item.Properties()) }
-    
+
     //  white shingles
     val WHITE_SHINGLES = register("white_shingles") { BlockItem(HybridBlocksBlocks.WHITE_SHINGLES.get(), Item.Properties()) }
     val WHITE_SHINGLE_STAIRS = register("white_shingle_stairs") { BlockItem(HybridBlocksBlocks.WHITE_SHINGLE_STAIRS.get(), Item.Properties()) }
@@ -269,6 +273,8 @@ object HybridBlocksItems {
     val MIXED_WHITE_SHINGLE_STAIRS = register("mixed_white_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_WHITE_SHINGLE_SLAB = register("mixed_white_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_WHITE_SHINGLE_WALL = register("mixed_white_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val WHITE_BRICK_CHIMNEY = register("white_brick_chimney") { BlockItem(HybridBlocksBlocks.WHITE_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
     
     //#region Orange Bricks
@@ -319,6 +325,8 @@ object HybridBlocksItems {
     val MIXED_ORANGE_SHINGLE_STAIRS = register("mixed_orange_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_ORANGE_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_ORANGE_SHINGLE_SLAB = register("mixed_orange_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_ORANGE_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_ORANGE_SHINGLE_WALL = register("mixed_orange_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_ORANGE_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val ORANGE_BRICK_CHIMNEY = register("orange_brick_chimney") { BlockItem(HybridBlocksBlocks.ORANGE_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
     
     //#region Magenta Bricks
@@ -369,6 +377,8 @@ object HybridBlocksItems {
     val MIXED_MAGENTA_SHINGLE_STAIRS = register("mixed_magenta_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_MAGENTA_SHINGLE_SLAB = register("mixed_magenta_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_MAGENTA_SHINGLE_WALL = register("mixed_magenta_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val MAGENTA_BRICK_CHIMNEY = register("magenta_brick_chimney") { BlockItem(HybridBlocksBlocks.MAGENTA_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Light_Blue Bricks
@@ -419,6 +429,8 @@ object HybridBlocksItems {
     val MIXED_LIGHT_BLUE_SHINGLE_STAIRS = register("mixed_light_blue_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_LIGHT_BLUE_SHINGLE_SLAB = register("mixed_light_blue_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_LIGHT_BLUE_SHINGLE_WALL = register("mixed_light_blue_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val LIGHT_BLUE_BRICK_CHIMNEY = register("light_blue_brick_chimney") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Yellow Bricks
@@ -469,6 +481,8 @@ object HybridBlocksItems {
     val MIXED_YELLOW_SHINGLE_STAIRS = register("mixed_yellow_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_YELLOW_SHINGLE_SLAB = register("mixed_yellow_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_YELLOW_SHINGLE_WALL = register("mixed_yellow_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val YELLOW_BRICK_CHIMNEY = register("yellow_brick_chimney") { BlockItem(HybridBlocksBlocks.YELLOW_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Lime Bricks
@@ -519,6 +533,8 @@ object HybridBlocksItems {
     val MIXED_LIME_SHINGLE_STAIRS = register("mixed_lime_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_LIME_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_LIME_SHINGLE_SLAB = register("mixed_lime_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_LIME_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_LIME_SHINGLE_WALL = register("mixed_lime_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_LIME_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val LIME_BRICK_CHIMNEY = register("lime_brick_chimney") { BlockItem(HybridBlocksBlocks.LIME_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Pink Bricks
@@ -569,6 +585,8 @@ object HybridBlocksItems {
     val MIXED_PINK_SHINGLE_STAIRS = register("mixed_pink_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_PINK_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_PINK_SHINGLE_SLAB = register("mixed_pink_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_PINK_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_PINK_SHINGLE_WALL = register("mixed_pink_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_PINK_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val PINK_BRICK_CHIMNEY = register("pink_brick_chimney") { BlockItem(HybridBlocksBlocks.PINK_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Gray Bricks
@@ -619,6 +637,8 @@ object HybridBlocksItems {
     val MIXED_GRAY_SHINGLE_STAIRS = register("mixed_gray_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_GRAY_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_GRAY_SHINGLE_SLAB = register("mixed_gray_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_GRAY_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_GRAY_SHINGLE_WALL = register("mixed_gray_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_GRAY_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val GRAY_BRICK_CHIMNEY = register("gray_brick_chimney") { BlockItem(HybridBlocksBlocks.GRAY_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Light_Gray Bricks
@@ -669,6 +689,8 @@ object HybridBlocksItems {
     val MIXED_LIGHT_GRAY_SHINGLE_STAIRS = register("mixed_light_gray_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_LIGHT_GRAY_SHINGLE_SLAB = register("mixed_light_gray_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_LIGHT_GRAY_SHINGLE_WALL = register("mixed_light_gray_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val LIGHT_GRAY_BRICK_CHIMNEY = register("light_gray_brick_chimney") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Cyan Bricks
@@ -719,6 +741,8 @@ object HybridBlocksItems {
     val MIXED_CYAN_SHINGLE_STAIRS = register("mixed_cyan_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_CYAN_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_CYAN_SHINGLE_SLAB = register("mixed_cyan_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_CYAN_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_CYAN_SHINGLE_WALL = register("mixed_cyan_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_CYAN_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val CYAN_BRICK_CHIMNEY = register("cyan_brick_chimney") { BlockItem(HybridBlocksBlocks.CYAN_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Purple Bricks
@@ -769,6 +793,8 @@ object HybridBlocksItems {
     val MIXED_PURPLE_SHINGLE_STAIRS = register("mixed_purple_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_PURPLE_SHINGLE_SLAB = register("mixed_purple_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_PURPLE_SHINGLE_WALL = register("mixed_purple_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val PURPLE_BRICK_CHIMNEY = register("purple_brick_chimney") { BlockItem(HybridBlocksBlocks.PURPLE_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Blue Bricks
@@ -819,6 +845,8 @@ object HybridBlocksItems {
     val MIXED_BLUE_SHINGLE_STAIRS = register("mixed_blue_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_BLUE_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_BLUE_SHINGLE_SLAB = register("mixed_blue_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_BLUE_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_BLUE_SHINGLE_WALL = register("mixed_blue_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_BLUE_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val BLUE_BRICK_CHIMNEY = register("blue_brick_chimney") { BlockItem(HybridBlocksBlocks.BLUE_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Brown Bricks
@@ -869,6 +897,8 @@ object HybridBlocksItems {
     val MIXED_BROWN_SHINGLE_STAIRS = register("mixed_brown_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_BROWN_SHINGLE_SLAB = register("mixed_brown_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_BROWN_SHINGLE_WALL = register("mixed_brown_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val BROWN_BRICK_CHIMNEY = register("brown_brick_chimney") { BlockItem(HybridBlocksBlocks.BROWN_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Green Bricks
@@ -919,6 +949,8 @@ object HybridBlocksItems {
     val MIXED_GREEN_SHINGLE_STAIRS = register("mixed_green_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_GREEN_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_GREEN_SHINGLE_SLAB = register("mixed_green_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_GREEN_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_GREEN_SHINGLE_WALL = register("mixed_green_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_GREEN_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val GREEN_BRICK_CHIMNEY = register("green_brick_chimney") { BlockItem(HybridBlocksBlocks.GREEN_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Red Bricks
@@ -969,6 +1001,8 @@ object HybridBlocksItems {
     val MIXED_RED_SHINGLE_STAIRS = register("mixed_red_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_RED_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_RED_SHINGLE_SLAB = register("mixed_red_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_RED_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_RED_SHINGLE_WALL = register("mixed_red_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_RED_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val RED_BRICK_CHIMNEY = register("red_brick_chimney") { BlockItem(HybridBlocksBlocks.RED_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Black Bricks
@@ -1019,6 +1053,8 @@ object HybridBlocksItems {
     val MIXED_BLACK_SHINGLE_STAIRS = register("mixed_black_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_BLACK_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_BLACK_SHINGLE_SLAB = register("mixed_black_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_BLACK_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_BLACK_SHINGLE_WALL = register("mixed_black_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_BLACK_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val BLACK_BRICK_CHIMNEY = register("black_brick_chimney") { BlockItem(HybridBlocksBlocks.BLACK_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Nether Bricks
@@ -1063,6 +1099,8 @@ object HybridBlocksItems {
     val MIXED_NETHER_SHINGLE_STAIRS = register("mixed_nether_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_NETHER_SHINGLE_SLAB = register("mixed_nether_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_NETHER_SHINGLE_WALL = register("mixed_nether_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val NETHER_BRICK_CHIMNEY = register("nether_brick_chimney") { BlockItem(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
     //#region Red_Nether Bricks
@@ -1108,8 +1146,11 @@ object HybridBlocksItems {
     val MIXED_RED_NETHER_SHINGLE_STAIRS = register("mixed_red_nether_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLE_STAIRS.get(), Item.Properties()) }
     val MIXED_RED_NETHER_SHINGLE_SLAB = register("mixed_red_nether_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLE_SLAB.get(), Item.Properties()) }
     val MIXED_RED_NETHER_SHINGLE_WALL = register("mixed_red_nether_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val RED_NETHER_BRICK_CHIMNEY = register("red_nether_brick_chimney") { BlockItem(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), Item.Properties()) }
     //#endregion
 
+    //#region Mossy Bricks
     val MOSSY_WHITE_BRICKS = register("mossy_white_bricks") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICKS.get(), Item.Properties()) }
     val MOSSY_WHITE_BRICK_STAIRS = register("mossy_white_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICK_STAIRS.get(), Item.Properties()) }
     val MOSSY_WHITE_BRICK_SLAB = register("mossy_white_brick_slab") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICK_SLAB.get(), Item.Properties()) }
@@ -1194,9 +1235,11 @@ object HybridBlocksItems {
     val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_STAIRS.get(), Item.Properties()) }
     val MOSSY_BRICK_SLAB = register("mossy_brick_slab") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_SLAB.get(), Item.Properties()) }
     val MOSSY_BRICK_WALL = register("mossy_brick_wall") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_WALL.get(), Item.Properties()) }
+    //#endregion
 
     val DORIC_COLUMN = register("doric_column") { BlockItem(HybridBlocksBlocks.DORIC_COLUMN.get(), Item.Properties()) }
 
+    //#region Clear Glass
     val CLEAR_GLASS = register("clear_glass") { BlockItem(HybridBlocksBlocks.CLEAR_GLASS.get(), Item.Properties()) }
     val WHITE_STAINED_CLEAR_GLASS = register("white_stained_clear_glass") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_CLEAR_GLASS.get(), Item.Properties()) }
     val ORANGE_STAINED_CLEAR_GLASS = register("orange_stained_clear_glass") { BlockItem(HybridBlocksBlocks.ORANGE_STAINED_CLEAR_GLASS.get(), Item.Properties()) }
@@ -1232,6 +1275,7 @@ object HybridBlocksItems {
     val GREEN_STAINED_CLEAR_GLASS_PANE = register("green_stained_clear_glass_pane") { BlockItem(HybridBlocksBlocks.GREEN_STAINED_CLEAR_GLASS_PANE.get(), Item.Properties()) }
     val RED_STAINED_CLEAR_GLASS_PANE = register("red_stained_clear_glass_pane") { BlockItem(HybridBlocksBlocks.RED_STAINED_CLEAR_GLASS_PANE.get(), Item.Properties()) }
     val BLACK_STAINED_CLEAR_GLASS_PANE: RegistryObject<Item> = register("black_stained_clear_glass_pane") { BlockItem(HybridBlocksBlocks.BLACK_STAINED_CLEAR_GLASS_PANE.get(), Item.Properties()) }
+    //#endregion
 
     private fun <T : Item> register(id: String, item: Supplier<T>): RegistryObject<T> {
         return HybridBlocksCommon.ITEMS.register(id, item)

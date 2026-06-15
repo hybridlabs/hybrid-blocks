@@ -177,6 +177,8 @@ object HybridBlocksBlocks {
 
     // endregion
 
+    //#region All Bricks
+
     //#region Bricks
     //  large bricks
     val LARGE_BRICKS = register("large_bricks") {
@@ -441,6 +443,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.RED)
         )
     }
+
+    val BRICK_CHIMNEY = register("brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
     //#endregion
 
     //#region Nether Bricks
@@ -675,6 +686,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.RED)
+        )
+    }
+
+    val NETHER_BRICK_CHIMNEY = register("nether_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
         )
     }
     //#endregion
@@ -918,6 +938,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_NETHER_BRICK_CHIMNEY = register("red_nether_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.RED_NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
         )
     }
     //#endregion
@@ -1193,6 +1222,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.WHITE)
         )
     }
+
+    val WHITE_BRICK_CHIMNEY = register("white_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.WHITE)
+        )
+    }
     //#endregion
 
     //#region Orange Bricks
@@ -1464,6 +1502,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_BRICK_CHIMNEY = register("orange_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.ORANGE)
         )
     }
     //#endregion
@@ -1739,6 +1786,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.MAGENTA)
         )
     }
+
+    val MAGENTA_BRICK_CHIMNEY = register("magenta_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.MAGENTA)
+        )
+    }
     //#endregion
     
     //#region Light Blue Bricks
@@ -2010,6 +2066,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val LIGHT_BLUE_BRICK_CHIMNEY = register("light_blue_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIGHT_BLUE)
         )
     }
     //#endregion
@@ -2285,6 +2350,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.YELLOW)
         )
     }
+
+    val YELLOW_BRICK_CHIMNEY = register("yellow_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
     //#endregion
 
     //#region Lime Bricks
@@ -2556,6 +2630,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.LIME)
+        )
+    }
+
+    val LIME_BRICK_CHIMNEY = register("lime_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIME)
         )
     }
     //#endregion
@@ -2831,6 +2914,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.PINK)
         )
     }
+
+    val PINK_BRICK_CHIMNEY = register("pink_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.PINK)
+        )
+    }
     //#endregion
 
     //#region Gray Bricks
@@ -3102,6 +3194,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val GRAY_BRICK_CHIMNEY = register("gray_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.GRAY)
         )
     }
     //#endregion
@@ -3377,6 +3478,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.LIGHT_GRAY)
         )
     }
+
+    val LIGHT_GRAY_BRICK_CHIMNEY = register("light_gray_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
     //#endregion
 
     //#region Cyan Bricks
@@ -3648,6 +3758,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val CYAN_BRICK_CHIMNEY = register("cyan_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.CYAN)
         )
     }
     //#endregion
@@ -3923,6 +4042,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.PURPLE)
         )
     }
+
+    val PURPLE_BRICK_CHIMNEY = register("purple_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.PURPLE)
+        )
+    }
     //#endregion
 
     //#region Blue Bricks
@@ -4194,6 +4322,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val BLUE_BRICK_CHIMNEY = register("blue_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.BLUE)
         )
     }
     //#endregion
@@ -4469,6 +4606,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.BROWN)
         )
     }
+
+    val BROWN_BRICK_CHIMNEY = register("brown_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
     //#endregion
 
     //#region Green Bricks
@@ -4740,6 +4886,15 @@ object HybridBlocksBlocks {
         WallBlock(BlockBehaviour.Properties
             .copy(Blocks.BRICK_WALL)
             .mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val GREEN_BRICK_CHIMNEY = register("green_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.GREEN)
         )
     }
     //#endregion
@@ -5015,6 +5170,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.RED)
         )
     }
+
+    val RED_BRICK_CHIMNEY = register("red_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
     //#endregion
 
     //#region Black Bricks
@@ -5288,6 +5452,15 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.BLACK)
         )
     }
+
+    val BLACK_BRICK_CHIMNEY = register("black_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.BRICKS)
+                .mapColor(DyeColor.BLACK)
+        )
+    }
     //#endregion
 
     val MOSSY_BRICKS = register("mossy_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
@@ -5374,7 +5547,8 @@ object HybridBlocksBlocks {
     val MOSSY_BLACK_BRICK_STAIRS = register("mossy_black_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_SLAB = register("mossy_black_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_WALL = register("mossy_black_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK))}
-    //endregion
+
+    //#endregion
 
     // region Clear Glass
     val CLEAR_GLASS = register("clear_glass") { GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS))}
@@ -5414,6 +5588,236 @@ object HybridBlocksBlocks {
     val BLACK_STAINED_CLEAR_GLASS_PANE = register("black_stained_clear_glass_pane") { StainedGlassPaneBlock(DyeColor.BLACK, BlockBehaviour.Properties.copy(Blocks.BLACK_STAINED_GLASS_PANE))}
 
     // endregion
+
+    //#region Wool Stairs & Slabs
+
+    val WHITE_WOOL_STAIRS = register("white_wool_stairs") { 
+        HybridBlocksStairBlock(Blocks.WHITE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.WHITE_WOOL)
+                .mapColor(DyeColor.WHITE)
+        )
+    }
+    val WHITE_WOOL_SLAB = register("white_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.WHITE_WOOL)
+            .mapColor(DyeColor.WHITE)
+        )
+    }
+    
+    val LIGHT_GRAY_WOOL_STAIRS = register("light_gray_wool_stairs") { 
+        HybridBlocksStairBlock(Blocks.LIGHT_GRAY_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.LIGHT_GRAY_WOOL)
+                .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+    val LIGHT_GRAY_WOOL_SLAB = register("light_gray_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.LIGHT_GRAY_WOOL)
+            .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+    
+    val GRAY_WOOL_STAIRS = register("gray_wool_stairs") { 
+        HybridBlocksStairBlock(Blocks.GRAY_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.GRAY_WOOL)
+                .mapColor(DyeColor.GRAY)
+        )
+    }
+    val GRAY_WOOL_SLAB = register("gray_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.GRAY_WOOL)
+            .mapColor(DyeColor.GRAY)
+        )
+    }
+    
+    val BLACK_WOOL_STAIRS = register("black_wool_stairs") { 
+        HybridBlocksStairBlock(Blocks.BLACK_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.BLACK_WOOL)
+                .mapColor(DyeColor.BLACK)
+        )
+    }
+    val BLACK_WOOL_SLAB = register("black_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.BLACK_WOOL)
+            .mapColor(DyeColor.BLACK)
+        )
+    }
+    
+    val RED_WOOL_STAIRS = register("red_wool_stairs") { 
+        HybridBlocksStairBlock(Blocks.RED_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.RED_WOOL)
+                .mapColor(DyeColor.RED)
+        )
+    }
+    val RED_WOOL_SLAB = register("red_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.RED_WOOL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val ORANGE_WOOL_STAIRS = register("orange_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.ORANGE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.ORANGE_WOOL)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+    val ORANGE_WOOL_SLAB = register("orange_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties
+                .copy(Blocks.ORANGE_WOOL)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val YELLOW_WOOL_STAIRS = register("yellow_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.YELLOW_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                    .copy(Blocks.YELLOW_WOOL)
+                    .mapColor(DyeColor.YELLOW)
+        )
+    }
+    
+    val YELLOW_WOOL_SLAB = register("yellow_wool_slab") { 
+        SlabBlock(BlockBehaviour.Properties
+                .copy(Blocks.YELLOW_WOOL)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val PURPLE_WOOL_STAIRS = register("purple_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.PURPLE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.PURPLE_WOOL)
+                .mapColor(DyeColor.PURPLE)
+        )
+    }
+    val PURPLE_WOOL_SLAB = register("purple_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.PURPLE_WOOL)
+            .mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val MAGENTA_WOOL_STAIRS = register("magenta_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.MAGENTA_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MAGENTA_WOOL)
+                .mapColor(DyeColor.MAGENTA)
+        )
+    }
+    val MAGENTA_WOOL_SLAB = register("magenta_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MAGENTA_WOOL)
+            .mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val PINK_WOOL_STAIRS = register("pink_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.PINK_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.PINK_WOOL)
+                .mapColor(DyeColor.PINK)
+        )
+    }
+    val PINK_WOOL_SLAB = register("pink_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.PINK_WOOL)
+            .mapColor(DyeColor.PINK)
+        )
+    }
+
+    val BLUE_WOOL_STAIRS = register("blue_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.BLUE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.BLUE_WOOL)
+                .mapColor(DyeColor.BLUE)
+        )
+    }
+    val BLUE_WOOL_SLAB = register("blue_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.BLUE_WOOL)
+            .mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val LIGHT_BLUE_WOOL_STAIRS = register("light_blue_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.LIGHT_BLUE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.LIGHT_BLUE_WOOL)
+                .mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+    val LIGHT_BLUE_WOOL_SLAB = register("light_blue_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.LIGHT_BLUE_WOOL)
+            .mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val CYAN_WOOL_STAIRS = register("cyan_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.CYAN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.CYAN_WOOL)
+                .mapColor(DyeColor.CYAN)
+        )
+    }
+    val CYAN_WOOL_SLAB = register("cyan_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.CYAN_WOOL)
+            .mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val GREEN_WOOL_STAIRS = register("green_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.GREEN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.GREEN_WOOL)
+                .mapColor(DyeColor.GREEN)
+        )
+    }
+    val GREEN_WOOL_SLAB = register("green_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.GREEN_WOOL)
+            .mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val LIME_WOOL_STAIRS = register("lime_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.LIME_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.LIME_WOOL)
+                .mapColor(DyeColor.LIME)
+        )
+    }
+    val LIME_WOOL_SLAB = register("lime_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.LIME_WOOL)
+            .mapColor(DyeColor.LIME)
+        )
+    }
+
+    val BROWN_WOOL_STAIRS = register("brown_wool_stairs") {
+        HybridBlocksStairBlock(Blocks.BROWN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.BROWN_WOOL)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+    val BROWN_WOOL_SLAB = register("brown_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.BROWN_WOOL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //#endregion
 
     private fun register(id: String, block: Supplier<Block>): RegistryObject<Block> {
         return HybridBlocksCommon.BLOCKS.register(id, block)

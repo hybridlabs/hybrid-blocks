@@ -2,11 +2,24 @@ package dev.hybridlabs.blocks.data.client
 
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.HybridBlocksFamilies
+import dev.hybridlabs.client.HBModelTemplates
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
+import net.minecraft.core.Direction
 import net.minecraft.data.models.BlockModelGenerators
 import net.minecraft.data.models.ItemModelGenerators
+import net.minecraft.data.models.blockstates.BlockStateGenerator
+import net.minecraft.data.models.blockstates.MultiVariantGenerator
+import net.minecraft.data.models.blockstates.PropertyDispatch
+import net.minecraft.data.models.blockstates.Variant
+import net.minecraft.data.models.blockstates.VariantProperties
+import net.minecraft.data.models.model.ModelTemplate
+import net.minecraft.data.models.model.TextureMapping
+import net.minecraft.data.models.model.TextureSlot
 import net.minecraft.data.models.model.TexturedModel
+import net.minecraft.resources.ResourceLocation
+import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.state.properties.BlockStateProperties
 
 /**
  * Generates all models.
@@ -602,8 +615,61 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             .generateFor(HybridBlocksFamilies.SMOOTH_RED_QUARTZ)
         generator.family(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ.get())
             .generateFor(HybridBlocksFamilies.SMOOTH_BLACK_QUARTZ)
+
+        generator.create(HybridBlocksBlocks.WHITE_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.LIGHT_GRAY_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.GRAY_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.BLACK_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+
+        generator.create(HybridBlocksBlocks.BROWN_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.RED_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.ORANGE_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.YELLOW_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+
+        generator.create(HybridBlocksBlocks.LIME_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.GREEN_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.CYAN_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.LIGHT_BLUE_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+
+        generator.create(HybridBlocksBlocks.BLUE_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.PURPLE_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.MAGENTA_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.PINK_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+
+        generator.create(HybridBlocksBlocks.BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
+        generator.create(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
     }
 
     override fun generateItemModels(generator: ItemModelGenerators) {
+    }
+
+    companion object {
+        fun createMapping(block: Block, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)): TextureMapping? {
+            return TextureMapping.defaultTexture(block).also {
+                if (particleLocation != null) {
+                    it.put(TextureSlot.PARTICLE, particleLocation)
+                }
+            }
+        }
+
+        fun BlockModelGenerators.createModel(block: Block, template: ModelTemplate, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)): ResourceLocation {
+            val mapping = createMapping(block, particleLocation)
+
+            return template.create(block, mapping, modelOutput)
+        }
+
+        fun BlockModelGenerators.create(block: Block, template: ModelTemplate, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)) {
+            val location = createModel(block, template, particleLocation)
+            blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, location))
+        }
+
+        fun BlockModelGenerators.createParticle(block: Block, template: ModelTemplate) {
+            create(block, template, TextureMapping.getBlockTexture(block, "_particle"))
+        }
+
+        fun TextureMapping.put(slot: TextureSlot, block: Block): TextureMapping {
+            return put(slot, TextureMapping.getBlockTexture(block, "_${slot.id}"))
+        }
     }
 }

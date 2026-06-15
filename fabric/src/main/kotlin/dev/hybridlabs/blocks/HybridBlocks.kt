@@ -2,6 +2,7 @@ package dev.hybridlabs.blocks
 
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.HybridBlocksFamilies
+import dev.hybridlabs.blocks.block.entity.HBBlockEntityTypes
 import dev.hybridlabs.blocks.item.HybridBlocksItemGroups
 import dev.hybridlabs.blocks.item.HybridBlocksItems
 import net.fabricmc.api.ModInitializer
@@ -17,6 +18,7 @@ object HybridBlocks : ModInitializer {
         logger.info("Initializing $MOD_NAME")
 
         HybridBlocksBlocks
+        HBBlockEntityTypes
         HybridBlocksFamilies
 
         HybridBlocksItems

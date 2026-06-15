@@ -1,6 +1,7 @@
 package dev.hybridlabs.blocks.block
 
 import net.minecraft.data.BlockFamily
+import net.minecraft.world.level.block.Blocks
 
 object HybridBlocksFamilies {
 
