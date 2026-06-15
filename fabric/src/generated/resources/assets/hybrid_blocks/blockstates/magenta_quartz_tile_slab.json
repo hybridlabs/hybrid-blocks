@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hybrid_blocks:block/magenta_quartz_tile_slab"
+    },
+    "type=double": {
+      "model": "hybrid_blocks:block/magenta_quartz_tiles"
+    },
+    "type=top": {
+      "model": "hybrid_blocks:block/magenta_quartz_tile_slab_top"
+    }
+  }
+}
