@@ -48,6 +48,8 @@ class BlockTagProvider(
             val pickaxePath = id.path
             if (setOf(
                     "quartz",
+                    "tile",
+                    "tiles",
                     "brick",
                     "bricks",
                     "pillar",
