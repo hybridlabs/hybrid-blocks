@@ -215,22 +215,6 @@
     "hybrid_blocks:mossy_brown_brick_slab",
     "hybrid_blocks:mossy_green_brick_slab",
     "hybrid_blocks:mossy_red_brick_slab",
-    "hybrid_blocks:mossy_black_brick_slab",
-    "hybrid_blocks:white_wool_slab",
-    "hybrid_blocks:light_gray_wool_slab",
-    "hybrid_blocks:gray_wool_slab",
-    "hybrid_blocks:black_wool_slab",
-    "hybrid_blocks:red_wool_slab",
-    "hybrid_blocks:orange_wool_slab",
-    "hybrid_blocks:yellow_wool_slab",
-    "hybrid_blocks:purple_wool_slab",
-    "hybrid_blocks:magenta_wool_slab",
-    "hybrid_blocks:pink_wool_slab",
-    "hybrid_blocks:blue_wool_slab",
-    "hybrid_blocks:light_blue_wool_slab",
-    "hybrid_blocks:cyan_wool_slab",
-    "hybrid_blocks:green_wool_slab",
-    "hybrid_blocks:lime_wool_slab",
-    "hybrid_blocks:brown_wool_slab"
+    "hybrid_blocks:mossy_black_brick_slab"
   ]
 }

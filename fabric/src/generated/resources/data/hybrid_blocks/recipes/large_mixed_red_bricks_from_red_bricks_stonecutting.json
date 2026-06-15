@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:red_bricks"
+  },
+  "result": "hybrid_blocks:large_mixed_red_bricks"
+}

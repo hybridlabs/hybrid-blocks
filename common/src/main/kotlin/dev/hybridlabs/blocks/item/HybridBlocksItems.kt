@@ -1285,8 +1285,6 @@ object HybridBlocksItems {
     val MOSSY_PINK_BRICK_WALL = register("mossy_pink_brick_wall") { BlockItem(HybridBlocksBlocks.MOSSY_PINK_BRICK_WALL.get(), Item.Properties()) }
     //#endregion
 
-    val DORIC_COLUMN = register("doric_column") { BlockItem(HybridBlocksBlocks.DORIC_COLUMN.get(), Item.Properties()) }
-
     //#region Clear Glass
     val CLEAR_GLASS = register("clear_glass") { BlockItem(HybridBlocksBlocks.CLEAR_GLASS.get(), Item.Properties()) }
     val WHITE_STAINED_CLEAR_GLASS = register("white_stained_clear_glass") { BlockItem(HybridBlocksBlocks.WHITE_STAINED_CLEAR_GLASS.get(), Item.Properties()) }

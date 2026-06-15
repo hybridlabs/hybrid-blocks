@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "quartz_tiles",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:light_blue_quartz_block"
+    },
+    "X": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "#X ",
+    "X# ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hybrid_blocks:light_blue_quartz_tiles"
+  },
+  "show_notification": true
+}

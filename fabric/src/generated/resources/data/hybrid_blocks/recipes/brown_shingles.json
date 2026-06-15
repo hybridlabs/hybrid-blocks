@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_shingles",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:shingles"
+    },
+    "X": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid_blocks:brown_shingles"
+  },
+  "show_notification": true
+}

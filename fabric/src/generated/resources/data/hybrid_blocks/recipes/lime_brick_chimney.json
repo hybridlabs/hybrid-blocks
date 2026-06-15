@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chimney",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:lime_bricks"
+    }
+  },
+  "pattern": [
+    "# #",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "hybrid_blocks:lime_brick_chimney"
+  },
+  "show_notification": true
+}
