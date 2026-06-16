@@ -9,8 +9,8 @@
   },
   "pattern": [
     "# #",
-    "# #",
-    "# #"
+    "   ",
+    "   "
   ],
   "result": {
     "item": "hybrid_blocks:nether_brick_chimney"

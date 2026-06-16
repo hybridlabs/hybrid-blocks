@@ -9,8 +9,8 @@
   },
   "pattern": [
     "# #",
-    "# #",
-    "# #"
+    "   ",
+    "   "
   ],
   "result": {
     "item": "hybrid_blocks:green_brick_chimney"
