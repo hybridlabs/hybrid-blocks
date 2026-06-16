@@ -1,6 +1,8 @@
+@file:Suppress("DEPRECATION")
+
 package dev.hybridlabs.blocks
 
-import dev.hybridlabs.blocks.Constants.FORGE_MOD_ID
+import dev.hybridlabs.blocks.Constants.MOD_ID
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import net.minecraft.client.renderer.ItemBlockRenderTypes
 import net.minecraft.client.renderer.RenderType
@@ -9,7 +11,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent
 import net.minecraftforge.eventbus.api.SubscribeEvent
 import net.minecraftforge.fml.common.Mod
 
-@Mod.EventBusSubscriber(modid = FORGE_MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = [Dist.CLIENT])
+@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = [Dist.CLIENT])
 object HybridBlocksClient {
     @SubscribeEvent
     fun onRegisterRenderers(event: EntityRenderersEvent.RegisterRenderers) {
