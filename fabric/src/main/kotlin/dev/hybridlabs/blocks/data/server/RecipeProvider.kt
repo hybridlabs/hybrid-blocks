@@ -31,10 +31,16 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get())
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_STAIRS.get(), Items.CALCITE)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_STAIRS.get(), Items.CALCITE)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), Items.CALCITE)
 
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get())
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE.get(), 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get(), 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get(), 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_SLAB.get(), Items.CALCITE, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_SLAB.get(), Items.CALCITE, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_SLAB.get(), Items.CALCITE, 2)
 
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get())
@@ -1281,7 +1287,8 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                     exporter,
                     RecipeCategory.BUILDING_BLOCKS,
                     result,
-                    input
+                    input,
+                    2
                 )
             }
         }
@@ -1314,7 +1321,8 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                     exporter,
                     RecipeCategory.BUILDING_BLOCKS,
                     result,
-                    input
+                    input,
+                    2
                 )
             }
         }

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "item": "hybrid_blocks:polished_calcite_tiles"
+    "item": "minecraft:calcite"
   },
   "result": "hybrid_blocks:polished_calcite_tile_slab"
 }
