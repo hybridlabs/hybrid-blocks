@@ -514,30 +514,30 @@ object HybridBlocksBlocks {
     //  large nether bricks
     val LARGE_NETHER_BRICKS = register("large_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_NETHER_BRICK_STAIRS = register("large_nether_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_NETHER_BRICK_SLAB = register("large_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_NETHER_BRICK_WALL = register("large_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -545,49 +545,49 @@ object HybridBlocksBlocks {
     // small nether bricks
     val SMALL_NETHER_BRICKS = register("small_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_NETHER_BRICK_STAIRS = register("nether_small_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_NETHER_BRICK_SLAB = register("nether_small_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_NETHER_BRICK_WALL = register("nether_small_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
 
     // nether brick variants
     val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val PINWHEEL_NETHER_BRICKS = register("pinwheel_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val JACK_ON_JACK_NETHER_BRICKS = register("jack_on_jack_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
@@ -595,7 +595,7 @@ object HybridBlocksBlocks {
     // mixed nether bricks
     val MIXED_NETHER_BRICKS = register("mixed_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
@@ -611,14 +611,14 @@ object HybridBlocksBlocks {
 
     val MIXED_NETHER_BRICK_SLAB = register("mixed_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_NETHER_BRICK_WALL = register("mixed_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -626,30 +626,30 @@ object HybridBlocksBlocks {
     //  mixed large nether bricks
     val LARGE_MIXED_NETHER_BRICKS = register("large_mixed_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_NETHER_BRICK_STAIRS = register("large_mixed_nether_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_NETHER_BRICK_SLAB = register("large_mixed_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_NETHER_BRICK_WALL = register("large_mixed_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -657,7 +657,7 @@ object HybridBlocksBlocks {
     //  mixed small nether bricks
     val SMALL_MIXED_NETHER_BRICKS = register("small_mixed_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
@@ -666,21 +666,21 @@ object HybridBlocksBlocks {
         HybridBlocksStairBlock(
             Blocks.BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_MIXED_NETHER_BRICK_SLAB = register("mixed_nether_small_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_MIXED_NETHER_BRICK_WALL = register("mixed_nether_small_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -688,29 +688,29 @@ object HybridBlocksBlocks {
     //  nether shingles
     val NETHER_SHINGLES = register("nether_shingles") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
         )
     }
 
     val NETHER_SHINGLE_STAIRS = register("nether_shingle_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val NETHER_SHINGLE_SLAB = register("nether_shingle_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val NETHER_SHINGLE_WALL = register("nether_shingle_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -718,7 +718,7 @@ object HybridBlocksBlocks {
     //  mixed nether shingles
     val MIXED_NETHER_SHINGLES = register("mixed_nether_shingles") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
         )
     }
 
@@ -726,21 +726,21 @@ object HybridBlocksBlocks {
         HybridBlocksStairBlock(
             Blocks.BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_NETHER_SHINGLE_SLAB = register("mixed_nether_shingle_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_NETHER_SHINGLE_WALL = register("mixed_nether_shingle_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -759,7 +759,7 @@ object HybridBlocksBlocks {
     //  large red_nether bricks
     val LARGE_RED_NETHER_BRICKS = register("large_red_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
@@ -768,21 +768,21 @@ object HybridBlocksBlocks {
         HybridBlocksStairBlock(
             Blocks.BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_RED_NETHER_BRICK_SLAB = register("large_red_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_RED_NETHER_BRICK_WALL = register("large_red_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -790,30 +790,30 @@ object HybridBlocksBlocks {
     // small red_nether bricks
     val SMALL_RED_NETHER_BRICKS = register("small_red_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_RED_NETHER_BRICK_STAIRS = register("red_nether_small_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_RED_NETHER_BRICK_SLAB = register("red_nether_small_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_RED_NETHER_BRICK_WALL = register("red_nether_small_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -822,24 +822,24 @@ object HybridBlocksBlocks {
     val CRACKED_RED_NETHER_BRICKS = register("cracked_red_nether_bricks") {
         Block(
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
         )
     }
 
     val BASKETWEAVE_RED_NETHER_BRICKS = register("basketweave_red_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val PINWHEEL_RED_NETHER_BRICKS = register("pinwheel_red_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val JACK_ON_JACK_RED_NETHER_BRICKS = register("jack_on_jack_red_nether_bricks") {
-        Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)
+        Block(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
@@ -847,30 +847,30 @@ object HybridBlocksBlocks {
     // mixed red_nether bricks
     val MIXED_RED_NETHER_BRICKS = register("mixed_red_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_RED_NETHER_BRICK_STAIRS = register("mixed_red_nether_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_RED_NETHER_BRICK_SLAB = register("mixed_red_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_RED_NETHER_BRICK_WALL = register("mixed_red_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -878,30 +878,30 @@ object HybridBlocksBlocks {
     //  mixed large red_nether bricks
     val LARGE_MIXED_RED_NETHER_BRICKS = register("large_mixed_red_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_RED_NETHER_BRICK_STAIRS = register("large_mixed_red_nether_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_RED_NETHER_BRICK_SLAB = register("large_mixed_red_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val LARGE_MIXED_RED_NETHER_BRICK_WALL = register("large_mixed_red_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -909,30 +909,30 @@ object HybridBlocksBlocks {
     //  mixed small red_nether bricks
     val SMALL_MIXED_RED_NETHER_BRICKS = register("small_mixed_red_nether_bricks") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_MIXED_RED_NETHER_BRICK_STAIRS = register("small_mixed_red_nether_brick_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_MIXED_RED_NETHER_BRICK_SLAB = register("small_mixed_red_nether_brick_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val SMALL_MIXED_RED_NETHER_BRICK_WALL = register("small_mixed_red_nether_brick_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -940,29 +940,29 @@ object HybridBlocksBlocks {
     //  red_nether shingles
     val RED_NETHER_SHINGLES = register("red_nether_shingles") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
         )
     }
 
     val RED_NETHER_SHINGLE_STAIRS = register("red_nether_shingle_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.V.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val RED_NETHER_SHINGLE_SLAB = register("red_nether_shingle_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val RED_NETHER_SHINGLE_WALL = register("red_nether_shingle_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
@@ -970,29 +970,29 @@ object HybridBlocksBlocks {
     //  mixed red_nether shingles
     val MIXED_RED_NETHER_SHINGLES = register("mixed_red_nether_shingles") {
         Block(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
         )
     }
 
     val MIXED_RED_NETHER_SHINGLE_STAIRS = register("mixed_red_nether_shingle_stairs") {
         HybridBlocksStairBlock(
-            Blocks.BRICKS.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
-                .copy(Blocks.BRICKS)
+                .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_RED_NETHER_SHINGLE_SLAB = register("mixed_red_nether_shingle_slab") {
         SlabBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICKS)
+            .copy(Blocks.RED_NETHER_BRICKS)
             .mapColor(DyeColor.RED)
         )
     }
 
     val MIXED_RED_NETHER_SHINGLE_WALL = register("mixed_red_nether_shingle_wall") {
         WallBlock(BlockBehaviour.Properties
-            .copy(Blocks.BRICK_WALL)
+            .copy(Blocks.RED_NETHER_BRICK_WALL)
             .mapColor(DyeColor.RED)
         )
     }
