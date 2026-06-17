@@ -946,7 +946,7 @@ object HybridBlocksBlocks {
 
     val RED_NETHER_SHINGLE_STAIRS = register("red_nether_shingle_stairs") {
         HybridBlocksStairBlock(
-            Blocks.V.defaultBlockState(),
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
             BlockBehaviour.Properties
                 .copy(Blocks.RED_NETHER_BRICKS)
                 .mapColor(DyeColor.RED)
