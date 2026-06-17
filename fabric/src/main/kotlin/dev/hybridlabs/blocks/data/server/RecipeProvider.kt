@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Blocks
 import java.util.function.Consumer
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.data.recipes.FinishedRecipe
+import net.minecraft.tags.ItemTags
 
 /**
  * Generates all recipes.
@@ -24,6 +25,14 @@ import net.minecraft.data.recipes.FinishedRecipe
 @Suppress("SameParameterValue")
 class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
     override fun buildRecipes(exporter: Consumer<FinishedRecipe>) {
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE.get(), 4)
+            .pattern("CC ")
+            .pattern("CC ")
+            .pattern("   ")
+            .define('C', Items.CALCITE)
+            .unlockedBy("has_calcite", InventoryChangeTrigger.TriggerInstance.hasItems(Items.CALCITE))
+            .save(exporter)
 
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE.get(), Items.CALCITE)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICKS.get(), HybridBlocksItems.POLISHED_CALCITE.get())
