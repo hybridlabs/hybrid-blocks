@@ -4,6 +4,8 @@ plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
 
+// This config will copy the output of Fabric's runDatagen task into
+// 'src/generated/resources/fabric' when the Forge runData task is run.
 configurations.create('fabricDatagen')
 dependencies {
     fabricDatagen project(path: ':fabric', configuration: 'datagenOutput')
@@ -28,18 +30,12 @@ legacyForge {
     }
 
     parchment {
-        minecraftVersion = parchment_minecraft
+        minecraftVersion = minecraft_version
         mappingsVersion = parchment_version
     }
 
     sourceSets {
         main.kotlin.srcDirs = ['src/main/java', 'src/main/kotlin']
-    }
-
-    sourceSets.main.resources.srcDirs += 'src/generated/resources'
-
-    processResources {
-        from configurations.fabricDatagen.singleFile
     }
 
     compileKotlin {
@@ -78,6 +74,11 @@ repositories {
     mavenCentral()
 }
 
+sourceSets.main.resources.srcDirs += 'src/generated/resources'
+
+processResources {
+    from configurations.fabricDatagen.singleFile
+}
 
 dependencies {
     compileOnly project(":common")
@@ -88,11 +89,14 @@ dependencies {
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.0"))
 }
 
-subprojects {
-    apply plugin: 'java'
-    apply plugin: 'org.jetbrains.kotlin.jvm'
-    apply plugin: 'kotlin'
-    repositories {
-        mavenCentral()
-    }
+jar {
+    finalizedBy('reobfJar')
+    manifest.attributes([
+            "MixinConfigs": "${mod_id}.forge.mixins.json"
+    ])
+}
+
+compileKotlin {
+    source(project(":common").sourceSets.main.allSource)
+    inputs.file "../gradle.properties"
 }

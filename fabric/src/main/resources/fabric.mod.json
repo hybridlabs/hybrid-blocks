@@ -47,7 +47,6 @@
     },
 
     "mixins": [
-        "hybrid_blocks.mixins.json",
         "hybrid_blocks.fabric.mixins.json"
     ],
 
