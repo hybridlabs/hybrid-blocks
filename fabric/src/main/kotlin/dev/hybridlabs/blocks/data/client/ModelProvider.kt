@@ -154,6 +154,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.PINWHEEL_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_BRICKS.get(),
 
+            HybridBlocksBlocks.BASKETWEAVE_MUD_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_MUD_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_MUD_BRICKS.get(),
+
             HybridBlocksBlocks.BASKETWEAVE_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS.get(),
@@ -205,6 +209,8 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
         generator.family(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MIXED_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.MEDIUM_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MEDIUM_MUD_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MEDIUM_MIXED_MUD_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_MUD_BRICKS.get())

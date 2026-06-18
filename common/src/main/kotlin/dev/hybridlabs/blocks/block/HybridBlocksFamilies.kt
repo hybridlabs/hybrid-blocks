@@ -150,6 +150,14 @@ object HybridBlocksFamilies {
             .family
     }
     
+    val MEDIUM_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MUD_BRICK_WALL.get())
+            .family
+    }
+    
     val MEDIUM_MIXED_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get())
             .stairs(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_STAIRS.get())
