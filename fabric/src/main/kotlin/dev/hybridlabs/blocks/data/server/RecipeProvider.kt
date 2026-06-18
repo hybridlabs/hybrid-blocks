@@ -165,7 +165,9 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
         //#endregion
 
+        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_MEDIUM_MUD_BRICK_SLAB.get(), HybridBlocksItems.CRACKED_MEDIUM_MUD_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_BRICK_SLAB.get(), HybridBlocksItems.CRACKED_BRICKS.get())
+        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLACK_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLUE_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get())
@@ -184,7 +186,9 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_WHITE_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_YELLOW_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get())
 
+        stair(exporter,HybridBlocksItems.CRACKED_MEDIUM_MUD_BRICK_STAIRS.get(), HybridBlocksItems.CRACKED_MEDIUM_MUD_BRICKS.get())
         stair(exporter,HybridBlocksItems.CRACKED_BRICK_STAIRS.get(), HybridBlocksItems.CRACKED_BRICKS.get())
+        stair(exporter,HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get())
         stair(exporter,HybridBlocksItems.MOSSY_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BRICKS.get())
         stair(exporter,HybridBlocksItems.MOSSY_BLUE_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get())
         stair(exporter,HybridBlocksItems.MOSSY_BROWN_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BROWN_BRICKS.get())
@@ -288,6 +292,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_BRICK_STAIRS.get(), HybridBlocksItems.CRACKED_BRICKS.get())
 
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLACK_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLUE_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get())
@@ -306,6 +311,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_WHITE_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_YELLOW_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get())
 
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_WALL.get(), HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BRICK_WALL.get(), HybridBlocksItems.MOSSY_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLACK_BRICK_WALL.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_BLUE_BRICK_WALL.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get())
@@ -459,6 +465,34 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         //#endregion
         //#endregion
 
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MIXED_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MIXED_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMALL_MIXED_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MIXED_MUD_BRICK_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MIXED_MUD_BRICK_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LARGE_MIXED_MUD_BRICK_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SHINGLE_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SHINGLE_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SHINGLE_SLAB.get(), Items.MUD_BRICKS, 2)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_SHINGLE_WALL.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_SHINGLE_STAIRS.get(), Items.MUD_BRICKS)
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_SHINGLE_SLAB.get(), Items.MUD_BRICKS, 2)
+        
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_BRICK_WALL.get(), Items.BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_BRICK_STAIRS.get(), Items.BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_BRICK_SLAB.get(), Items.BRICKS, 2)
@@ -987,6 +1021,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         //#endregion
 
         //#region Chimney
+        offerChimneyRecipe(exporter, Items.MUD_BRICKS, getHasName(Items.MUD_BRICKS),HybridBlocksItems.MUD_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.BRICKS, getHasName(Items.BRICKS),HybridBlocksItems.BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.NETHER_BRICKS, getHasName(Items.NETHER_BRICKS),HybridBlocksItems.NETHER_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.RED_NETHER_BRICKS, getHasName(Items.RED_NETHER_BRICKS), HybridBlocksItems.RED_NETHER_BRICK_CHIMNEY.get())
@@ -1192,6 +1227,7 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
         // mossy bricks
         offerMossingRecipes(exporter, "mossy_bricks", HybridBlocksItems.MOSSY_BRICKS.get(), Items.BRICKS)
+        offerMossingRecipes(exporter, "mossy_mud_bricks", HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get(), Items.BRICKS)
 
         // stained mossy bricks
         offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get(), Items.BLACK_DYE)
@@ -1243,6 +1279,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         private val BRICK_AND_SHINGLE_SETS = listOf(
 
             //#region Bricks
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.MEDIUM_MUD_BRICKS,
+                HybridBlocksItems.MEDIUM_MUD_BRICK_STAIRS,
+                HybridBlocksItems.MEDIUM_MUD_BRICK_SLAB,
+                HybridBlocksItems.MEDIUM_MUD_BRICK_WALL
+            ),
             BrickAndShingleRecipeSets(
                 HybridBlocksItems.BLACK_BRICKS,
                 HybridBlocksItems.BLACK_BRICK_STAIRS,
@@ -1342,6 +1384,18 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             //#endregion
 
             //#region Mixed Bricks
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.MEDIUM_MIXED_MUD_BRICKS,
+                HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_STAIRS,
+                HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_SLAB,
+                HybridBlocksItems.MEDIUM_MIXED_MUD_BRICK_WALL
+            ),
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.MIXED_MUD_BRICKS,
+                HybridBlocksItems.MIXED_MUD_BRICK_STAIRS,
+                HybridBlocksItems.MIXED_MUD_BRICK_SLAB,
+                HybridBlocksItems.MIXED_MUD_BRICK_WALL
+            ),
             BrickAndShingleRecipeSets(
                 HybridBlocksItems.MIXED_BRICKS,
                 HybridBlocksItems.MIXED_BRICK_STAIRS,
@@ -1460,6 +1514,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
             //#region Small Bricks
             BrickAndShingleRecipeSets(
+                HybridBlocksItems.SMALL_MUD_BRICKS,
+                HybridBlocksItems.SMALL_MUD_BRICK_STAIRS,
+                HybridBlocksItems.SMALL_MUD_BRICK_SLAB,
+                HybridBlocksItems.SMALL_MUD_BRICK_WALL
+            ),
+            BrickAndShingleRecipeSets(
                 HybridBlocksItems.SMALL_BRICKS,
                 HybridBlocksItems.SMALL_BRICK_STAIRS,
                 HybridBlocksItems.SMALL_BRICK_SLAB,
@@ -1576,6 +1636,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             //#endregion
 
             //#region Small Mixed Bricks
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.SMALL_MIXED_MUD_BRICKS,
+                HybridBlocksItems.SMALL_MIXED_MUD_BRICK_STAIRS,
+                HybridBlocksItems.SMALL_MIXED_MUD_BRICK_SLAB,
+                HybridBlocksItems.SMALL_MIXED_MUD_BRICK_WALL
+            ),
             BrickAndShingleRecipeSets(
                 HybridBlocksItems.SMALL_MIXED_BRICKS,
                 HybridBlocksItems.SMALL_MIXED_BRICK_STAIRS,
@@ -1694,6 +1760,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
 
             //#region Large Bricks
             BrickAndShingleRecipeSets(
+                HybridBlocksItems.LARGE_MUD_BRICKS,
+                HybridBlocksItems.LARGE_MUD_BRICK_STAIRS,
+                HybridBlocksItems.LARGE_MUD_BRICK_SLAB,
+                HybridBlocksItems.LARGE_MUD_BRICK_WALL
+            ),
+            BrickAndShingleRecipeSets(
                 HybridBlocksItems.LARGE_BRICKS,
                 HybridBlocksItems.LARGE_BRICK_STAIRS,
                 HybridBlocksItems.LARGE_BRICK_SLAB,
@@ -1810,6 +1882,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             //#endregion
 
             //#region Large Mixed Bricks
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.LARGE_MIXED_MUD_BRICKS,
+                HybridBlocksItems.LARGE_MIXED_MUD_BRICK_STAIRS,
+                HybridBlocksItems.LARGE_MIXED_MUD_BRICK_SLAB,
+                HybridBlocksItems.LARGE_MIXED_MUD_BRICK_WALL
+            ),
             BrickAndShingleRecipeSets(
                 HybridBlocksItems.LARGE_MIXED_BRICKS,
                 HybridBlocksItems.LARGE_MIXED_BRICK_STAIRS,
@@ -1934,6 +2012,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 HybridBlocksItems.SHINGLE_WALL
             ),
             BrickAndShingleRecipeSets(
+                HybridBlocksItems.MUD_SHINGLES,
+                HybridBlocksItems.MUD_SHINGLE_STAIRS,
+                HybridBlocksItems.MUD_SHINGLE_SLAB,
+                HybridBlocksItems.MUD_SHINGLE_WALL
+            ),
+            BrickAndShingleRecipeSets(
                 HybridBlocksItems.NETHER_SHINGLES,
                 HybridBlocksItems.NETHER_SHINGLE_STAIRS,
                 HybridBlocksItems.NETHER_SHINGLE_SLAB,
@@ -2044,6 +2128,12 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             //#endregion
 
             //#region Mixed Shingles
+            BrickAndShingleRecipeSets(
+                HybridBlocksItems.MIXED_MUD_SHINGLES,
+                HybridBlocksItems.MIXED_MUD_SHINGLE_STAIRS,
+                HybridBlocksItems.MIXED_MUD_SHINGLE_SLAB,
+                HybridBlocksItems.MIXED_MUD_SHINGLE_WALL
+            ),
             BrickAndShingleRecipeSets(
                 HybridBlocksItems.MIXED_SHINGLES,
                 HybridBlocksItems.MIXED_SHINGLE_STAIRS,
@@ -2158,8 +2248,8 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
                 HybridBlocksItems.MIXED_YELLOW_SHINGLE_SLAB,
                 HybridBlocksItems.MIXED_YELLOW_SHINGLE_WALL
             )
-            //#endregion
         )
+        //#endregion
 
         private fun offerBrickAndShingleRecipes(exporter: Consumer<FinishedRecipe>) {
             BRICK_AND_SHINGLE_SETS.forEach { set ->

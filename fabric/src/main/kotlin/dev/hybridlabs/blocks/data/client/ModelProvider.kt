@@ -203,6 +203,23 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLES.get())
             .generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_SHINGLES)
 
+        generator.family(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MIXED_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MEDIUM_MIXED_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.SMALL_MIXED_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.LARGE_MIXED_MUD_BRICKS)
+        generator.family(HybridBlocksBlocks.MUD_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MUD_SHINGLES)
+        generator.family(HybridBlocksBlocks.MIXED_MUD_SHINGLES.get())
+            .generateFor(HybridBlocksFamilies.MIXED_MUD_SHINGLES)
+
         generator.family(HybridBlocksBlocks.MIXED_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MIXED_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_BRICKS.get())
@@ -523,6 +540,12 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.MOSSY_BLACK_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MOSSY_BLACK_BRICKS)
 
+        generator.family(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.MOSSY_MEDIUM_MUD_BRICKS)
+
+        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICKS.get())
+            .generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_MUD_BRICKS)
+
         generator.family(HybridBlocksBlocks.MOSSY_BRICKS.get())
             .generateFor(HybridBlocksFamilies.MOSSY_BRICKS)
 
@@ -669,6 +692,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.create(HybridBlocksBlocks.MAGENTA_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
         generator.create(HybridBlocksBlocks.PINK_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
 
+        generator.create(HybridBlocksBlocks.MUD_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
         generator.create(HybridBlocksBlocks.BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
         generator.create(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)
         generator.create(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), HBModelTemplates.TEMPLATE_CHIMNEY)

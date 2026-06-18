@@ -1007,6 +1007,340 @@ object HybridBlocksBlocks {
     }
     //#endregion
 
+    //#region Mud Bricks
+    val MEDIUM_MUD_BRICKS = register("medium_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MUD_BRICK_STAIRS = register("medium_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MUD_BRICK_SLAB = register("medium_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MUD_BRICK_WALL = register("medium_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //  large mud bricks
+    val LARGE_MUD_BRICKS = register("large_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MUD_BRICK_STAIRS = register("large_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MUD_BRICK_SLAB = register("large_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MUD_BRICK_WALL = register("large_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small mud bricks
+    val SMALL_MUD_BRICKS = register("small_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MUD_BRICK_STAIRS = register("small_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MUD_BRICK_SLAB = register("small_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MUD_BRICK_WALL = register("small_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // mud brick variants
+    val CRACKED_MEDIUM_MUD_BRICKS = register("cracked_medium_mud_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_MUD_BRICK_STAIRS = register("cracked_medium_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_MUD_BRICK_SLAB = register("cracked_medium_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_MUD_BRICK_WALL = register("cracked_medium_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val BASKETWEAVE_MUD_BRICKS = register("basketweave_mud_bricks") {
+        Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val PINWHEEL_MUD_BRICKS = register("pinwheel_mud_bricks") {
+        Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val JACK_ON_JACK_MUD_BRICKS = register("jack_on_jack_mud_bricks") {
+        Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // mixed mud bricks
+    val MIXED_MUD_BRICKS = register("mixed_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MIXED_MUD_BRICK_STAIRS = register("mixed_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MIXED_MUD_BRICK_SLAB = register("mixed_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MIXED_MUD_BRICK_WALL = register("mixed_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+    val MEDIUM_MIXED_MUD_BRICKS = register("medium_mixed_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_MUD_BRICK_STAIRS = register("medium_mixed_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_MUD_BRICK_SLAB = register("medium_mixed_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_MUD_BRICK_WALL = register("medium_mixed_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //  mixed large mud bricks
+    val LARGE_MIXED_MUD_BRICKS = register("large_mixed_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MIXED_MUD_BRICK_STAIRS = register("large_mixed_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MIXED_MUD_BRICK_SLAB = register("large_mixed_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val LARGE_MIXED_MUD_BRICK_WALL = register("large_mixed_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //  mixed small mud bricks
+    val SMALL_MIXED_MUD_BRICKS = register("small_mixed_mud_bricks") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MIXED_MUD_BRICK_STAIRS = register("mixed_small_mud_brick_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MIXED_MUD_BRICK_SLAB = register("mixed_small_mud_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val SMALL_MIXED_MUD_BRICK_WALL = register("mixed_small_mud_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //  mud shingles
+    val MUD_SHINGLES = register("mud_shingles") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val MUD_SHINGLE_STAIRS = register("mud_shingle_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MUD_SHINGLE_SLAB = register("mud_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MUD_SHINGLE_WALL = register("mud_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    //  mixed mud shingles
+    val MIXED_MUD_SHINGLES = register("mixed_mud_shingles") {
+        Block(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val MIXED_MUD_SHINGLE_STAIRS = register("mixed_mud_shingle_stairs") {
+        HybridBlocksStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MIXED_MUD_SHINGLE_SLAB = register("mixed_mud_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MIXED_MUD_SHINGLE_WALL = register("mixed_mud_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .copy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MUD_BRICK_CHIMNEY = register("mud_brick_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .copy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+    //#endregion
+
     //#region White Bricks
     val WHITE_BRICKS = register("white_bricks") { 
         Block(BlockBehaviour.Properties
@@ -5518,6 +5852,11 @@ object HybridBlocksBlocks {
         )
     }
     //#endregion
+
+    val MOSSY_MEDIUM_MUD_BRICKS = register("mossy_medium_mud_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).mapColor(DyeColor.BROWN))}
+    val MOSSY_MEDIUM_MUD_BRICK_STAIRS = register("mossy_medium_mud_brick_stairs") { HybridBlocksStairBlock(Blocks.MUD_BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).mapColor(DyeColor.BROWN))}
+    val MOSSY_MEDIUM_MUD_BRICK_SLAB = register("mossy_medium_mud_brick_slab") { SlabBlock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).mapColor(DyeColor.BROWN))}
+    val MOSSY_MEDIUM_MUD_BRICK_WALL = register("mossy_medium_mud_brick_wall") { WallBlock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICK_WALL).mapColor(DyeColor.BROWN))}
 
     val MOSSY_BRICKS = register("mossy_bricks") { Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs") { HybridBlocksStairBlock(Blocks.BRICKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}

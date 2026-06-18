@@ -233,6 +233,67 @@ object HybridBlocksItems {
     val PINK_QUARTZ_TILE_SLAB = register("pink_quartz_tile_slab") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_TILE_SLAB.get(), Item.Properties()) }
     //#endregion
 
+    //#region Mud_Bricks
+    //  normal mud_bricks
+    val SMALL_MUD_BRICKS = register("small_mud_bricks") { BlockItem(HybridBlocksBlocks.SMALL_MUD_BRICKS.get(), Item.Properties()) }
+    val SMALL_MUD_BRICK_STAIRS = register("small_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.SMALL_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val SMALL_MUD_BRICK_SLAB = register("small_mud_brick_slab") { BlockItem(HybridBlocksBlocks.SMALL_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val SMALL_MUD_BRICK_WALL = register("small_mud_brick_wall") { BlockItem(HybridBlocksBlocks.SMALL_MUD_BRICK_WALL.get(), Item.Properties()) }
+    
+    val MEDIUM_MUD_BRICKS = register("medium_mud_bricks") { BlockItem(HybridBlocksBlocks.MEDIUM_MUD_BRICKS.get(), Item.Properties()) }
+    val MEDIUM_MUD_BRICK_STAIRS = register("medium_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.MEDIUM_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val MEDIUM_MUD_BRICK_SLAB = register("medium_mud_brick_slab") { BlockItem(HybridBlocksBlocks.MEDIUM_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val MEDIUM_MUD_BRICK_WALL = register("medium_mud_brick_wall") { BlockItem(HybridBlocksBlocks.MEDIUM_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    val LARGE_MUD_BRICKS = register("large_mud_bricks") { BlockItem(HybridBlocksBlocks.LARGE_MUD_BRICKS.get(), Item.Properties()) }
+    val LARGE_MUD_BRICK_STAIRS = register("large_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.LARGE_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val LARGE_MUD_BRICK_SLAB = register("large_mud_brick_slab") { BlockItem(HybridBlocksBlocks.LARGE_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val LARGE_MUD_BRICK_WALL = register("large_mud_brick_wall") { BlockItem(HybridBlocksBlocks.LARGE_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    //  mixed mud_bricks
+    val SMALL_MIXED_MUD_BRICKS = register("small_mixed_mud_bricks") { BlockItem(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICKS.get(), Item.Properties()) }
+    val SMALL_MIXED_MUD_BRICK_STAIRS = register("small_mixed_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val SMALL_MIXED_MUD_BRICK_SLAB = register("small_mixed_mud_brick_slab") { BlockItem(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val SMALL_MIXED_MUD_BRICK_WALL = register("small_mixed_mud_brick_wall") { BlockItem(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    val MEDIUM_MIXED_MUD_BRICKS = register("medium_mixed_mud_bricks") { BlockItem(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get(), Item.Properties()) }
+    val MEDIUM_MIXED_MUD_BRICK_STAIRS = register("medium_mixed_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val MEDIUM_MIXED_MUD_BRICK_SLAB = register("medium_mixed_mud_brick_slab") { BlockItem(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val MEDIUM_MIXED_MUD_BRICK_WALL = register("medium_mixed_mud_brick_wall") { BlockItem(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    val MIXED_MUD_BRICKS = register("mixed_mud_bricks") { BlockItem(HybridBlocksBlocks.MIXED_MUD_BRICKS.get(), Item.Properties()) }
+    val MIXED_MUD_BRICK_STAIRS = register("mixed_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.MIXED_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val MIXED_MUD_BRICK_SLAB = register("mixed_mud_brick_slab") { BlockItem(HybridBlocksBlocks.MIXED_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val MIXED_MUD_BRICK_WALL = register("mixed_mud_brick_wall") { BlockItem(HybridBlocksBlocks.MIXED_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    val LARGE_MIXED_MUD_BRICKS = register("large_mixed_mud_bricks") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICKS.get(), Item.Properties()) }
+    val LARGE_MIXED_MUD_BRICK_STAIRS = register("large_mixed_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val LARGE_MIXED_MUD_BRICK_SLAB = register("large_mixed_mud_brick_slab") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val LARGE_MIXED_MUD_BRICK_WALL = register("large_mixed_mud_brick_wall") { BlockItem(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_WALL.get(), Item.Properties()) }
+
+    val CRACKED_MEDIUM_MUD_BRICKS = register("cracked_medium_mud_bricks") { BlockItem(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICKS.get(), Item.Properties()) }
+    val CRACKED_MEDIUM_MUD_BRICK_STAIRS = register("cracked_medium_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val CRACKED_MEDIUM_MUD_BRICK_SLAB = register("cracked_medium_mud_brick_slab") { BlockItem(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val CRACKED_MEDIUM_MUD_BRICK_WALL = register("cracked_medium_mud_brick_wall") { BlockItem(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_WALL.get(), Item.Properties()) }
+    
+    val BASKETWEAVE_MUD_BRICKS = register("basketweave_mud_bricks") { BlockItem(HybridBlocksBlocks.BASKETWEAVE_MUD_BRICKS.get(), Item.Properties()) }
+    val PINWHEEL_MUD_BRICKS = register("pinwheel_mud_bricks") { BlockItem(HybridBlocksBlocks.PINWHEEL_MUD_BRICKS.get(), Item.Properties()) }
+    val JACK_ON_JACK_MUD_BRICKS = register("jack_on_jack_mud_bricks") { BlockItem(HybridBlocksBlocks.JACK_ON_JACK_MUD_BRICKS.get(), Item.Properties()) }
+
+    //  shingles
+    val MUD_SHINGLES = register("mud_shingles") { BlockItem(HybridBlocksBlocks.MUD_SHINGLES.get(), Item.Properties()) }
+    val MUD_SHINGLE_STAIRS = register("mud_shingle_stairs") { BlockItem(HybridBlocksBlocks.MUD_SHINGLE_STAIRS.get(), Item.Properties()) }
+    val MUD_SHINGLE_SLAB = register("mud_shingle_slab") { BlockItem(HybridBlocksBlocks.MUD_SHINGLE_SLAB.get(), Item.Properties()) }
+    val MUD_SHINGLE_WALL = register("mud_shingle_wall") { BlockItem(HybridBlocksBlocks.MUD_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val MIXED_MUD_SHINGLES = register("mixed_mud_shingles") { BlockItem(HybridBlocksBlocks.MIXED_MUD_SHINGLES.get(), Item.Properties()) }
+    val MIXED_MUD_SHINGLE_STAIRS = register("mixed_mud_shingle_stairs") { BlockItem(HybridBlocksBlocks.MIXED_MUD_SHINGLE_STAIRS.get(), Item.Properties()) }
+    val MIXED_MUD_SHINGLE_SLAB = register("mixed_mud_shingle_slab") { BlockItem(HybridBlocksBlocks.MIXED_MUD_SHINGLE_SLAB.get(), Item.Properties()) }
+    val MIXED_MUD_SHINGLE_WALL = register("mixed_mud_shingle_wall") { BlockItem(HybridBlocksBlocks.MIXED_MUD_SHINGLE_WALL.get(), Item.Properties()) }
+
+    val MUD_BRICK_CHIMNEY = register("mud_brick_chimney") { BlockItem(HybridBlocksBlocks.MUD_BRICK_CHIMNEY.get(), Item.Properties()) }
+    //#endregion
+    
     //#region Bricks
     //  normal bricks
     val SMALL_BRICKS = register("small_bricks") { BlockItem(HybridBlocksBlocks.SMALL_BRICKS.get(), Item.Properties()) }
@@ -1213,6 +1274,11 @@ object HybridBlocksItems {
     val MOSSY_BRICK_STAIRS = register("mossy_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_STAIRS.get(), Item.Properties()) }
     val MOSSY_BRICK_SLAB = register("mossy_brick_slab") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_SLAB.get(), Item.Properties()) }
     val MOSSY_BRICK_WALL = register("mossy_brick_wall") { BlockItem(HybridBlocksBlocks.MOSSY_BRICK_WALL.get(), Item.Properties()) }
+
+    val MOSSY_MEDIUM_MUD_BRICKS = register("mossy_medium_mud_bricks") { BlockItem(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS.get(), Item.Properties()) }
+    val MOSSY_MEDIUM_MUD_BRICK_STAIRS = register("mossy_medium_mud_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_STAIRS.get(), Item.Properties()) }
+    val MOSSY_MEDIUM_MUD_BRICK_SLAB = register("mossy_medium_mud_brick_slab") { BlockItem(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_SLAB.get(), Item.Properties()) }
+    val MOSSY_MEDIUM_MUD_BRICK_WALL = register("mossy_medium_mud_brick_wall") { BlockItem(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_WALL.get(), Item.Properties()) }
 
     val MOSSY_WHITE_BRICKS = register("mossy_white_bricks") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICKS.get(), Item.Properties()) }
     val MOSSY_WHITE_BRICK_STAIRS = register("mossy_white_brick_stairs") { BlockItem(HybridBlocksBlocks.MOSSY_WHITE_BRICK_STAIRS.get(), Item.Properties()) }

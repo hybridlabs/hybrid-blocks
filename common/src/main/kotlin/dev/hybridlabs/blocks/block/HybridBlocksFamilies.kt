@@ -91,6 +91,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_WALL.get())
             .family
     }
+    
     val LARGE_RED_NETHER_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.LARGE_RED_NETHER_BRICKS.get())
             .stairs(HybridBlocksBlocks.LARGE_RED_NETHER_BRICK_STAIRS.get())
@@ -141,11 +142,43 @@ object HybridBlocksFamilies {
     //#endregion
 
     //#region Bricks Families
+    val MIXED_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_MUD_BRICK_WALL.get())
+            .family
+    }
+    
+    val MEDIUM_MIXED_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_WALL.get())
+            .family
+    }
+    
     val MIXED_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_BRICK_STAIRS.get())
             .slab(HybridBlocksBlocks.MIXED_BRICK_SLAB.get())
             .wall(HybridBlocksBlocks.MIXED_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MUD_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICK_WALL.get())
             .family
     }
 
@@ -165,6 +198,22 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val SMALL_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MUD_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_MUD_BRICK_WALL.get())
+            .family
+    }
+
     val SMALL_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_BRICKS.get())
             .stairs(HybridBlocksBlocks.SMALL_BRICK_STAIRS.get())
@@ -178,6 +227,22 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.SMALL_MIXED_BRICK_STAIRS.get())
             .slab(HybridBlocksBlocks.SMALL_MIXED_BRICK_SLAB.get())
             .wall(HybridBlocksBlocks.SMALL_MIXED_BRICK_WALL.get())
+            .family
+    }
+
+    val MUD_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MUD_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MUD_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MUD_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MUD_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_MUD_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_MUD_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_MUD_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_MUD_SHINGLE_WALL.get())
             .family
     }
 
@@ -1269,6 +1334,22 @@ object HybridBlocksFamilies {
             .family
     }
     //#endregion
+
+    val CRACKED_MEDIUM_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICKS.get())
+        .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_STAIRS.get())
+        .slab(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_SLAB.get())
+        .wall(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_WALL.get())
+        .family
+    }
+
+    val MOSSY_MEDIUM_MUD_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS.get())
+        .stairs(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_STAIRS.get())
+        .slab(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_SLAB.get())
+        .wall(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_WALL.get())
+        .family
+    }
 
     val CRACKED_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BRICKS.get())

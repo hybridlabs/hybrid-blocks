@@ -28,6 +28,7 @@ object HBBlockEntityTypes {
             HybridBlocksBlocks.PURPLE_BRICK_CHIMNEY,
             HybridBlocksBlocks.MAGENTA_BRICK_CHIMNEY,
             HybridBlocksBlocks.PINK_BRICK_CHIMNEY,
+            HybridBlocksBlocks.MUD_BRICK_CHIMNEY,
             HybridBlocksBlocks.BRICK_CHIMNEY,
             HybridBlocksBlocks.NETHER_BRICK_CHIMNEY,
             HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY
