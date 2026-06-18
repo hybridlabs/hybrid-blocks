@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:magenta_bricks"
+  },
+  "result": "hybrid_blocks:mixed_magenta_shingle_stairs"
+}

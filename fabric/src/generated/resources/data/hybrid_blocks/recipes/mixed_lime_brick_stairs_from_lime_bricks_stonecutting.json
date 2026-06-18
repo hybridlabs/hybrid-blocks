@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:lime_bricks"
+  },
+  "result": "hybrid_blocks:mixed_lime_brick_stairs"
+}
