@@ -1,20 +1,25 @@
 package main.kotlin.dev.hybridlabs.blocks
 
-import main.kotlin.dev.hybridlabs.blocks.item.HBItemGroups
+import dev.hybridlabs.blocks.CommonClass
+import dev.hybridlabs.blocks.Constants
+import dev.hybridlabs.blocks.block.HybridBlocksBlocks
+import dev.hybridlabs.blocks.block.entity.HBBlockEntityTypes
+import dev.hybridlabs.blocks.item.HybridBlocksItemGroups
+import dev.hybridlabs.blocks.item.HybridBlocksItems
+import net.neoforged.fml.common.Mod
 
 @Suppress("UnusedExpression")
 @Mod(Constants.MOD_ID)
-object HybridAquaticForge {
-
+object HybridBlocksForge {
 
     init {
 
         CommonClass.init()
 
-        HBBlocks
+        HybridBlocksBlocks
         HBBlockEntityTypes
-        HBItems
-        HBItemGroups
+        HybridBlocksItems
+        HybridBlocksItemGroups
     }
 
 }
