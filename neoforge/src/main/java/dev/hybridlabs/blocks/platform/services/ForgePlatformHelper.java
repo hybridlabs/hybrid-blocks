@@ -1,15 +1,14 @@
-package dev.hybridlabs.blocks.platform;
+package dev.hybridlabs.blocks.platform.services;
 
 import dev.hybridlabs.blocks.Constants;
-import dev.hybridlabs.blocks.platform.services.PlatformHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModContainer;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.javafmlmod.FMLModContainer;
-import net.minecraftforge.fml.loading.FMLLoader;
-import net.minecraftforge.fml.loading.FMLPaths;
-import thedarkcolour.kotlinforforge.KotlinModContainer;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.javafmlmod.FMLModContainer;
+import net.neoforged.fml.loading.FMLLoader;
+import net.neoforged.fml.loading.FMLPaths;
+import thedarkcolour.kotlinforforge.neoforge.KotlinModContainer;
 
 import java.nio.file.Path;
 
@@ -20,7 +19,7 @@ public class ForgePlatformHelper implements PlatformHelper {
         if (cont instanceof FMLModContainer fmlModContainer) {
             return fmlModContainer.getEventBus();
         } else if (cont instanceof KotlinModContainer kotlinModContainer) {
-            return kotlinModContainer.getEventBus$kfflang();
+            return kotlinModContainer.getEventBus$kotlinforforge_langNeoForge();
         } else {
             throw new ClassCastException("The container of the mod " + Constants.MOD_ID + " is not a FML one!");
         }
