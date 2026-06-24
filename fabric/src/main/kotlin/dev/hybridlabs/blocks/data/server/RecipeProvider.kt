@@ -15,7 +15,6 @@ import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.item.crafting.RecipeSerializer
 import net.minecraft.world.level.ItemLike
 import net.minecraft.world.level.block.Blocks
-import java.util.function.Consumer
 import net.minecraft.data.recipes.RecipeCategory
 import net.minecraft.world.item.crafting.SmeltingRecipe
 import java.util.concurrent.CompletableFuture
@@ -1253,7 +1252,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
 
     companion object {
         private fun convertBetween(to: Item, from: Item): String {
-            return "${BuiltInRegistries.ITEM.getKey(to.asItem())}_from_${from.asItem()}"
+            return "${to}_from_${from.descriptionId}"
         }
 
         private fun offerShinglesDyeingRecipe(
