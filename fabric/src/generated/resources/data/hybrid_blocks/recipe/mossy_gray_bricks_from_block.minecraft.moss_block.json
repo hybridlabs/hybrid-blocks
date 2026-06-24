@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_mossy_bricks",
+  "ingredients": [
+    {
+      "item": "hybrid_blocks:gray_bricks"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:mossy_gray_bricks"
+  }
+}

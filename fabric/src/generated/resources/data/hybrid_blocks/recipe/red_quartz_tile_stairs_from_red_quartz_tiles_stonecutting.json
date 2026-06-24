@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:red_quartz_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:red_quartz_tile_stairs"
+  }
+}

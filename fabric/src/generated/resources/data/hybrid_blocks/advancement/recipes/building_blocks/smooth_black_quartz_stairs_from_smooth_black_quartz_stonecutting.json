@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_smooth_black_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hybrid_blocks:smooth_black_quartz"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hybrid_blocks:smooth_black_quartz_stairs_from_smooth_black_quartz_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_smooth_black_quartz"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hybrid_blocks:smooth_black_quartz_stairs_from_smooth_black_quartz_stonecutting"
+    ]
+  }
+}

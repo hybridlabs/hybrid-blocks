@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:red_nether_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:red_nether_shingle_stairs"
+  }
+}

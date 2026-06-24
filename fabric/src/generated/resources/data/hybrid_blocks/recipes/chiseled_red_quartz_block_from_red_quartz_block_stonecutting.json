@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:red_quartz_block"
-  },
-  "result": "hybrid_blocks:chiseled_red_quartz_block"
-}

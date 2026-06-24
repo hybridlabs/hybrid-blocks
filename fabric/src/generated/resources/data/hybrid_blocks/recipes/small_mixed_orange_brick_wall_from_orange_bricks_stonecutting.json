@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:orange_bricks"
-  },
-  "result": "hybrid_blocks:small_mixed_orange_brick_wall"
-}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:green_quartz_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:green_quartz_bricks"
+  }
+}

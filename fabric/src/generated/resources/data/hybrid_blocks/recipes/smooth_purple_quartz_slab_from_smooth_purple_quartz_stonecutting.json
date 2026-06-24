@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "hybrid_blocks:smooth_purple_quartz"
-  },
-  "result": "hybrid_blocks:smooth_purple_quartz_slab"
-}

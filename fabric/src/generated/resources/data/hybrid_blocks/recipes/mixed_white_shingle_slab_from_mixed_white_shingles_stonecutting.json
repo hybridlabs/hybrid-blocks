@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "hybrid_blocks:mixed_white_shingles"
-  },
-  "result": "hybrid_blocks:mixed_white_shingle_slab"
-}

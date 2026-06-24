@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:mixed_purple_shingles"
-  },
-  "result": "hybrid_blocks:mixed_purple_shingle_wall"
-}

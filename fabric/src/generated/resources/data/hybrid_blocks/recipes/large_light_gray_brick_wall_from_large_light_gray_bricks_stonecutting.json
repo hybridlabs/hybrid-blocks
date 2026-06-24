@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:large_light_gray_bricks"
-  },
-  "result": "hybrid_blocks:large_light_gray_brick_wall"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:blue_bricks"
-  },
-  "result": "hybrid_blocks:large_blue_brick_stairs"
-}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:lime_quartz_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:chiseled_lime_quartz_block"
+  }
+}

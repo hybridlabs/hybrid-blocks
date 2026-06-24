@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chimney",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:purple_bricks"
+    }
+  },
+  "pattern": [
+    "# #",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:purple_brick_chimney"
+  }
+}

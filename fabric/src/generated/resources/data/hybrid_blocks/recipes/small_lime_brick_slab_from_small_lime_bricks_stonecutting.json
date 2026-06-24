@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "hybrid_blocks:small_lime_bricks"
-  },
-  "result": "hybrid_blocks:small_lime_brick_slab"
-}

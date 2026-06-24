@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:magenta_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:mixed_magenta_bricks"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:nether_bricks"
-  },
-  "result": "hybrid_blocks:mixed_nether_shingle_stairs"
-}

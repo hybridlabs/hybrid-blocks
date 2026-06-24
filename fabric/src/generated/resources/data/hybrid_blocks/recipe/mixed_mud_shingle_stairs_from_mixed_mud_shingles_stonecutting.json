@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:mixed_mud_shingles"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:mixed_mud_shingle_stairs"
+  }
+}

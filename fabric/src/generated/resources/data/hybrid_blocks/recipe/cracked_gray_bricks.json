@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_cracked_bricks",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:cracked_bricks"
+    },
+    "X": {
+      "item": "minecraft:gray_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "hybrid_blocks:cracked_gray_bricks"
+  }
+}

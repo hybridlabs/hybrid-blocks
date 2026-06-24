@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "hybrid_blocks:mossy_pink_bricks"
-  },
-  "result": "hybrid_blocks:mossy_pink_brick_wall"
-}

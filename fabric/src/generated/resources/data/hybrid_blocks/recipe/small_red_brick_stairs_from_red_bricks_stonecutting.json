@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:red_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:small_red_brick_stairs"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_clear_glass",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:clear_glass"
+    },
+    "X": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "hybrid_blocks:white_stained_clear_glass"
+  }
+}

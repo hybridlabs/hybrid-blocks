@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:large_white_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:large_white_brick_stairs"
+  }
+}

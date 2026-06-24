@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_mossy_bricks",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:mossy_bricks"
+    },
+    "X": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "hybrid_blocks:mossy_yellow_bricks"
+  }
+}

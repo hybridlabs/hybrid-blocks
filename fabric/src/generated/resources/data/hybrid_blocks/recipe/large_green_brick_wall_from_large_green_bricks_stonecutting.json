@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:large_green_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "hybrid_blocks:large_green_brick_wall"
+  }
+}
