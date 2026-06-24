@@ -1,7 +1,7 @@
 package dev.hybridlabs.blocks.item
 
+import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.Constants
-import dev.hybridlabs.blocks.HybridBlocksCommon
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.core.registries.BuiltInRegistries
@@ -30,6 +30,6 @@ object HybridBlocksItemGroups {
     )
 
     private fun register(id: String, itemGroup: CreativeModeTab): RegistryObject<CreativeModeTab> {
-        return HybridBlocksCommon.CREATIVE_MODE_TABS.register(id) { itemGroup }
+        return CommonClass.CREATIVE_MODE_TABS.register(id) { itemGroup }
     }
 }

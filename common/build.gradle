@@ -1,20 +1,42 @@
 plugins {
     id 'multiloader-common'
-    id 'net.neoforged.moddev.legacyforge'
+    id 'net.neoforged.moddev'
     id 'org.jetbrains.kotlin.jvm'
 }
 
-legacyForge {
-    validateAccessTransformers = false
-    mcpVersion = minecraft_version
-    accessTransformers = [project(':common').file("src/main/resources/META-INF/accesstransformer.cfg")]
+neoForge {
+    neoFormVersion = neo_form_version
+    // Automatically enable AccessTransformers if the file exists
+    def at = file("src/main/resources/'META-INF/accesstransformer.cfg")
+    if (at.exists()) {
+        accessTransformers.from(at.absolutePath)
+    }
     parchment {
-        minecraftVersion = minecraft_version
+        minecraftVersion = parchment_minecraft
         mappingsVersion = parchment_version
     }
 }
 
 repositories {
+    maven {
+        name = "Jitpack"
+        url = "https://jitpack.io/"
+    }
+
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+
+    maven {
+        name = "Debug Utils (GitLab)"
+        url = "https://gitlab.com/api/v4/projects/21830712/packages/maven/"
+    }
+
+    maven {
+        name = "Minecraft Forge"
+        url = "https://maven.minecraftforge.net/"
+    }
     mavenCentral()
 }
 

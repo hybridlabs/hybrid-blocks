@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
 
 @Suppress("SameParameterValue", "OVERRIDE_DEPRECATION")
-class ColumnBlock(
+class HBColumnBlock(
     properties: Properties,
 ) : Block(properties) {
 

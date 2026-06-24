@@ -1,6 +1,6 @@
 package dev.hybridlabs.blocks.block.entity
 
-import dev.hybridlabs.blocks.HybridBlocksCommon
+import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.world.level.block.Block
@@ -39,7 +39,7 @@ object HBBlockEntityTypes {
         factory: BlockEntityType.BlockEntitySupplier<T>, vararg validBlocks: RegistryObject<Block>?,
     ): RegistryObject<BlockEntityType<T?>> {
 
-        return HybridBlocksCommon.BLOCK_ENTITY_TYPES.register(id) {
+        return CommonClass.BLOCK_ENTITY_TYPES.register(id) {
             val blocks = validBlocks.map { block -> block?.get() }.toTypedArray()
             val builder = BlockEntityType.Builder.of(factory, *blocks)
             builder.build(null)

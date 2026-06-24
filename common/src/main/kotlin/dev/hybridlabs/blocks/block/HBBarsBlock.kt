@@ -2,6 +2,6 @@ package dev.hybridlabs.blocks.block
 
 import net.minecraft.world.level.block.IronBarsBlock
 
-class HybridBlocksBarsBlock(
+class HBBarsBlock(
     properties: Properties
 ) : IronBarsBlock(properties)

@@ -1,6 +1,6 @@
 package dev.hybridlabs.blocks.item
 
-import dev.hybridlabs.blocks.HybridBlocksCommon
+import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.world.item.Item
@@ -1400,6 +1400,6 @@ object HybridBlocksItems {
     //#endregion
 
     private fun <T : Item> register(id: String, item: Supplier<T>): RegistryObject<T> {
-        return HybridBlocksCommon.ITEMS.register(id, item)
+        return CommonClass.ITEMS.register(id, item)
     }
 }

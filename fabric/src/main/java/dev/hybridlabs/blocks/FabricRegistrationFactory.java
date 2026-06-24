@@ -1,5 +1,6 @@
 package dev.hybridlabs.blocks;
 
+import dev.hybridlabs.blocks.CommonClass;
 import dev.hybridlabs.blocks.platform.registration.RegistrationProvider;
 import dev.hybridlabs.blocks.platform.registration.RegistryObject;
 import net.minecraft.core.Holder;
@@ -52,7 +53,7 @@ public class FabricRegistrationFactory implements RegistrationProvider.Factory {
         @Override
         @SuppressWarnings("unchecked")
         public <I extends T> RegistryObject<I> register(String name, Supplier<? extends I> supplier) {
-            final var rl = new ResourceLocation(modId, name);
+            final var rl = CommonClass.locate(name);
             final var obj = Registry.register(registry, rl, supplier.get());
             final var ro = new RegistryObject<I>() {
                 final ResourceKey<I> key = ResourceKey.create((ResourceKey<? extends Registry<I>>) registry.key(), rl);
