@@ -1,4 +1,4 @@
-package main.kotlin.dev.hybridlabs.blocks
+package dev.hybridlabs.blocks
 
 import dev.hybridlabs.blocks.Constants.MOD_ID
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks

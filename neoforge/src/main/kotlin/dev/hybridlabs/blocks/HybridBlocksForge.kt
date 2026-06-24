@@ -1,9 +1,8 @@
-package main.kotlin.dev.hybridlabs.blocks
+package dev.hybridlabs.blocks
 
-import dev.hybridlabs.blocks.CommonClass
-import dev.hybridlabs.blocks.Constants
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.entity.HBBlockEntityTypes
+import dev.hybridlabs.blocks.forge.HybridBlocksModBusEvents
 import dev.hybridlabs.blocks.item.HybridBlocksItemGroups
 import dev.hybridlabs.blocks.item.HybridBlocksItems
 import net.neoforged.fml.common.Mod
@@ -20,6 +19,8 @@ object HybridBlocksForge {
         HBBlockEntityTypes
         HybridBlocksItems
         HybridBlocksItemGroups
+
+        HybridBlocksModBusEvents
     }
 
 }
