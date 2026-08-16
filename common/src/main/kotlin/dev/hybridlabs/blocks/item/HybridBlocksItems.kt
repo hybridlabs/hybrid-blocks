@@ -12,7 +12,7 @@ import java.util.function.Supplier
  */
 @Suppress("unused")
 object HybridBlocksItems {
-    //#region Quartz
+    //#region Calcite
     val POLISHED_CALCITE = register("polished_calcite") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE.get(), Item.Properties()) }
     val POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_STAIRS.get(), Item.Properties()) }
     val POLISHED_CALCITE_SLAB = register("polished_calcite_slab") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_SLAB.get(), Item.Properties()) }
