@@ -1838,4 +1838,116 @@ object HybridBlocksFamilies {
             .slab(HybridBlocksBlocks.BLACK_QUARTZ_TILE_SLAB.get())
             .family
     }
+
+    val WHITE_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.WHITE_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.WHITE_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.WHITE_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val ORANGE_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.ORANGE_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.ORANGE_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.ORANGE_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val MAGENTA_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val LIGHT_BLUE_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val YELLOW_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.YELLOW_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.YELLOW_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.YELLOW_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val LIME_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LIME_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LIME_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LIME_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val PINK_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.PINK_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.PINK_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.PINK_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val GRAY_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.GRAY_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.GRAY_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.GRAY_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val LIGHT_GRAY_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val CYAN_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CYAN_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CYAN_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CYAN_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val PURPLE_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.PURPLE_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.PURPLE_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.PURPLE_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val BLUE_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.BLUE_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.BLUE_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.BLUE_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val BROWN_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.BROWN_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.BROWN_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.BROWN_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val GREEN_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.GREEN_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.GREEN_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.GREEN_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val RED_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.RED_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.RED_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.RED_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
+
+    val BLACK_QUARTZ_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.BLACK_QUARTZ_BRICKS.get())
+            .stairs(HybridBlocksBlocks.BLACK_QUARTZ_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.BLACK_QUARTZ_BRICK_SLAB.get())
+            .family
+    }
 }

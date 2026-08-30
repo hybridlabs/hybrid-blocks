@@ -3,8 +3,8 @@ package dev.hybridlabs.blocks.item
 import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.BlockItem
+import net.minecraft.world.item.Item
 import java.util.function.Supplier
 
 /**
@@ -24,11 +24,16 @@ object HybridBlocksItems {
     val POLISHED_CALCITE_TILE_SLAB = register("polished_calcite_tile_slab") { BlockItem(HybridBlocksBlocks.POLISHED_CALCITE_TILE_SLAB.get(), Item.Properties()) }
 
     //#region Quartz
+    val QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val QUARTZ_BRICK_SLAB = register("quartz_brick_slab") { BlockItem(HybridBlocksBlocks.QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
+
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val WHITE_QUARTZ_STAIRS = register("white_quartz_stairs") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_STAIRS.get(), Item.Properties()) }
     val WHITE_QUARTZ_SLAB = register("white_quartz_slab") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_WHITE_QUARTZ_BLOCK = register("chiseled_white_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_WHITE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val WHITE_QUARTZ_BRICKS = register("white_quartz_bricks") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val WHITE_QUARTZ_BRICK_STAIRS = register("white_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val WHITE_QUARTZ_BRICK_SLAB = register("white_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val WHITE_QUARTZ_PILLAR = register("white_quartz_pillar") { BlockItem(HybridBlocksBlocks.WHITE_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_WHITE_QUARTZ = register("smooth_white_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_WHITE_QUARTZ_STAIRS = register("smooth_white_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_WHITE_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -42,6 +47,8 @@ object HybridBlocksItems {
     val LIGHT_GRAY_QUARTZ_SLAB = register("light_gray_quartz_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_LIGHT_GRAY_QUARTZ_BLOCK = register("chiseled_light_gray_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK.get(), Item.Properties()) }
     val LIGHT_GRAY_QUARTZ_BRICKS = register("light_gray_quartz_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val LIGHT_GRAY_QUARTZ_BRICK_STAIRS = register("light_gray_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val LIGHT_GRAY_QUARTZ_BRICK_SLAB = register("light_gray_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val LIGHT_GRAY_QUARTZ_PILLAR = register("light_gray_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_LIGHT_GRAY_QUARTZ = register("smooth_light_gray_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_LIGHT_GRAY_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS = register("smooth_light_gray_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -55,6 +62,8 @@ object HybridBlocksItems {
     val GRAY_QUARTZ_SLAB = register("gray_quartz_slab") { BlockItem(HybridBlocksBlocks.GRAY_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_GRAY_QUARTZ_BLOCK = register("chiseled_gray_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_GRAY_QUARTZ_BLOCK.get(), Item.Properties()) }
     val GRAY_QUARTZ_BRICKS = register("gray_quartz_bricks") { BlockItem(HybridBlocksBlocks.GRAY_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val GRAY_QUARTZ_BRICK_STAIRS = register("gray_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.GRAY_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val GRAY_QUARTZ_BRICK_SLAB = register("gray_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.GRAY_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val GRAY_QUARTZ_PILLAR = register("gray_quartz_pillar") { BlockItem(HybridBlocksBlocks.GRAY_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_GRAY_QUARTZ = register("smooth_gray_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_GRAY_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_GRAY_QUARTZ_STAIRS = register("smooth_gray_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_GRAY_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -68,6 +77,8 @@ object HybridBlocksItems {
     val BLACK_QUARTZ_SLAB = register("black_quartz_slab") { BlockItem(HybridBlocksBlocks.BLACK_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_BLACK_QUARTZ_BLOCK = register("chiseled_black_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_BLACK_QUARTZ_BLOCK.get(), Item.Properties()) }
     val BLACK_QUARTZ_BRICKS = register("black_quartz_bricks") { BlockItem(HybridBlocksBlocks.BLACK_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val BLACK_QUARTZ_BRICK_STAIRS = register("black_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.BLACK_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val BLACK_QUARTZ_BRICK_SLAB = register("black_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.BLACK_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val BLACK_QUARTZ_PILLAR = register("black_quartz_pillar") { BlockItem(HybridBlocksBlocks.BLACK_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_BLACK_QUARTZ = register("smooth_black_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_BLACK_QUARTZ_STAIRS = register("smooth_black_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_BLACK_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -81,6 +92,8 @@ object HybridBlocksItems {
     val BROWN_QUARTZ_SLAB = register("brown_quartz_slab") { BlockItem(HybridBlocksBlocks.BROWN_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_BROWN_QUARTZ_BLOCK = register("chiseled_brown_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_BROWN_QUARTZ_BLOCK.get(), Item.Properties()) }
     val BROWN_QUARTZ_BRICKS = register("brown_quartz_bricks") { BlockItem(HybridBlocksBlocks.BROWN_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val BROWN_QUARTZ_BRICK_STAIRS = register("brown_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.BROWN_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val BROWN_QUARTZ_BRICK_SLAB = register("brown_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.BROWN_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val BROWN_QUARTZ_PILLAR = register("brown_quartz_pillar") { BlockItem(HybridBlocksBlocks.BROWN_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_BROWN_QUARTZ = register("smooth_brown_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_BROWN_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_BROWN_QUARTZ_STAIRS = register("smooth_brown_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_BROWN_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -94,6 +107,8 @@ object HybridBlocksItems {
     val RED_QUARTZ_SLAB = register("red_quartz_slab") { BlockItem(HybridBlocksBlocks.RED_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_RED_QUARTZ_BLOCK = register("chiseled_red_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_RED_QUARTZ_BLOCK.get(), Item.Properties()) }
     val RED_QUARTZ_BRICKS = register("red_quartz_bricks") { BlockItem(HybridBlocksBlocks.RED_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val RED_QUARTZ_BRICK_STAIRS = register("red_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.RED_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val RED_QUARTZ_BRICK_SLAB = register("red_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.RED_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val RED_QUARTZ_PILLAR = register("red_quartz_pillar") { BlockItem(HybridBlocksBlocks.RED_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_RED_QUARTZ = register("smooth_red_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_RED_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_RED_QUARTZ_STAIRS = register("smooth_red_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_RED_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -107,6 +122,8 @@ object HybridBlocksItems {
     val ORANGE_QUARTZ_SLAB = register("orange_quartz_slab") { BlockItem(HybridBlocksBlocks.ORANGE_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_ORANGE_QUARTZ_BLOCK = register("chiseled_orange_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_ORANGE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val ORANGE_QUARTZ_BRICKS = register("orange_quartz_bricks") { BlockItem(HybridBlocksBlocks.ORANGE_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val ORANGE_QUARTZ_BRICK_STAIRS = register("orange_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.ORANGE_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val ORANGE_QUARTZ_BRICK_SLAB = register("orange_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.ORANGE_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val ORANGE_QUARTZ_PILLAR = register("orange_quartz_pillar") { BlockItem(HybridBlocksBlocks.ORANGE_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_ORANGE_QUARTZ = register("smooth_orange_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_ORANGE_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_ORANGE_QUARTZ_STAIRS = register("smooth_orange_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_ORANGE_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -120,6 +137,8 @@ object HybridBlocksItems {
     val YELLOW_QUARTZ_SLAB = register("yellow_quartz_slab") { BlockItem(HybridBlocksBlocks.YELLOW_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_YELLOW_QUARTZ_BLOCK = register("chiseled_yellow_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_YELLOW_QUARTZ_BLOCK.get(), Item.Properties()) }
     val YELLOW_QUARTZ_BRICKS = register("yellow_quartz_bricks") { BlockItem(HybridBlocksBlocks.YELLOW_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val YELLOW_QUARTZ_BRICK_STAIRS = register("yellow_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.YELLOW_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val YELLOW_QUARTZ_BRICK_SLAB = register("yellow_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.YELLOW_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val YELLOW_QUARTZ_PILLAR = register("yellow_quartz_pillar") { BlockItem(HybridBlocksBlocks.YELLOW_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_YELLOW_QUARTZ = register("smooth_yellow_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_YELLOW_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_YELLOW_QUARTZ_STAIRS = register("smooth_yellow_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_YELLOW_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -133,6 +152,8 @@ object HybridBlocksItems {
     val LIME_QUARTZ_SLAB = register("lime_quartz_slab") { BlockItem(HybridBlocksBlocks.LIME_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_LIME_QUARTZ_BLOCK = register("chiseled_lime_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_LIME_QUARTZ_BLOCK.get(), Item.Properties()) }
     val LIME_QUARTZ_BRICKS = register("lime_quartz_bricks") { BlockItem(HybridBlocksBlocks.LIME_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val LIME_QUARTZ_BRICK_STAIRS = register("lime_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.LIME_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val LIME_QUARTZ_BRICK_SLAB = register("lime_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.LIME_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val LIME_QUARTZ_PILLAR = register("lime_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIME_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_LIME_QUARTZ = register("smooth_lime_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_LIME_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_LIME_QUARTZ_STAIRS = register("smooth_lime_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_LIME_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -146,6 +167,8 @@ object HybridBlocksItems {
     val GREEN_QUARTZ_SLAB = register("green_quartz_slab") { BlockItem(HybridBlocksBlocks.GREEN_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_GREEN_QUARTZ_BLOCK = register("chiseled_green_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_GREEN_QUARTZ_BLOCK.get(), Item.Properties()) }
     val GREEN_QUARTZ_BRICKS = register("green_quartz_bricks") { BlockItem(HybridBlocksBlocks.GREEN_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val GREEN_QUARTZ_BRICK_STAIRS = register("green_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.GREEN_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val GREEN_QUARTZ_BRICK_SLAB = register("green_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.GREEN_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val GREEN_QUARTZ_PILLAR = register("green_quartz_pillar") { BlockItem(HybridBlocksBlocks.GREEN_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_GREEN_QUARTZ = register("smooth_green_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_GREEN_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_GREEN_QUARTZ_STAIRS = register("smooth_green_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_GREEN_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -159,6 +182,8 @@ object HybridBlocksItems {
     val CYAN_QUARTZ_SLAB = register("cyan_quartz_slab") { BlockItem(HybridBlocksBlocks.CYAN_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_CYAN_QUARTZ_BLOCK = register("chiseled_cyan_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_CYAN_QUARTZ_BLOCK.get(), Item.Properties()) }
     val CYAN_QUARTZ_BRICKS = register("cyan_quartz_bricks") { BlockItem(HybridBlocksBlocks.CYAN_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val CYAN_QUARTZ_BRICK_STAIRS = register("cyan_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.CYAN_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val CYAN_QUARTZ_BRICK_SLAB = register("cyan_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.CYAN_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val CYAN_QUARTZ_PILLAR = register("cyan_quartz_pillar") { BlockItem(HybridBlocksBlocks.CYAN_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_CYAN_QUARTZ = register("smooth_cyan_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_CYAN_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_CYAN_QUARTZ_STAIRS = register("smooth_cyan_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_CYAN_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -172,6 +197,8 @@ object HybridBlocksItems {
     val LIGHT_BLUE_QUARTZ_SLAB = register("light_blue_quartz_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_LIGHT_BLUE_QUARTZ_BLOCK = register("chiseled_light_blue_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val LIGHT_BLUE_QUARTZ_BRICKS = register("light_blue_quartz_bricks") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val LIGHT_BLUE_QUARTZ_BRICK_STAIRS = register("light_blue_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val LIGHT_BLUE_QUARTZ_BRICK_SLAB = register("light_blue_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val LIGHT_BLUE_QUARTZ_PILLAR = register("light_blue_quartz_pillar") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_LIGHT_BLUE_QUARTZ = register("smooth_light_blue_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_LIGHT_BLUE_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS = register("smooth_light_blue_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -185,6 +212,8 @@ object HybridBlocksItems {
     val BLUE_QUARTZ_SLAB = register("blue_quartz_slab") { BlockItem(HybridBlocksBlocks.BLUE_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_BLUE_QUARTZ_BLOCK = register("chiseled_blue_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_BLUE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val BLUE_QUARTZ_BRICKS = register("blue_quartz_bricks") { BlockItem(HybridBlocksBlocks.BLUE_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val BLUE_QUARTZ_BRICK_STAIRS = register("blue_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.BLUE_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val BLUE_QUARTZ_BRICK_SLAB = register("blue_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.BLUE_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val BLUE_QUARTZ_PILLAR = register("blue_quartz_pillar") { BlockItem(HybridBlocksBlocks.BLUE_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_BLUE_QUARTZ = register("smooth_blue_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_BLUE_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_BLUE_QUARTZ_STAIRS = register("smooth_blue_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_BLUE_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -198,6 +227,8 @@ object HybridBlocksItems {
     val PURPLE_QUARTZ_SLAB = register("purple_quartz_slab") { BlockItem(HybridBlocksBlocks.PURPLE_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_PURPLE_QUARTZ_BLOCK = register("chiseled_purple_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_PURPLE_QUARTZ_BLOCK.get(), Item.Properties()) }
     val PURPLE_QUARTZ_BRICKS = register("purple_quartz_bricks") { BlockItem(HybridBlocksBlocks.PURPLE_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val PURPLE_QUARTZ_BRICK_STAIRS = register("purple_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.PURPLE_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val PURPLE_QUARTZ_BRICK_SLAB = register("purple_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.PURPLE_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val PURPLE_QUARTZ_PILLAR = register("purple_quartz_pillar") { BlockItem(HybridBlocksBlocks.PURPLE_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_PURPLE_QUARTZ = register("smooth_purple_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_PURPLE_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_PURPLE_QUARTZ_STAIRS = register("smooth_purple_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_PURPLE_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -211,6 +242,8 @@ object HybridBlocksItems {
     val MAGENTA_QUARTZ_SLAB = register("magenta_quartz_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_MAGENTA_QUARTZ_BLOCK = register("chiseled_magenta_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_MAGENTA_QUARTZ_BLOCK.get(), Item.Properties()) }
     val MAGENTA_QUARTZ_BRICKS = register("magenta_quartz_bricks") { BlockItem(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val MAGENTA_QUARTZ_BRICK_STAIRS = register("magenta_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val MAGENTA_QUARTZ_BRICK_SLAB = register("magenta_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val MAGENTA_QUARTZ_PILLAR = register("magenta_quartz_pillar") { BlockItem(HybridBlocksBlocks.MAGENTA_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_MAGENTA_QUARTZ = register("smooth_magenta_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_MAGENTA_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_MAGENTA_QUARTZ_STAIRS = register("smooth_magenta_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_MAGENTA_QUARTZ_STAIRS.get(), Item.Properties()) }
@@ -224,6 +257,8 @@ object HybridBlocksItems {
     val PINK_QUARTZ_SLAB = register("pink_quartz_slab") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_SLAB.get(), Item.Properties()) }
     val CHISELED_PINK_QUARTZ_BLOCK = register("chiseled_pink_quartz_block") { BlockItem(HybridBlocksBlocks.CHISELED_PINK_QUARTZ_BLOCK.get(), Item.Properties()) }
     val PINK_QUARTZ_BRICKS = register("pink_quartz_bricks") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_BRICKS.get(), Item.Properties()) }
+    val PINK_QUARTZ_BRICK_STAIRS = register("pink_quartz_brick_stairs") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_BRICK_STAIRS.get(), Item.Properties()) }
+    val PINK_QUARTZ_BRICK_SLAB = register("pink_quartz_brick_slab") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_BRICK_SLAB.get(), Item.Properties()) }
     val PINK_QUARTZ_PILLAR = register("pink_quartz_pillar") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_PILLAR.get(), Item.Properties()) }
     val SMOOTH_PINK_QUARTZ = register("smooth_pink_quartz") { BlockItem(HybridBlocksBlocks.SMOOTH_PINK_QUARTZ.get(), Item.Properties()) }
     val SMOOTH_PINK_QUARTZ_STAIRS = register("smooth_pink_quartz_stairs") { BlockItem(HybridBlocksBlocks.SMOOTH_PINK_QUARTZ_STAIRS.get(), Item.Properties()) }

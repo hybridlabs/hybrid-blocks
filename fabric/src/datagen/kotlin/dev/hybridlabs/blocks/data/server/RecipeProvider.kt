@@ -1,5 +1,6 @@
 package dev.hybridlabs.blocks.data.server
 
+import dev.hybridlabs.blocks.data.server.RecipeProvider.Companion.offerQuartzSetRecipes
 import dev.hybridlabs.blocks.item.HybridBlocksItems
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
@@ -65,108 +66,30 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get())
 
         //#region Quartz
-        // stained smooth quartz
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_BLACK_QUARTZ.get(), Items.BLACK_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_BLUE_QUARTZ.get(), Items.BLUE_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_BROWN_QUARTZ.get(), Items.BROWN_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_CYAN_QUARTZ.get(), Items.CYAN_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_GRAY_QUARTZ.get(), Items.GRAY_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_GREEN_QUARTZ.get(), Items.GREEN_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ.get(), Items.LIGHT_BLUE_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ.get(), Items.LIGHT_GRAY_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_LIME_QUARTZ.get(), Items.LIME_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ.get(), Items.MAGENTA_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_ORANGE_QUARTZ.get(), Items.ORANGE_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_PINK_QUARTZ.get(), Items.PINK_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_PURPLE_QUARTZ.get(), Items.PURPLE_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_RED_QUARTZ.get(), Items.RED_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_WHITE_QUARTZ.get(), Items.WHITE_DYE)
-        offerSmoothQuartzDyeingRecipe(exporter, HybridBlocksItems.SMOOTH_YELLOW_QUARTZ.get(), Items.YELLOW_DYE)
+        offerStainedQuartzSetRecipes(exporter, WHITE_QUARTZ_SET, Items.WHITE_DYE)
+        offerStainedQuartzSetRecipes(exporter, ORANGE_QUARTZ_SET, Items.ORANGE_DYE)
+        offerStainedQuartzSetRecipes(exporter, MAGENTA_QUARTZ_SET, Items.MAGENTA_DYE)
+        offerStainedQuartzSetRecipes(exporter, LIGHT_BLUE_QUARTZ_SET, Items.LIGHT_BLUE_DYE)
+        offerStainedQuartzSetRecipes(exporter, YELLOW_QUARTZ_SET, Items.YELLOW_DYE)
+        offerStainedQuartzSetRecipes(exporter, LIME_QUARTZ_SET, Items.LIME_DYE)
+        offerStainedQuartzSetRecipes(exporter, PINK_QUARTZ_SET, Items.PINK_DYE)
+        offerStainedQuartzSetRecipes(exporter, GRAY_QUARTZ_SET, Items.GRAY_DYE)
+        offerStainedQuartzSetRecipes(exporter, LIGHT_GRAY_QUARTZ_SET, Items.LIGHT_GRAY_DYE)
+        offerStainedQuartzSetRecipes(exporter, CYAN_QUARTZ_SET, Items.CYAN_DYE)
+        offerStainedQuartzSetRecipes(exporter, PURPLE_QUARTZ_SET, Items.PURPLE_DYE)
+        offerStainedQuartzSetRecipes(exporter, BLUE_QUARTZ_SET, Items.BLUE_DYE)
+        offerStainedQuartzSetRecipes(exporter, BROWN_QUARTZ_SET, Items.BROWN_DYE)
+        offerStainedQuartzSetRecipes(exporter, GREEN_QUARTZ_SET, Items.GREEN_DYE)
+        offerStainedQuartzSetRecipes(exporter, RED_QUARTZ_SET, Items.RED_DYE)
+        offerStainedQuartzSetRecipes(exporter, BLACK_QUARTZ_SET, Items.BLACK_DYE)
 
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_SLAB.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_SLAB.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_SLAB.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_SLAB.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_SLAB.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_SLAB.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_SLAB.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_SLAB.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_SLAB.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_SLAB.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_SLAB.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_SLAB.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
-
-        stairBuilder(exporter,HybridBlocksItems.BLACK_QUARTZ_STAIRS.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.BROWN_QUARTZ_STAIRS.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.CYAN_QUARTZ_STAIRS.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.GREEN_QUARTZ_STAIRS.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.LIGHT_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.LIGHT_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.LIME_QUARTZ_STAIRS.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.MAGENTA_QUARTZ_STAIRS.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.ORANGE_QUARTZ_STAIRS.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.PINK_QUARTZ_STAIRS.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.PURPLE_QUARTZ_STAIRS.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.RED_QUARTZ_STAIRS.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.WHITE_QUARTZ_STAIRS.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        stairBuilder(exporter,HybridBlocksItems.YELLOW_QUARTZ_STAIRS.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
-
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLACK_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BLACK_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BLUE_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BROWN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BROWN_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_CYAN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_CYAN_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_GRAY_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GREEN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_GREEN_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIME_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIME_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_ORANGE_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PINK_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_PINK_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_PURPLE_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_RED_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_RED_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_WHITE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_WHITE_QUARTZ.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_YELLOW_QUARTZ.get())
-
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.BLACK_QUARTZ_BLOCK.get(), HybridBlocksItems.BLACK_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.BLUE_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.BROWN_QUARTZ_BLOCK.get(), HybridBlocksItems.BROWN_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.CYAN_QUARTZ_BLOCK.get(), HybridBlocksItems.CYAN_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.GRAY_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.GREEN_QUARTZ_BLOCK.get(), HybridBlocksItems.GREEN_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.LIME_QUARTZ_BLOCK.get(), HybridBlocksItems.LIME_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get(), HybridBlocksItems.MAGENTA_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get(), HybridBlocksItems.ORANGE_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.PINK_QUARTZ_BLOCK.get(), HybridBlocksItems.PINK_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get(), HybridBlocksItems.PURPLE_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.RED_QUARTZ_BLOCK.get(), HybridBlocksItems.RED_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.WHITE_QUARTZ_BLOCK.get(), HybridBlocksItems.WHITE_QUARTZ_BRICKS.get())
-        offerQuartzBricksRecipes(exporter, HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get(), HybridBlocksItems.YELLOW_QUARTZ_BRICKS.get())
-
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_BLACK_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BLACK_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BLUE_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_BROWN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BROWN_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_CYAN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_CYAN_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_GRAY_QUARTZ.get())
-        stairBuilder(exporter, HybridBlocksItems.SMOOTH_GREEN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_GREEN_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_LIME_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIME_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_ORANGE_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_PINK_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_PINK_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_PURPLE_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_RED_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_RED_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_WHITE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_WHITE_QUARTZ.get())
-        stairBuilder(exporter,HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_YELLOW_QUARTZ.get())
+        // vanilla quartz keeps its own recipes; only the added brick stairs and slab need them
+        offerStairsAndSlabRecipes(
+            exporter,
+            Items.QUARTZ_BRICKS,
+            HybridBlocksItems.QUARTZ_BRICK_STAIRS.get(),
+            HybridBlocksItems.QUARTZ_BRICK_SLAB.get()
+        )
 
         //#endregion
 
@@ -209,91 +132,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         stairBuilder(exporter,HybridBlocksItems.MOSSY_RED_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_RED_BRICKS.get())
         stairBuilder(exporter,HybridBlocksItems.MOSSY_WHITE_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get())
         stairBuilder(exporter,HybridBlocksItems.MOSSY_YELLOW_BRICK_STAIRS.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_PILLAR.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_PILLAR.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_PILLAR.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_PILLAR.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_PILLAR.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_PILLAR.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_PILLAR.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_PILLAR.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_PILLAR.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_PILLAR.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_PILLAR.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_PILLAR.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_PILLAR.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_PILLAR.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_PILLAR.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_PILLAR.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_STAIRS.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_STAIRS.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_STAIRS.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_STAIRS.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_STAIRS.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_STAIRS.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_STAIRS.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_STAIRS.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_STAIRS.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_STAIRS.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_STAIRS.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_STAIRS.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLACK_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BLACK_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BLUE_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BROWN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_BROWN_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_CYAN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_CYAN_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_GRAY_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GREEN_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_GREEN_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIME_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_LIME_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_ORANGE_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PINK_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_PINK_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_PURPLE_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_RED_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_RED_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_WHITE_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_WHITE_QUARTZ.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_STAIRS.get(), HybridBlocksItems.SMOOTH_YELLOW_QUARTZ.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_SLAB.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_SLAB.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_SLAB.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_SLAB.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_SLAB.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_SLAB.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_SLAB.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_SLAB.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_SLAB.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_SLAB.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_SLAB.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_SLAB.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get(), 2)
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLACK_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BLACK_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BLUE_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_BROWN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_BROWN_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_CYAN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_CYAN_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_GRAY_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_GREEN_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_GREEN_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_LIME_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_LIME_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_ORANGE_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PINK_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_PINK_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_PURPLE_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_RED_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_RED_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_WHITE_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_WHITE_QUARTZ.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_SLAB.get(), HybridBlocksItems.SMOOTH_YELLOW_QUARTZ.get(), 2)
 
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_BRICK_STAIRS.get(), HybridBlocksItems.CRACKED_BRICKS.get())
 
@@ -354,40 +192,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_RED_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_RED_BRICKS.get(), 2)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_WHITE_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get(), 2)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MOSSY_YELLOW_BRICK_SLAB.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get(), 2)
-
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BLACK_QUARTZ_BLOCK.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BROWN_QUARTZ_BLOCK.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_CYAN_QUARTZ_BLOCK.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_GREEN_QUARTZ_BLOCK.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIME_QUARTZ_BLOCK.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_MAGENTA_QUARTZ_BLOCK.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_ORANGE_QUARTZ_BLOCK.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_PINK_QUARTZ_BLOCK.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_PURPLE_QUARTZ_BLOCK.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_RED_QUARTZ_BLOCK.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_WHITE_QUARTZ_BLOCK.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_YELLOW_QUARTZ_BLOCK.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BLACK_QUARTZ_BLOCK.get(), HybridBlocksItems.BLACK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_BROWN_QUARTZ_BLOCK.get(), HybridBlocksItems.BROWN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_CYAN_QUARTZ_BLOCK.get(), HybridBlocksItems.CYAN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_GREEN_QUARTZ_BLOCK.get(), HybridBlocksItems.GREEN_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_LIME_QUARTZ_BLOCK.get(), HybridBlocksItems.LIME_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_MAGENTA_QUARTZ_BLOCK.get(), HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_ORANGE_QUARTZ_BLOCK.get(), HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_PINK_QUARTZ_BLOCK.get(), HybridBlocksItems.PINK_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_PURPLE_QUARTZ_BLOCK.get(), HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_RED_QUARTZ_BLOCK.get(), HybridBlocksItems.RED_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_WHITE_QUARTZ_BLOCK.get(), HybridBlocksItems.WHITE_QUARTZ_BLOCK.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CHISELED_YELLOW_QUARTZ_BLOCK.get(), HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get())
 
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.CRACKED_BRICK_WALL.get(), HybridBlocksItems.CRACKED_BRICKS.get())
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.MOSSY_BRICK_WALL.get(), HybridBlocksItems.MOSSY_BRICKS.get())
@@ -916,7 +720,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_RED_NETHER_SHINGLE_STAIRS.get(), Items.RED_NETHER_BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_RED_NETHER_SHINGLE_SLAB.get(), Items.RED_NETHER_BRICKS, 2)
         
-        
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_BRICKS.get(), Items.BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_NETHER_BRICKS.get(), Items.NETHER_BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MIXED_RED_NETHER_BRICKS.get(), Items.RED_NETHER_BRICKS)
@@ -1068,110 +871,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BASKETWEAVE_WHITE_BRICKS.get(), HybridBlocksItems.WHITE_BRICKS.get())
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BASKETWEAVE_YELLOW_BRICKS.get(), HybridBlocksItems.YELLOW_BRICKS.get())
 
-        //#region Quartz
-        // stained quartz pillar
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.BLACK_QUARTZ_PILLAR.get(), Items.BLACK_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.BLUE_QUARTZ_PILLAR.get(), Items.BLUE_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.BROWN_QUARTZ_PILLAR.get(), Items.BROWN_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.CYAN_QUARTZ_PILLAR.get(), Items.CYAN_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.GRAY_QUARTZ_PILLAR.get(), Items.GRAY_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.GREEN_QUARTZ_PILLAR.get(), Items.GREEN_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_QUARTZ_PILLAR.get(), Items.LIGHT_BLUE_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_QUARTZ_PILLAR.get(), Items.LIGHT_GRAY_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.LIME_QUARTZ_PILLAR.get(), Items.LIME_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.MAGENTA_QUARTZ_PILLAR.get(), Items.MAGENTA_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.ORANGE_QUARTZ_PILLAR.get(), Items.ORANGE_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.PINK_QUARTZ_PILLAR.get(), Items.PINK_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.PURPLE_QUARTZ_PILLAR.get(), Items.PURPLE_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.RED_QUARTZ_PILLAR.get(), Items.RED_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.WHITE_QUARTZ_PILLAR.get(), Items.WHITE_DYE)
-        offerQuartzPillarDyeingRecipe(exporter, HybridBlocksItems.YELLOW_QUARTZ_PILLAR.get(), Items.YELLOW_DYE)
-
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.BLACK_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.BLACK_QUARTZ_BLOCK.get()), HybridBlocksItems.BLACK_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.BLUE_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.BLUE_QUARTZ_BLOCK.get()), HybridBlocksItems.BLUE_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.BROWN_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.BROWN_QUARTZ_BLOCK.get()), HybridBlocksItems.BROWN_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.CYAN_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.CYAN_QUARTZ_BLOCK.get()), HybridBlocksItems.CYAN_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.GRAY_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.GRAY_QUARTZ_BLOCK.get()), HybridBlocksItems.GRAY_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.GREEN_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.GREEN_QUARTZ_BLOCK.get()), HybridBlocksItems.GREEN_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK.get()), HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK.get()), HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.LIME_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.LIME_QUARTZ_BLOCK.get()), HybridBlocksItems.LIME_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.MAGENTA_QUARTZ_BLOCK.get()), HybridBlocksItems.MAGENTA_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.ORANGE_QUARTZ_BLOCK.get()), HybridBlocksItems.ORANGE_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.PINK_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.PINK_QUARTZ_BLOCK.get()), HybridBlocksItems.PINK_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.PURPLE_QUARTZ_BLOCK.get()), HybridBlocksItems.PURPLE_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.RED_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.RED_QUARTZ_BLOCK.get()), HybridBlocksItems.RED_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.WHITE_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.WHITE_QUARTZ_BLOCK.get()), HybridBlocksItems.WHITE_QUARTZ_TILES.get())
-        offerQuartzTilesRecipe(exporter, HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get(), getHasName(HybridBlocksItems.YELLOW_QUARTZ_BLOCK.get()), HybridBlocksItems.YELLOW_QUARTZ_TILES.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BLACK_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BLUE_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BROWN_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.CYAN_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.GRAY_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.GREEN_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIME_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.MAGENTA_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.ORANGE_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.PINK_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.PURPLE_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.RED_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.WHITE_QUARTZ_TILES.get())
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.YELLOW_QUARTZ_TILES.get())
-
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BLACK_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BLUE_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BROWN_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.CYAN_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.GRAY_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.GREEN_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIME_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.MAGENTA_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.ORANGE_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.PINK_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.PURPLE_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.RED_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.WHITE_QUARTZ_TILES.get(), 2)
-        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.YELLOW_QUARTZ_TILES.get(), 2)
-
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLACK_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BLACK_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BLUE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BLUE_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.BROWN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.BROWN_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CYAN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.CYAN_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GRAY_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.GRAY_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.GREEN_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.GREEN_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.LIME_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.LIME_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.MAGENTA_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.MAGENTA_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.ORANGE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.ORANGE_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PINK_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.PINK_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.PURPLE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.PURPLE_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.RED_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.RED_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.WHITE_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.WHITE_QUARTZ_TILES.get())
-        slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.YELLOW_QUARTZ_TILE_SLAB.get(), HybridBlocksItems.YELLOW_QUARTZ_TILES.get())
-
-        stairBuilder(exporter,HybridBlocksItems.BLACK_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BLACK_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.BLUE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BLUE_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.BROWN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.BROWN_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.CYAN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.CYAN_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.GRAY_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.GRAY_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.GREEN_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.GREEN_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.LIME_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.LIME_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.MAGENTA_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.MAGENTA_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.ORANGE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.ORANGE_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.PINK_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.PINK_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.PURPLE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.PURPLE_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.RED_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.RED_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.WHITE_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.WHITE_QUARTZ_TILES.get())
-        stairBuilder(exporter,HybridBlocksItems.YELLOW_QUARTZ_TILE_STAIRS.get(), HybridBlocksItems.YELLOW_QUARTZ_TILES.get())
-        //#endregion
 
         // stained bricks
         offerBricksDyeingRecipe(exporter, HybridBlocksItems.BLACK_BRICKS.get(), Items.BLACK_DYE)
@@ -2569,5 +2268,377 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
 
                 .save(exporter, convertBetween(output, Items.MOSS_BLOCK))
         }
+
+        //#region Quartz Sets
+        /**
+         * Every block variant a single quartz colour ships with.
+         */
+        private data class QuartzRecipeSet(
+            val block: RegistryObject<BlockItem>,
+            val stairs: RegistryObject<BlockItem>,
+            val slab: RegistryObject<BlockItem>,
+            val smooth: RegistryObject<BlockItem>,
+            val smoothStairs: RegistryObject<BlockItem>,
+            val smoothSlab: RegistryObject<BlockItem>,
+            val bricks: RegistryObject<BlockItem>,
+            val brickStairs: RegistryObject<BlockItem>,
+            val brickSlab: RegistryObject<BlockItem>,
+            val pillar: RegistryObject<BlockItem>,
+            val chiseled: RegistryObject<BlockItem>,
+            val tiles: RegistryObject<BlockItem>,
+            val tileStairs: RegistryObject<BlockItem>,
+            val tileSlab: RegistryObject<BlockItem>,
+        )
+
+        private val WHITE_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.WHITE_QUARTZ_BLOCK,
+            HybridBlocksItems.WHITE_QUARTZ_STAIRS,
+            HybridBlocksItems.WHITE_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_WHITE_QUARTZ,
+            HybridBlocksItems.SMOOTH_WHITE_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_WHITE_QUARTZ_SLAB,
+            HybridBlocksItems.WHITE_QUARTZ_BRICKS,
+            HybridBlocksItems.WHITE_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.WHITE_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.WHITE_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_WHITE_QUARTZ_BLOCK,
+            HybridBlocksItems.WHITE_QUARTZ_TILES,
+            HybridBlocksItems.WHITE_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.WHITE_QUARTZ_TILE_SLAB,
+        )
+
+        private val ORANGE_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.ORANGE_QUARTZ_BLOCK,
+            HybridBlocksItems.ORANGE_QUARTZ_STAIRS,
+            HybridBlocksItems.ORANGE_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_ORANGE_QUARTZ,
+            HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_ORANGE_QUARTZ_SLAB,
+            HybridBlocksItems.ORANGE_QUARTZ_BRICKS,
+            HybridBlocksItems.ORANGE_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.ORANGE_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.ORANGE_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_ORANGE_QUARTZ_BLOCK,
+            HybridBlocksItems.ORANGE_QUARTZ_TILES,
+            HybridBlocksItems.ORANGE_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.ORANGE_QUARTZ_TILE_SLAB,
+        )
+
+        private val MAGENTA_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.MAGENTA_QUARTZ_BLOCK,
+            HybridBlocksItems.MAGENTA_QUARTZ_STAIRS,
+            HybridBlocksItems.MAGENTA_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ,
+            HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_MAGENTA_QUARTZ_SLAB,
+            HybridBlocksItems.MAGENTA_QUARTZ_BRICKS,
+            HybridBlocksItems.MAGENTA_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.MAGENTA_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.MAGENTA_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_MAGENTA_QUARTZ_BLOCK,
+            HybridBlocksItems.MAGENTA_QUARTZ_TILES,
+            HybridBlocksItems.MAGENTA_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.MAGENTA_QUARTZ_TILE_SLAB,
+        )
+
+        private val LIGHT_BLUE_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_BLOCK,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_STAIRS,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ,
+            HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_LIGHT_BLUE_QUARTZ_SLAB,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_BRICKS,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_LIGHT_BLUE_QUARTZ_BLOCK,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILES,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.LIGHT_BLUE_QUARTZ_TILE_SLAB,
+        )
+
+        private val YELLOW_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.YELLOW_QUARTZ_BLOCK,
+            HybridBlocksItems.YELLOW_QUARTZ_STAIRS,
+            HybridBlocksItems.YELLOW_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_YELLOW_QUARTZ,
+            HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_YELLOW_QUARTZ_SLAB,
+            HybridBlocksItems.YELLOW_QUARTZ_BRICKS,
+            HybridBlocksItems.YELLOW_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.YELLOW_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.YELLOW_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_YELLOW_QUARTZ_BLOCK,
+            HybridBlocksItems.YELLOW_QUARTZ_TILES,
+            HybridBlocksItems.YELLOW_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.YELLOW_QUARTZ_TILE_SLAB,
+        )
+
+        private val LIME_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.LIME_QUARTZ_BLOCK,
+            HybridBlocksItems.LIME_QUARTZ_STAIRS,
+            HybridBlocksItems.LIME_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_LIME_QUARTZ,
+            HybridBlocksItems.SMOOTH_LIME_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_LIME_QUARTZ_SLAB,
+            HybridBlocksItems.LIME_QUARTZ_BRICKS,
+            HybridBlocksItems.LIME_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.LIME_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.LIME_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_LIME_QUARTZ_BLOCK,
+            HybridBlocksItems.LIME_QUARTZ_TILES,
+            HybridBlocksItems.LIME_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.LIME_QUARTZ_TILE_SLAB,
+        )
+
+        private val PINK_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.PINK_QUARTZ_BLOCK,
+            HybridBlocksItems.PINK_QUARTZ_STAIRS,
+            HybridBlocksItems.PINK_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_PINK_QUARTZ,
+            HybridBlocksItems.SMOOTH_PINK_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_PINK_QUARTZ_SLAB,
+            HybridBlocksItems.PINK_QUARTZ_BRICKS,
+            HybridBlocksItems.PINK_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.PINK_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.PINK_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_PINK_QUARTZ_BLOCK,
+            HybridBlocksItems.PINK_QUARTZ_TILES,
+            HybridBlocksItems.PINK_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.PINK_QUARTZ_TILE_SLAB,
+        )
+
+        private val GRAY_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.GRAY_QUARTZ_BLOCK,
+            HybridBlocksItems.GRAY_QUARTZ_STAIRS,
+            HybridBlocksItems.GRAY_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_GRAY_QUARTZ,
+            HybridBlocksItems.SMOOTH_GRAY_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_GRAY_QUARTZ_SLAB,
+            HybridBlocksItems.GRAY_QUARTZ_BRICKS,
+            HybridBlocksItems.GRAY_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.GRAY_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.GRAY_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_GRAY_QUARTZ_BLOCK,
+            HybridBlocksItems.GRAY_QUARTZ_TILES,
+            HybridBlocksItems.GRAY_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.GRAY_QUARTZ_TILE_SLAB,
+        )
+
+        private val LIGHT_GRAY_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_BLOCK,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_STAIRS,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ,
+            HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_LIGHT_GRAY_QUARTZ_SLAB,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_BRICKS,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_LIGHT_GRAY_QUARTZ_BLOCK,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILES,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.LIGHT_GRAY_QUARTZ_TILE_SLAB,
+        )
+
+        private val CYAN_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.CYAN_QUARTZ_BLOCK,
+            HybridBlocksItems.CYAN_QUARTZ_STAIRS,
+            HybridBlocksItems.CYAN_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_CYAN_QUARTZ,
+            HybridBlocksItems.SMOOTH_CYAN_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_CYAN_QUARTZ_SLAB,
+            HybridBlocksItems.CYAN_QUARTZ_BRICKS,
+            HybridBlocksItems.CYAN_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.CYAN_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.CYAN_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_CYAN_QUARTZ_BLOCK,
+            HybridBlocksItems.CYAN_QUARTZ_TILES,
+            HybridBlocksItems.CYAN_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.CYAN_QUARTZ_TILE_SLAB,
+        )
+
+        private val PURPLE_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.PURPLE_QUARTZ_BLOCK,
+            HybridBlocksItems.PURPLE_QUARTZ_STAIRS,
+            HybridBlocksItems.PURPLE_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_PURPLE_QUARTZ,
+            HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_PURPLE_QUARTZ_SLAB,
+            HybridBlocksItems.PURPLE_QUARTZ_BRICKS,
+            HybridBlocksItems.PURPLE_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.PURPLE_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.PURPLE_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_PURPLE_QUARTZ_BLOCK,
+            HybridBlocksItems.PURPLE_QUARTZ_TILES,
+            HybridBlocksItems.PURPLE_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.PURPLE_QUARTZ_TILE_SLAB,
+        )
+
+        private val BLUE_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.BLUE_QUARTZ_BLOCK,
+            HybridBlocksItems.BLUE_QUARTZ_STAIRS,
+            HybridBlocksItems.BLUE_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_BLUE_QUARTZ,
+            HybridBlocksItems.SMOOTH_BLUE_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_BLUE_QUARTZ_SLAB,
+            HybridBlocksItems.BLUE_QUARTZ_BRICKS,
+            HybridBlocksItems.BLUE_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.BLUE_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.BLUE_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_BLUE_QUARTZ_BLOCK,
+            HybridBlocksItems.BLUE_QUARTZ_TILES,
+            HybridBlocksItems.BLUE_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.BLUE_QUARTZ_TILE_SLAB,
+        )
+
+        private val BROWN_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.BROWN_QUARTZ_BLOCK,
+            HybridBlocksItems.BROWN_QUARTZ_STAIRS,
+            HybridBlocksItems.BROWN_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_BROWN_QUARTZ,
+            HybridBlocksItems.SMOOTH_BROWN_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_BROWN_QUARTZ_SLAB,
+            HybridBlocksItems.BROWN_QUARTZ_BRICKS,
+            HybridBlocksItems.BROWN_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.BROWN_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.BROWN_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_BROWN_QUARTZ_BLOCK,
+            HybridBlocksItems.BROWN_QUARTZ_TILES,
+            HybridBlocksItems.BROWN_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.BROWN_QUARTZ_TILE_SLAB,
+        )
+
+        private val GREEN_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.GREEN_QUARTZ_BLOCK,
+            HybridBlocksItems.GREEN_QUARTZ_STAIRS,
+            HybridBlocksItems.GREEN_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_GREEN_QUARTZ,
+            HybridBlocksItems.SMOOTH_GREEN_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_GREEN_QUARTZ_SLAB,
+            HybridBlocksItems.GREEN_QUARTZ_BRICKS,
+            HybridBlocksItems.GREEN_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.GREEN_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.GREEN_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_GREEN_QUARTZ_BLOCK,
+            HybridBlocksItems.GREEN_QUARTZ_TILES,
+            HybridBlocksItems.GREEN_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.GREEN_QUARTZ_TILE_SLAB,
+        )
+
+        private val RED_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.RED_QUARTZ_BLOCK,
+            HybridBlocksItems.RED_QUARTZ_STAIRS,
+            HybridBlocksItems.RED_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_RED_QUARTZ,
+            HybridBlocksItems.SMOOTH_RED_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_RED_QUARTZ_SLAB,
+            HybridBlocksItems.RED_QUARTZ_BRICKS,
+            HybridBlocksItems.RED_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.RED_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.RED_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_RED_QUARTZ_BLOCK,
+            HybridBlocksItems.RED_QUARTZ_TILES,
+            HybridBlocksItems.RED_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.RED_QUARTZ_TILE_SLAB,
+        )
+
+        private val BLACK_QUARTZ_SET = QuartzRecipeSet(
+            HybridBlocksItems.BLACK_QUARTZ_BLOCK,
+            HybridBlocksItems.BLACK_QUARTZ_STAIRS,
+            HybridBlocksItems.BLACK_QUARTZ_SLAB,
+            HybridBlocksItems.SMOOTH_BLACK_QUARTZ,
+            HybridBlocksItems.SMOOTH_BLACK_QUARTZ_STAIRS,
+            HybridBlocksItems.SMOOTH_BLACK_QUARTZ_SLAB,
+            HybridBlocksItems.BLACK_QUARTZ_BRICKS,
+            HybridBlocksItems.BLACK_QUARTZ_BRICK_STAIRS,
+            HybridBlocksItems.BLACK_QUARTZ_BRICK_SLAB,
+            HybridBlocksItems.BLACK_QUARTZ_PILLAR,
+            HybridBlocksItems.CHISELED_BLACK_QUARTZ_BLOCK,
+            HybridBlocksItems.BLACK_QUARTZ_TILES,
+            HybridBlocksItems.BLACK_QUARTZ_TILE_STAIRS,
+            HybridBlocksItems.BLACK_QUARTZ_TILE_SLAB,
+        )
+        /**
+         * Emits every crafting and stonecutting recipe inside a quartz set. Colour agnostic: it only
+         * ever walks from a set's own base block outwards, so nothing here depends on a dye.
+         */
+        private fun offerQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet) {
+            val block = set.block.get()
+            val smooth = set.smooth.get()
+            val tiles = set.tiles.get()
+
+            // base block -> stairs, slab
+            offerStairsAndSlabRecipes(exporter, block, set.stairs.get(), set.slab.get())
+
+            // smooth -> smooth stairs, smooth slab
+            offerStairsAndSlabRecipes(exporter, smooth, set.smoothStairs.get(), set.smoothSlab.get())
+
+            // tiles -> tile stairs, tile slab
+            offerStairsAndSlabRecipes(exporter, tiles, set.tileStairs.get(), set.tileSlab.get())
+
+            // base block -> bricks (crafting + stonecutting)
+            offerQuartzBricksRecipes(exporter, block, set.bricks.get())
+
+            // bricks -> brick stairs, brick slab
+            offerStairsAndSlabRecipes(exporter, set.bricks.get(), set.brickStairs.get(), set.brickSlab.get())
+
+            // base block -> tiles, crafted against vanilla quartz
+            offerQuartzTilesRecipe(exporter, block, getHasName(block), tiles)
+
+            // base block -> chiseled (crafting + stonecutting)
+            chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, set.chiseled.get(), block)
+            stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, set.chiseled.get(), block)
+
+            // base block -> pillar; the crafting route is the dyeing recipe, so stonecutting only
+            stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, set.pillar.get(), block)
+        }
+
+        /**
+         * [offerQuartzSetRecipes] plus the dyeing recipes that turn vanilla quartz into this colour.
+         * Only the three blocks with a vanilla counterpart are dyed; everything else in the set is
+         * reached from the stained base block.
+         */
+        private fun offerStainedQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet, dye: Item) {
+            offerQuartzSetRecipes(exporter, set)
+
+            offerQuartzBlockDyeingRecipe(exporter, set.block.get(), dye)
+            offerSmoothQuartzDyeingRecipe(exporter, set.smooth.get(), dye)
+            offerQuartzPillarDyeingRecipe(exporter, set.pillar.get(), dye)
+        }
+
+        /**
+         * Crafting and stonecutting for the stairs and slab cut from [base].
+         */
+        private fun offerStairsAndSlabRecipes(
+            exporter: RecipeOutput,
+            base: Item,
+            stairs: Item,
+            slab: Item,
+        ) {
+            stairBuilder(exporter, stairs, base)
+            stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, stairs, base)
+
+            slab(exporter, RecipeCategory.BUILDING_BLOCKS, slab, base)
+            stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, slab, base, 2)
+        }
+
+        private fun offerQuartzBlockDyeingRecipe(
+            exporter: RecipeOutput,
+            output: Item,
+            input: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Items.QUARTZ_BLOCK,
+                "has_quartz_block",
+                "stained_quartz_block",
+                output,
+                input
+            )
+        }
+        //#endregion
     }
 }

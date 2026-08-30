@@ -3,7 +3,13 @@ package dev.hybridlabs.blocks.block
 import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.world.item.DyeColor
-import net.minecraft.world.level.block.*
+import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.RotatedPillarBlock
+import net.minecraft.world.level.block.SlabBlock
+import net.minecraft.world.level.block.StainedGlassBlock
+import net.minecraft.world.level.block.StainedGlassPaneBlock
+import net.minecraft.world.level.block.WallBlock
 import net.minecraft.world.level.block.state.BlockBehaviour
 import java.util.function.Supplier
 
@@ -23,11 +29,16 @@ object HybridBlocksBlocks {
     val POLISHED_CALCITE_TILE_SLAB = register("polished_calcite_tile_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE).mapColor(DyeColor.WHITE))}
     
     // region Quartz
+    val QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BRICKS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS))}
+    val QUARTZ_BRICK_SLAB = register("quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS))}
+
     val WHITE_QUARTZ_BLOCK = register("white_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
     val WHITE_QUARTZ_STAIRS = register("white_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)) }
     val WHITE_QUARTZ_SLAB = register("white_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE)) }
     val CHISELED_WHITE_QUARTZ_BLOCK = register("chiseled_white_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
     val WHITE_QUARTZ_BRICKS = register("white_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
+    val WHITE_QUARTZ_BRICK_STAIRS = register("white_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
+    val WHITE_QUARTZ_BRICK_SLAB = register("white_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
     val WHITE_QUARTZ_PILLAR = register("white_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.WHITE)) }
     val SMOOTH_WHITE_QUARTZ = register("smooth_white_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.WHITE))}
     val SMOOTH_WHITE_QUARTZ_STAIRS = register("smooth_white_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.WHITE))}
@@ -41,6 +52,8 @@ object HybridBlocksBlocks {
     val ORANGE_QUARTZ_SLAB = register("orange_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
     val CHISELED_ORANGE_QUARTZ_BLOCK = register("chiseled_orange_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
     val ORANGE_QUARTZ_BRICKS = register("orange_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
+    val ORANGE_QUARTZ_BRICK_STAIRS = register("orange_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
+    val ORANGE_QUARTZ_BRICK_SLAB = register("orange_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
     val ORANGE_QUARTZ_PILLAR = register("orange_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.ORANGE))}
     val SMOOTH_ORANGE_QUARTZ = register("smooth_orange_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.ORANGE))}
     val SMOOTH_ORANGE_QUARTZ_STAIRS = register("smooth_orange_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.ORANGE))}
@@ -54,6 +67,8 @@ object HybridBlocksBlocks {
     val MAGENTA_QUARTZ_SLAB = register("magenta_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
     val CHISELED_MAGENTA_QUARTZ_BLOCK = register("chiseled_magenta_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
     val MAGENTA_QUARTZ_BRICKS = register("magenta_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
+    val MAGENTA_QUARTZ_BRICK_STAIRS = register("magenta_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
+    val MAGENTA_QUARTZ_BRICK_SLAB = register("magenta_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
     val MAGENTA_QUARTZ_PILLAR = register("magenta_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.MAGENTA))}
     val SMOOTH_MAGENTA_QUARTZ = register("smooth_magenta_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.MAGENTA))}
     val SMOOTH_MAGENTA_QUARTZ_STAIRS = register("smooth_magenta_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.MAGENTA))}
@@ -67,6 +82,8 @@ object HybridBlocksBlocks {
     val LIGHT_BLUE_QUARTZ_SLAB = register("light_blue_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
     val CHISELED_LIGHT_BLUE_QUARTZ_BLOCK = register("chiseled_light_blue_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
     val LIGHT_BLUE_QUARTZ_BRICKS = register("light_blue_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
+    val LIGHT_BLUE_QUARTZ_BRICK_STAIRS = register("light_blue_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
+    val LIGHT_BLUE_QUARTZ_BRICK_SLAB = register("light_blue_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
     val LIGHT_BLUE_QUARTZ_PILLAR = register("light_blue_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_BLUE))}
     val SMOOTH_LIGHT_BLUE_QUARTZ = register("smooth_light_blue_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.LIGHT_BLUE))}
     val SMOOTH_LIGHT_BLUE_QUARTZ_STAIRS = register("smooth_light_blue_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_BLUE))}
@@ -80,6 +97,8 @@ object HybridBlocksBlocks {
     val YELLOW_QUARTZ_SLAB = register("yellow_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
     val CHISELED_YELLOW_QUARTZ_BLOCK = register("chiseled_yellow_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
     val YELLOW_QUARTZ_BRICKS = register("yellow_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
+    val YELLOW_QUARTZ_BRICK_STAIRS = register("yellow_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
+    val YELLOW_QUARTZ_BRICK_SLAB = register("yellow_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
     val YELLOW_QUARTZ_PILLAR = register("yellow_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.YELLOW))}
     val SMOOTH_YELLOW_QUARTZ = register("smooth_yellow_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.YELLOW))}
     val SMOOTH_YELLOW_QUARTZ_STAIRS = register("smooth_yellow_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.YELLOW))}
@@ -93,6 +112,8 @@ object HybridBlocksBlocks {
     val LIME_QUARTZ_SLAB = register("lime_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
     val CHISELED_LIME_QUARTZ_BLOCK = register("chiseled_lime_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
     val LIME_QUARTZ_BRICKS = register("lime_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
+    val LIME_QUARTZ_BRICK_STAIRS = register("lime_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
+    val LIME_QUARTZ_BRICK_SLAB = register("lime_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
     val LIME_QUARTZ_PILLAR = register("lime_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIME))}
     val SMOOTH_LIME_QUARTZ = register("smooth_lime_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.LIME))}
     val SMOOTH_LIME_QUARTZ_STAIRS = register("smooth_lime_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIME))}
@@ -106,6 +127,8 @@ object HybridBlocksBlocks {
     val PINK_QUARTZ_SLAB = register("pink_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
     val CHISELED_PINK_QUARTZ_BLOCK = register("chiseled_pink_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
     val PINK_QUARTZ_BRICKS = register("pink_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
+    val PINK_QUARTZ_BRICK_STAIRS = register("pink_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
+    val PINK_QUARTZ_BRICK_SLAB = register("pink_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
     val PINK_QUARTZ_PILLAR = register("pink_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.PINK))}
     val SMOOTH_PINK_QUARTZ = register("smooth_pink_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.PINK))}
     val SMOOTH_PINK_QUARTZ_STAIRS = register("smooth_pink_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PINK))}
@@ -119,6 +142,8 @@ object HybridBlocksBlocks {
     val GRAY_QUARTZ_SLAB = register("gray_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
     val CHISELED_GRAY_QUARTZ_BLOCK = register("chiseled_gray_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
     val GRAY_QUARTZ_BRICKS = register("gray_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
+    val GRAY_QUARTZ_BRICK_STAIRS = register("gray_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
+    val GRAY_QUARTZ_BRICK_SLAB = register("gray_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
     val GRAY_QUARTZ_PILLAR = register("gray_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.GRAY))}
     val SMOOTH_GRAY_QUARTZ = register("smooth_gray_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.GRAY))}
     val SMOOTH_GRAY_QUARTZ_STAIRS = register("smooth_gray_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GRAY))}
@@ -132,6 +157,8 @@ object HybridBlocksBlocks {
     val LIGHT_GRAY_QUARTZ_SLAB = register("light_gray_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
     val CHISELED_LIGHT_GRAY_QUARTZ_BLOCK = register("chiseled_light_gray_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
     val LIGHT_GRAY_QUARTZ_BRICKS = register("light_gray_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
+    val LIGHT_GRAY_QUARTZ_BRICK_STAIRS = register("light_gray_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
+    val LIGHT_GRAY_QUARTZ_BRICK_SLAB = register("light_gray_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
     val LIGHT_GRAY_QUARTZ_PILLAR = register("light_gray_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.LIGHT_GRAY))}
     val SMOOTH_LIGHT_GRAY_QUARTZ = register("smooth_light_gray_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.LIGHT_GRAY))}
     val SMOOTH_LIGHT_GRAY_QUARTZ_STAIRS = register("smooth_light_gray_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.LIGHT_GRAY))}
@@ -145,6 +172,8 @@ object HybridBlocksBlocks {
     val CYAN_QUARTZ_SLAB = register("cyan_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
     val CHISELED_CYAN_QUARTZ_BLOCK = register("chiseled_cyan_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
     val CYAN_QUARTZ_BRICKS = register("cyan_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
+    val CYAN_QUARTZ_BRICK_STAIRS = register("cyan_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
+    val CYAN_QUARTZ_BRICK_SLAB = register("cyan_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
     val CYAN_QUARTZ_PILLAR = register("cyan_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.CYAN))}
     val SMOOTH_CYAN_QUARTZ = register("smooth_cyan_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.CYAN))}
     val SMOOTH_CYAN_QUARTZ_STAIRS = register("smooth_cyan_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.CYAN))}
@@ -158,6 +187,8 @@ object HybridBlocksBlocks {
     val PURPLE_QUARTZ_SLAB = register("purple_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
     val CHISELED_PURPLE_QUARTZ_BLOCK = register("chiseled_purple_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
     val PURPLE_QUARTZ_BRICKS = register("purple_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
+    val PURPLE_QUARTZ_BRICK_STAIRS = register("purple_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
+    val PURPLE_QUARTZ_BRICK_SLAB = register("purple_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
     val PURPLE_QUARTZ_PILLAR = register("purple_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.PURPLE))}
     val SMOOTH_PURPLE_QUARTZ = register("smooth_purple_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.PURPLE))}
     val SMOOTH_PURPLE_QUARTZ_STAIRS = register("smooth_purple_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.PURPLE))}
@@ -171,6 +202,8 @@ object HybridBlocksBlocks {
     val BLUE_QUARTZ_SLAB = register("blue_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
     val CHISELED_BLUE_QUARTZ_BLOCK = register("chiseled_blue_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
     val BLUE_QUARTZ_BRICKS = register("blue_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
+    val BLUE_QUARTZ_BRICK_STAIRS = register("blue_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
+    val BLUE_QUARTZ_BRICK_SLAB = register("blue_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
     val BLUE_QUARTZ_PILLAR = register("blue_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BLUE))}
     val SMOOTH_BLUE_QUARTZ = register("smooth_blue_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.BLUE))}
     val SMOOTH_BLUE_QUARTZ_STAIRS = register("smooth_blue_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLUE))}
@@ -184,6 +217,8 @@ object HybridBlocksBlocks {
     val BROWN_QUARTZ_SLAB = register("brown_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
     val CHISELED_BROWN_QUARTZ_BLOCK = register("chiseled_brown_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
     val BROWN_QUARTZ_BRICKS = register("brown_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
+    val BROWN_QUARTZ_BRICK_STAIRS = register("brown_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
+    val BROWN_QUARTZ_BRICK_SLAB = register("brown_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
     val BROWN_QUARTZ_PILLAR = register("brown_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BROWN))}
     val SMOOTH_BROWN_QUARTZ = register("smooth_brown_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.BROWN))}
     val SMOOTH_BROWN_QUARTZ_STAIRS = register("smooth_brown_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BROWN))}
@@ -197,6 +232,8 @@ object HybridBlocksBlocks {
     val GREEN_QUARTZ_SLAB = register("green_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
     val CHISELED_GREEN_QUARTZ_BLOCK = register("chiseled_green_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
     val GREEN_QUARTZ_BRICKS = register("green_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
+    val GREEN_QUARTZ_BRICK_STAIRS = register("green_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
+    val GREEN_QUARTZ_BRICK_SLAB = register("green_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
     val GREEN_QUARTZ_PILLAR = register("green_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.GREEN))}
     val SMOOTH_GREEN_QUARTZ = register("smooth_green_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.GREEN))}
     val SMOOTH_GREEN_QUARTZ_STAIRS = register("smooth_green_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.GREEN))}
@@ -210,6 +247,8 @@ object HybridBlocksBlocks {
     val RED_QUARTZ_SLAB = register("red_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
     val CHISELED_RED_QUARTZ_BLOCK = register("chiseled_red_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
     val RED_QUARTZ_BRICKS = register("red_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
+    val RED_QUARTZ_BRICK_STAIRS = register("red_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
+    val RED_QUARTZ_BRICK_SLAB = register("red_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
     val RED_QUARTZ_PILLAR = register("red_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.RED))}
     val SMOOTH_RED_QUARTZ = register("smooth_red_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.RED))}
     val SMOOTH_RED_QUARTZ_STAIRS = register("smooth_red_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.RED))}
@@ -223,6 +262,8 @@ object HybridBlocksBlocks {
     val BLACK_QUARTZ_SLAB = register("black_quartz_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
     val CHISELED_BLACK_QUARTZ_BLOCK = register("chiseled_black_quartz_block") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
     val BLACK_QUARTZ_BRICKS = register("black_quartz_bricks") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
+    val BLACK_QUARTZ_BRICK_STAIRS = register("black_quartz_brick_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
+    val BLACK_QUARTZ_BRICK_SLAB = register("black_quartz_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
     val BLACK_QUARTZ_PILLAR = register("black_quartz_pillar") { RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR).mapColor(DyeColor.BLACK))}
     val SMOOTH_BLACK_QUARTZ = register("smooth_black_quartz") { Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).mapColor(DyeColor.BLACK))}
     val SMOOTH_BLACK_QUARTZ_STAIRS = register("smooth_black_quartz_stairs") { HBStairBlock(Blocks.QUARTZ_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).mapColor(DyeColor.BLACK))}
