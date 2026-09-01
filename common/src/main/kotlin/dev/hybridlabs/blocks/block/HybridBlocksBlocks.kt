@@ -615,6 +615,28 @@ object HybridBlocksBlocks {
     }
 
     // nether brick variants
+    val CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_NETHER_BRICK_SLAB = register("cracked_nether_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
     val BASKETWEAVE_NETHER_BRICKS = register("basketweave_nether_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
             .mapColor(DyeColor.RED)
@@ -864,6 +886,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.RED_NETHER_BRICKS)
+        )
+    }
+
+    val CRACKED_RED_NETHER_BRICK_STAIRS = register("cracked_red_nether_brick_stairs") {
+        HBStairBlock(
+            Blocks.RED_NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.RED_NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_RED_NETHER_BRICK_SLAB = register("cracked_red_nether_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.RED_NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_RED_NETHER_BRICK_WALL = register("cracked_red_nether_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.RED_NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
         )
     }
 
@@ -1483,6 +1528,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_WHITE_BRICK_STAIRS = register("cracked_white_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_WHITE_BRICK_SLAB = register("cracked_white_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.WHITE)
+        )
+    }
+
+    val CRACKED_WHITE_BRICK_WALL = register("cracked_white_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.WHITE)
+        )
+    }
+
     val BASKETWEAVE_WHITE_BRICKS = register("basketweave_white_bricks") { 
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
@@ -1762,6 +1830,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_ORANGE_BRICK_STAIRS = register("cracked_orange_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val CRACKED_ORANGE_BRICK_SLAB = register("cracked_orange_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val CRACKED_ORANGE_BRICK_WALL = register("cracked_orange_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
         )
     }
 
@@ -2047,6 +2138,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_MAGENTA_BRICK_STAIRS = register("cracked_magenta_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val CRACKED_MAGENTA_BRICK_SLAB = register("cracked_magenta_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val CRACKED_MAGENTA_BRICK_WALL = register("cracked_magenta_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.MAGENTA)
+        )
+    }
+
     val BASKETWEAVE_MAGENTA_BRICKS = register("basketweave_magenta_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.MAGENTA)
@@ -2326,6 +2440,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_LIGHT_BLUE_BRICK_STAIRS = register("cracked_light_blue_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val CRACKED_LIGHT_BLUE_BRICK_SLAB = register("cracked_light_blue_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val CRACKED_LIGHT_BLUE_BRICK_WALL = register("cracked_light_blue_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.LIGHT_BLUE)
         )
     }
 
@@ -2611,6 +2748,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_YELLOW_BRICK_STAIRS = register("cracked_yellow_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val CRACKED_YELLOW_BRICK_SLAB = register("cracked_yellow_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val CRACKED_YELLOW_BRICK_WALL = register("cracked_yellow_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
     val BASKETWEAVE_YELLOW_BRICKS = register("basketweave_yellow_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.YELLOW)
@@ -2890,6 +3050,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_LIME_BRICK_STAIRS = register("cracked_lime_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIME)
+        )
+    }
+
+    val CRACKED_LIME_BRICK_SLAB = register("cracked_lime_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.LIME)
+        )
+    }
+
+    val CRACKED_LIME_BRICK_WALL = register("cracked_lime_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.LIME)
         )
     }
 
@@ -3175,6 +3358,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_PINK_BRICK_STAIRS = register("cracked_pink_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.PINK)
+        )
+    }
+
+    val CRACKED_PINK_BRICK_SLAB = register("cracked_pink_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.PINK)
+        )
+    }
+
+    val CRACKED_PINK_BRICK_WALL = register("cracked_pink_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.PINK)
+        )
+    }
+
     val BASKETWEAVE_PINK_BRICKS = register("basketweave_pink_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.PINK)
@@ -3454,6 +3660,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_GRAY_BRICK_STAIRS = register("cracked_gray_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val CRACKED_GRAY_BRICK_SLAB = register("cracked_gray_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val CRACKED_GRAY_BRICK_WALL = register("cracked_gray_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.GRAY)
         )
     }
 
@@ -3739,6 +3968,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_LIGHT_GRAY_BRICK_STAIRS = register("cracked_light_gray_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val CRACKED_LIGHT_GRAY_BRICK_SLAB = register("cracked_light_gray_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val CRACKED_LIGHT_GRAY_BRICK_WALL = register("cracked_light_gray_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
     val BASKETWEAVE_LIGHT_GRAY_BRICKS = register("basketweave_light_gray_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.LIGHT_GRAY)
@@ -4018,6 +4270,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_CYAN_BRICK_STAIRS = register("cracked_cyan_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val CRACKED_CYAN_BRICK_SLAB = register("cracked_cyan_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val CRACKED_CYAN_BRICK_WALL = register("cracked_cyan_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.CYAN)
         )
     }
 
@@ -4303,6 +4578,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_PURPLE_BRICK_STAIRS = register("cracked_purple_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val CRACKED_PURPLE_BRICK_SLAB = register("cracked_purple_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val CRACKED_PURPLE_BRICK_WALL = register("cracked_purple_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.PURPLE)
+        )
+    }
+
     val BASKETWEAVE_PURPLE_BRICKS = register("basketweave_purple_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.PURPLE)
@@ -4582,6 +4880,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_BLUE_BRICK_STAIRS = register("cracked_blue_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val CRACKED_BLUE_BRICK_SLAB = register("cracked_blue_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val CRACKED_BLUE_BRICK_WALL = register("cracked_blue_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.BLUE)
         )
     }
 
@@ -4867,6 +5188,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_BROWN_BRICK_STAIRS = register("cracked_brown_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val CRACKED_BROWN_BRICK_SLAB = register("cracked_brown_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val CRACKED_BROWN_BRICK_WALL = register("cracked_brown_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
     val BASKETWEAVE_BROWN_BRICKS = register("basketweave_brown_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.BROWN)
@@ -5146,6 +5490,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_GREEN_BRICK_STAIRS = register("cracked_green_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val CRACKED_GREEN_BRICK_SLAB = register("cracked_green_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val CRACKED_GREEN_BRICK_WALL = register("cracked_green_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.GREEN)
         )
     }
 
@@ -5431,6 +5798,29 @@ object HybridBlocksBlocks {
         )
     }
 
+    val CRACKED_RED_BRICK_STAIRS = register("cracked_red_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_RED_BRICK_SLAB = register("cracked_red_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_RED_BRICK_WALL = register("cracked_red_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
     val BASKETWEAVE_RED_BRICKS = register("basketweave_red_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.RED)
@@ -5710,6 +6100,29 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+        )
+    }
+
+    val CRACKED_BLACK_BRICK_STAIRS = register("cracked_black_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.BLACK)
+        )
+    }
+
+    val CRACKED_BLACK_BRICK_SLAB = register("cracked_black_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICKS)
+            .mapColor(DyeColor.BLACK)
+        )
+    }
+
+    val CRACKED_BLACK_BRICK_WALL = register("cracked_black_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.BRICK_WALL)
+            .mapColor(DyeColor.BLACK)
         )
     }
 
