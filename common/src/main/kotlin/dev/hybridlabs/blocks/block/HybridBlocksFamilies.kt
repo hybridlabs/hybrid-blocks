@@ -142,6 +142,328 @@ object HybridBlocksFamilies {
     }
     //#endregion
 
+    //#region Hybrid Aquatic Bricks Families
+    val MIXED_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
+    val SCHIST_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SCHIST_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.SCHIST_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.SCHIST_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.SCHIST_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_SCHIST_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_SCHIST_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_WALL.get())
+            .family
+    }
+    
+    val MIXED_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val CHIMNEYSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_CHIMNEYSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLE_WALL.get())
+            .family
+    }
+    
+    val MIXED_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val RED_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.RED_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.RED_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.RED_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.RED_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_RED_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+    
+    val MIXED_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val ORANGE_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_ORANGE_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+    
+    val MIXED_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val LARGE_MIXED_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val YELLOW_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.YELLOW_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.YELLOW_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_YELLOW_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+    //#endregion
+
     //#region Bricks Families
     val MIXED_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "hybrid_blocks:block/medium_mixed_orange_brinestone_bricks"
+  }
+}

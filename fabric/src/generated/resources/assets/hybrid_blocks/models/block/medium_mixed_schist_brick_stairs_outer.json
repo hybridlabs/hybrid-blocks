@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "hybrid_blocks:block/medium_mixed_schist_bricks",
+    "side": "hybrid_blocks:block/medium_mixed_schist_bricks",
+    "top": "hybrid_blocks:block/medium_mixed_schist_bricks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hybrid_blocks:block/mixed_chimneystone_small_brick_slab"
+    },
+    "type=double": {
+      "model": "hybrid_blocks:block/small_mixed_chimneystone_bricks"
+    },
+    "type=top": {
+      "model": "hybrid_blocks:block/mixed_chimneystone_small_brick_slab_top"
+    }
+  }
+}

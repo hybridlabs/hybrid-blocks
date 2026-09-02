@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hybrid_blocks:block/mixed_red_brinestone_shingles",
+    "side": "hybrid_blocks:block/mixed_red_brinestone_shingles",
+    "top": "hybrid_blocks:block/mixed_red_brinestone_shingles"
+  }
+}

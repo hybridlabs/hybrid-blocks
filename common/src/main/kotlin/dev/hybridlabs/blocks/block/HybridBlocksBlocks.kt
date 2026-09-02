@@ -817,7 +817,7 @@ object HybridBlocksBlocks {
         )
     }
     //#endregion
-    
+
     //#region Red_Nether Bricks
     //  large red_nether bricks
     val LARGE_RED_NETHER_BRICKS = register("large_red_nether_bricks") {
@@ -1265,6 +1265,7 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.BROWN)
         )
     }
+
     val MEDIUM_MIXED_MUD_BRICKS = register("medium_mixed_mud_bricks") {
         Block(BlockBehaviour.Properties
             .ofFullCopy(Blocks.MUD_BRICKS)
@@ -1428,7 +1429,7 @@ object HybridBlocksBlocks {
     //#endregion
 
     //#region White Bricks
-    val WHITE_BRICKS = register("white_bricks") { 
+    val WHITE_BRICKS = register("white_bricks") {
         Block(BlockBehaviour.Properties
             .ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
@@ -1459,7 +1460,7 @@ object HybridBlocksBlocks {
     }
 
     //  large white bricks
-    val LARGE_WHITE_BRICKS = register("large_white_bricks") { 
+    val LARGE_WHITE_BRICKS = register("large_white_bricks") {
         Block(BlockBehaviour.Properties
             .ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
@@ -1552,26 +1553,26 @@ object HybridBlocksBlocks {
         )
     }
 
-    val BASKETWEAVE_WHITE_BRICKS = register("basketweave_white_bricks") { 
+    val BASKETWEAVE_WHITE_BRICKS = register("basketweave_white_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     val PINWHEEL_WHITE_BRICKS = register("pinwheel_white_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     val JACK_ON_JACK_WHITE_BRICKS = register("jack_on_jack_white_bricks") {
         Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     // mixed white bricks
-    val MIXED_WHITE_BRICKS = register("mixed_white_bricks") { 
+    val MIXED_WHITE_BRICKS = register("mixed_white_bricks") {
         Block(BlockBehaviour.Properties
         .ofFullCopy(Blocks.BRICKS)
         .mapColor(DyeColor.WHITE)
@@ -1600,7 +1601,7 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     //  mixed large white bricks
     val LARGE_MIXED_WHITE_BRICKS = register("large_mixed_white_bricks") {
         Block(BlockBehaviour.Properties
@@ -1639,7 +1640,7 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     val SMALL_MIXED_WHITE_BRICK_STAIRS = register("mixed_white_small_brick_stairs") {
         HBStairBlock(
             Blocks.BRICKS.defaultBlockState(),
@@ -1662,7 +1663,7 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     //  white shingles
     val WHITE_SHINGLES = register("white_shingles") {
         Block(BlockBehaviour.Properties
@@ -1692,7 +1693,7 @@ object HybridBlocksBlocks {
             .mapColor(DyeColor.WHITE)
         )
     }
-    
+
     //  mixed white shingles
     val MIXED_WHITE_SHINGLES = register("mixed_white_shingles") {
         Block(BlockBehaviour.Properties
@@ -2037,7 +2038,7 @@ object HybridBlocksBlocks {
         )
     }
     //#endregion
-    
+
     //#region Magenta Bricks
     val MAGENTA_BRICKS = register("magenta_bricks") {
         Block(BlockBehaviour.Properties
@@ -2342,7 +2343,7 @@ object HybridBlocksBlocks {
         )
     }
     //#endregion
-    
+
     //#region Light Blue Bricks
     val LIGHT_BLUE_BRICKS = register("light_blue_bricks") {
         Block(BlockBehaviour.Properties
@@ -6398,6 +6399,1514 @@ object HybridBlocksBlocks {
     val MOSSY_BLACK_BRICK_SLAB = register("mossy_black_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_WALL = register("mossy_black_brick_wall") { WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK))}
 
+    //#endregion
+
+    //#region Hybrid Aquatic Bricks
+    val MEDIUM_SCHIST_BRICKS = register("medium_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_SCHIST_BRICK_STAIRS = register("medium_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_SCHIST_BRICK_SLAB = register("medium_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_SCHIST_BRICK_WALL = register("medium_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_SCHIST_BRICKS = register("medium_mixed_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_SCHIST_BRICK_STAIRS = register("medium_mixed_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_SCHIST_BRICK_SLAB = register("medium_mixed_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_SCHIST_BRICK_WALL = register("medium_mixed_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small nether bricks
+    val SMALL_SCHIST_BRICKS = register("small_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_SCHIST_BRICK_STAIRS = register("small_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_SCHIST_BRICK_SLAB = register("small_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_SCHIST_BRICK_WALL = register("small_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // nether brick variants
+    val CRACKED_MEDIUM_SCHIST_BRICKS = register("cracked_medium_schist_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_SCHIST_BRICK_STAIRS = register("cracked_medium_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_SCHIST_BRICK_SLAB = register("cracked_medium_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_SCHIST_BRICK_WALL = register("cracked_medium_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+    val BASKETWEAVE_SCHIST_BRICKS = register("basketweave_schist_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val PINWHEEL_SCHIST_BRICKS = register("pinwheel_schist_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val JACK_ON_JACK_SCHIST_BRICKS = register("jack_on_jack_schist_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // mixed nether bricks
+    val MIXED_SCHIST_BRICKS = register("mixed_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_SCHIST_BRICK_STAIRS = register("mixed_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_SCHIST_BRICK_SLAB = register("mixed_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_SCHIST_BRICK_WALL = register("mixed_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed large nether bricks
+    val LARGE_MIXED_SCHIST_BRICKS = register("large_mixed_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_SCHIST_BRICK_STAIRS = register("large_mixed_schist_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_SCHIST_BRICK_SLAB = register("large_mixed_schist_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_SCHIST_BRICK_WALL = register("large_mixed_schist_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed small nether bricks
+    val SMALL_MIXED_SCHIST_BRICKS = register("small_mixed_schist_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_SCHIST_BRICK_STAIRS = register("mixed_schist_small_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_SCHIST_BRICK_SLAB = register("mixed_schist_small_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_SCHIST_BRICK_WALL = register("mixed_schist_small_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  nether shingles
+    val SCHIST_SHINGLES = register("schist_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val SCHIST_SHINGLE_STAIRS = register("schist_shingle_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SCHIST_SHINGLE_SLAB = register("schist_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SCHIST_SHINGLE_WALL = register("schist_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed nether shingles
+    val MIXED_SCHIST_SHINGLES = register("mixed_schist_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val MIXED_SCHIST_SHINGLE_STAIRS = register("mixed_schist_shingle_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_SCHIST_SHINGLE_SLAB = register("mixed_schist_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_SCHIST_SHINGLE_WALL = register("mixed_schist_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SCHIST_CHIMNEY = register("schist_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MEDIUM_CHIMNEYSTONE_BRICKS = register("medium_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_CHIMNEYSTONE_BRICK_STAIRS = register("medium_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_CHIMNEYSTONE_BRICK_SLAB = register("medium_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_CHIMNEYSTONE_BRICK_WALL = register("medium_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_CHIMNEYSTONE_BRICKS = register("medium_mixed_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_CHIMNEYSTONE_BRICK_STAIRS = register("medium_mixed_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_CHIMNEYSTONE_BRICK_SLAB = register("medium_mixed_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_CHIMNEYSTONE_BRICK_WALL = register("medium_mixed_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small chimneystone bricks
+    val SMALL_CHIMNEYSTONE_BRICKS = register("small_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_CHIMNEYSTONE_BRICK_STAIRS = register("small_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_CHIMNEYSTONE_BRICK_SLAB = register("small_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_CHIMNEYSTONE_BRICK_WALL = register("small_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // chimneystone brick variants
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS = register("cracked_medium_chimneystone_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_STAIRS = register("cracked_medium_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_SLAB = register("cracked_medium_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_WALL = register("cracked_medium_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+    val BASKETWEAVE_CHIMNEYSTONE_BRICKS = register("basketweave_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val PINWHEEL_CHIMNEYSTONE_BRICKS = register("pinwheel_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val JACK_ON_JACK_CHIMNEYSTONE_BRICKS = register("jack_on_jack_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // mixed chimneystone bricks
+    val MIXED_CHIMNEYSTONE_BRICKS = register("mixed_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_BRICK_STAIRS = register("mixed_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_BRICK_SLAB = register("mixed_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_BRICK_WALL = register("mixed_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed large chimneystone bricks
+    val LARGE_MIXED_CHIMNEYSTONE_BRICKS = register("large_mixed_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_STAIRS = register("large_mixed_chimneystone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_SLAB = register("large_mixed_chimneystone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_WALL = register("large_mixed_chimneystone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed small chimneystone bricks
+    val SMALL_MIXED_CHIMNEYSTONE_BRICKS = register("small_mixed_chimneystone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_STAIRS = register("mixed_chimneystone_small_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_SLAB = register("mixed_chimneystone_small_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_WALL = register("mixed_chimneystone_small_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  chimneystone shingles
+    val CHIMNEYSTONE_SHINGLES = register("chimneystone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val CHIMNEYSTONE_SHINGLE_STAIRS = register("chimneystone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CHIMNEYSTONE_SHINGLE_SLAB = register("chimneystone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CHIMNEYSTONE_SHINGLE_WALL = register("chimneystone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed chimneystone shingles
+    val MIXED_CHIMNEYSTONE_SHINGLES = register("mixed_chimneystone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_SHINGLE_STAIRS = register("mixed_chimneystone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_SHINGLE_SLAB = register("mixed_chimneystone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_CHIMNEYSTONE_SHINGLE_WALL = register("mixed_chimneystone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CHIMNEYSTONE_CHIMNEY = register("chimneystone_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MEDIUM_RED_BRINESTONE_BRICKS = register("medium_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_RED_BRINESTONE_BRICK_STAIRS = register("medium_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_RED_BRINESTONE_BRICK_SLAB = register("medium_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_RED_BRINESTONE_BRICK_WALL = register("medium_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_RED_BRINESTONE_BRICKS = register("medium_mixed_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_RED_BRINESTONE_BRICK_STAIRS = register("medium_mixed_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_RED_BRINESTONE_BRICK_SLAB = register("medium_mixed_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_RED_BRINESTONE_BRICK_WALL = register("medium_mixed_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small red brinestone bricks
+    val SMALL_RED_BRINESTONE_BRICKS = register("small_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_RED_BRINESTONE_BRICK_STAIRS = register("small_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_RED_BRINESTONE_BRICK_SLAB = register("small_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_RED_BRINESTONE_BRICK_WALL = register("small_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // red brinestone brick variants
+    val CRACKED_MEDIUM_RED_BRINESTONE_BRICKS = register("cracked_medium_red_brinestone_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_RED_BRINESTONE_BRICK_STAIRS = register("cracked_medium_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_RED_BRINESTONE_BRICK_SLAB = register("cracked_medium_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val CRACKED_MEDIUM_RED_BRINESTONE_BRICK_WALL = register("cracked_medium_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val BASKETWEAVE_RED_BRINESTONE_BRICKS = register("basketweave_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val PINWHEEL_RED_BRINESTONE_BRICKS = register("pinwheel_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val JACK_ON_JACK_RED_BRINESTONE_BRICKS = register("jack_on_jack_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    // mixed red brinestone bricks
+    val MIXED_RED_BRINESTONE_BRICKS = register("mixed_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_BRICK_STAIRS = register("mixed_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_BRICK_SLAB = register("mixed_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_BRICK_WALL = register("mixed_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed large red brinestone bricks
+    val LARGE_MIXED_RED_BRINESTONE_BRICKS = register("large_mixed_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_RED_BRINESTONE_BRICK_STAIRS = register("large_mixed_red_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_RED_BRINESTONE_BRICK_SLAB = register("large_mixed_red_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val LARGE_MIXED_RED_BRINESTONE_BRICK_WALL = register("large_mixed_red_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed small red brinestone bricks
+    val SMALL_MIXED_RED_BRINESTONE_BRICKS = register("small_mixed_red_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_RED_BRINESTONE_BRICK_STAIRS = register("mixed_red_brinestone_small_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_RED_BRINESTONE_BRICK_SLAB = register("mixed_red_brinestone_small_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val SMALL_MIXED_RED_BRINESTONE_BRICK_WALL = register("mixed_red_brinestone_small_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  red brinestone shingles
+    val RED_BRINESTONE_SHINGLES = register("red_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val RED_BRINESTONE_SHINGLE_STAIRS = register("red_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_BRINESTONE_SHINGLE_SLAB = register("red_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_BRINESTONE_SHINGLE_WALL = register("red_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    //  mixed red brinestone shingles
+    val MIXED_RED_BRINESTONE_SHINGLES = register("mixed_red_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_SHINGLE_STAIRS = register("mixed_red_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_SHINGLE_SLAB = register("mixed_red_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MIXED_RED_BRINESTONE_SHINGLE_WALL = register("mixed_red_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_BRINESTONE_CHIMNEY = register("red_brinestone_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val MEDIUM_ORANGE_BRINESTONE_BRICKS = register("medium_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_ORANGE_BRINESTONE_BRICK_STAIRS = register("medium_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_ORANGE_BRINESTONE_BRICK_SLAB = register("medium_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_ORANGE_BRINESTONE_BRICK_WALL = register("medium_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_ORANGE_BRINESTONE_BRICKS = register("medium_mixed_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = register("medium_mixed_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_SLAB = register("medium_mixed_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_ORANGE_BRINESTONE_BRICK_WALL = register("medium_mixed_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small nether bricks
+    val SMALL_ORANGE_BRINESTONE_BRICKS = register("small_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_ORANGE_BRINESTONE_BRICK_STAIRS = register("small_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_ORANGE_BRINESTONE_BRICK_SLAB = register("small_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_ORANGE_BRINESTONE_BRICK_WALL = register("small_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    // nether brick variants
+    val CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICKS = register("cracked_medium_orange_brinestone_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_STAIRS = register("cracked_medium_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_SLAB = register("cracked_medium_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_WALL = register("cracked_medium_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+    val BASKETWEAVE_ORANGE_BRINESTONE_BRICKS = register("basketweave_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val PINWHEEL_ORANGE_BRINESTONE_BRICKS = register("pinwheel_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val JACK_ON_JACK_ORANGE_BRINESTONE_BRICKS = register("jack_on_jack_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    // mixed nether bricks
+    val MIXED_ORANGE_BRINESTONE_BRICKS = register("mixed_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = register("mixed_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_BRICK_SLAB = register("mixed_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_BRICK_WALL = register("mixed_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    //  mixed large nether bricks
+    val LARGE_MIXED_ORANGE_BRINESTONE_BRICKS = register("large_mixed_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val LARGE_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = register("large_mixed_orange_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val LARGE_MIXED_ORANGE_BRINESTONE_BRICK_SLAB = register("large_mixed_orange_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val LARGE_MIXED_ORANGE_BRINESTONE_BRICK_WALL = register("large_mixed_orange_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    //  mixed small nether bricks
+    val SMALL_MIXED_ORANGE_BRINESTONE_BRICKS = register("small_mixed_orange_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = register("mixed_orange_brinestone_small_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_MIXED_ORANGE_BRINESTONE_BRICK_SLAB = register("mixed_orange_brinestone_small_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val SMALL_MIXED_ORANGE_BRINESTONE_BRICK_WALL = register("mixed_orange_brinestone_small_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    //  nether shingles
+    val ORANGE_BRINESTONE_SHINGLES = register("orange_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val ORANGE_BRINESTONE_SHINGLE_STAIRS = register("orange_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_BRINESTONE_SHINGLE_SLAB = register("orange_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_BRINESTONE_SHINGLE_WALL = register("orange_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    //  mixed nether shingles
+    val MIXED_ORANGE_BRINESTONE_SHINGLES = register("mixed_orange_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS = register("mixed_orange_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_SHINGLE_SLAB = register("mixed_orange_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MIXED_ORANGE_BRINESTONE_SHINGLE_WALL = register("mixed_orange_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_BRINESTONE_CHIMNEY = register("orange_brinestone_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MEDIUM_YELLOW_BRINESTONE_BRICKS = register("medium_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS = register("medium_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB = register("medium_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_WALL = register("medium_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS = register("medium_mixed_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = register("medium_mixed_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.MUD_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+                .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = register("medium_mixed_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICKS)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_WALL = register("medium_mixed_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.MUD_BRICK_WALL)
+            .mapColor(DyeColor.BROWN)
+        )
+    }
+
+    // small nether bricks
+    val SMALL_YELLOW_BRINESTONE_BRICKS = register("small_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_YELLOW_BRINESTONE_BRICK_STAIRS = register("small_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_YELLOW_BRINESTONE_BRICK_SLAB = register("small_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_YELLOW_BRINESTONE_BRICK_WALL = register("small_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    // nether brick variants
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS = register("cracked_medium_yellow_brinestone_bricks") {
+        Block(
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.MUD_BRICKS)
+        )
+    }
+
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS = register("cracked_medium_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB = register("cracked_medium_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_WALL = register("cracked_medium_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+    val BASKETWEAVE_YELLOW_BRINESTONE_BRICKS = register("basketweave_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val PINWHEEL_YELLOW_BRINESTONE_BRICKS = register("pinwheel_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val JACK_ON_JACK_YELLOW_BRINESTONE_BRICKS = register("jack_on_jack_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    // mixed nether bricks
+    val MIXED_YELLOW_BRINESTONE_BRICKS = register("mixed_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = register("mixed_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_BRICK_SLAB = register("mixed_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_BRICK_WALL = register("mixed_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    //  mixed large nether bricks
+    val LARGE_MIXED_YELLOW_BRINESTONE_BRICKS = register("large_mixed_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val LARGE_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = register("large_mixed_yellow_brinestone_brick_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val LARGE_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = register("large_mixed_yellow_brinestone_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val LARGE_MIXED_YELLOW_BRINESTONE_BRICK_WALL = register("large_mixed_yellow_brinestone_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    //  mixed small nether bricks
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICKS = register("small_mixed_yellow_brinestone_bricks") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = register("mixed_yellow_brinestone_small_brick_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = register("mixed_yellow_brinestone_small_brick_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_WALL = register("mixed_yellow_brinestone_small_brick_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    //  nether shingles
+    val YELLOW_BRINESTONE_SHINGLES = register("yellow_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val YELLOW_BRINESTONE_SHINGLE_STAIRS = register("yellow_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.NETHER_BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val YELLOW_BRINESTONE_SHINGLE_SLAB = register("yellow_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val YELLOW_BRINESTONE_SHINGLE_WALL = register("yellow_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    //  mixed nether shingles
+    val MIXED_YELLOW_BRINESTONE_SHINGLES = register("mixed_yellow_brinestone_shingles") {
+        Block(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_SHINGLE_STAIRS = register("mixed_yellow_brinestone_shingle_stairs") {
+        HBStairBlock(
+            Blocks.BRICKS.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_SHINGLE_SLAB = register("mixed_yellow_brinestone_shingle_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICKS)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val MIXED_YELLOW_BRINESTONE_SHINGLE_WALL = register("mixed_yellow_brinestone_shingle_wall") {
+        WallBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.NETHER_BRICK_WALL)
+            .mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val YELLOW_BRINESTONE_CHIMNEY = register("yellow_brinestone_chimney") {
+        ChimneyBlock(
+            2,
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.NETHER_BRICKS)
+                .mapColor(DyeColor.YELLOW)
+        )
+    }
     //#endregion
     
     //#region Wool Sets

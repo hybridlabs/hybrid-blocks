@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hybrid_blocks:block/small_mixed_orange_brinestone_bricks"
+  }
+}
