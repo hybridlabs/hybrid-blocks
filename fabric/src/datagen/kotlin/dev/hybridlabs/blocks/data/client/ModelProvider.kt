@@ -149,7 +149,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.PINWHEEL_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_NETHER_BRICKS.get(),
 
-            HybridBlocksBlocks.CRACKED_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS.get(),
@@ -358,12 +357,63 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
         generator.family(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS.get()).generateFor(HybridBlocksFamilies.MOSSY_MEDIUM_MUD_BRICKS)
 
-        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_MUD_BRICKS)
-
         generator.family(HybridBlocksBlocks.MOSSY_BRICKS.get()).generateFor(HybridBlocksFamilies.MOSSY_BRICKS)
 
         generator.family(HybridBlocksBlocks.CRACKED_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_WHITE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_WHITE_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_ORANGE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_ORANGE_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_MAGENTA_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MAGENTA_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_LIGHT_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_YELLOW_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_YELLOW_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_LIME_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_LIME_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_PINK_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_PINK_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_GRAY_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_LIGHT_GRAY_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_CYAN_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_CYAN_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_PURPLE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_PURPLE_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_BLUE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_BLUE_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_BROWN_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_BROWN_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_GREEN_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_GREEN_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_RED_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_RED_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_BLACK_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_BLACK_BRICKS)
+        generator.family(Blocks.CRACKED_NETHER_BRICKS).generateFor(HybridBlocksFamilies.CRACKED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_RED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_RED_NETHER_BRICKS)
+        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_MUD_BRICKS)
 
+        generator.family(Blocks.WHITE_WOOL).generateFor(HybridBlocksFamilies.WHITE_WOOL)
+        generator.family(Blocks.ORANGE_WOOL).generateFor(HybridBlocksFamilies.ORANGE_WOOL)
+        generator.family(Blocks.MAGENTA_WOOL).generateFor(HybridBlocksFamilies.MAGENTA_WOOL)
+        generator.family(Blocks.LIGHT_BLUE_WOOL).generateFor(HybridBlocksFamilies.LIGHT_BLUE_WOOL)
+        generator.family(Blocks.YELLOW_WOOL).generateFor(HybridBlocksFamilies.YELLOW_WOOL)
+        generator.family(Blocks.LIME_WOOL).generateFor(HybridBlocksFamilies.LIME_WOOL)
+        generator.family(Blocks.PINK_WOOL).generateFor(HybridBlocksFamilies.PINK_WOOL)
+        generator.family(Blocks.GRAY_WOOL).generateFor(HybridBlocksFamilies.GRAY_WOOL)
+        generator.family(Blocks.LIGHT_GRAY_WOOL).generateFor(HybridBlocksFamilies.LIGHT_GRAY_WOOL)
+        generator.family(Blocks.CYAN_WOOL).generateFor(HybridBlocksFamilies.CYAN_WOOL)
+        generator.family(Blocks.PURPLE_WOOL).generateFor(HybridBlocksFamilies.PURPLE_WOOL)
+        generator.family(Blocks.BLUE_WOOL).generateFor(HybridBlocksFamilies.BLUE_WOOL)
+        generator.family(Blocks.BROWN_WOOL).generateFor(HybridBlocksFamilies.BROWN_WOOL)
+        generator.family(Blocks.GREEN_WOOL).generateFor(HybridBlocksFamilies.GREEN_WOOL)
+        generator.family(Blocks.RED_WOOL).generateFor(HybridBlocksFamilies.RED_WOOL)
+        generator.family(Blocks.BLACK_WOOL).generateFor(HybridBlocksFamilies.BLACK_WOOL)
+
+        generator.family(Blocks.WHITE_CONCRETE).generateFor(HybridBlocksFamilies.WHITE_CONCRETE)
+        generator.family(Blocks.ORANGE_CONCRETE).generateFor(HybridBlocksFamilies.ORANGE_CONCRETE)
+        generator.family(Blocks.MAGENTA_CONCRETE).generateFor(HybridBlocksFamilies.MAGENTA_CONCRETE)
+        generator.family(Blocks.LIGHT_BLUE_CONCRETE).generateFor(HybridBlocksFamilies.LIGHT_BLUE_CONCRETE)
+        generator.family(Blocks.YELLOW_CONCRETE).generateFor(HybridBlocksFamilies.YELLOW_CONCRETE)
+        generator.family(Blocks.LIME_CONCRETE).generateFor(HybridBlocksFamilies.LIME_CONCRETE)
+        generator.family(Blocks.PINK_CONCRETE).generateFor(HybridBlocksFamilies.PINK_CONCRETE)
+        generator.family(Blocks.GRAY_CONCRETE).generateFor(HybridBlocksFamilies.GRAY_CONCRETE)
+        generator.family(Blocks.LIGHT_GRAY_CONCRETE).generateFor(HybridBlocksFamilies.LIGHT_GRAY_CONCRETE)
+        generator.family(Blocks.CYAN_CONCRETE).generateFor(HybridBlocksFamilies.CYAN_CONCRETE)
+        generator.family(Blocks.PURPLE_CONCRETE).generateFor(HybridBlocksFamilies.PURPLE_CONCRETE)
+        generator.family(Blocks.BLUE_CONCRETE).generateFor(HybridBlocksFamilies.BLUE_CONCRETE)
+        generator.family(Blocks.BROWN_CONCRETE).generateFor(HybridBlocksFamilies.BROWN_CONCRETE)
+        generator.family(Blocks.GREEN_CONCRETE).generateFor(HybridBlocksFamilies.GREEN_CONCRETE)
+        generator.family(Blocks.RED_CONCRETE).generateFor(HybridBlocksFamilies.RED_CONCRETE)
+        generator.family(Blocks.BLACK_CONCRETE).generateFor(HybridBlocksFamilies.BLACK_CONCRETE)
+        
         generator.family(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.WHITE_QUARTZ_BLOCK)
         generator.family(HybridBlocksBlocks.ORANGE_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.ORANGE_QUARTZ_BLOCK)
         generator.family(HybridBlocksBlocks.MAGENTA_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.MAGENTA_QUARTZ_BLOCK)

@@ -267,6 +267,106 @@ object HybridBlocksItems {
     val PINK_QUARTZ_TILE_STAIRS = register("pink_quartz_tile_stairs") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_TILE_STAIRS.get(), Item.Properties()) }
     val PINK_QUARTZ_TILE_SLAB = register("pink_quartz_tile_slab") { BlockItem(HybridBlocksBlocks.PINK_QUARTZ_TILE_SLAB.get(), Item.Properties()) }
     //#endregion
+    
+    //#region Wool
+    val WHITE_WOOL_STAIRS = register("white_wool_stairs") { BlockItem(HybridBlocksBlocks.WHITE_WOOL_STAIRS.get(), Item.Properties()) }
+    val WHITE_WOOL_SLAB = register("white_wool_slab") { BlockItem(HybridBlocksBlocks.WHITE_WOOL_SLAB.get(), Item.Properties()) }
+
+    val LIGHT_GRAY_WOOL_STAIRS = register("light_gray_wool_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_WOOL_STAIRS.get(), Item.Properties()) }
+    val LIGHT_GRAY_WOOL_SLAB = register("light_gray_wool_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_WOOL_SLAB.get(), Item.Properties()) }
+
+    val GRAY_WOOL_STAIRS = register("gray_wool_stairs") { BlockItem(HybridBlocksBlocks.GRAY_WOOL_STAIRS.get(), Item.Properties()) }
+    val GRAY_WOOL_SLAB = register("gray_wool_slab") { BlockItem(HybridBlocksBlocks.GRAY_WOOL_SLAB.get(), Item.Properties()) }
+
+    val BLACK_WOOL_STAIRS = register("black_wool_stairs") { BlockItem(HybridBlocksBlocks.BLACK_WOOL_STAIRS.get(), Item.Properties()) }
+    val BLACK_WOOL_SLAB = register("black_wool_slab") { BlockItem(HybridBlocksBlocks.BLACK_WOOL_SLAB.get(), Item.Properties()) }
+
+    val BROWN_WOOL_STAIRS = register("brown_wool_stairs") { BlockItem(HybridBlocksBlocks.BROWN_WOOL_STAIRS.get(), Item.Properties()) }
+    val BROWN_WOOL_SLAB = register("brown_wool_slab") { BlockItem(HybridBlocksBlocks.BROWN_WOOL_SLAB.get(), Item.Properties()) }
+
+    val RED_WOOL_STAIRS = register("red_wool_stairs") { BlockItem(HybridBlocksBlocks.RED_WOOL_STAIRS.get(), Item.Properties()) }
+    val RED_WOOL_SLAB = register("red_wool_slab") { BlockItem(HybridBlocksBlocks.RED_WOOL_SLAB.get(), Item.Properties()) }
+
+    val ORANGE_WOOL_STAIRS = register("orange_wool_stairs") { BlockItem(HybridBlocksBlocks.ORANGE_WOOL_STAIRS.get(), Item.Properties()) }
+    val ORANGE_WOOL_SLAB = register("orange_wool_slab") { BlockItem(HybridBlocksBlocks.ORANGE_WOOL_SLAB.get(), Item.Properties()) }
+
+    val YELLOW_WOOL_STAIRS = register("yellow_wool_stairs") { BlockItem(HybridBlocksBlocks.YELLOW_WOOL_STAIRS.get(), Item.Properties()) }
+    val YELLOW_WOOL_SLAB = register("yellow_wool_slab") { BlockItem(HybridBlocksBlocks.YELLOW_WOOL_SLAB.get(), Item.Properties()) }
+
+    val LIME_WOOL_STAIRS = register("lime_wool_stairs") { BlockItem(HybridBlocksBlocks.LIME_WOOL_STAIRS.get(), Item.Properties()) }
+    val LIME_WOOL_SLAB = register("lime_wool_slab") { BlockItem(HybridBlocksBlocks.LIME_WOOL_SLAB.get(), Item.Properties()) }
+
+    val GREEN_WOOL_STAIRS = register("green_wool_stairs") { BlockItem(HybridBlocksBlocks.GREEN_WOOL_STAIRS.get(), Item.Properties()) }
+    val GREEN_WOOL_SLAB = register("green_wool_slab") { BlockItem(HybridBlocksBlocks.GREEN_WOOL_SLAB.get(), Item.Properties()) }
+
+    val CYAN_WOOL_STAIRS = register("cyan_wool_stairs") { BlockItem(HybridBlocksBlocks.CYAN_WOOL_STAIRS.get(), Item.Properties()) }
+    val CYAN_WOOL_SLAB = register("cyan_wool_slab") { BlockItem(HybridBlocksBlocks.CYAN_WOOL_SLAB.get(), Item.Properties()) }
+
+    val LIGHT_BLUE_WOOL_STAIRS = register("light_blue_wool_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_WOOL_STAIRS.get(), Item.Properties()) }
+    val LIGHT_BLUE_WOOL_SLAB = register("light_blue_wool_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_WOOL_SLAB.get(), Item.Properties()) }
+
+    val BLUE_WOOL_STAIRS = register("blue_wool_stairs") { BlockItem(HybridBlocksBlocks.BLUE_WOOL_STAIRS.get(), Item.Properties()) }
+    val BLUE_WOOL_SLAB = register("blue_wool_slab") { BlockItem(HybridBlocksBlocks.BLUE_WOOL_SLAB.get(), Item.Properties()) }
+
+    val PURPLE_WOOL_STAIRS = register("purple_wool_stairs") { BlockItem(HybridBlocksBlocks.PURPLE_WOOL_STAIRS.get(), Item.Properties()) }
+    val PURPLE_WOOL_SLAB = register("purple_wool_slab") { BlockItem(HybridBlocksBlocks.PURPLE_WOOL_SLAB.get(), Item.Properties()) }
+
+    val MAGENTA_WOOL_STAIRS = register("magenta_wool_stairs") { BlockItem(HybridBlocksBlocks.MAGENTA_WOOL_STAIRS.get(), Item.Properties()) }
+    val MAGENTA_WOOL_SLAB = register("magenta_wool_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_WOOL_SLAB.get(), Item.Properties()) }
+
+    val PINK_WOOL_STAIRS = register("pink_wool_stairs") { BlockItem(HybridBlocksBlocks.PINK_WOOL_STAIRS.get(), Item.Properties()) }
+    val PINK_WOOL_SLAB = register("pink_wool_slab") { BlockItem(HybridBlocksBlocks.PINK_WOOL_SLAB.get(), Item.Properties()) }
+    //#endregion
+    
+    //#region Concrete
+    val WHITE_CONCRETE_STAIRS = register("white_concrete_stairs") { BlockItem(HybridBlocksBlocks.WHITE_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val WHITE_CONCRETE_SLAB = register("white_concrete_slab") { BlockItem(HybridBlocksBlocks.WHITE_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab") { BlockItem(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs") { BlockItem(HybridBlocksBlocks.GRAY_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val GRAY_CONCRETE_SLAB = register("gray_concrete_slab") { BlockItem(HybridBlocksBlocks.GRAY_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val BLACK_CONCRETE_STAIRS = register("black_concrete_stairs") { BlockItem(HybridBlocksBlocks.BLACK_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val BLACK_CONCRETE_SLAB = register("black_concrete_slab") { BlockItem(HybridBlocksBlocks.BLACK_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs") { BlockItem(HybridBlocksBlocks.BROWN_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val BROWN_CONCRETE_SLAB = register("brown_concrete_slab") { BlockItem(HybridBlocksBlocks.BROWN_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val RED_CONCRETE_STAIRS = register("red_concrete_stairs") { BlockItem(HybridBlocksBlocks.RED_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val RED_CONCRETE_SLAB = register("red_concrete_slab") { BlockItem(HybridBlocksBlocks.RED_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs") { BlockItem(HybridBlocksBlocks.ORANGE_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val ORANGE_CONCRETE_SLAB = register("orange_concrete_slab") { BlockItem(HybridBlocksBlocks.ORANGE_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs") { BlockItem(HybridBlocksBlocks.YELLOW_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab") { BlockItem(HybridBlocksBlocks.YELLOW_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val LIME_CONCRETE_STAIRS = register("lime_concrete_stairs") { BlockItem(HybridBlocksBlocks.LIME_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val LIME_CONCRETE_SLAB = register("lime_concrete_slab") { BlockItem(HybridBlocksBlocks.LIME_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val GREEN_CONCRETE_STAIRS = register("green_concrete_stairs") { BlockItem(HybridBlocksBlocks.GREEN_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val GREEN_CONCRETE_SLAB = register("green_concrete_slab") { BlockItem(HybridBlocksBlocks.GREEN_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs") { BlockItem(HybridBlocksBlocks.CYAN_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val CYAN_CONCRETE_SLAB = register("cyan_concrete_slab") { BlockItem(HybridBlocksBlocks.CYAN_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab") { BlockItem(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs") { BlockItem(HybridBlocksBlocks.BLUE_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val BLUE_CONCRETE_SLAB = register("blue_concrete_slab") { BlockItem(HybridBlocksBlocks.BLUE_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs") { BlockItem(HybridBlocksBlocks.PURPLE_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val PURPLE_CONCRETE_SLAB = register("purple_concrete_slab") { BlockItem(HybridBlocksBlocks.PURPLE_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs") { BlockItem(HybridBlocksBlocks.MAGENTA_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab") { BlockItem(HybridBlocksBlocks.MAGENTA_CONCRETE_SLAB.get(), Item.Properties()) }
+
+    val PINK_CONCRETE_STAIRS = register("pink_concrete_stairs") { BlockItem(HybridBlocksBlocks.PINK_CONCRETE_STAIRS.get(), Item.Properties()) }
+    val PINK_CONCRETE_SLAB = register("pink_concrete_slab") { BlockItem(HybridBlocksBlocks.PINK_CONCRETE_SLAB.get(), Item.Properties()) }
+    //#endregion
 
     //#region Mud_Bricks
     //  normal mud_bricks

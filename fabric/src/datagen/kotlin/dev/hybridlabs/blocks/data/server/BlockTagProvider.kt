@@ -58,8 +58,16 @@ class BlockTagProvider(
                     "shingles",
                     "chimney",
                     "polished",
+                    "concrete",
                 ).any { pickaxePath.contains(it) }) {
                 getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(block)
+            }
+
+            val shearsPath = id.path
+            if (setOf(
+                    "wool",
+                ).any { shearsPath.contains(it) }) {
+                getOrCreateTagBuilder(BlockTags.WOOL).add(block)
             }
         }
     }

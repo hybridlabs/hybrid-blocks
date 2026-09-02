@@ -1525,6 +1525,7 @@ object HybridBlocksBlocks {
         Block(
             BlockBehaviour.Properties
                 .ofFullCopy(Blocks.BRICKS)
+                .mapColor(DyeColor.WHITE)
         )
     }
 
@@ -6397,6 +6398,432 @@ object HybridBlocksBlocks {
     val MOSSY_BLACK_BRICK_SLAB = register("mossy_black_brick_slab") { SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.BLACK))}
     val MOSSY_BLACK_BRICK_WALL = register("mossy_black_brick_wall") { WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICK_WALL).mapColor(DyeColor.BLACK))}
 
+    //#endregion
+    
+    //#region Wool Sets
+    val WHITE_WOOL_STAIRS = register("white_wool_stairs") {
+        HBStairBlock(
+            Blocks.WHITE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).mapColor(DyeColor.WHITE)
+        )
+    }
+
+    val WHITE_WOOL_SLAB = register("white_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).mapColor(DyeColor.WHITE)
+        )
+    }
+
+    val ORANGE_WOOL_STAIRS = register("orange_wool_stairs") {
+        HBStairBlock(
+            Blocks.ORANGE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL).mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_WOOL_SLAB = register("orange_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL).mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MAGENTA_WOOL_STAIRS = register("magenta_wool_stairs") {
+        HBStairBlock(
+            Blocks.MAGENTA_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_WOOL).mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val MAGENTA_WOOL_SLAB = register("magenta_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_WOOL).mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val LIGHT_BLUE_WOOL_STAIRS = register("light_blue_wool_stairs") {
+        HBStairBlock(
+            Blocks.LIGHT_BLUE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_WOOL).mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val LIGHT_BLUE_WOOL_SLAB = register("light_blue_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_WOOL).mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val YELLOW_WOOL_STAIRS = register("yellow_wool_stairs") {
+        HBStairBlock(
+            Blocks.YELLOW_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val YELLOW_WOOL_SLAB = register("yellow_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val LIME_WOOL_STAIRS = register("lime_wool_stairs") {
+        HBStairBlock(
+            Blocks.LIME_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_WOOL).mapColor(DyeColor.LIME)
+        )
+    }
+
+    val LIME_WOOL_SLAB = register("lime_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_WOOL).mapColor(DyeColor.LIME)
+        )
+    }
+
+    val PINK_WOOL_STAIRS = register("pink_wool_stairs") {
+        HBStairBlock(
+            Blocks.PINK_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_WOOL).mapColor(DyeColor.PINK)
+        )
+    }
+
+    val PINK_WOOL_SLAB = register("pink_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_WOOL).mapColor(DyeColor.PINK)
+        )
+    }
+
+    val GRAY_WOOL_STAIRS = register("gray_wool_stairs") {
+        HBStairBlock(
+            Blocks.GRAY_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_WOOL).mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val GRAY_WOOL_SLAB = register("gray_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_WOOL).mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val LIGHT_GRAY_WOOL_STAIRS = register("light_gray_wool_stairs") {
+        HBStairBlock(
+            Blocks.LIGHT_GRAY_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_WOOL).mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val LIGHT_GRAY_WOOL_SLAB = register("light_gray_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_WOOL).mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val CYAN_WOOL_STAIRS = register("cyan_wool_stairs") {
+        HBStairBlock(
+            Blocks.CYAN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_WOOL).mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val CYAN_WOOL_SLAB = register("cyan_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_WOOL).mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val PURPLE_WOOL_STAIRS = register("purple_wool_stairs") {
+        HBStairBlock(
+            Blocks.PURPLE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_WOOL).mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val PURPLE_WOOL_SLAB = register("purple_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_WOOL).mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val BROWN_WOOL_STAIRS = register("brown_wool_stairs") {
+        HBStairBlock(
+            Blocks.BROWN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val BROWN_WOOL_SLAB = register("brown_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val GREEN_WOOL_STAIRS = register("green_wool_stairs") {
+        HBStairBlock(
+            Blocks.GREEN_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL).mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val GREEN_WOOL_SLAB = register("green_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL).mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val BLUE_WOOL_STAIRS = register("blue_wool_stairs") {
+        HBStairBlock(
+            Blocks.BLUE_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL).mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val BLUE_WOOL_SLAB = register("blue_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL).mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val RED_WOOL_STAIRS = register("red_wool_stairs") {
+        HBStairBlock(
+            Blocks.RED_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.RED_WOOL)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_WOOL_SLAB = register("red_wool_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.RED_WOOL)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val BLACK_WOOL_STAIRS = register("black_wool_stairs") {
+        HBStairBlock(
+            Blocks.BLACK_WOOL.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).mapColor(DyeColor.BLACK)
+        )
+    }
+
+    val BLACK_WOOL_SLAB = register("black_wool_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).mapColor(DyeColor.BLACK)
+        )
+    }
+    //#endregion
+    
+    //#region Concrete Sets
+    val WHITE_CONCRETE_STAIRS = register("white_concrete_stairs") {
+        HBStairBlock(
+            Blocks.WHITE_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).mapColor(DyeColor.WHITE)
+        )
+    }
+
+    val WHITE_CONCRETE_SLAB = register("white_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).mapColor(DyeColor.WHITE)
+        )
+    }
+
+    val ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs") {
+        HBStairBlock(
+            Blocks.ORANGE_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val ORANGE_CONCRETE_SLAB = register("orange_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).mapColor(DyeColor.ORANGE)
+        )
+    }
+
+    val MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs") {
+        HBStairBlock(
+            Blocks.MAGENTA_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).mapColor(DyeColor.MAGENTA)
+        )
+    }
+
+    val LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs") {
+        HBStairBlock(
+            Blocks.LIGHT_BLUE_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).mapColor(DyeColor.LIGHT_BLUE)
+        )
+    }
+
+    val YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs") {
+        HBStairBlock(
+            Blocks.YELLOW_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).mapColor(DyeColor.YELLOW)
+        )
+    }
+
+    val LIME_CONCRETE_STAIRS = register("lime_concrete_stairs") {
+        HBStairBlock(
+            Blocks.LIME_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).mapColor(DyeColor.LIME)
+        )
+    }
+
+    val LIME_CONCRETE_SLAB = register("lime_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).mapColor(DyeColor.LIME)
+        )
+    }
+
+    val PINK_CONCRETE_STAIRS = register("pink_concrete_stairs") {
+        HBStairBlock(
+            Blocks.PINK_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).mapColor(DyeColor.PINK)
+        )
+    }
+
+    val PINK_CONCRETE_SLAB = register("pink_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).mapColor(DyeColor.PINK)
+        )
+    }
+
+    val GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs") {
+        HBStairBlock(
+            Blocks.GRAY_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val GRAY_CONCRETE_SLAB = register("gray_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).mapColor(DyeColor.GRAY)
+        )
+    }
+
+    val LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs") {
+        HBStairBlock(
+            Blocks.LIGHT_GRAY_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).mapColor(DyeColor.LIGHT_GRAY)
+        )
+    }
+
+    val CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs") {
+        HBStairBlock(
+            Blocks.CYAN_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val CYAN_CONCRETE_SLAB = register("cyan_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).mapColor(DyeColor.CYAN)
+        )
+    }
+
+    val PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs") {
+        HBStairBlock(
+            Blocks.PURPLE_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val PURPLE_CONCRETE_SLAB = register("purple_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).mapColor(DyeColor.PURPLE)
+        )
+    }
+
+    val BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs") {
+        HBStairBlock(
+            Blocks.BROWN_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val BROWN_CONCRETE_SLAB = register("brown_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).mapColor(DyeColor.BROWN)
+        )
+    }
+
+    val GREEN_CONCRETE_STAIRS = register("green_concrete_stairs") {
+        HBStairBlock(
+            Blocks.GREEN_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val GREEN_CONCRETE_SLAB = register("green_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).mapColor(DyeColor.GREEN)
+        )
+    }
+
+    val BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs") {
+        HBStairBlock(
+            Blocks.BLUE_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val BLUE_CONCRETE_SLAB = register("blue_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).mapColor(DyeColor.BLUE)
+        )
+    }
+
+    val RED_CONCRETE_STAIRS = register("red_concrete_stairs") {
+        HBStairBlock(
+            Blocks.RED_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties
+                .ofFullCopy(Blocks.RED_CONCRETE)
+                .mapColor(DyeColor.RED)
+        )
+    }
+
+    val RED_CONCRETE_SLAB = register("red_concrete_slab") {
+        SlabBlock(BlockBehaviour.Properties
+            .ofFullCopy(Blocks.RED_CONCRETE)
+            .mapColor(DyeColor.RED)
+        )
+    }
+
+    val BLACK_CONCRETE_STAIRS = register("black_concrete_stairs") {
+        HBStairBlock(
+            Blocks.BLACK_CONCRETE.defaultBlockState(),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).mapColor(DyeColor.BLACK)
+        )
+    }
+
+    val BLACK_CONCRETE_SLAB = register("black_concrete_slab") {
+        SlabBlock(
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).mapColor(DyeColor.BLACK)
+        )
+    }
     //#endregion
 
     // region Clear Glass
