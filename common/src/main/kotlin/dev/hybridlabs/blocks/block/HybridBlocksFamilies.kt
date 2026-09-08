@@ -279,6 +279,14 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MEDIUM_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_RED_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_RED_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_RED_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_RED_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
     val MEDIUM_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICK_STAIRS.get())
@@ -343,6 +351,14 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
     val MEDIUM_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICK_STAIRS.get())
@@ -404,6 +420,14 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
             .slab(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_SLAB.get())
             .wall(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_WALL.get())
             .family
     }
 

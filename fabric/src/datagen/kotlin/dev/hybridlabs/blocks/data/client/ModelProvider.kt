@@ -152,6 +152,26 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             HybridBlocksBlocks.BASKETWEAVE_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.PINWHEEL_RED_NETHER_BRICKS.get(),
             HybridBlocksBlocks.JACK_ON_JACK_RED_NETHER_BRICKS.get(),
+
+            HybridBlocksBlocks.BASKETWEAVE_RED_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_RED_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_RED_BRINESTONE_BRICKS.get(),
+
+            HybridBlocksBlocks.BASKETWEAVE_ORANGE_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_ORANGE_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_ORANGE_BRINESTONE_BRICKS.get(),
+
+            HybridBlocksBlocks.BASKETWEAVE_YELLOW_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_YELLOW_BRINESTONE_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_YELLOW_BRINESTONE_BRICKS.get(),
+
+            HybridBlocksBlocks.BASKETWEAVE_CHIMNEYSTONE_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_CHIMNEYSTONE_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_CHIMNEYSTONE_BRICKS.get(),
+
+            HybridBlocksBlocks.BASKETWEAVE_SCHIST_BRICKS.get(),
+            HybridBlocksBlocks.PINWHEEL_SCHIST_BRICKS.get(),
+            HybridBlocksBlocks.JACK_ON_JACK_SCHIST_BRICKS.get(),
         ).forEach { block ->
             generator.createTrivialCube(block)
         }
@@ -398,6 +418,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.CHIMNEYSTONE_SHINGLES)
         generator.family(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.MIXED_CHIMNEYSTONE_SHINGLES)
 
+        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_RED_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_RED_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_RED_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_RED_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_RED_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_MIXED_RED_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_MIXED_RED_BRINESTONE_BRICKS)
@@ -407,6 +428,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.RED_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.RED_BRINESTONE_SHINGLES)
         generator.family(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.MIXED_RED_BRINESTONE_SHINGLES)
 
+        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_ORANGE_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_ORANGE_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_ORANGE_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_ORANGE_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_MIXED_ORANGE_BRINESTONE_BRICKS)
@@ -416,6 +438,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.ORANGE_BRINESTONE_SHINGLES)
         generator.family(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.MIXED_ORANGE_BRINESTONE_SHINGLES)
 
+        generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_YELLOW_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_YELLOW_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_YELLOW_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS)
