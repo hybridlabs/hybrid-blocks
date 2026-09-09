@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "hybrid_blocks:block/mixed_deepslate_shingles"
+  }
+}

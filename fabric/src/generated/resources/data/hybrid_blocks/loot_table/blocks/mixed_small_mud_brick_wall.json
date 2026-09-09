@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "hybrid_blocks:small_mixed_mud_brick_wall"
+          "name": "hybrid_blocks:mixed_small_mud_brick_wall"
         }
       ],
       "rolls": 1.0
