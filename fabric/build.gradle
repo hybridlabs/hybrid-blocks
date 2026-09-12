@@ -1,7 +1,7 @@
 plugins {
     id 'multiloader-loader'
     id 'fabric-loom'
-    id "org.jetbrains.kotlin.jvm"
+    id 'org.jetbrains.kotlin.jvm'
 }
 
 repositories {
@@ -15,11 +15,6 @@ repositories {
     maven {
         name = "JamiesWhiteShirt"
         url  = "https://maven.jamieswhiteshirt.com/libs-release"
-    }
-
-    maven {
-        name = "Modrinth"
-        url  = "https://api.modrinth.com/maven/"
     }
 
     maven {

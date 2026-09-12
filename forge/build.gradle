@@ -12,8 +12,6 @@ dependencies {
 }
 
 legacyForge {
-    apply plugin: 'org.jetbrains.kotlin.jvm'
-    apply plugin: 'kotlin'
     version = "${minecraft_version}-${forge_version}"
 
     mixin {
@@ -71,7 +69,6 @@ repositories {
         name = 'Kotlin for Forge'
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
     }
-    mavenCentral()
 }
 
 sourceSets.main.resources.srcDirs += 'src/generated/resources'
