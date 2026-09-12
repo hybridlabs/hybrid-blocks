@@ -14,8 +14,9 @@
     ],
 
     "contact": {
-        "sources": "https://github.com/hybridlabs/hybrid_blocks",
-        "issues": "https://github.com/hybridlabs/hybrid_blocks/issues"
+        "homepage": "https://hybridlabs.net/",
+        "sources": "https://github.com/hybridlabs/hybrid-blocks",
+        "issues": "https://github.com/hybridlabs/hybrid-blocks/issues"
     },
 
     "license": "ARR (Assets), MIT (Code)",
