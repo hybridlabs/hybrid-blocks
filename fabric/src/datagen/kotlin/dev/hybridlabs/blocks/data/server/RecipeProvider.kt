@@ -202,6 +202,25 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerStainedClearGlassRecipes(exporter, Items.WHITE_STAINED_GLASS, HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.WHITE_DYE)
         offerStainedClearGlassRecipes(exporter, Items.YELLOW_STAINED_GLASS, HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.YELLOW_DYE)
 
+        // clear glass panes
+        offerPaneRecipe(exporter, "clear_glass_pane", HybridBlocksItems.CLEAR_GLASS_PANE.get(), HybridBlocksItems.CLEAR_GLASS.get())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.BLUE_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.BROWN_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS.get(), Items.CYAN_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS.get(), Items.GRAY_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS.get(), Items.GREEN_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS.get(), Items.LIGHT_BLUE_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS.get(), Items.LIGHT_GRAY_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIME_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIME_STAINED_CLEAR_GLASS.get(), Items.LIME_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS.get(), Items.MAGENTA_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS.get(), Items.ORANGE_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PINK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PINK_STAINED_CLEAR_GLASS.get(), Items.PINK_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS.get(), Items.PURPLE_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.RED_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.RED_STAINED_CLEAR_GLASS.get(), Items.RED_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.WHITE_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.YELLOW_DYE)
+
         // mossy bricks
         offerMossingRecipes(exporter, "mossy_bricks", HybridBlocksItems.MOSSY_BRICKS.get(), Items.BRICKS)
         offerMossingRecipes(exporter, "mossy_mud_bricks", HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get(), Items.BRICKS)
@@ -1988,6 +2007,57 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 output,
                 base
             )
+        }
+
+        /**
+         * Six blocks make sixteen panes, the same rate as vanilla glass.
+         */
+        private fun offerPaneRecipe(
+            exporter: RecipeOutput,
+            group: String,
+            output: Item,
+            input: Item,
+        ) {
+            ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, output, 16)
+                .define(Character.valueOf('#'), input)
+
+                .pattern("###")
+                .pattern("###")
+
+                .group(group)
+                .unlockedBy(
+                    "has_${BuiltInRegistries.ITEM.getKey(input.asItem()).path}",
+                    InventoryChangeTrigger.TriggerInstance.hasItems(input)
+                )
+
+                .save(exporter)
+        }
+
+        /**
+         * A stained pane can be cut from the matching stained block, or dyed in bulk from plain
+         * panes the way vanilla stains its own. Two routes means the second needs its own id.
+         */
+        private fun offerStainedClearGlassPaneRecipes(
+            exporter: RecipeOutput,
+            output: Item,
+            base: Item,
+            dye: Item
+        ) {
+            offerPaneRecipe(exporter, "stained_clear_glass_pane", output, base)
+
+            val plainPane = HybridBlocksItems.CLEAR_GLASS_PANE.get()
+            ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, output, 8)
+                .define(Character.valueOf('#'), plainPane)
+                .define(Character.valueOf('X'), dye)
+
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+
+                .group("stained_clear_glass_pane")
+                .unlockedBy("has_clear_glass_pane", InventoryChangeTrigger.TriggerInstance.hasItems(plainPane))
+
+                .save(exporter, "${BuiltInRegistries.ITEM.getKey(output.asItem())}_from_dyeing")
         }
 
         private fun offerStainedMossyBricksRecipes(
