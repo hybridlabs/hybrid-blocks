@@ -115,3 +115,7 @@ loom {
         }
     }
 }
+
+publishMods.platforms.configureEach {
+    requires 'fabric-api', 'fabric-language-kotlin'
+}
