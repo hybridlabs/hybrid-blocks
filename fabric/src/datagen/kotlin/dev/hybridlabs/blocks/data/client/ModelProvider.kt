@@ -1,10 +1,12 @@
 package dev.hybridlabs.blocks.data.client
 
+import dev.hybridlabs.blocks.HybridBlocks.MOD_ID
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.HybridBlocksFamilies
 import dev.hybridlabs.client.HBModelTemplates
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
+import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.data.models.BlockModelGenerators
 import net.minecraft.data.models.ItemModelGenerators
 import net.minecraft.data.models.model.ModelLocationUtils
@@ -179,7 +181,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.POLISHED_CALCITE.get()).generateFor(HybridBlocksFamilies.POLISHED_CALCITE)
         generator.family(HybridBlocksBlocks.POLISHED_CALCITE_BRICKS.get()).generateFor(HybridBlocksFamilies.POLISHED_CALCITE_BRICKS)
         generator.family(HybridBlocksBlocks.POLISHED_CALCITE_TILES.get()).generateFor(HybridBlocksFamilies.POLISHED_CALCITE_TILES)
-        
+
         generator.family(HybridBlocksBlocks.MIXED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_NETHER_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_NETHER_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_MIXED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_MIXED_NETHER_BRICKS)
@@ -187,7 +189,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.LARGE_MIXED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.LARGE_MIXED_NETHER_BRICKS)
         generator.family(HybridBlocksBlocks.NETHER_SHINGLES.get()).generateFor(HybridBlocksFamilies.NETHER_SHINGLES)
         generator.family(HybridBlocksBlocks.MIXED_NETHER_SHINGLES.get()).generateFor(HybridBlocksFamilies.MIXED_NETHER_SHINGLES)
-        
+
         generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_RED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_RED_NETHER_BRICKS)
         generator.family(HybridBlocksBlocks.SMALL_MIXED_RED_NETHER_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_MIXED_RED_NETHER_BRICKS)
@@ -465,7 +467,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(HybridBlocksBlocks.LARGE_MIXED_YELLOW_BRINESTONE_BRICKS.get()).generateFor(HybridBlocksFamilies.LARGE_MIXED_YELLOW_BRINESTONE_BRICKS)
         generator.family(HybridBlocksBlocks.YELLOW_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.YELLOW_BRINESTONE_SHINGLES)
         generator.family(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.MIXED_YELLOW_BRINESTONE_SHINGLES)
-        
+
         generator.family(Blocks.WHITE_WOOL).generateFor(HybridBlocksFamilies.WHITE_WOOL)
         generator.family(Blocks.ORANGE_WOOL).generateFor(HybridBlocksFamilies.ORANGE_WOOL)
         generator.family(Blocks.MAGENTA_WOOL).generateFor(HybridBlocksFamilies.MAGENTA_WOOL)
@@ -499,7 +501,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
         generator.family(Blocks.GREEN_CONCRETE).generateFor(HybridBlocksFamilies.GREEN_CONCRETE)
         generator.family(Blocks.RED_CONCRETE).generateFor(HybridBlocksFamilies.RED_CONCRETE)
         generator.family(Blocks.BLACK_CONCRETE).generateFor(HybridBlocksFamilies.BLACK_CONCRETE)
-        
+
         generator.family(HybridBlocksBlocks.WHITE_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.WHITE_QUARTZ_BLOCK)
         generator.family(HybridBlocksBlocks.ORANGE_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.ORANGE_QUARTZ_BLOCK)
         generator.family(HybridBlocksBlocks.MAGENTA_QUARTZ_BLOCK.get()).generateFor(HybridBlocksFamilies.MAGENTA_QUARTZ_BLOCK)
