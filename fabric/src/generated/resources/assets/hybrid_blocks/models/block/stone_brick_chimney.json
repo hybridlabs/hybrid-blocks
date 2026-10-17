@@ -1,0 +1,7 @@
+{
+  "parent": "hybrid_blocks:block/template_chimney",
+  "textures": {
+    "particle": "minecraft:block/stone_bricks",
+    "texture": "minecraft:block/stone_bricks"
+  }
+}

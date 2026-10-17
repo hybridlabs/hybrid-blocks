@@ -759,7 +759,7 @@ object HybridBlocksItems {
 
     val BRICK_CHIMNEY = item(HybridBlocksBlocks.BRICK_CHIMNEY)
     //#endregion
-    
+
     //  normal deepslate bricks
     val SMALL_DEEPSLATE_BRICKS = item(HybridBlocksBlocks.SMALL_DEEPSLATE_BRICKS)
     val SMALL_DEEPSLATE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_DEEPSLATE_BRICK_STAIRS)
@@ -808,7 +808,7 @@ object HybridBlocksItems {
 
     val DEEPSLATE_BRICK_CHIMNEY = item(HybridBlocksBlocks.DEEPSLATE_BRICK_CHIMNEY)
     //#endregion
-    
+
     //  normal stone bricks
     val SMALL_STONE_BRICKS = item(HybridBlocksBlocks.SMALL_STONE_BRICKS)
     val SMALL_STONE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_STONE_BRICK_STAIRS)
@@ -1836,6 +1836,10 @@ object HybridBlocksItems {
 
     val RED_NETHER_BRICK_CHIMNEY = item(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY)
     //#endregion
+
+    val COBBLESTONE_CHIMNEY = item(HybridBlocksBlocks.COBBLESTONE_CHIMNEY)
+    val TUFF_BRICKS_CHIMNEY = item(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY)
+    val END_STONE_BRICKS_CHIMNEY = item(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY)
 
     //#region Mossy Bricks
     val MOSSY_BRICKS = item(HybridBlocksBlocks.MOSSY_BRICKS)

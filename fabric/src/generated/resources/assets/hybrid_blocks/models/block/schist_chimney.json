@@ -1,0 +1,7 @@
+{
+  "parent": "hybrid_blocks:block/template_chimney",
+  "textures": {
+    "particle": "hybrid_aquatic:block/schist_bricks",
+    "texture": "hybrid_aquatic:block/schist_bricks"
+  }
+}

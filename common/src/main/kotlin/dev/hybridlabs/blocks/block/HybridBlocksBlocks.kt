@@ -450,6 +450,10 @@ object HybridBlocksBlocks {
     val STONE_BRICK_CHIMNEY = chimney("stone_brick_chimney", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
     //#endregion
 
+    val COBBLESTONE_CHIMNEY = chimney("cobblestone_chimney", Blocks.COBBLESTONE, DyeColor.GRAY)
+    val TUFF_BRICKS_CHIMNEY = chimney("tuff_bricks_chimney", Blocks.TUFF_BRICKS, DyeColor.GRAY)
+    val END_STONE_BRICKS_CHIMNEY = chimney("end_stone_bricks_chimney", Blocks.END_STONE_BRICKS, DyeColor.YELLOW)
+
     //#region Nether Bricks
 
     //  large nether bricks

@@ -31,7 +31,15 @@ object HBBlockEntityTypes {
             HybridBlocksBlocks.MUD_BRICK_CHIMNEY,
             HybridBlocksBlocks.BRICK_CHIMNEY,
             HybridBlocksBlocks.NETHER_BRICK_CHIMNEY,
-            HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY
+            HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY,
+            HybridBlocksBlocks.COBBLESTONE_CHIMNEY,
+            HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY,
+            HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY,
+            HybridBlocksBlocks.RED_BRINESTONE_CHIMNEY,
+            HybridBlocksBlocks.ORANGE_BRINESTONE_CHIMNEY,
+            HybridBlocksBlocks.YELLOW_BRINESTONE_CHIMNEY,
+            HybridBlocksBlocks.SCHIST_CHIMNEY,
+            HybridBlocksBlocks.CHIMNEYSTONE_CHIMNEY,
         )
 
     fun <T : BlockEntity?> register(

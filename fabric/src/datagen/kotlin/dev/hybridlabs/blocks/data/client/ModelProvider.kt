@@ -168,6 +168,14 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 HybridBlocksBlocks.BASKETWEAVE_SCHIST_BRICKS.get(),
                 HybridBlocksBlocks.PINWHEEL_SCHIST_BRICKS.get(),
                 HybridBlocksBlocks.JACK_ON_JACK_SCHIST_BRICKS.get(),
+
+                HybridBlocksBlocks.BASKETWEAVE_STONE_BRICKS.get(),
+                HybridBlocksBlocks.PINWHEEL_STONE_BRICKS.get(),
+                HybridBlocksBlocks.JACK_ON_JACK_STONE_BRICKS.get(),
+
+                HybridBlocksBlocks.BASKETWEAVE_DEEPSLATE_BRICKS.get(),
+                HybridBlocksBlocks.PINWHEEL_DEEPSLATE_BRICKS.get(),
+                HybridBlocksBlocks.JACK_ON_JACK_DEEPSLATE_BRICKS.get(),
             ).forEach { block ->
                 generator.createTrivialCube(block)
             }
@@ -593,6 +601,8 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
             generator.family(HybridBlocksBlocks.MIXED_SCHIST_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.MIXED_SCHIST_BRICKS)
+            generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_SCHIST_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_SCHIST_BRICKS)
             generator.family(HybridBlocksBlocks.MEDIUM_SCHIST_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.MEDIUM_SCHIST_BRICKS)
             generator.family(HybridBlocksBlocks.MEDIUM_MIXED_SCHIST_BRICKS.get())
@@ -609,6 +619,8 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
             generator.family(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.MIXED_CHIMNEYSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS)
             generator.family(HybridBlocksBlocks.MEDIUM_CHIMNEYSTONE_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.MEDIUM_CHIMNEYSTONE_BRICKS)
             generator.family(HybridBlocksBlocks.MEDIUM_MIXED_CHIMNEYSTONE_BRICKS.get())
@@ -927,9 +939,21 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             createChimney(HybridBlocksBlocks.RED_BRICK_CHIMNEY.get(), "hybrid_blocks", "red_bricks")
             createChimney(HybridBlocksBlocks.BLACK_BRICK_CHIMNEY.get(), "hybrid_blocks", "black_bricks")
 
+            createChimney(HybridBlocksBlocks.BRICK_CHIMNEY.get(), "minecraft", "bricks")
+            createChimney(HybridBlocksBlocks.STONE_BRICK_CHIMNEY.get(), "minecraft", "stone_bricks")
+            createChimney(HybridBlocksBlocks.DEEPSLATE_BRICK_CHIMNEY.get(), "minecraft", "deepslate_bricks")
             createChimney(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), "minecraft", "nether_bricks")
             createChimney(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), "minecraft", "red_nether_bricks")
             createChimney(HybridBlocksBlocks.MUD_BRICK_CHIMNEY.get(), "minecraft", "mud_bricks")
+            createChimney(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY.get(), "minecraft", "tuff_bricks")
+            createChimney(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY.get(), "minecraft", "end_stone_bricks")
+            createChimney(HybridBlocksBlocks.COBBLESTONE_CHIMNEY.get(), "minecraft", "cobblestone")
+
+            createChimney(HybridBlocksBlocks.RED_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "red_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.ORANGE_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "orange_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.YELLOW_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "yellow_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.SCHIST_CHIMNEY.get(), "hybrid_aquatic", "schist_bricks")
+            createChimney(HybridBlocksBlocks.CHIMNEYSTONE_CHIMNEY.get(), "hybrid_aquatic", "chimneystone_bricks")
         }
     }
 

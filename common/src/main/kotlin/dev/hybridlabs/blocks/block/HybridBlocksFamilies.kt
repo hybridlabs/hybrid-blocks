@@ -92,7 +92,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_RED_NETHER_BRICK_WALL.get())
             .family
     }
-    
+
     val LARGE_RED_NETHER_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.LARGE_RED_NETHER_BRICKS.get())
             .stairs(HybridBlocksBlocks.LARGE_RED_NETHER_BRICK_STAIRS.get())
@@ -191,6 +191,14 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MEDIUM_SCHIST_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_SCHIST_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_SCHIST_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_SCHIST_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_SCHIST_BRICK_WALL.get())
+            .family
+    }
+
     val SCHIST_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.SCHIST_SHINGLES.get())
             .stairs(HybridBlocksBlocks.SCHIST_SHINGLE_STAIRS.get())
@@ -206,7 +214,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_WALL.get())
             .family
     }
-    
+
     val MIXED_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_BRICK_STAIRS.get())
@@ -255,6 +263,14 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_WALL.get())
+            .family
+    }
+
     val CHIMNEYSTONE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_STAIRS.get())
@@ -270,7 +286,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLE_WALL.get())
             .family
     }
-    
+
     val MIXED_RED_BRINESTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_RED_BRINESTONE_BRICK_STAIRS.get())
@@ -342,7 +358,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
-    
+
     val MIXED_ORANGE_BRINESTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_BRICK_STAIRS.get())
@@ -414,7 +430,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
-    
+
     val MIXED_YELLOW_BRINESTONE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_BRICK_STAIRS.get())
@@ -617,7 +633,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_STONE_SHINGLE_WALL.get())
             .family
     }
-    
+
     val MIXED_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_MUD_BRICK_STAIRS.get())
@@ -625,7 +641,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MIXED_MUD_BRICK_WALL.get())
             .family
     }
-    
+
     val MEDIUM_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MUD_BRICKS.get())
             .stairs(HybridBlocksBlocks.MEDIUM_MUD_BRICK_STAIRS.get())
@@ -633,7 +649,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MEDIUM_MUD_BRICK_WALL.get())
             .family
     }
-    
+
     val MEDIUM_MIXED_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICKS.get())
             .stairs(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_STAIRS.get())
@@ -641,7 +657,7 @@ object HybridBlocksFamilies {
             .wall(HybridBlocksBlocks.MEDIUM_MIXED_MUD_BRICK_WALL.get())
             .family
     }
-    
+
     val MIXED_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_BRICK_STAIRS.get())
@@ -878,7 +894,7 @@ object HybridBlocksFamilies {
             .family
     }
     //#endregion
-    
+
     //#region Magenta Bricks Families
     val MAGENTA_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MAGENTA_BRICKS.get())
@@ -944,7 +960,7 @@ object HybridBlocksFamilies {
             .family
     }
     //#endregion
-    
+
     //#region Light Blue Bricks Families
     val LIGHT_BLUE_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.LIGHT_BLUE_BRICKS.get())
@@ -1736,7 +1752,7 @@ object HybridBlocksFamilies {
             .family
     }
     //#endregion
-    
+
     //#region Black Bricks Families
     val BLACK_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.BLACK_BRICKS.get())
@@ -2562,7 +2578,7 @@ object HybridBlocksFamilies {
             .slab(HybridBlocksBlocks.WHITE_WOOL_SLAB.get())
             .family
     }
-    
+
     val ORANGE_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.ORANGE_WOOL)
             .stairs(HybridBlocksBlocks.ORANGE_WOOL_STAIRS.get())
@@ -2576,70 +2592,70 @@ object HybridBlocksFamilies {
             .slab(HybridBlocksBlocks.MAGENTA_WOOL_SLAB.get())
             .family
     }
-    
+
     val LIGHT_BLUE_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIGHT_BLUE_WOOL)
             .stairs(HybridBlocksBlocks.LIGHT_BLUE_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_BLUE_WOOL_SLAB.get())
             .family
     }
-    
+
     val YELLOW_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.YELLOW_WOOL)
             .stairs(HybridBlocksBlocks.YELLOW_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.YELLOW_WOOL_SLAB.get())
             .family
     }
-    
+
     val LIME_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIME_WOOL)
             .stairs(HybridBlocksBlocks.LIME_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.LIME_WOOL_SLAB.get())
             .family
     }
-    
+
     val PINK_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.PINK_WOOL)
             .stairs(HybridBlocksBlocks.PINK_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.PINK_WOOL_SLAB.get())
             .family
     }
-    
+
     val GRAY_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.GRAY_WOOL)
             .stairs(HybridBlocksBlocks.GRAY_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.GRAY_WOOL_SLAB.get())
             .family
     }
-    
+
     val LIGHT_GRAY_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIGHT_GRAY_WOOL)
             .stairs(HybridBlocksBlocks.LIGHT_GRAY_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_GRAY_WOOL_SLAB.get())
             .family
     }
-    
+
     val CYAN_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CYAN_WOOL)
             .stairs(HybridBlocksBlocks.CYAN_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.CYAN_WOOL_SLAB.get())
             .family
     }
-    
+
     val PURPLE_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.PURPLE_WOOL)
             .stairs(HybridBlocksBlocks.PURPLE_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.PURPLE_WOOL_SLAB.get())
             .family
     }
-    
+
     val BLUE_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.BLUE_WOOL)
             .stairs(HybridBlocksBlocks.BLUE_WOOL_STAIRS.get())
             .slab(HybridBlocksBlocks.BLUE_WOOL_SLAB.get())
             .family
     }
-    
+
     val BROWN_WOOL: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.BROWN_WOOL)
             .stairs(HybridBlocksBlocks.BROWN_WOOL_STAIRS.get())
@@ -2676,7 +2692,7 @@ object HybridBlocksFamilies {
             .slab(HybridBlocksBlocks.WHITE_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val ORANGE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.ORANGE_CONCRETE)
             .stairs(HybridBlocksBlocks.ORANGE_CONCRETE_STAIRS.get())
@@ -2690,70 +2706,70 @@ object HybridBlocksFamilies {
             .slab(HybridBlocksBlocks.MAGENTA_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val LIGHT_BLUE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIGHT_BLUE_CONCRETE)
             .stairs(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val YELLOW_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.YELLOW_CONCRETE)
             .stairs(HybridBlocksBlocks.YELLOW_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.YELLOW_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val LIME_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIME_CONCRETE)
             .stairs(HybridBlocksBlocks.LIME_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIME_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val PINK_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.PINK_CONCRETE)
             .stairs(HybridBlocksBlocks.PINK_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.PINK_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val GRAY_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.GRAY_CONCRETE)
             .stairs(HybridBlocksBlocks.GRAY_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.GRAY_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val LIGHT_GRAY_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.LIGHT_GRAY_CONCRETE)
             .stairs(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val CYAN_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CYAN_CONCRETE)
             .stairs(HybridBlocksBlocks.CYAN_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.CYAN_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val PURPLE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.PURPLE_CONCRETE)
             .stairs(HybridBlocksBlocks.PURPLE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.PURPLE_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val BLUE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.BLUE_CONCRETE)
             .stairs(HybridBlocksBlocks.BLUE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLUE_CONCRETE_SLAB.get())
             .family
     }
-    
+
     val BROWN_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.BROWN_CONCRETE)
             .stairs(HybridBlocksBlocks.BROWN_CONCRETE_STAIRS.get())
