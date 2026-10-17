@@ -176,6 +176,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 HybridBlocksBlocks.BASKETWEAVE_DEEPSLATE_BRICKS.get(),
                 HybridBlocksBlocks.PINWHEEL_DEEPSLATE_BRICKS.get(),
                 HybridBlocksBlocks.JACK_ON_JACK_DEEPSLATE_BRICKS.get(),
+
+                HybridBlocksBlocks.BASKETWEAVE_POLISHED_BLACKSTONE_BRICKS.get(),
+                HybridBlocksBlocks.PINWHEEL_POLISHED_BLACKSTONE_BRICKS.get(),
+                HybridBlocksBlocks.JACK_ON_JACK_POLISHED_BLACKSTONE_BRICKS.get(),
             ).forEach { block ->
                 generator.createTrivialCube(block)
             }
@@ -266,6 +270,23 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 .generateFor(HybridBlocksFamilies.DEEPSLATE_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_DEEPSLATE_SHINGLES)
+
+            generator.family(HybridBlocksBlocks.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.MIXED_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.MEDIUM_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.MEDIUM_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.SMALL_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.SMALL_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+                .generateFor(HybridBlocksFamilies.SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS)
+            generator.family(HybridBlocksBlocks.BLACKSTONE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.BLACKSTONE_SHINGLES)
+            generator.family(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MIXED_POLISHED_BLACKSTONE_SHINGLES)
 
             generator.family(HybridBlocksBlocks.MIXED_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_BRICKS)
             generator.family(HybridBlocksBlocks.SMALL_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_BRICKS)
@@ -941,6 +962,7 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
 
             createChimney(HybridBlocksBlocks.BRICK_CHIMNEY.get(), "minecraft", "bricks")
             createChimney(HybridBlocksBlocks.STONE_BRICK_CHIMNEY.get(), "minecraft", "stone_bricks")
+            createChimney(HybridBlocksBlocks.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get(), "minecraft", "polished_blackstone_bricks")
             createChimney(HybridBlocksBlocks.DEEPSLATE_BRICK_CHIMNEY.get(), "minecraft", "deepslate_bricks")
             createChimney(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), "minecraft", "nether_bricks")
             createChimney(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), "minecraft", "red_nether_bricks")

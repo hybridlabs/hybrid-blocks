@@ -634,6 +634,70 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val MIXED_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS.get())
+            .stairs(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS.get())
+            .slab(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_SLAB.get())
+            .wall(HybridBlocksBlocks.SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_WALL.get())
+            .family
+    }
+
+    val BLACKSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.BLACKSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.BLACKSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.BLACKSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.BLACKSTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val MIXED_POLISHED_BLACKSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_WALL.get())
+            .family
+    }
+
     val MIXED_MUD_BRICKS: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_BRICKS.get())
             .stairs(HybridBlocksBlocks.MIXED_MUD_BRICK_STAIRS.get())

@@ -450,6 +450,64 @@ object HybridBlocksBlocks {
     val STONE_BRICK_CHIMNEY = chimney("stone_brick_chimney", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
     //#endregion
 
+    //  large stone bricks
+    val MEDIUM_POLISHED_BLACKSTONE_BRICKS = simple("medium_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("medium_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB = slab("medium_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL = wall("medium_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    // small stone bricks
+    val SMALL_POLISHED_BLACKSTONE_BRICKS = simple("small_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("small_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_POLISHED_BLACKSTONE_BRICK_SLAB = slab("small_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_POLISHED_BLACKSTONE_BRICK_WALL = wall("small_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    // stone brick variants
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS = simple("cracked_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("cracked_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB = slab("cracked_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL = wall("cracked_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    val BASKETWEAVE_POLISHED_BLACKSTONE_BRICKS = simple("basketweave_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+
+    val PINWHEEL_POLISHED_BLACKSTONE_BRICKS = simple("pinwheel_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+
+    val JACK_ON_JACK_POLISHED_BLACKSTONE_BRICKS = simple("jack_on_jack_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+
+    // mixed stone bricks
+    val MIXED_POLISHED_BLACKSTONE_BRICKS = simple("mixed_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("mixed_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_POLISHED_BLACKSTONE_BRICK_SLAB = slab("mixed_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_POLISHED_BLACKSTONE_BRICK_WALL = wall("mixed_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    //  mixed large stone bricks
+    val MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICKS = simple("medium_mixed_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("medium_mixed_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_SLAB = slab("medium_mixed_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MEDIUM_MIXED_POLISHED_BLACKSTONE_BRICK_WALL = wall("medium_mixed_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    //  mixed small stone bricks
+    val SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS = simple("small_mixed_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("small_mixed_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_SLAB = slab("small_mixed_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val SMALL_MIXED_POLISHED_BLACKSTONE_BRICK_WALL = wall("small_mixed_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    //  shingles
+    val BLACKSTONE_SHINGLES = simple("blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
+
+    val BLACKSTONE_SHINGLE_STAIRS = stairs("blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val BLACKSTONE_SHINGLE_SLAB = slab("blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val BLACKSTONE_SHINGLE_WALL = wall("blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    //  mixed stone_shingles
+    val MIXED_POLISHED_BLACKSTONE_SHINGLES = simple("mixed_polished_blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val MIXED_POLISHED_BLACKSTONE_SHINGLE_STAIRS = stairs("mixed_polished_blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_POLISHED_BLACKSTONE_SHINGLE_SLAB = slab("mixed_polished_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_POLISHED_BLACKSTONE_SHINGLE_WALL = wall("mixed_polished_blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+
+    val POLISHED_BLACKSTONE_BRICK_CHIMNEY = chimney("polished_blackstone_brick_chimney", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    //#endregion
+
     val COBBLESTONE_CHIMNEY = chimney("cobblestone_chimney", Blocks.COBBLESTONE, DyeColor.GRAY)
     val TUFF_BRICKS_CHIMNEY = chimney("tuff_bricks_chimney", Blocks.TUFF_BRICKS, DyeColor.GRAY)
     val END_STONE_BRICKS_CHIMNEY = chimney("end_stone_bricks_chimney", Blocks.END_STONE_BRICKS, DyeColor.YELLOW)

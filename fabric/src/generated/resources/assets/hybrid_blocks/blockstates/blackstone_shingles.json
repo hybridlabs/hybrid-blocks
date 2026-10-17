@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "hybrid_blocks:block/blackstone_shingles"
+    }
+  }
+}
