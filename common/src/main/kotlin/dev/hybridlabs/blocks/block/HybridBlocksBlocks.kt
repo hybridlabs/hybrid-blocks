@@ -463,10 +463,10 @@ object HybridBlocksBlocks {
     val SMALL_POLISHED_BLACKSTONE_BRICK_WALL = wall("small_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
 
     // stone brick variants
-    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS = simple("cracked_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS)
-    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("cracked_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
-    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB = slab("cracked_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
-    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL = wall("cracked_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICKS = simple("cracked_medium_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_STAIRS = stairs("cracked_medium_polished_blackstone_brick_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_SLAB = slab("cracked_medium_polished_blackstone_brick_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val CRACKED_MEDIUM_POLISHED_BLACKSTONE_BRICK_WALL = wall("cracked_medium_polished_blackstone_brick_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
 
     val BASKETWEAVE_POLISHED_BLACKSTONE_BRICKS = simple("basketweave_polished_blackstone_bricks", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
 
