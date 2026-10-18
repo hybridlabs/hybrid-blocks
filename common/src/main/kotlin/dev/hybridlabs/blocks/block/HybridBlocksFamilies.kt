@@ -690,11 +690,11 @@ object HybridBlocksFamilies {
             .family
     }
 
-    val MIXED_POLISHED_BLACKSTONE_SHINGLES: BlockFamily by lazy {
-        BlockFamily.Builder(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLES.get())
-            .stairs(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_STAIRS.get())
-            .slab(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_SLAB.get())
-            .wall(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLE_WALL.get())
+    val MIXED_BLACKSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLE_WALL.get())
             .family
     }
 

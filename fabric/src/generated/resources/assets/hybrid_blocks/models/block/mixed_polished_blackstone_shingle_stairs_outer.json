@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "hybrid_blocks:block/mixed_polished_blackstone_shingles",
-    "side": "hybrid_blocks:block/mixed_polished_blackstone_shingles",
-    "top": "hybrid_blocks:block/mixed_polished_blackstone_shingles"
-  }
-}

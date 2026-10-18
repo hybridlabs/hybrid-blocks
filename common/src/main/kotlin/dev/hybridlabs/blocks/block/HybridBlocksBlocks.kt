@@ -494,16 +494,15 @@ object HybridBlocksBlocks {
 
     //  shingles
     val BLACKSTONE_SHINGLES = simple("blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
-
     val BLACKSTONE_SHINGLE_STAIRS = stairs("blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
     val BLACKSTONE_SHINGLE_SLAB = slab("blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
     val BLACKSTONE_SHINGLE_WALL = wall("blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
 
     //  mixed stone_shingles
-    val MIXED_POLISHED_BLACKSTONE_SHINGLES = simple("mixed_polished_blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
-    val MIXED_POLISHED_BLACKSTONE_SHINGLE_STAIRS = stairs("mixed_polished_blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
-    val MIXED_POLISHED_BLACKSTONE_SHINGLE_SLAB = slab("mixed_polished_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
-    val MIXED_POLISHED_BLACKSTONE_SHINGLE_WALL = wall("mixed_polished_blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
+    val MIXED_BLACKSTONE_SHINGLES = simple("mixed_blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val MIXED_BLACKSTONE_SHINGLE_STAIRS = stairs("mixed_blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_BLACKSTONE_SHINGLE_SLAB = slab("mixed_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MIXED_BLACKSTONE_SHINGLE_WALL = wall("mixed_blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
 
     val POLISHED_BLACKSTONE_BRICK_CHIMNEY = chimney("polished_blackstone_brick_chimney", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
     //#endregion

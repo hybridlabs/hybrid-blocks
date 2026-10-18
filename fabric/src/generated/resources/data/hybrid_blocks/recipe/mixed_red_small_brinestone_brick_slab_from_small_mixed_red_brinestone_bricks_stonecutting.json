@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "hybrid_blocks:small_mixed_red_brinestone_bricks"
+  },
+  "result": {
+    "count": 2,
+    "id": "hybrid_blocks:mixed_red_small_brinestone_brick_slab"
+  }
+}

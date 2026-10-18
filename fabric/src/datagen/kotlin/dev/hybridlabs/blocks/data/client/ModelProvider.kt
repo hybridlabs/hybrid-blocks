@@ -285,8 +285,8 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 .generateFor(HybridBlocksFamilies.SMALL_MIXED_POLISHED_BLACKSTONE_BRICKS)
             generator.family(HybridBlocksBlocks.BLACKSTONE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.BLACKSTONE_SHINGLES)
-            generator.family(HybridBlocksBlocks.MIXED_POLISHED_BLACKSTONE_SHINGLES.get())
-                .generateFor(HybridBlocksFamilies.MIXED_POLISHED_BLACKSTONE_SHINGLES)
+            generator.family(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MIXED_BLACKSTONE_SHINGLES)
 
             generator.family(HybridBlocksBlocks.MIXED_BRICKS.get()).generateFor(HybridBlocksFamilies.MIXED_BRICKS)
             generator.family(HybridBlocksBlocks.SMALL_BRICKS.get()).generateFor(HybridBlocksFamilies.SMALL_BRICKS)
