@@ -960,6 +960,12 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             createChimney(HybridBlocksBlocks.RED_BRICK_CHIMNEY.get(), "hybrid_blocks", "red_bricks")
             createChimney(HybridBlocksBlocks.BLACK_BRICK_CHIMNEY.get(), "hybrid_blocks", "black_bricks")
 
+            createChimney(HybridBlocksBlocks.RED_BRINESTONE_CHIMNEY.get(), "hybrid_blocks", "red_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.ORANGE_BRINESTONE_CHIMNEY.get(), "hybrid_blocks", "orange_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.YELLOW_BRINESTONE_CHIMNEY.get(), "hybrid_blocks", "yellow_brinestone_bricks")
+            createChimney(HybridBlocksBlocks.SCHIST_CHIMNEY.get(), "hybrid_blocks", "schist_bricks")
+            createChimney(HybridBlocksBlocks.CHIMNEYSTONE_CHIMNEY.get(), "hybrid_blocks", "chimneystone_bricks")
+
             createChimney(HybridBlocksBlocks.BRICK_CHIMNEY.get(), "minecraft", "bricks")
             createChimney(HybridBlocksBlocks.STONE_BRICK_CHIMNEY.get(), "minecraft", "stone_bricks")
             createChimney(HybridBlocksBlocks.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get(), "minecraft", "polished_blackstone_bricks")
@@ -970,12 +976,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             createChimney(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY.get(), "minecraft", "tuff_bricks")
             createChimney(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY.get(), "minecraft", "end_stone_bricks")
             createChimney(HybridBlocksBlocks.COBBLESTONE_CHIMNEY.get(), "minecraft", "cobblestone")
-
-            createChimney(HybridBlocksBlocks.RED_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "red_brinestone_bricks")
-            createChimney(HybridBlocksBlocks.ORANGE_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "orange_brinestone_bricks")
-            createChimney(HybridBlocksBlocks.YELLOW_BRINESTONE_CHIMNEY.get(), "hybrid_aquatic", "yellow_brinestone_bricks")
-            createChimney(HybridBlocksBlocks.SCHIST_CHIMNEY.get(), "hybrid_aquatic", "schist_bricks")
-            createChimney(HybridBlocksBlocks.CHIMNEYSTONE_CHIMNEY.get(), "hybrid_aquatic", "chimneystone_bricks")
         }
     }
 
