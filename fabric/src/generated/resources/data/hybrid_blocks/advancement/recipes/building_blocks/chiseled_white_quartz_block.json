@@ -7,11 +7,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_white_quartz_block": {
+    "has_white_quartz_slab": {
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:white_quartz_block"
+            "items": "hybrid_blocks:white_quartz_slab"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_white_quartz_block"
+      "has_white_quartz_slab"
     ]
   ],
   "rewards": {

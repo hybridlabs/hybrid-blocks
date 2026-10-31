@@ -2070,18 +2070,29 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             output: Item,
             dye: Item
         ) {
+            val outputId = BuiltInRegistries.ITEM.getKey(output)
+            val baseId = BuiltInRegistries.ITEM.getKey(base)
+            val dyeId = BuiltInRegistries.ITEM.getKey(dye)
+
+            val recipeId = outputId.withSuffix(
+                "_from_${baseId.path}_and_${dyeId.path}"
+            )
+
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, output, 8)
-                .define(Character.valueOf('#'), base)
-                .define(Character.valueOf('X'), dye)
+                .define('#', base)
+                .define('X', dye)
 
                 .pattern("###")
                 .pattern("#X#")
                 .pattern("###")
 
                 .group(group)
-                .unlockedBy(unlockedBy, InventoryChangeTrigger.TriggerInstance.hasItems(base))
+                .unlockedBy(
+                    unlockedBy,
+                    InventoryChangeTrigger.TriggerInstance.hasItems(base)
+                )
 
-                .save(exporter)
+                .save(exporter, recipeId)
         }
 
         private fun offerBrickRecipe(
@@ -2102,36 +2113,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 .unlockedBy(unlockedBy, InventoryChangeTrigger.TriggerInstance.hasItems(base))
 
                 .save(exporter)
-        }
-
-        private fun offerQuartzPillarDyeingRecipe(
-            exporter: RecipeOutput,
-            output: Item,
-            input: Item
-        ) {
-            offerDyeingRecipe(
-                exporter,
-                Items.QUARTZ_PILLAR,
-                "has_quartz_pillar",
-                "stained_quartz_pillar",
-                output,
-                input
-            )
-        }
-
-        private fun offerSmoothQuartzDyeingRecipe(
-            exporter: RecipeOutput,
-            output: Item,
-            input: Item
-        ) {
-            offerDyeingRecipe(
-                exporter,
-                Items.SMOOTH_QUARTZ,
-                "has_smooth_quartz",
-                "stained_smooth_quartz",
-                output,
-                input
-            )
         }
 
         private fun offerBricksDyeingRecipe(
@@ -2658,6 +2639,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          */
         private fun offerQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet) {
             val block = set.block.get()
+            val slab = set.slab.get()
             val smooth = set.smooth.get()
             val tiles = set.tiles.get()
 
@@ -2680,7 +2662,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             offerQuartzTilesRecipe(exporter, block, getHasName(block), tiles)
 
             // base block -> chiseled (crafting + stonecutting)
-            chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, set.chiseled.get(), block)
+            chiseled(exporter, RecipeCategory.BUILDING_BLOCKS, set.chiseled.get(), slab)
             stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, set.chiseled.get(), block)
 
             // base block -> pillar; the crafting route is the dyeing recipe, so stonecutting only
@@ -2695,9 +2677,11 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         private fun offerStainedQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet, dye: Item) {
             offerQuartzSetRecipes(exporter, set)
 
-            offerQuartzBlockDyeingRecipe(exporter, set.block.get(), dye)
-            offerSmoothQuartzDyeingRecipe(exporter, set.smooth.get(), dye)
+            offerQuartzBlockDyeingRecipe(exporter, set.block.get(), set.stairs.get(), set.slab.get(), dye)
+            offerSmoothQuartzDyeingRecipe(exporter, set.smooth.get(), set.smoothStairs.get(), set.smoothSlab.get(), dye)
             offerQuartzPillarDyeingRecipe(exporter, set.pillar.get(), dye)
+            offerChiseledQuartzBrickDyeingRecipe(exporter, set.chiseled.get(), dye)
+            offerQuartzBrickDyeingRecipe(exporter, set.bricks.get(), set.brickStairs.get(), set.brickSlab.get(), dye)
         }
 
         /**
@@ -2718,16 +2702,136 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
 
         private fun offerQuartzBlockDyeingRecipe(
             exporter: RecipeOutput,
-            output: Item,
-            input: Item
+            outputBlock: Item,
+            outputStairs: Item,
+            outputSlab: Item,
+            dye: Item
         ) {
             offerDyeingRecipe(
                 exporter,
                 Items.QUARTZ_BLOCK,
                 "has_quartz_block",
+                "stained_quartz",
+                outputBlock,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                Items.QUARTZ_STAIRS,
+                "has_quartz_stairs",
+                "stained_quartz_stairs",
+                outputStairs,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                Items.QUARTZ_SLAB,
+                "has_quartz_slab",
+                "stained_quartz_slab",
+                outputSlab,
+                dye
+            )
+        }
+
+        private fun offerQuartzBrickDyeingRecipe(
+            exporter: RecipeOutput,
+            outputBlock: Item,
+            outputStairs: Item,
+            outputSlab: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Items.QUARTZ_BRICKS,
+                "has_quartz_block",
                 "stained_quartz_block",
+                outputBlock,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksItems.QUARTZ_BRICK_STAIRS.get(),
+                "has_quartz_brick_stairs",
+                "stained_quartz_stairs",
+                outputStairs,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksItems.QUARTZ_BRICK_SLAB.get(),
+                "has_quartz_brick_slab",
+                "stained_quartz_slab",
+                outputSlab,
+                dye
+            )
+        }
+
+        private fun offerQuartzPillarDyeingRecipe(
+            exporter: RecipeOutput,
+            output: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Items.QUARTZ_PILLAR,
+                "has_quartz_pillar",
+                "stained_quartz_pillar",
                 output,
-                input
+                dye
+            )
+        }
+
+        private fun offerSmoothQuartzDyeingRecipe(
+            exporter: RecipeOutput,
+            outputBlock: Item,
+            outputStairs: Item,
+            outputSlab: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Items.SMOOTH_QUARTZ,
+                "has_smooth_quartz",
+                "stained_smooth_quartz",
+                outputBlock,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                Items.SMOOTH_QUARTZ_STAIRS,
+                "has_smooth_quartz_stairs",
+                "stained_smooth_quartz_stairs",
+                outputStairs,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                Items.SMOOTH_QUARTZ_SLAB,
+                "has_smooth_quartz_slab",
+                "stained_smooth_quartz_slab",
+                outputSlab,
+                dye
+            )
+        }
+
+        private fun offerChiseledQuartzBrickDyeingRecipe(
+            exporter: RecipeOutput,
+            output: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                Items.CHISELED_QUARTZ_BLOCK,
+                "has_chiseled_quartz_block",
+                "stained_chiseled_quartz_block",
+                output,
+                dye
             )
         }
         //#endregion

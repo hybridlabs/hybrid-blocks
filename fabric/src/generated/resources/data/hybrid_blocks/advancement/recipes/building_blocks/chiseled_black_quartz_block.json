@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_quartz_block": {
+    "has_black_quartz_slab": {
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:black_quartz_block"
+            "items": "hybrid_blocks:black_quartz_slab"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_black_quartz_block"
+      "has_black_quartz_slab"
     ]
   ],
   "rewards": {
