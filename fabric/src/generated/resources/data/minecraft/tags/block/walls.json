@@ -18,7 +18,7 @@
     "hybrid_blocks:mixed_deepslate_shingle_wall",
     "hybrid_blocks:medium_stone_brick_wall",
     "hybrid_blocks:small_stone_brick_wall",
-    "hybrid_blocks:cracked_stone_brick_wall",
+    "hybrid_blocks:cracked_medium_stone_brick_wall",
     "hybrid_blocks:mixed_stone_brick_wall",
     "hybrid_blocks:medium_mixed_stone_brick_wall",
     "hybrid_blocks:small_mixed_stone_brick_wall",

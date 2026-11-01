@@ -421,10 +421,10 @@ object HybridBlocksBlocks {
     val SMALL_STONE_BRICK_WALL = wall("small_stone_brick_wall", Blocks.STONE_BRICK_WALL, DyeColor.LIGHT_GRAY)
 
     // stone brick variants
-    val CRACKED_MEDIUM_STONE_BRICKS = simple("cracked_stone_bricks", Blocks.STONE_BRICKS)
-    val CRACKED_MEDIUM_STONE_BRICK_STAIRS = stairs("cracked_stone_brick_stairs", Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
-    val CRACKED_MEDIUM_STONE_BRICK_SLAB = slab("cracked_stone_brick_slab", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
-    val CRACKED_MEDIUM_STONE_BRICK_WALL = wall("cracked_stone_brick_wall", Blocks.STONE_BRICK_WALL, DyeColor.LIGHT_GRAY)
+    val CRACKED_MEDIUM_STONE_BRICKS = simple("cracked_medium_stone_bricks", Blocks.STONE_BRICKS)
+    val CRACKED_MEDIUM_STONE_BRICK_STAIRS = stairs("cracked_medium_stone_brick_stairs", Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
+    val CRACKED_MEDIUM_STONE_BRICK_SLAB = slab("cracked_medium_stone_brick_slab", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
+    val CRACKED_MEDIUM_STONE_BRICK_WALL = wall("cracked_medium_stone_brick_wall", Blocks.STONE_BRICK_WALL, DyeColor.LIGHT_GRAY)
 
     val BASKETWEAVE_STONE_BRICKS = simple("basketweave_stone_bricks", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
 

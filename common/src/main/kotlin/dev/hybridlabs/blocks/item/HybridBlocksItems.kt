@@ -412,6 +412,11 @@ object HybridBlocksItems {
     val CRACKED_MEDIUM_MUD_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_SLAB)
     val CRACKED_MEDIUM_MUD_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_MEDIUM_MUD_BRICK_WALL)
 
+    val MOSSY_MEDIUM_MUD_BRICKS = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS)
+    val MOSSY_MEDIUM_MUD_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_STAIRS)
+    val MOSSY_MEDIUM_MUD_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_SLAB)
+    val MOSSY_MEDIUM_MUD_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_WALL)
+
     val BASKETWEAVE_MUD_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_MUD_BRICKS)
     val PINWHEEL_MUD_BRICKS = item(HybridBlocksBlocks.PINWHEEL_MUD_BRICKS)
     val JACK_ON_JACK_MUD_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_MUD_BRICKS)
@@ -790,6 +795,12 @@ object HybridBlocksItems {
     val CRACKED_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_BRICK_STAIRS)
     val CRACKED_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_BRICK_SLAB)
     val CRACKED_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_BRICK_WALL)
+
+    val MOSSY_BRICKS = item(HybridBlocksBlocks.MOSSY_BRICKS)
+    val MOSSY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BRICK_STAIRS)
+    val MOSSY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BRICK_SLAB)
+    val MOSSY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BRICK_WALL)
+
     val BASKETWEAVE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_BRICKS)
     val PINWHEEL_BRICKS = item(HybridBlocksBlocks.PINWHEEL_BRICKS)
     val JACK_ON_JACK_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_BRICKS)
@@ -1024,6 +1035,12 @@ object HybridBlocksItems {
     val CRACKED_WHITE_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_WHITE_BRICK_STAIRS)
     val CRACKED_WHITE_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_WHITE_BRICK_SLAB)
     val CRACKED_WHITE_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_WHITE_BRICK_WALL)
+
+    val MOSSY_WHITE_BRICKS = item(HybridBlocksBlocks.MOSSY_WHITE_BRICKS)
+    val MOSSY_WHITE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_STAIRS)
+    val MOSSY_WHITE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_SLAB)
+    val MOSSY_WHITE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_WALL)
+
     val BASKETWEAVE_WHITE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_WHITE_BRICKS)
     val PINWHEEL_WHITE_BRICKS = item(HybridBlocksBlocks.PINWHEEL_WHITE_BRICKS)
     val JACK_ON_JACK_WHITE_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_WHITE_BRICKS)
@@ -1087,6 +1104,12 @@ object HybridBlocksItems {
     val CRACKED_LIGHT_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_BRICK_STAIRS)
     val CRACKED_LIGHT_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_BRICK_SLAB)
     val CRACKED_LIGHT_GRAY_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_BRICK_WALL)
+
+    val MOSSY_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICKS)
+    val MOSSY_LIGHT_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_STAIRS)
+    val MOSSY_LIGHT_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_SLAB)
+    val MOSSY_LIGHT_GRAY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_WALL)
+
     val BASKETWEAVE_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_LIGHT_GRAY_BRICKS)
     val PINWHEEL_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.PINWHEEL_LIGHT_GRAY_BRICKS)
     val JACK_ON_JACK_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_LIGHT_GRAY_BRICKS)
@@ -1150,6 +1173,12 @@ object HybridBlocksItems {
     val CRACKED_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_GRAY_BRICK_STAIRS)
     val CRACKED_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_GRAY_BRICK_SLAB)
     val CRACKED_GRAY_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_GRAY_BRICK_WALL)
+
+    val MOSSY_GRAY_BRICKS = item(HybridBlocksBlocks.MOSSY_GRAY_BRICKS)
+    val MOSSY_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_STAIRS)
+    val MOSSY_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_SLAB)
+    val MOSSY_GRAY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_WALL)
+
     val BASKETWEAVE_GRAY_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_GRAY_BRICKS)
     val PINWHEEL_GRAY_BRICKS = item(HybridBlocksBlocks.PINWHEEL_GRAY_BRICKS)
     val JACK_ON_JACK_GRAY_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_GRAY_BRICKS)
@@ -1213,6 +1242,12 @@ object HybridBlocksItems {
     val CRACKED_BLACK_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_BLACK_BRICK_STAIRS)
     val CRACKED_BLACK_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_BLACK_BRICK_SLAB)
     val CRACKED_BLACK_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_BLACK_BRICK_WALL)
+
+    val MOSSY_BLACK_BRICKS = item(HybridBlocksBlocks.MOSSY_BLACK_BRICKS)
+    val MOSSY_BLACK_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_STAIRS)
+    val MOSSY_BLACK_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_SLAB)
+    val MOSSY_BLACK_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_WALL)
+
     val BASKETWEAVE_BLACK_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_BLACK_BRICKS)
     val PINWHEEL_BLACK_BRICKS = item(HybridBlocksBlocks.PINWHEEL_BLACK_BRICKS)
     val JACK_ON_JACK_BLACK_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_BLACK_BRICKS)
@@ -1276,6 +1311,12 @@ object HybridBlocksItems {
     val CRACKED_BROWN_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_BROWN_BRICK_STAIRS)
     val CRACKED_BROWN_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_BROWN_BRICK_SLAB)
     val CRACKED_BROWN_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_BROWN_BRICK_WALL)
+
+    val MOSSY_BROWN_BRICKS = item(HybridBlocksBlocks.MOSSY_BROWN_BRICKS)
+    val MOSSY_BROWN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_STAIRS)
+    val MOSSY_BROWN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_SLAB)
+    val MOSSY_BROWN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_WALL)
+
     val BASKETWEAVE_BROWN_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_BROWN_BRICKS)
     val PINWHEEL_BROWN_BRICKS = item(HybridBlocksBlocks.PINWHEEL_BROWN_BRICKS)
     val JACK_ON_JACK_BROWN_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_BROWN_BRICKS)
@@ -1339,6 +1380,12 @@ object HybridBlocksItems {
     val CRACKED_RED_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_RED_BRICK_STAIRS)
     val CRACKED_RED_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_RED_BRICK_SLAB)
     val CRACKED_RED_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_RED_BRICK_WALL)
+
+    val MOSSY_RED_BRICKS = item(HybridBlocksBlocks.MOSSY_RED_BRICKS)
+    val MOSSY_RED_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_RED_BRICK_STAIRS)
+    val MOSSY_RED_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_RED_BRICK_SLAB)
+    val MOSSY_RED_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_RED_BRICK_WALL)
+
     val BASKETWEAVE_RED_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_RED_BRICKS)
     val PINWHEEL_RED_BRICKS = item(HybridBlocksBlocks.PINWHEEL_RED_BRICKS)
     val JACK_ON_JACK_RED_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_RED_BRICKS)
@@ -1402,6 +1449,12 @@ object HybridBlocksItems {
     val CRACKED_ORANGE_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_ORANGE_BRICK_STAIRS)
     val CRACKED_ORANGE_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_ORANGE_BRICK_SLAB)
     val CRACKED_ORANGE_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_ORANGE_BRICK_WALL)
+
+    val MOSSY_ORANGE_BRICKS = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICKS)
+    val MOSSY_ORANGE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_STAIRS)
+    val MOSSY_ORANGE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_SLAB)
+    val MOSSY_ORANGE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_WALL)
+
     val BASKETWEAVE_ORANGE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_ORANGE_BRICKS)
     val PINWHEEL_ORANGE_BRICKS = item(HybridBlocksBlocks.PINWHEEL_ORANGE_BRICKS)
     val JACK_ON_JACK_ORANGE_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_ORANGE_BRICKS)
@@ -1465,6 +1518,12 @@ object HybridBlocksItems {
     val CRACKED_YELLOW_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_YELLOW_BRICK_STAIRS)
     val CRACKED_YELLOW_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_YELLOW_BRICK_SLAB)
     val CRACKED_YELLOW_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_YELLOW_BRICK_WALL)
+
+    val MOSSY_YELLOW_BRICKS = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICKS)
+    val MOSSY_YELLOW_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_STAIRS)
+    val MOSSY_YELLOW_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_SLAB)
+    val MOSSY_YELLOW_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_WALL)
+
     val BASKETWEAVE_YELLOW_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_YELLOW_BRICKS)
     val PINWHEEL_YELLOW_BRICKS = item(HybridBlocksBlocks.PINWHEEL_YELLOW_BRICKS)
     val JACK_ON_JACK_YELLOW_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_YELLOW_BRICKS)
@@ -1528,6 +1587,12 @@ object HybridBlocksItems {
     val CRACKED_LIME_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_LIME_BRICK_STAIRS)
     val CRACKED_LIME_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_LIME_BRICK_SLAB)
     val CRACKED_LIME_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_LIME_BRICK_WALL)
+
+    val MOSSY_LIME_BRICKS = item(HybridBlocksBlocks.MOSSY_LIME_BRICKS)
+    val MOSSY_LIME_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_STAIRS)
+    val MOSSY_LIME_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_SLAB)
+    val MOSSY_LIME_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_WALL)
+
     val BASKETWEAVE_LIME_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_LIME_BRICKS)
     val PINWHEEL_LIME_BRICKS = item(HybridBlocksBlocks.PINWHEEL_LIME_BRICKS)
     val JACK_ON_JACK_LIME_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_LIME_BRICKS)
@@ -1591,6 +1656,12 @@ object HybridBlocksItems {
     val CRACKED_GREEN_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_GREEN_BRICK_STAIRS)
     val CRACKED_GREEN_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_GREEN_BRICK_SLAB)
     val CRACKED_GREEN_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_GREEN_BRICK_WALL)
+
+    val MOSSY_GREEN_BRICKS = item(HybridBlocksBlocks.MOSSY_GREEN_BRICKS)
+    val MOSSY_GREEN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_STAIRS)
+    val MOSSY_GREEN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_SLAB)
+    val MOSSY_GREEN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_WALL)
+
     val BASKETWEAVE_GREEN_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_GREEN_BRICKS)
     val PINWHEEL_GREEN_BRICKS = item(HybridBlocksBlocks.PINWHEEL_GREEN_BRICKS)
     val JACK_ON_JACK_GREEN_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_GREEN_BRICKS)
@@ -1654,6 +1725,12 @@ object HybridBlocksItems {
     val CRACKED_CYAN_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_CYAN_BRICK_STAIRS)
     val CRACKED_CYAN_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_CYAN_BRICK_SLAB)
     val CRACKED_CYAN_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_CYAN_BRICK_WALL)
+
+    val MOSSY_CYAN_BRICKS = item(HybridBlocksBlocks.MOSSY_CYAN_BRICKS)
+    val MOSSY_CYAN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_STAIRS)
+    val MOSSY_CYAN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_SLAB)
+    val MOSSY_CYAN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_WALL)
+
     val BASKETWEAVE_CYAN_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_CYAN_BRICKS)
     val PINWHEEL_CYAN_BRICKS = item(HybridBlocksBlocks.PINWHEEL_CYAN_BRICKS)
     val JACK_ON_JACK_CYAN_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_CYAN_BRICKS)
@@ -1717,6 +1794,12 @@ object HybridBlocksItems {
     val CRACKED_LIGHT_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_BRICK_STAIRS)
     val CRACKED_LIGHT_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_BRICK_SLAB)
     val CRACKED_LIGHT_BLUE_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_BRICK_WALL)
+
+    val MOSSY_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICKS)
+    val MOSSY_LIGHT_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_STAIRS)
+    val MOSSY_LIGHT_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_SLAB)
+    val MOSSY_LIGHT_BLUE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_WALL)
+
     val BASKETWEAVE_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_LIGHT_BLUE_BRICKS)
     val PINWHEEL_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.PINWHEEL_LIGHT_BLUE_BRICKS)
     val JACK_ON_JACK_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_LIGHT_BLUE_BRICKS)
@@ -1780,6 +1863,12 @@ object HybridBlocksItems {
     val CRACKED_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_BLUE_BRICK_STAIRS)
     val CRACKED_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_BLUE_BRICK_SLAB)
     val CRACKED_BLUE_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_BLUE_BRICK_WALL)
+
+    val MOSSY_BLUE_BRICKS = item(HybridBlocksBlocks.MOSSY_BLUE_BRICKS)
+    val MOSSY_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_STAIRS)
+    val MOSSY_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_SLAB)
+    val MOSSY_BLUE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_WALL)
+
     val BASKETWEAVE_BLUE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_BLUE_BRICKS)
     val PINWHEEL_BLUE_BRICKS = item(HybridBlocksBlocks.PINWHEEL_BLUE_BRICKS)
     val JACK_ON_JACK_BLUE_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_BLUE_BRICKS)
@@ -1843,6 +1932,12 @@ object HybridBlocksItems {
     val CRACKED_PURPLE_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_PURPLE_BRICK_STAIRS)
     val CRACKED_PURPLE_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_PURPLE_BRICK_SLAB)
     val CRACKED_PURPLE_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_PURPLE_BRICK_WALL)
+
+    val MOSSY_PURPLE_BRICKS = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICKS)
+    val MOSSY_PURPLE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_STAIRS)
+    val MOSSY_PURPLE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_SLAB)
+    val MOSSY_PURPLE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_WALL)
+
     val BASKETWEAVE_PURPLE_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_PURPLE_BRICKS)
     val PINWHEEL_PURPLE_BRICKS = item(HybridBlocksBlocks.PINWHEEL_PURPLE_BRICKS)
     val JACK_ON_JACK_PURPLE_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_PURPLE_BRICKS)
@@ -1906,6 +2001,12 @@ object HybridBlocksItems {
     val CRACKED_PINK_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_PINK_BRICK_STAIRS)
     val CRACKED_PINK_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_PINK_BRICK_SLAB)
     val CRACKED_PINK_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_PINK_BRICK_WALL)
+
+    val MOSSY_PINK_BRICKS = item(HybridBlocksBlocks.MOSSY_PINK_BRICKS)
+    val MOSSY_PINK_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_STAIRS)
+    val MOSSY_PINK_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_SLAB)
+    val MOSSY_PINK_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_WALL)
+
     val BASKETWEAVE_PINK_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_PINK_BRICKS)
     val PINWHEEL_PINK_BRICKS = item(HybridBlocksBlocks.PINWHEEL_PINK_BRICKS)
     val JACK_ON_JACK_PINK_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_PINK_BRICKS)
@@ -1969,6 +2070,12 @@ object HybridBlocksItems {
     val CRACKED_MAGENTA_BRICK_STAIRS = item(HybridBlocksBlocks.CRACKED_MAGENTA_BRICK_STAIRS)
     val CRACKED_MAGENTA_BRICK_SLAB = item(HybridBlocksBlocks.CRACKED_MAGENTA_BRICK_SLAB)
     val CRACKED_MAGENTA_BRICK_WALL = item(HybridBlocksBlocks.CRACKED_MAGENTA_BRICK_WALL)
+
+    val MOSSY_MAGENTA_BRICKS = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICKS)
+    val MOSSY_MAGENTA_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_STAIRS)
+    val MOSSY_MAGENTA_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_SLAB)
+    val MOSSY_MAGENTA_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_WALL)
+
     val BASKETWEAVE_MAGENTA_BRICKS = item(HybridBlocksBlocks.BASKETWEAVE_MAGENTA_BRICKS)
     val PINWHEEL_MAGENTA_BRICKS = item(HybridBlocksBlocks.PINWHEEL_MAGENTA_BRICKS)
     val JACK_ON_JACK_MAGENTA_BRICKS = item(HybridBlocksBlocks.JACK_ON_JACK_MAGENTA_BRICKS)
@@ -2113,98 +2220,6 @@ object HybridBlocksItems {
     val COBBLESTONE_CHIMNEY = item(HybridBlocksBlocks.COBBLESTONE_CHIMNEY)
     val TUFF_BRICKS_CHIMNEY = item(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY)
     val END_STONE_BRICKS_CHIMNEY = item(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY)
-
-    //#region Mossy Bricks
-    val MOSSY_BRICKS = item(HybridBlocksBlocks.MOSSY_BRICKS)
-    val MOSSY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BRICK_STAIRS)
-    val MOSSY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BRICK_SLAB)
-    val MOSSY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BRICK_WALL)
-
-    val MOSSY_MEDIUM_MUD_BRICKS = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICKS)
-    val MOSSY_MEDIUM_MUD_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_STAIRS)
-    val MOSSY_MEDIUM_MUD_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_SLAB)
-    val MOSSY_MEDIUM_MUD_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_MEDIUM_MUD_BRICK_WALL)
-
-    val MOSSY_WHITE_BRICKS = item(HybridBlocksBlocks.MOSSY_WHITE_BRICKS)
-    val MOSSY_WHITE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_STAIRS)
-    val MOSSY_WHITE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_SLAB)
-    val MOSSY_WHITE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_WHITE_BRICK_WALL)
-
-    val MOSSY_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICKS)
-    val MOSSY_LIGHT_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_STAIRS)
-    val MOSSY_LIGHT_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_SLAB)
-    val MOSSY_LIGHT_GRAY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_BRICK_WALL)
-
-    val MOSSY_GRAY_BRICKS = item(HybridBlocksBlocks.MOSSY_GRAY_BRICKS)
-    val MOSSY_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_STAIRS)
-    val MOSSY_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_SLAB)
-    val MOSSY_GRAY_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_GRAY_BRICK_WALL)
-
-    val MOSSY_BLACK_BRICKS = item(HybridBlocksBlocks.MOSSY_BLACK_BRICKS)
-    val MOSSY_BLACK_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_STAIRS)
-    val MOSSY_BLACK_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_SLAB)
-    val MOSSY_BLACK_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BLACK_BRICK_WALL)
-
-    val MOSSY_BROWN_BRICKS = item(HybridBlocksBlocks.MOSSY_BROWN_BRICKS)
-    val MOSSY_BROWN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_STAIRS)
-    val MOSSY_BROWN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_SLAB)
-    val MOSSY_BROWN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BROWN_BRICK_WALL)
-
-    val MOSSY_RED_BRICKS = item(HybridBlocksBlocks.MOSSY_RED_BRICKS)
-    val MOSSY_RED_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_RED_BRICK_STAIRS)
-    val MOSSY_RED_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_RED_BRICK_SLAB)
-    val MOSSY_RED_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_RED_BRICK_WALL)
-
-    val MOSSY_ORANGE_BRICKS = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICKS)
-    val MOSSY_ORANGE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_STAIRS)
-    val MOSSY_ORANGE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_SLAB)
-    val MOSSY_ORANGE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_ORANGE_BRICK_WALL)
-
-    val MOSSY_YELLOW_BRICKS = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICKS)
-    val MOSSY_YELLOW_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_STAIRS)
-    val MOSSY_YELLOW_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_SLAB)
-    val MOSSY_YELLOW_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_YELLOW_BRICK_WALL)
-
-    val MOSSY_LIME_BRICKS = item(HybridBlocksBlocks.MOSSY_LIME_BRICKS)
-    val MOSSY_LIME_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_STAIRS)
-    val MOSSY_LIME_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_SLAB)
-    val MOSSY_LIME_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIME_BRICK_WALL)
-
-    val MOSSY_GREEN_BRICKS = item(HybridBlocksBlocks.MOSSY_GREEN_BRICKS)
-    val MOSSY_GREEN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_STAIRS)
-    val MOSSY_GREEN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_SLAB)
-    val MOSSY_GREEN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_GREEN_BRICK_WALL)
-
-    val MOSSY_CYAN_BRICKS = item(HybridBlocksBlocks.MOSSY_CYAN_BRICKS)
-    val MOSSY_CYAN_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_STAIRS)
-    val MOSSY_CYAN_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_SLAB)
-    val MOSSY_CYAN_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_CYAN_BRICK_WALL)
-
-    val MOSSY_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICKS)
-    val MOSSY_LIGHT_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_STAIRS)
-    val MOSSY_LIGHT_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_SLAB)
-    val MOSSY_LIGHT_BLUE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_BRICK_WALL)
-
-    val MOSSY_BLUE_BRICKS = item(HybridBlocksBlocks.MOSSY_BLUE_BRICKS)
-    val MOSSY_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_STAIRS)
-    val MOSSY_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_SLAB)
-    val MOSSY_BLUE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_BLUE_BRICK_WALL)
-
-    val MOSSY_PURPLE_BRICKS = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICKS)
-    val MOSSY_PURPLE_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_STAIRS)
-    val MOSSY_PURPLE_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_SLAB)
-    val MOSSY_PURPLE_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_PURPLE_BRICK_WALL)
-
-    val MOSSY_MAGENTA_BRICKS = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICKS)
-    val MOSSY_MAGENTA_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_STAIRS)
-    val MOSSY_MAGENTA_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_SLAB)
-    val MOSSY_MAGENTA_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_MAGENTA_BRICK_WALL)
-
-    val MOSSY_PINK_BRICKS = item(HybridBlocksBlocks.MOSSY_PINK_BRICKS)
-    val MOSSY_PINK_BRICK_STAIRS = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_STAIRS)
-    val MOSSY_PINK_BRICK_SLAB = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_SLAB)
-    val MOSSY_PINK_BRICK_WALL = item(HybridBlocksBlocks.MOSSY_PINK_BRICK_WALL)
-    //#endregion
 
     //#region Clear Glass
     val CLEAR_GLASS = item(HybridBlocksBlocks.CLEAR_GLASS)
