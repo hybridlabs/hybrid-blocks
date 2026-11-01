@@ -4,7 +4,7 @@
   "group": "chimney",
   "key": {
     "#": {
-      "item": "hybrid_blocks:polished_blackstone_brick_chimney"
+      "item": "minecraft:polished_blackstone"
     }
   },
   "pattern": [

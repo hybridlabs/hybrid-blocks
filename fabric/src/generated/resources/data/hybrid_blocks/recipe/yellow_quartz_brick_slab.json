@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "quartz_brick_slabs",
   "key": {
     "#": {
       "item": "hybrid_blocks:yellow_quartz_bricks"

@@ -61,9 +61,9 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_BRICK_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get())
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE_TILE_SLAB.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get())
 
-        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE.get())
-        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_BRICK_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get())
-        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get())
+        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE.get(), "calcite_stairs")
+        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_BRICK_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_BRICKS.get(), "calcite_stairs")
+        stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get(), "calcite_stairs")
 
         //#region Quartz
         offerStainedQuartzSetRecipes(exporter, WHITE_QUARTZ_SET, Items.WHITE_DYE)
@@ -88,12 +88,14 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             exporter,
             Items.QUARTZ_BRICKS,
             HybridBlocksItems.QUARTZ_BRICK_STAIRS.get(),
-            HybridBlocksItems.QUARTZ_BRICK_SLAB.get()
+            HybridBlocksItems.QUARTZ_BRICK_SLAB.get(),
+            "quartz_brick_stairs",
+            "quartz_brick_slab",
         )
         //#endregion
 
         slab(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_NETHER_BRICK_SLAB.get(), Items.CRACKED_NETHER_BRICKS)
-        stairBuilder(exporter,HybridBlocksItems.CRACKED_NETHER_BRICK_STAIRS.get(), Items.CRACKED_NETHER_BRICKS)
+        stairBuilder(exporter,HybridBlocksItems.CRACKED_NETHER_BRICK_STAIRS.get(), Items.CRACKED_NETHER_BRICKS, "cracked_nether_brick_stairs")
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_NETHER_BRICK_STAIRS.get(), Items.CRACKED_NETHER_BRICKS)
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.CRACKED_NETHER_BRICK_SLAB.get(), Items.CRACKED_NETHER_BRICKS, 2)
         wall(exporter, RecipeCategory.DECORATIONS, HybridBlocksItems.CRACKED_NETHER_BRICK_WALL.get(), HybridBlocksItems.CRACKED_BRICKS.get())
@@ -143,12 +145,12 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerChimneyRecipe(exporter, HybridBlocksItems.RED_BRICKS.get(), getHasName(HybridBlocksItems.RED_BRICKS.get()), HybridBlocksItems.RED_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, HybridBlocksItems.WHITE_BRICKS.get(), getHasName(HybridBlocksItems.WHITE_BRICKS.get()), HybridBlocksItems.WHITE_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), getHasName(HybridBlocksItems.YELLOW_BRICKS.get()), HybridBlocksItems.YELLOW_BRICK_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.STONE_BRICK_CHIMNEY.get(), getHasName(Items.STONE_BRICKS), HybridBlocksItems.STONE_BRICK_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.DEEPSLATE_BRICK_CHIMNEY.get(), getHasName(Items.DEEPSLATE_BRICKS), HybridBlocksItems.DEEPSLATE_BRICK_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get(), getHasName(Items.POLISHED_BLACKSTONE_BRICKS), HybridBlocksItems.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.TUFF_BRICKS_CHIMNEY.get(), getHasName(Items.TUFF_BRICKS), HybridBlocksItems.TUFF_BRICKS_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.COBBLESTONE_CHIMNEY.get(), getHasName(Items.COBBLESTONE), HybridBlocksItems.COBBLESTONE_CHIMNEY.get())
-        offerChimneyRecipe(exporter, HybridBlocksItems.END_STONE_BRICKS_CHIMNEY.get(), getHasName(Items.END_STONE_BRICKS), HybridBlocksItems.END_STONE_BRICKS_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.STONE_BRICKS, getHasName(Items.STONE_BRICKS), HybridBlocksItems.STONE_BRICK_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.DEEPSLATE_BRICKS, getHasName(Items.DEEPSLATE_BRICKS), HybridBlocksItems.DEEPSLATE_BRICK_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.POLISHED_BLACKSTONE, getHasName(Items.POLISHED_BLACKSTONE_BRICKS), HybridBlocksItems.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.TUFF_BRICKS, getHasName(Items.TUFF_BRICKS), HybridBlocksItems.TUFF_BRICKS_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.COBBLESTONE, getHasName(Items.COBBLESTONE), HybridBlocksItems.COBBLESTONE_CHIMNEY.get())
+        offerChimneyRecipe(exporter, Items.END_STONE_BRICKS, getHasName(Items.END_STONE_BRICKS), HybridBlocksItems.END_STONE_BRICKS_CHIMNEY.get())
         //#endregion
 
         // stained bricks
@@ -244,22 +246,22 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.CRACKED_YELLOW_BRICKS.get(), Items.YELLOW_DYE)
 
         // stained cracked shingles
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.CRACKED_BLACK_SHINGLES.get(), Items.BLACK_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_BLUE_SHINGLES.get(), Items.BLUE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.CRACKED_BROWN_SHINGLES.get(), Items.BROWN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CRACKED_CYAN_SHINGLES.get(), Items.CYAN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_GRAY_SHINGLES.get(), Items.GRAY_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.CRACKED_GREEN_SHINGLES.get(), Items.GREEN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.CRACKED_LIME_SHINGLES.get(), Items.LIME_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.CRACKED_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.CRACKED_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.CRACKED_PINK_SHINGLES.get(), Items.PINK_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.CRACKED_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.CRACKED_RED_SHINGLES.get(), Items.RED_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(), Items.WHITE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.CRACKED_BLACK_SHINGLES.get(), Items.BLACK_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_BLUE_SHINGLES.get(), Items.BLUE_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.CRACKED_BROWN_SHINGLES.get(), Items.BROWN_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CRACKED_CYAN_SHINGLES.get(), Items.CYAN_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_GRAY_SHINGLES.get(), Items.GRAY_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.CRACKED_GREEN_SHINGLES.get(), Items.GREEN_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.CRACKED_LIME_SHINGLES.get(), Items.LIME_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.CRACKED_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.CRACKED_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.CRACKED_PINK_SHINGLES.get(), Items.PINK_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.CRACKED_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.CRACKED_RED_SHINGLES.get(), Items.RED_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(), Items.WHITE_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
 
         simpleCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING_RECIPE, ::SmeltingRecipe, 200, Items.GLASS, HybridBlocksItems.CLEAR_GLASS.get(), 0.15f)
         offerStainedClearGlassRecipes(exporter, Items.BLACK_STAINED_GLASS, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
@@ -332,22 +334,22 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get(), Items.WHITE_DYE)
         offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get(), Items.YELLOW_DYE)
 
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.MOSSY_BLACK_SHINGLES.get(), Items.BLACK_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_BLUE_SHINGLES.get(), Items.BLUE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.MOSSY_BROWN_SHINGLES.get(), Items.BROWN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.MOSSY_CYAN_SHINGLES.get(), Items.CYAN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_GRAY_SHINGLES.get(), Items.GRAY_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.MOSSY_GREEN_SHINGLES.get(), Items.GREEN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.MOSSY_LIME_SHINGLES.get(), Items.LIME_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MOSSY_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.MOSSY_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.MOSSY_PINK_SHINGLES.get(), Items.PINK_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.MOSSY_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.MOSSY_RED_SHINGLES.get(), Items.RED_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.MOSSY_WHITE_SHINGLES.get(), Items.WHITE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.MOSSY_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.MOSSY_BLACK_SHINGLES.get(), Items.BLACK_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_BLUE_SHINGLES.get(), Items.BLUE_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.MOSSY_BROWN_SHINGLES.get(), Items.BROWN_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.MOSSY_CYAN_SHINGLES.get(), Items.CYAN_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_GRAY_SHINGLES.get(), Items.GRAY_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.MOSSY_GREEN_SHINGLES.get(), Items.GREEN_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.MOSSY_LIME_SHINGLES.get(), Items.LIME_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MOSSY_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.MOSSY_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.MOSSY_PINK_SHINGLES.get(), Items.PINK_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.MOSSY_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.MOSSY_RED_SHINGLES.get(), Items.RED_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.MOSSY_WHITE_SHINGLES.get(), Items.WHITE_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.MOSSY_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
     }
 
     companion object {
@@ -2066,11 +2068,14 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 val slabs = set.slabs.get()
                 val walls = set.walls.get()
 
+                val isShingle = BuiltInRegistries.ITEM.getKey(base).path.contains("shingle")
+                val groupPrefix = if (isShingle) "shingle" else "brick"
+
                 stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, stairBuilders, base)
-                stairBuilder(exporter, stairBuilders, base)
+                stairBuilder(exporter, stairBuilders, base, "${groupPrefix}_stairs")
 
                 stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, slabs, base, 2)
-                slab(exporter, RecipeCategory.BUILDING_BLOCKS, slabs, base)
+                slabBuilder(exporter, slabs, base, "${groupPrefix}_slabs")
 
                 stonecutterResultFromBase(exporter, RecipeCategory.DECORATIONS, walls, base)
                 wall(exporter, RecipeCategory.DECORATIONS, walls, base)
@@ -2082,9 +2087,23 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             finishedRecipeConsumer: RecipeOutput,
             stairBuilders: ItemLike,
             material: ItemLike,
+            group: String,
         ) {
             stairBuilder(stairBuilders, Ingredient.of(material))
                 .unlockedBy(getHasName(material), has(material))
+                .group(group)
+                .save(finishedRecipeConsumer)
+        }
+
+        private fun slabBuilder(
+            finishedRecipeConsumer: RecipeOutput,
+            slabBuilders: ItemLike,
+            material: ItemLike,
+            group: String,
+        ) {
+            slabBuilder(RecipeCategory.BUILDING_BLOCKS, slabBuilders, Ingredient.of(material))
+                .unlockedBy(getHasName(material), has(material))
+                .group(group)
                 .save(finishedRecipeConsumer)
         }
 
@@ -2410,17 +2429,68 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 exporter,
                 HybridBlocksItems.MOSSY_BRICKS.get(),
                 "has_mossy_bricks",
-                "stained_mossy_bricks",
+                "stained_mossy_bricks_from_dye",
                 mossy,
                 dye
             )
 
-            offerMossingRecipes(
+            offerStainedMossingRecipes(
                 exporter,
-                "stained_mossy_bricks",
+                "stained_mossy_bricks_from_vines",
+                "stained_mossy_bricks_from_moss",
                 mossy,
                 base
             )
+        }
+
+        private fun offerStainedMossyShinglesRecipes(
+            exporter: RecipeOutput,
+            base: Item,
+            mossy: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksItems.SHINGLES.get(),
+                "has_shingles",
+                "stained_mossy_shingles_from_dye",
+                mossy,
+                dye
+            )
+
+            offerStainedMossingRecipes(
+                exporter,
+                "stained_mossy_shingles_from_vines",
+                "stained_mossy_shingles_from_moss",
+                mossy,
+                base
+            )
+        }
+
+        private fun offerStainedMossingRecipes(
+            exporter: RecipeOutput,
+            vineGroup: String,
+            mossGroup: String,
+            output: Item,
+            input: Item
+        ) {
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, output)
+                .requires(input)
+                .requires(Blocks.VINE)
+
+                .group(vineGroup)
+                .unlockedBy("has_vine", InventoryChangeTrigger.TriggerInstance.hasItems(Blocks.VINE))
+
+                .save(exporter, convertBetween(output, Items.VINE))
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, output)
+                .requires(input)
+                .requires(Blocks.MOSS_BLOCK)
+
+                .group(mossGroup)
+                .unlockedBy("has_moss_block", InventoryChangeTrigger.TriggerInstance.hasItems(Blocks.MOSS_BLOCK))
+
+                .save(exporter, convertBetween(output, Items.MOSS_BLOCK))
         }
 
         private fun offerMossingRecipes(
@@ -2752,19 +2822,19 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             val tiles = set.tiles.get()
 
             // base block -> stairs, slab
-            offerStairsAndSlabRecipes(exporter, block, set.stairs.get(), set.slab.get())
+            offerStairsAndSlabRecipes(exporter, block, set.stairs.get(), set.slab.get(), "quartz_stairs", "quartz_slabs")
 
             // smooth -> smooth stairs, smooth slab
-            offerStairsAndSlabRecipes(exporter, smooth, set.smoothStairs.get(), set.smoothSlab.get())
+            offerStairsAndSlabRecipes(exporter, smooth, set.smoothStairs.get(), set.smoothSlab.get(), "smooth_quartz_stairs", "smooth_quartz_slabs")
 
             // tiles -> tile stairs, tile slab
-            offerStairsAndSlabRecipes(exporter, tiles, set.tileStairs.get(), set.tileSlab.get())
+            offerStairsAndSlabRecipes(exporter, tiles, set.tileStairs.get(), set.tileSlab.get(), "quartz_tile_stairs", "quartz_tile_slabs")
 
             // base block -> bricks (crafting + stonecutting)
             offerQuartzBricksRecipes(exporter, block, set.bricks.get())
 
             // bricks -> brick stairs, brick slab
-            offerStairsAndSlabRecipes(exporter, set.bricks.get(), set.brickStairs.get(), set.brickSlab.get())
+            offerStairsAndSlabRecipes(exporter, set.bricks.get(), set.brickStairs.get(), set.brickSlab.get(), "quartz_brick_stairs", "quartz_brick_slabs")
 
             // base block -> tiles, crafted against vanilla quartz
             offerQuartzTilesRecipe(exporter, block, getHasName(block), tiles)
@@ -2800,11 +2870,13 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             base: Item,
             stairs: Item,
             slab: Item,
+            stairGroup: String,
+            slabGroup: String,
         ) {
-            stairBuilder(exporter, stairs, base)
+            stairBuilder(exporter, stairs, base, stairGroup)
             stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, stairs, base)
 
-            slab(exporter, RecipeCategory.BUILDING_BLOCKS, slab, base)
+            slabBuilder(exporter, slab, base, slabGroup)
             stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, slab, base, 2)
         }
 

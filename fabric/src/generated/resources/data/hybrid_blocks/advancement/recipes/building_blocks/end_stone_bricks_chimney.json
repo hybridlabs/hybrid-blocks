@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:end_stone_bricks_chimney"
+            "items": "minecraft:end_stone_bricks"
           }
         ]
       },

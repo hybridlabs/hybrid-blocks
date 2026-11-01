@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "calcite_stairs",
   "key": {
     "#": {
       "item": "hybrid_blocks:polished_calcite"

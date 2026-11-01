@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "shingle_stairs",
   "key": {
     "#": {
       "item": "hybrid_blocks:mixed_yellow_shingles"

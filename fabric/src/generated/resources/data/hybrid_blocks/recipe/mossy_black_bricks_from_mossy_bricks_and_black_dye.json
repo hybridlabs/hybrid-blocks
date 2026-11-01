@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "stained_mossy_bricks",
+  "group": "stained_mossy_bricks_from_dye",
   "key": {
     "#": {
       "item": "hybrid_blocks:mossy_bricks"

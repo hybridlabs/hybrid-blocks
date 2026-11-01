@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "brick_slabs",
   "key": {
     "#": {
       "item": "hybrid_blocks:mixed_lime_bricks"

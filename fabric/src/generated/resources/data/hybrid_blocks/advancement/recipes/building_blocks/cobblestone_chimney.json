@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:cobblestone_chimney"
+            "items": "minecraft:cobblestone"
           }
         ]
       },

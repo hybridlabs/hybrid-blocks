@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "stained_mossy_bricks",
+  "group": "stained_mossy_shingles_from_vines",
   "ingredients": [
     {
       "item": "hybrid_blocks:lime_shingles"

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cracked_bricks": {
+    "has_cracked_shingles": {
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:cracked_bricks"
+            "items": "hybrid_blocks:cracked_shingles"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cracked_bricks"
+      "has_cracked_shingles"
     ]
   ],
   "rewards": {

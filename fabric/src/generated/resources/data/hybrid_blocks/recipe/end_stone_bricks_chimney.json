@@ -4,7 +4,7 @@
   "group": "chimney",
   "key": {
     "#": {
-      "item": "hybrid_blocks:end_stone_bricks_chimney"
+      "item": "minecraft:end_stone_bricks"
     }
   },
   "pattern": [

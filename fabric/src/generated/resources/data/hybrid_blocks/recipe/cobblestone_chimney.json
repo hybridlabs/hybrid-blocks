@@ -4,7 +4,7 @@
   "group": "chimney",
   "key": {
     "#": {
-      "item": "hybrid_blocks:cobblestone_chimney"
+      "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
