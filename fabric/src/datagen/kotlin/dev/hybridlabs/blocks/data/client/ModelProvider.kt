@@ -202,6 +202,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             generator.family(HybridBlocksBlocks.LARGE_MIXED_NETHER_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.LARGE_MIXED_NETHER_BRICKS)
             generator.family(HybridBlocksBlocks.NETHER_SHINGLES.get()).generateFor(HybridBlocksFamilies.NETHER_SHINGLES)
+            generator.family(HybridBlocksBlocks.CRACKED_NETHER_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_NETHER_SHINGLES)
+            generator.family(HybridBlocksBlocks.MOSSY_NETHER_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MOSSY_NETHER_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_NETHER_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_NETHER_SHINGLES)
 
@@ -217,6 +221,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 .generateFor(HybridBlocksFamilies.LARGE_MIXED_RED_NETHER_BRICKS)
             generator.family(HybridBlocksBlocks.RED_NETHER_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.RED_NETHER_SHINGLES)
+            generator.family(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_RED_NETHER_SHINGLES)
+            generator.family(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MOSSY_RED_NETHER_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_RED_NETHER_SHINGLES)
 
@@ -235,6 +243,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             generator.family(HybridBlocksBlocks.LARGE_MIXED_MUD_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.LARGE_MIXED_MUD_BRICKS)
             generator.family(HybridBlocksBlocks.MUD_SHINGLES.get()).generateFor(HybridBlocksFamilies.MUD_SHINGLES)
+            generator.family(HybridBlocksBlocks.CRACKED_MUD_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_MUD_SHINGLES)
+            generator.family(HybridBlocksBlocks.MOSSY_MUD_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MOSSY_MUD_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_MUD_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_MUD_SHINGLES)
 
@@ -251,6 +263,10 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             generator.family(HybridBlocksBlocks.SMALL_MIXED_STONE_BRICKS.get())
                 .generateFor(HybridBlocksFamilies.SMALL_MIXED_STONE_BRICKS)
             generator.family(HybridBlocksBlocks.STONE_SHINGLES.get()).generateFor(HybridBlocksFamilies.STONE_SHINGLES)
+            generator.family(HybridBlocksBlocks.CRACKED_STONE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_STONE_SHINGLES)
+            generator.family(HybridBlocksBlocks.MOSSY_STONE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MOSSY_STONE_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_STONE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_STONE_SHINGLES)
 
@@ -268,6 +284,12 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 .generateFor(HybridBlocksFamilies.SMALL_MIXED_DEEPSLATE_BRICKS)
             generator.family(HybridBlocksBlocks.DEEPSLATE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.DEEPSLATE_SHINGLES)
+            generator.family(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.CRACKED_DEEPSLATE_SHINGLES)
+            generator.family(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLES.get())
+                .generateFor(HybridBlocksFamilies.MOSSY_DEEPSLATE_SHINGLES)
+
+
             generator.family(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_DEEPSLATE_SHINGLES)
 

@@ -325,6 +325,14 @@ object HybridBlocksBlocks {
     val SHINGLE_SLAB = slab("shingle_slab", Blocks.BRICKS, DyeColor.RED)
     val SHINGLE_WALL = wall("shingle_wall", Blocks.BRICK_WALL, DyeColor.RED)
 
+    val CRACKED_SHINGLES = simple("cracked_shingles", Blocks.BRICKS)
+    val CRACKED_SHINGLE_STAIRS = stairs("cracked_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
+    val CRACKED_SHINGLE_SLAB = slab("cracked_shingle_slab", Blocks.BRICKS, DyeColor.RED)
+
+    val MOSSY_SHINGLES = simple("mossy_shingles", Blocks.BRICKS)
+    val MOSSY_SHINGLE_STAIRS = stairs("mossy_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
+    val MOSSY_SHINGLE_SLAB = slab("mossy_shingle_slab", Blocks.BRICKS, DyeColor.RED)
+
     //  mixed shingles
     val MIXED_SHINGLES = simple("mixed_shingles", Blocks.BRICKS)
     val MIXED_SHINGLE_STAIRS = stairs("mixed_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
@@ -383,6 +391,14 @@ object HybridBlocksBlocks {
     val DEEPSLATE_SHINGLE_SLAB = slab("deepslate_shingle_slab", Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
     val DEEPSLATE_SHINGLE_WALL = wall("deepslate_shingle_wall", Blocks.DEEPSLATE_BRICK_WALL, DyeColor.GRAY)
 
+    val CRACKED_DEEPSLATE_SHINGLES = simple("cracked_deepslate_shingles", Blocks.DEEPSLATE_BRICKS)
+    val CRACKED_DEEPSLATE_SHINGLE_STAIRS = stairs("cracked_deepslate_shingle_stairs", Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
+    val CRACKED_DEEPSLATE_SHINGLE_SLAB = slab("cracked_deepslate_shingle_slab", Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
+
+    val MOSSY_DEEPSLATE_SHINGLES = simple("mossy_deepslate_shingles", Blocks.DEEPSLATE_BRICKS)
+    val MOSSY_DEEPSLATE_SHINGLE_STAIRS = stairs("mossy_deepslate_shingle_stairs", Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
+    val MOSSY_DEEPSLATE_SHINGLE_SLAB = slab("mossy_deepslate_shingle_slab", Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
+
     //  mixed deepslate_shingles
     val MIXED_DEEPSLATE_SHINGLES = simple("mixed_deepslate_shingles", Blocks.DEEPSLATE_BRICKS)
     val MIXED_DEEPSLATE_SHINGLE_STAIRS = stairs("mixed_deepslate_shingle_stairs", Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS, DyeColor.GRAY)
@@ -440,6 +456,14 @@ object HybridBlocksBlocks {
     val STONE_SHINGLE_STAIRS = stairs("stone_shingle_stairs", Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
     val STONE_SHINGLE_SLAB = slab("stone_shingle_slab", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
     val STONE_SHINGLE_WALL = wall("stone_shingle_wall", Blocks.STONE_BRICK_WALL, DyeColor.LIGHT_GRAY)
+
+    val CRACKED_STONE_SHINGLES = simple("cracked_stone_shingles", Blocks.STONE_BRICKS)
+    val CRACKED_STONE_SHINGLE_STAIRS = stairs("cracked_stone_shingle_stairs", Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
+    val CRACKED_STONE_SHINGLE_SLAB = slab("cracked_stone_shingle_slab", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
+
+    val MOSSY_STONE_SHINGLES = simple("mossy_stone_shingles", Blocks.STONE_BRICKS)
+    val MOSSY_STONE_SHINGLE_STAIRS = stairs("mossy_stone_shingle_stairs", Blocks.STONE_BRICKS, Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
+    val MOSSY_STONE_SHINGLE_SLAB = slab("mossy_stone_shingle_slab", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
 
     //  mixed stone_shingles
     val MIXED_STONE_SHINGLES = simple("mixed_stone_shingles", Blocks.STONE_BRICKS)
@@ -504,6 +528,14 @@ object HybridBlocksBlocks {
     val MIXED_BLACKSTONE_SHINGLE_SLAB = slab("mixed_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
     val MIXED_BLACKSTONE_SHINGLE_WALL = wall("mixed_blackstone_shingle_wall", Blocks.POLISHED_BLACKSTONE_WALL, DyeColor.BLACK)
 
+    val CRACKED_BLACKSTONE_SHINGLES = simple("cracked_blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val CRACKED_BLACKSTONE_SHINGLE_STAIRS = stairs("cracked_blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val CRACKED_BLACKSTONE_SHINGLE_SLAB = slab("cracked_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+
+    val MOSSY_BLACKSTONE_SHINGLES = simple("mossy_blackstone_shingles", Blocks.POLISHED_BLACKSTONE_BRICKS)
+    val MOSSY_BLACKSTONE_SHINGLE_STAIRS = stairs("mossy_blackstone_shingle_stairs", Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+    val MOSSY_BLACKSTONE_SHINGLE_SLAB = slab("mossy_blackstone_shingle_slab", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
+
     val POLISHED_BLACKSTONE_BRICK_CHIMNEY = chimney("polished_blackstone_brick_chimney", Blocks.POLISHED_BLACKSTONE_BRICKS, DyeColor.BLACK)
     //#endregion
 
@@ -556,6 +588,14 @@ object HybridBlocksBlocks {
     val NETHER_SHINGLE_STAIRS = stairs("nether_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
     val NETHER_SHINGLE_SLAB = slab("nether_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
     val NETHER_SHINGLE_WALL = wall("nether_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+
+    val CRACKED_NETHER_SHINGLES = simple("cracked_nether_shingles", Blocks.NETHER_BRICKS)
+    val CRACKED_NETHER_SHINGLE_STAIRS = stairs("cracked_nether_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
+    val CRACKED_NETHER_SHINGLE_SLAB = slab("cracked_nether_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
+
+    val MOSSY_NETHER_SHINGLES = simple("mossy_nether_shingles", Blocks.NETHER_BRICKS)
+    val MOSSY_NETHER_SHINGLE_STAIRS = stairs("mossy_nether_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
+    val MOSSY_NETHER_SHINGLE_SLAB = slab("mossy_nether_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
 
     //  mixed nether shingles
     val MIXED_NETHER_SHINGLES = simple("mixed_nether_shingles", Blocks.NETHER_BRICKS)
@@ -612,6 +652,14 @@ object HybridBlocksBlocks {
     val RED_NETHER_SHINGLE_STAIRS = stairs("red_nether_shingle_stairs", Blocks.RED_NETHER_BRICKS, Blocks.RED_NETHER_BRICKS, DyeColor.RED)
     val RED_NETHER_SHINGLE_SLAB = slab("red_nether_shingle_slab", Blocks.RED_NETHER_BRICKS, DyeColor.RED)
     val RED_NETHER_SHINGLE_WALL = wall("red_nether_shingle_wall", Blocks.RED_NETHER_BRICK_WALL, DyeColor.RED)
+
+    val CRACKED_RED_NETHER_SHINGLES = simple("cracked_red_nether_shingles", Blocks.RED_NETHER_BRICKS)
+    val CRACKED_RED_NETHER_SHINGLE_STAIRS = stairs("cracked_red_nether_shingle_stairs", Blocks.RED_NETHER_BRICKS, Blocks.RED_NETHER_BRICKS, DyeColor.RED)
+    val CRACKED_RED_NETHER_SHINGLE_SLAB = slab("cracked_red_nether_shingle_slab", Blocks.RED_NETHER_BRICKS, DyeColor.RED)
+
+    val MOSSY_RED_NETHER_SHINGLES = simple("mossy_red_nether_shingles", Blocks.RED_NETHER_BRICKS)
+    val MOSSY_RED_NETHER_SHINGLE_STAIRS = stairs("mossy_red_nether_shingle_stairs", Blocks.RED_NETHER_BRICKS, Blocks.RED_NETHER_BRICKS, DyeColor.RED)
+    val MOSSY_RED_NETHER_SHINGLE_SLAB = slab("mossy_red_nether_shingle_slab", Blocks.RED_NETHER_BRICKS, DyeColor.RED)
 
     //  mixed red_nether shingles
     val MIXED_RED_NETHER_SHINGLES = simple("mixed_red_nether_shingles", Blocks.RED_NETHER_BRICKS)
@@ -679,6 +727,14 @@ object HybridBlocksBlocks {
     val MUD_SHINGLE_SLAB = slab("mud_shingle_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
     val MUD_SHINGLE_WALL = wall("mud_shingle_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
 
+    val CRACKED_MUD_SHINGLES = simple("cracked_mud_shingles", Blocks.BRICKS)
+    val CRACKED_MUD_SHINGLE_STAIRS = stairs("cracked_mud_shingle_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
+    val CRACKED_MUD_SHINGLE_SLAB = slab("cracked_mud_shingle_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
+
+    val MOSSY_MUD_SHINGLES = simple("mossy_mud_shingles", Blocks.MUD_BRICKS)
+    val MOSSY_MUD_SHINGLE_STAIRS = stairs("mossy_mud_shingle_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
+    val MOSSY_MUD_SHINGLE_SLAB = slab("mossy_mud_shingle_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
+
     //  mixed mud shingles
     val MIXED_MUD_SHINGLES = simple("mixed_mud_shingles", Blocks.MUD_BRICKS)
     val MIXED_MUD_SHINGLE_STAIRS = stairs("mixed_mud_shingle_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
@@ -745,6 +801,14 @@ object HybridBlocksBlocks {
     val MIXED_WHITE_SHINGLE_SLAB = slab("mixed_white_shingle_slab", Blocks.BRICKS, DyeColor.WHITE)
     val MIXED_WHITE_SHINGLE_WALL = wall("mixed_white_shingle_wall", Blocks.BRICK_WALL, DyeColor.WHITE)
 
+    val CRACKED_WHITE_SHINGLES = simple("cracked_white_shingles", Blocks.BRICKS)
+    val CRACKED_WHITE_SHINGLE_STAIRS = stairs("cracked_white_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.WHITE)
+    val CRACKED_WHITE_SHINGLE_SLAB = slab("cracked_white_shingle_slab", Blocks.BRICKS, DyeColor.WHITE)
+
+    val MOSSY_WHITE_SHINGLES = simple("mossy_white_shingles", Blocks.BRICKS)
+    val MOSSY_WHITE_SHINGLE_STAIRS = stairs("mossy_white_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.WHITE)
+    val MOSSY_WHITE_SHINGLE_SLAB = slab("mossy_white_shingle_slab", Blocks.BRICKS, DyeColor.WHITE)
+
     val WHITE_BRICK_CHIMNEY = chimney("white_brick_chimney", Blocks.BRICKS, DyeColor.WHITE)
     //#endregion
 
@@ -798,6 +862,14 @@ object HybridBlocksBlocks {
     val ORANGE_SHINGLE_STAIRS = stairs("orange_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.ORANGE)
     val ORANGE_SHINGLE_SLAB = slab("orange_shingle_slab", Blocks.BRICKS, DyeColor.ORANGE)
     val ORANGE_SHINGLE_WALL = wall("orange_shingle_wall", Blocks.BRICK_WALL, DyeColor.ORANGE)
+
+    val CRACKED_ORANGE_SHINGLES = simple("cracked_orange_shingles", Blocks.BRICKS)
+    val CRACKED_ORANGE_SHINGLE_STAIRS = stairs("cracked_orange_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.ORANGE)
+    val CRACKED_ORANGE_SHINGLE_SLAB = slab("cracked_orange_shingle_slab", Blocks.BRICKS, DyeColor.ORANGE)
+
+    val MOSSY_ORANGE_SHINGLES = simple("mossy_orange_shingles", Blocks.BRICKS)
+    val MOSSY_ORANGE_SHINGLE_STAIRS = stairs("mossy_orange_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.ORANGE)
+    val MOSSY_ORANGE_SHINGLE_SLAB = slab("mossy_orange_shingle_slab", Blocks.BRICKS, DyeColor.ORANGE)
 
     //  mixed orange shingles
     val MIXED_ORANGE_SHINGLES = simple("mixed_orange_shingles", Blocks.BRICKS)
@@ -859,6 +931,14 @@ object HybridBlocksBlocks {
     val MAGENTA_SHINGLE_SLAB = slab("magenta_shingle_slab", Blocks.BRICKS, DyeColor.MAGENTA)
     val MAGENTA_SHINGLE_WALL = wall("magenta_shingle_wall", Blocks.BRICK_WALL, DyeColor.MAGENTA)
 
+    val CRACKED_MAGENTA_SHINGLES = simple("cracked_magenta_shingles", Blocks.BRICKS)
+    val CRACKED_MAGENTA_SHINGLE_STAIRS = stairs("cracked_magenta_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.MAGENTA)
+    val CRACKED_MAGENTA_SHINGLE_SLAB = slab("cracked_magenta_shingle_slab", Blocks.BRICKS, DyeColor.MAGENTA)
+
+    val MOSSY_MAGENTA_SHINGLES = simple("mossy_magenta_shingles", Blocks.BRICKS)
+    val MOSSY_MAGENTA_SHINGLE_STAIRS = stairs("mossy_magenta_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.MAGENTA)
+    val MOSSY_MAGENTA_SHINGLE_SLAB = slab("mossy_magenta_shingle_slab", Blocks.BRICKS, DyeColor.MAGENTA)
+
     //  mixed magenta shingles
     val MIXED_MAGENTA_SHINGLES = simple("mixed_magenta_shingles", Blocks.BRICKS)
     val MIXED_MAGENTA_SHINGLE_STAIRS = stairs("mixed_magenta_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.MAGENTA)
@@ -918,6 +998,14 @@ object HybridBlocksBlocks {
     val LIGHT_BLUE_SHINGLE_STAIRS = stairs("light_blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_BLUE)
     val LIGHT_BLUE_SHINGLE_SLAB = slab("light_blue_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_BLUE)
     val LIGHT_BLUE_SHINGLE_WALL = wall("light_blue_shingle_wall", Blocks.BRICK_WALL, DyeColor.LIGHT_BLUE)
+
+    val CRACKED_LIGHT_BLUE_SHINGLES = simple("cracked_light_blue_shingles", Blocks.BRICKS)
+    val CRACKED_LIGHT_BLUE_SHINGLE_STAIRS = stairs("cracked_light_blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_BLUE)
+    val CRACKED_LIGHT_BLUE_SHINGLE_SLAB = slab("cracked_light_blue_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_BLUE)
+
+    val MOSSY_LIGHT_BLUE_SHINGLES = simple("mossy_light_blue_shingles", Blocks.BRICKS)
+    val MOSSY_LIGHT_BLUE_SHINGLE_STAIRS = stairs("mossy_light_blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_BLUE)
+    val MOSSY_LIGHT_BLUE_SHINGLE_SLAB = slab("mossy_light_blue_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_BLUE)
 
     //  mixed light_blue shingles
     val MIXED_LIGHT_BLUE_SHINGLES = simple("mixed_light_blue_shingles", Blocks.BRICKS)
@@ -979,6 +1067,14 @@ object HybridBlocksBlocks {
     val YELLOW_SHINGLE_SLAB = slab("yellow_shingle_slab", Blocks.BRICKS, DyeColor.YELLOW)
     val YELLOW_SHINGLE_WALL = wall("yellow_shingle_wall", Blocks.BRICK_WALL, DyeColor.YELLOW)
 
+    val CRACKED_YELLOW_SHINGLES = simple("cracked_yellow_shingles", Blocks.BRICKS)
+    val CRACKED_YELLOW_SHINGLE_STAIRS = stairs("cracked_yellow_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.YELLOW)
+    val CRACKED_YELLOW_SHINGLE_SLAB = slab("cracked_yellow_shingle_slab", Blocks.BRICKS, DyeColor.YELLOW)
+
+    val MOSSY_YELLOW_SHINGLES = simple("mossy_yellow_shingles", Blocks.BRICKS)
+    val MOSSY_YELLOW_SHINGLE_STAIRS = stairs("mossy_yellow_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.YELLOW)
+    val MOSSY_YELLOW_SHINGLE_SLAB = slab("mossy_yellow_shingle_slab", Blocks.BRICKS, DyeColor.YELLOW)
+
     //  mixed yellow shingles
     val MIXED_YELLOW_SHINGLES = simple("mixed_yellow_shingles", Blocks.BRICKS)
     val MIXED_YELLOW_SHINGLE_STAIRS = stairs("mixed_yellow_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.YELLOW)
@@ -1038,6 +1134,14 @@ object HybridBlocksBlocks {
     val LIME_SHINGLE_STAIRS = stairs("lime_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIME)
     val LIME_SHINGLE_SLAB = slab("lime_shingle_slab", Blocks.BRICKS, DyeColor.LIME)
     val LIME_SHINGLE_WALL = wall("lime_shingle_wall", Blocks.BRICK_WALL, DyeColor.LIME)
+
+    val CRACKED_LIME_SHINGLES = simple("cracked_lime_shingles", Blocks.BRICKS)
+    val CRACKED_LIME_SHINGLE_STAIRS = stairs("cracked_lime_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIME)
+    val CRACKED_LIME_SHINGLE_SLAB = slab("cracked_lime_shingle_slab", Blocks.BRICKS, DyeColor.LIME)
+
+    val MOSSY_LIME_SHINGLES = simple("mossy_lime_shingles", Blocks.BRICKS)
+    val MOSSY_LIME_SHINGLE_STAIRS = stairs("mossy_lime_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIME)
+    val MOSSY_LIME_SHINGLE_SLAB = slab("mossy_lime_shingle_slab", Blocks.BRICKS, DyeColor.LIME)
 
     //  mixed lime shingles
     val MIXED_LIME_SHINGLES = simple("mixed_lime_shingles", Blocks.BRICKS)
@@ -1099,6 +1203,14 @@ object HybridBlocksBlocks {
     val PINK_SHINGLE_SLAB = slab("pink_shingle_slab", Blocks.BRICKS, DyeColor.PINK)
     val PINK_SHINGLE_WALL = wall("pink_shingle_wall", Blocks.BRICK_WALL, DyeColor.PINK)
 
+    val CRACKED_PINK_SHINGLES = simple("cracked_pink_shingles", Blocks.BRICKS)
+    val CRACKED_PINK_SHINGLE_STAIRS = stairs("cracked_pink_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PINK)
+    val CRACKED_PINK_SHINGLE_SLAB = slab("cracked_pink_shingle_slab", Blocks.BRICKS, DyeColor.PINK)
+
+    val MOSSY_PINK_SHINGLES = simple("mossy_pink_shingles", Blocks.BRICKS)
+    val MOSSY_PINK_SHINGLE_STAIRS = stairs("mossy_pink_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PINK)
+    val MOSSY_PINK_SHINGLE_SLAB = slab("mossy_pink_shingle_slab", Blocks.BRICKS, DyeColor.PINK)
+
     //  mixed pink shingles
     val MIXED_PINK_SHINGLES = simple("mixed_pink_shingles", Blocks.BRICKS)
     val MIXED_PINK_SHINGLE_STAIRS = stairs("mixed_pink_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PINK)
@@ -1158,6 +1270,14 @@ object HybridBlocksBlocks {
     val GRAY_SHINGLE_STAIRS = stairs("gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
     val GRAY_SHINGLE_SLAB = slab("gray_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
     val GRAY_SHINGLE_WALL = wall("gray_shingle_wall", Blocks.BRICK_WALL, DyeColor.GRAY)
+
+    val CRACKED_GRAY_SHINGLES = simple("cracked_gray_shingles", Blocks.BRICKS)
+    val CRACKED_GRAY_SHINGLE_STAIRS = stairs("cracked_gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val CRACKED_GRAY_SHINGLE_SLAB = slab("cracked_gray_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
+
+    val MOSSY_GRAY_SHINGLES = simple("mossy_gray_shingles", Blocks.BRICKS)
+    val MOSSY_GRAY_SHINGLE_STAIRS = stairs("mossy_gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MOSSY_GRAY_SHINGLE_SLAB = slab("mossy_gray_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
 
     //  mixed gray shingles
     val MIXED_GRAY_SHINGLES = simple("mixed_gray_shingles", Blocks.BRICKS)
@@ -1219,6 +1339,14 @@ object HybridBlocksBlocks {
     val LIGHT_GRAY_SHINGLE_SLAB = slab("light_gray_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_GRAY)
     val LIGHT_GRAY_SHINGLE_WALL = wall("light_gray_shingle_wall", Blocks.BRICK_WALL, DyeColor.LIGHT_GRAY)
 
+    val CRACKED_LIGHT_GRAY_SHINGLES = simple("cracked_light_gray_shingles", Blocks.BRICKS)
+    val CRACKED_LIGHT_GRAY_SHINGLE_STAIRS = stairs("cracked_light_gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_GRAY)
+    val CRACKED_LIGHT_GRAY_SHINGLE_SLAB = slab("cracked_light_gray_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_GRAY)
+
+    val MOSSY_LIGHT_GRAY_SHINGLES = simple("mossy_light_gray_shingles", Blocks.BRICKS)
+    val MOSSY_LIGHT_GRAY_SHINGLE_STAIRS = stairs("mossy_light_gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_GRAY)
+    val MOSSY_LIGHT_GRAY_SHINGLE_SLAB = slab("mossy_light_gray_shingle_slab", Blocks.BRICKS, DyeColor.LIGHT_GRAY)
+
     //  mixed light_gray shingles
     val MIXED_LIGHT_GRAY_SHINGLES = simple("mixed_light_gray_shingles", Blocks.BRICKS)
     val MIXED_LIGHT_GRAY_SHINGLE_STAIRS = stairs("mixed_light_gray_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.LIGHT_GRAY)
@@ -1278,6 +1406,14 @@ object HybridBlocksBlocks {
     val CYAN_SHINGLE_STAIRS = stairs("cyan_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.CYAN)
     val CYAN_SHINGLE_SLAB = slab("cyan_shingle_slab", Blocks.BRICKS, DyeColor.CYAN)
     val CYAN_SHINGLE_WALL = wall("cyan_shingle_wall", Blocks.BRICK_WALL, DyeColor.CYAN)
+
+    val CRACKED_CYAN_SHINGLES = simple("cracked_cyan_shingles", Blocks.BRICKS)
+    val CRACKED_CYAN_SHINGLE_STAIRS = stairs("cracked_cyan_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.CYAN)
+    val CRACKED_CYAN_SHINGLE_SLAB = slab("cracked_cyan_shingle_slab", Blocks.BRICKS, DyeColor.CYAN)
+
+    val MOSSY_CYAN_SHINGLES = simple("mossy_cyan_shingles", Blocks.BRICKS)
+    val MOSSY_CYAN_SHINGLE_STAIRS = stairs("mossy_cyan_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.CYAN)
+    val MOSSY_CYAN_SHINGLE_SLAB = slab("mossy_cyan_shingle_slab", Blocks.BRICKS, DyeColor.CYAN)
 
     //  mixed cyan shingles
     val MIXED_CYAN_SHINGLES = simple("mixed_cyan_shingles", Blocks.BRICKS)
@@ -1339,6 +1475,14 @@ object HybridBlocksBlocks {
     val PURPLE_SHINGLE_SLAB = slab("purple_shingle_slab", Blocks.BRICKS, DyeColor.PURPLE)
     val PURPLE_SHINGLE_WALL = wall("purple_shingle_wall", Blocks.BRICK_WALL, DyeColor.PURPLE)
 
+    val CRACKED_PURPLE_SHINGLES = simple("cracked_purple_shingles", Blocks.BRICKS)
+    val CRACKED_PURPLE_SHINGLE_STAIRS = stairs("cracked_purple_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PURPLE)
+    val CRACKED_PURPLE_SHINGLE_SLAB = slab("cracked_purple_shingle_slab", Blocks.BRICKS, DyeColor.PURPLE)
+
+    val MOSSY_PURPLE_SHINGLES = simple("mossy_purple_shingles", Blocks.BRICKS)
+    val MOSSY_PURPLE_SHINGLE_STAIRS = stairs("mossy_purple_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PURPLE)
+    val MOSSY_PURPLE_SHINGLE_SLAB = slab("mossy_purple_shingle_slab", Blocks.BRICKS, DyeColor.PURPLE)
+
     //  mixed purple shingles
     val MIXED_PURPLE_SHINGLES = simple("mixed_purple_shingles", Blocks.BRICKS)
     val MIXED_PURPLE_SHINGLE_STAIRS = stairs("mixed_purple_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.PURPLE)
@@ -1398,6 +1542,14 @@ object HybridBlocksBlocks {
     val BLUE_SHINGLE_STAIRS = stairs("blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLUE)
     val BLUE_SHINGLE_SLAB = slab("blue_shingle_slab", Blocks.BRICKS, DyeColor.BLUE)
     val BLUE_SHINGLE_WALL = wall("blue_shingle_wall", Blocks.BRICK_WALL, DyeColor.BLUE)
+
+    val CRACKED_BLUE_SHINGLES = simple("cracked_blue_shingles", Blocks.BRICKS)
+    val CRACKED_BLUE_SHINGLE_STAIRS = stairs("cracked_blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLUE)
+    val CRACKED_BLUE_SHINGLE_SLAB = slab("cracked_blue_shingle_slab", Blocks.BRICKS, DyeColor.BLUE)
+
+    val MOSSY_BLUE_SHINGLES = simple("mossy_blue_shingles", Blocks.BRICKS)
+    val MOSSY_BLUE_SHINGLE_STAIRS = stairs("mossy_blue_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLUE)
+    val MOSSY_BLUE_SHINGLE_SLAB = slab("mossy_blue_shingle_slab", Blocks.BRICKS, DyeColor.BLUE)
 
     //  mixed blue shingles
     val MIXED_BLUE_SHINGLES = simple("mixed_blue_shingles", Blocks.BRICKS)
@@ -1459,6 +1611,14 @@ object HybridBlocksBlocks {
     val BROWN_SHINGLE_SLAB = slab("brown_shingle_slab", Blocks.BRICKS, DyeColor.BROWN)
     val BROWN_SHINGLE_WALL = wall("brown_shingle_wall", Blocks.BRICK_WALL, DyeColor.BROWN)
 
+    val CRACKED_BROWN_SHINGLES = simple("cracked_brown_shingles", Blocks.BRICKS)
+    val CRACKED_BROWN_SHINGLE_STAIRS = stairs("cracked_brown_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BROWN)
+    val CRACKED_BROWN_SHINGLE_SLAB = slab("cracked_brown_shingle_slab", Blocks.BRICKS, DyeColor.BROWN)
+
+    val MOSSY_BROWN_SHINGLES = simple("mossy_brown_shingles", Blocks.BRICKS)
+    val MOSSY_BROWN_SHINGLE_STAIRS = stairs("mossy_brown_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BROWN)
+    val MOSSY_BROWN_SHINGLE_SLAB = slab("mossy_brown_shingle_slab", Blocks.BRICKS, DyeColor.BROWN)
+
     //  mixed brown shingles
     val MIXED_BROWN_SHINGLES = simple("mixed_brown_shingles", Blocks.BRICKS)
     val MIXED_BROWN_SHINGLE_STAIRS = stairs("mixed_brown_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BROWN)
@@ -1518,6 +1678,14 @@ object HybridBlocksBlocks {
     val GREEN_SHINGLE_STAIRS = stairs("green_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GREEN)
     val GREEN_SHINGLE_SLAB = slab("green_shingle_slab", Blocks.BRICKS, DyeColor.GREEN)
     val GREEN_SHINGLE_WALL = wall("green_shingle_wall", Blocks.BRICK_WALL, DyeColor.GREEN)
+
+    val CRACKED_GREEN_SHINGLES = simple("cracked_green_shingles", Blocks.BRICKS)
+    val CRACKED_GREEN_SHINGLE_STAIRS = stairs("cracked_green_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GREEN)
+    val CRACKED_GREEN_SHINGLE_SLAB = slab("cracked_green_shingle_slab", Blocks.BRICKS, DyeColor.GREEN)
+
+    val MOSSY_GREEN_SHINGLES = simple("mossy_green_shingles", Blocks.BRICKS)
+    val MOSSY_GREEN_SHINGLE_STAIRS = stairs("mossy_green_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GREEN)
+    val MOSSY_GREEN_SHINGLE_SLAB = slab("mossy_green_shingle_slab", Blocks.BRICKS, DyeColor.GREEN)
 
     //  mixed green shingles
     val MIXED_GREEN_SHINGLES = simple("mixed_green_shingles", Blocks.BRICKS)
@@ -1579,6 +1747,14 @@ object HybridBlocksBlocks {
     val RED_SHINGLE_SLAB = slab("red_shingle_slab", Blocks.BRICKS, DyeColor.RED)
     val RED_SHINGLE_WALL = wall("red_shingle_wall", Blocks.BRICK_WALL, DyeColor.RED)
 
+    val CRACKED_RED_SHINGLES = simple("cracked_red_shingles", Blocks.BRICKS)
+    val CRACKED_RED_SHINGLE_STAIRS = stairs("cracked_red_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
+    val CRACKED_RED_SHINGLE_SLAB = slab("cracked_red_shingle_slab", Blocks.BRICKS, DyeColor.RED)
+
+    val MOSSY_RED_SHINGLES = simple("mossy_red_shingles", Blocks.BRICKS)
+    val MOSSY_RED_SHINGLE_STAIRS = stairs("mossy_red_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
+    val MOSSY_RED_SHINGLE_SLAB = slab("mossy_red_shingle_slab", Blocks.BRICKS, DyeColor.RED)
+
     //  mixed red shingles
     val MIXED_RED_SHINGLES = simple("mixed_red_shingles", Blocks.BRICKS)
     val MIXED_RED_SHINGLE_STAIRS = stairs("mixed_red_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
@@ -1638,6 +1814,14 @@ object HybridBlocksBlocks {
     val BLACK_SHINGLE_STAIRS = stairs("black_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLACK)
     val BLACK_SHINGLE_SLAB = slab("black_shingle_slab", Blocks.BRICKS, DyeColor.BLACK)
     val BLACK_SHINGLE_WALL = wall("black_shingle_wall", Blocks.BRICK_WALL, DyeColor.BLACK)
+
+    val CRACKED_BLACK_SHINGLES = simple("cracked_black_shingles", Blocks.BRICKS)
+    val CRACKED_BLACK_SHINGLE_STAIRS = stairs("cracked_black_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLACK)
+    val CRACKED_BLACK_SHINGLE_SLAB = slab("cracked_black_shingle_slab", Blocks.BRICKS, DyeColor.BLACK)
+
+    val MOSSY_BLACK_SHINGLES = simple("mossy_black_shingles", Blocks.BRICKS)
+    val MOSSY_BLACK_SHINGLE_STAIRS = stairs("mossy_black_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BLACK)
+    val MOSSY_BLACK_SHINGLE_SLAB = slab("mossy_black_shingle_slab", Blocks.BRICKS, DyeColor.BLACK)
 
     //  mixed black shingles
     val MIXED_BLACK_SHINGLES = simple("mixed_black_shingles", Blocks.BRICKS)
@@ -1740,63 +1924,71 @@ object HybridBlocksBlocks {
     //#endregion
 
     //#region Hybrid Aquatic Bricks
-    val MEDIUM_SCHIST_BRICKS = simple("medium_schist_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_SCHIST_BRICK_STAIRS = stairs("medium_schist_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_SCHIST_BRICK_SLAB = slab("medium_schist_brick_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_SCHIST_BRICK_WALL = wall("medium_schist_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
+    val MEDIUM_SCHIST_BRICKS = simple("medium_schist_bricks", Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_SCHIST_BRICK_STAIRS = stairs("medium_schist_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_SCHIST_BRICK_SLAB = slab("medium_schist_brick_slab", Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_SCHIST_BRICK_WALL = wall("medium_schist_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.GRAY)
 
-    val MEDIUM_MIXED_SCHIST_BRICKS = simple("medium_mixed_schist_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_SCHIST_BRICK_STAIRS = stairs("medium_mixed_schist_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_SCHIST_BRICK_SLAB = slab("medium_mixed_schist_brick_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_SCHIST_BRICK_WALL = wall("medium_mixed_schist_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
+    val MEDIUM_MIXED_SCHIST_BRICKS = simple("medium_mixed_schist_bricks", Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_MIXED_SCHIST_BRICK_STAIRS = stairs("medium_mixed_schist_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_MIXED_SCHIST_BRICK_SLAB = slab("medium_mixed_schist_brick_slab", Blocks.MUD_BRICKS, DyeColor.GRAY)
+    val MEDIUM_MIXED_SCHIST_BRICK_WALL = wall("medium_mixed_schist_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.GRAY)
 
     // small nether bricks
-    val SMALL_SCHIST_BRICKS = simple("small_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_SCHIST_BRICK_STAIRS = stairs("small_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_SCHIST_BRICK_SLAB = slab("small_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_SCHIST_BRICK_WALL = wall("small_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val SMALL_SCHIST_BRICKS = simple("small_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_SCHIST_BRICK_STAIRS = stairs("small_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_SCHIST_BRICK_SLAB = slab("small_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_SCHIST_BRICK_WALL = wall("small_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
     // nether brick variants
     val CRACKED_MEDIUM_SCHIST_BRICKS = simple("cracked_medium_schist_bricks", Blocks.MUD_BRICKS)
-    val CRACKED_MEDIUM_SCHIST_BRICK_STAIRS = stairs("cracked_medium_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CRACKED_MEDIUM_SCHIST_BRICK_SLAB = slab("cracked_medium_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CRACKED_MEDIUM_SCHIST_BRICK_WALL = wall("cracked_medium_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val CRACKED_MEDIUM_SCHIST_BRICK_STAIRS = stairs("cracked_medium_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val CRACKED_MEDIUM_SCHIST_BRICK_SLAB = slab("cracked_medium_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val CRACKED_MEDIUM_SCHIST_BRICK_WALL = wall("cracked_medium_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
-    val BASKETWEAVE_SCHIST_BRICKS = simple("basketweave_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val PINWHEEL_SCHIST_BRICKS = simple("pinwheel_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val JACK_ON_JACK_SCHIST_BRICKS = simple("jack_on_jack_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
+    val BASKETWEAVE_SCHIST_BRICKS = simple("basketweave_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val PINWHEEL_SCHIST_BRICKS = simple("pinwheel_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val JACK_ON_JACK_SCHIST_BRICKS = simple("jack_on_jack_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
 
     // mixed nether bricks
-    val MIXED_SCHIST_BRICKS = simple("mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_SCHIST_BRICK_STAIRS = stairs("mixed_schist_brick_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
-    val MIXED_SCHIST_BRICK_SLAB = slab("mixed_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_SCHIST_BRICK_WALL = wall("mixed_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val MIXED_SCHIST_BRICKS = simple("mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val MIXED_SCHIST_BRICK_STAIRS = stairs("mixed_schist_brick_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MIXED_SCHIST_BRICK_SLAB = slab("mixed_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val MIXED_SCHIST_BRICK_WALL = wall("mixed_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
     //  mixed large nether bricks
-    val LARGE_MIXED_SCHIST_BRICKS = simple("large_mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_SCHIST_BRICK_STAIRS = stairs("large_mixed_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_SCHIST_BRICK_SLAB = slab("large_mixed_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_SCHIST_BRICK_WALL = wall("large_mixed_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val LARGE_MIXED_SCHIST_BRICKS = simple("large_mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val LARGE_MIXED_SCHIST_BRICK_STAIRS = stairs("large_mixed_schist_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val LARGE_MIXED_SCHIST_BRICK_SLAB = slab("large_mixed_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val LARGE_MIXED_SCHIST_BRICK_WALL = wall("large_mixed_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
     //  mixed small nether bricks
-    val SMALL_MIXED_SCHIST_BRICKS = simple("small_mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_SCHIST_BRICK_STAIRS = stairs("mixed_small_schist_brick_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_SCHIST_BRICK_SLAB = slab("mixed_small_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_SCHIST_BRICK_WALL = wall("mixed_small_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val SMALL_MIXED_SCHIST_BRICKS = simple("small_mixed_schist_bricks", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_MIXED_SCHIST_BRICK_STAIRS = stairs("mixed_small_schist_brick_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_MIXED_SCHIST_BRICK_SLAB = slab("mixed_small_schist_brick_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SMALL_MIXED_SCHIST_BRICK_WALL = wall("mixed_small_schist_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
     //  nether shingles
     val SCHIST_SHINGLES = simple("schist_shingles", Blocks.NETHER_BRICKS)
-    val SCHIST_SHINGLE_STAIRS = stairs("schist_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SCHIST_SHINGLE_SLAB = slab("schist_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SCHIST_SHINGLE_WALL = wall("schist_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val SCHIST_SHINGLE_STAIRS = stairs("schist_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SCHIST_SHINGLE_SLAB = slab("schist_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val SCHIST_SHINGLE_WALL = wall("schist_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
+
+    val CRACKED_SCHIST_SHINGLES = simple("cracked_schist_shingles", Blocks.BRICKS)
+    val CRACKED_SCHIST_SHINGLE_STAIRS = stairs("cracked_schist_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val CRACKED_SCHIST_SHINGLE_SLAB = slab("cracked_schist_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
+
+    val MOSSY_SCHIST_SHINGLES = simple("mossy_schist_shingles", Blocks.BRICKS)
+    val MOSSY_SCHIST_SHINGLE_STAIRS = stairs("mossy_schist_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MOSSY_SCHIST_SHINGLE_SLAB = slab("mossy_schist_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
 
     //  mixed nether shingles
     val MIXED_SCHIST_SHINGLES = simple("mixed_schist_shingles", Blocks.NETHER_BRICKS)
-    val MIXED_SCHIST_SHINGLE_STAIRS = stairs("mixed_schist_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_SCHIST_SHINGLE_SLAB = slab("mixed_schist_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_SCHIST_SHINGLE_WALL = wall("mixed_schist_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val MIXED_SCHIST_SHINGLE_STAIRS = stairs("mixed_schist_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val MIXED_SCHIST_SHINGLE_SLAB = slab("mixed_schist_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+    val MIXED_SCHIST_SHINGLE_WALL = wall("mixed_schist_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.GRAY)
 
-    val SCHIST_CHIMNEY = chimney("schist_chimney", Blocks.NETHER_BRICKS, DyeColor.RED)
+    val SCHIST_CHIMNEY = chimney("schist_chimney", Blocks.NETHER_BRICKS, DyeColor.GRAY)
 
     val MEDIUM_CHIMNEYSTONE_BRICKS = simple("medium_chimneystone_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
     val MEDIUM_CHIMNEYSTONE_BRICK_STAIRS = stairs("medium_chimneystone_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
@@ -1809,52 +2001,60 @@ object HybridBlocksBlocks {
     val MEDIUM_MIXED_CHIMNEYSTONE_BRICK_WALL = wall("medium_mixed_chimneystone_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
 
     // small chimneystone bricks
-    val SMALL_CHIMNEYSTONE_BRICKS = simple("small_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_CHIMNEYSTONE_BRICK_STAIRS = stairs("small_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_CHIMNEYSTONE_BRICK_SLAB = slab("small_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_CHIMNEYSTONE_BRICK_WALL = wall("small_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val SMALL_CHIMNEYSTONE_BRICKS = simple("small_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_CHIMNEYSTONE_BRICK_STAIRS = stairs("small_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_CHIMNEYSTONE_BRICK_SLAB = slab("small_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_CHIMNEYSTONE_BRICK_WALL = wall("small_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
     // chimneystone brick variants
     val CRACKED_MEDIUM_CHIMNEYSTONE_BRICKS = simple("cracked_medium_chimneystone_bricks", Blocks.MUD_BRICKS)
-    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_STAIRS = stairs("cracked_medium_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_SLAB = slab("cracked_medium_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_WALL = wall("cracked_medium_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_STAIRS = stairs("cracked_medium_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_SLAB = slab("cracked_medium_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val CRACKED_MEDIUM_CHIMNEYSTONE_BRICK_WALL = wall("cracked_medium_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
-    val BASKETWEAVE_CHIMNEYSTONE_BRICKS = simple("basketweave_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val PINWHEEL_CHIMNEYSTONE_BRICKS = simple("pinwheel_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val JACK_ON_JACK_CHIMNEYSTONE_BRICKS = simple("jack_on_jack_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
+    val BASKETWEAVE_CHIMNEYSTONE_BRICKS = simple("basketweave_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val PINWHEEL_CHIMNEYSTONE_BRICKS = simple("pinwheel_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val JACK_ON_JACK_CHIMNEYSTONE_BRICKS = simple("jack_on_jack_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
 
     // mixed chimneystone bricks
-    val MIXED_CHIMNEYSTONE_BRICKS = simple("mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("mixed_chimneystone_brick_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.RED)
-    val MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("mixed_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_CHIMNEYSTONE_BRICK_WALL = wall("mixed_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val MIXED_CHIMNEYSTONE_BRICKS = simple("mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("mixed_chimneystone_brick_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.BROWN)
+    val MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("mixed_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MIXED_CHIMNEYSTONE_BRICK_WALL = wall("mixed_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
     //  mixed large chimneystone bricks
-    val LARGE_MIXED_CHIMNEYSTONE_BRICKS = simple("large_mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("large_mixed_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("large_mixed_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val LARGE_MIXED_CHIMNEYSTONE_BRICK_WALL = wall("large_mixed_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val LARGE_MIXED_CHIMNEYSTONE_BRICKS = simple("large_mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("large_mixed_chimneystone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("large_mixed_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val LARGE_MIXED_CHIMNEYSTONE_BRICK_WALL = wall("large_mixed_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
     //  mixed small chimneystone bricks
-    val SMALL_MIXED_CHIMNEYSTONE_BRICKS = simple("small_mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("mixed_small_chimneystone_brick_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("mixed_small_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val SMALL_MIXED_CHIMNEYSTONE_BRICK_WALL = wall("mixed_small_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val SMALL_MIXED_CHIMNEYSTONE_BRICKS = simple("small_mixed_chimneystone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_STAIRS = stairs("mixed_small_chimneystone_brick_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_SLAB = slab("mixed_small_chimneystone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val SMALL_MIXED_CHIMNEYSTONE_BRICK_WALL = wall("mixed_small_chimneystone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
     //  chimneystone shingles
     val CHIMNEYSTONE_SHINGLES = simple("chimneystone_shingles", Blocks.NETHER_BRICKS)
-    val CHIMNEYSTONE_SHINGLE_STAIRS = stairs("chimneystone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CHIMNEYSTONE_SHINGLE_SLAB = slab("chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val CHIMNEYSTONE_SHINGLE_WALL = wall("chimneystone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val CHIMNEYSTONE_SHINGLE_STAIRS = stairs("chimneystone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val CHIMNEYSTONE_SHINGLE_SLAB = slab("chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val CHIMNEYSTONE_SHINGLE_WALL = wall("chimneystone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
+
+    val CRACKED_CHIMNEYSTONE_SHINGLES = simple("cracked_chimneystone_shingles", Blocks.NETHER_BRICKS)
+    val CRACKED_CHIMNEYSTONE_SHINGLE_STAIRS = stairs("cracked_chimneystone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val CRACKED_CHIMNEYSTONE_SHINGLE_SLAB = slab("cracked_chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+
+    val MOSSY_CHIMNEYSTONE_SHINGLES = simple("mossy_chimneystone_shingles", Blocks.NETHER_BRICKS)
+    val MOSSY_CHIMNEYSTONE_SHINGLE_STAIRS = stairs("mossy_chimneystone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.BROWN)
+    val MOSSY_CHIMNEYSTONE_SHINGLE_SLAB = slab("mossy_chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
 
     //  mixed chimneystone shingles
     val MIXED_CHIMNEYSTONE_SHINGLES = simple("mixed_chimneystone_shingles", Blocks.NETHER_BRICKS)
-    val MIXED_CHIMNEYSTONE_SHINGLE_STAIRS = stairs("mixed_chimneystone_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_CHIMNEYSTONE_SHINGLE_SLAB = slab("mixed_chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
-    val MIXED_CHIMNEYSTONE_SHINGLE_WALL = wall("mixed_chimneystone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
+    val MIXED_CHIMNEYSTONE_SHINGLE_STAIRS = stairs("mixed_chimneystone_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MIXED_CHIMNEYSTONE_SHINGLE_SLAB = slab("mixed_chimneystone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MIXED_CHIMNEYSTONE_SHINGLE_WALL = wall("mixed_chimneystone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
-    val CHIMNEYSTONE_CHIMNEY = chimney("chimneystone_chimney", Blocks.NETHER_BRICKS, DyeColor.RED)
+    val CHIMNEYSTONE_CHIMNEY = chimney("chimneystone_chimney", Blocks.NETHER_BRICKS, DyeColor.BROWN)
 
     val MEDIUM_RED_BRINESTONE_BRICKS = simple("medium_red_brinestone_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
     val MEDIUM_RED_BRINESTONE_BRICK_STAIRS = stairs("medium_red_brinestone_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
@@ -1906,6 +2106,14 @@ object HybridBlocksBlocks {
     val RED_BRINESTONE_SHINGLE_SLAB = slab("red_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.RED)
     val RED_BRINESTONE_SHINGLE_WALL = wall("red_brinestone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.RED)
 
+    val CRACKED_RED_BRINESTONE_SHINGLES = simple("cracked_red_brinestone_shingles", Blocks.BRICKS)
+    val CRACKED_RED_BRINESTONE_SHINGLE_STAIRS = stairs("cracked_red_brinestone_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val CRACKED_RED_BRINESTONE_SHINGLE_SLAB = slab("cracked_red_brinestone_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
+
+    val MOSSY_RED_BRINESTONE_SHINGLES = simple("mossy_red_brinestone_shingles", Blocks.BRICKS)
+    val MOSSY_RED_BRINESTONE_SHINGLE_STAIRS = stairs("mossy_red_brinestone_shingle_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MOSSY_RED_BRINESTONE_SHINGLE_SLAB = slab("mossy_red_brinestone_shingle_slab", Blocks.BRICKS, DyeColor.GRAY)
+
     //  mixed red brinestone shingles
     val MIXED_RED_BRINESTONE_SHINGLES = simple("mixed_red_brinestone_shingles", Blocks.NETHER_BRICKS)
     val MIXED_RED_BRINESTONE_SHINGLE_STAIRS = stairs("mixed_red_brinestone_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.RED)
@@ -1942,7 +2150,7 @@ object HybridBlocksBlocks {
 
     // mixed nether bricks
     val MIXED_ORANGE_BRINESTONE_BRICKS = simple("mixed_orange_brinestone_bricks", Blocks.NETHER_BRICKS, DyeColor.ORANGE)
-    val MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = stairs("mixed_orange_brinestone_brick_stairs", Blocks.BRICKS, Blocks.BRICKS, DyeColor.ORANGE)
+    val MIXED_ORANGE_BRINESTONE_BRICK_STAIRS = stairs("mixed_orange_brinestone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.ORANGE)
     val MIXED_ORANGE_BRINESTONE_BRICK_SLAB = slab("mixed_orange_brinestone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.ORANGE)
     val MIXED_ORANGE_BRINESTONE_BRICK_WALL = wall("mixed_orange_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.ORANGE)
 
@@ -1964,23 +2172,31 @@ object HybridBlocksBlocks {
     val ORANGE_BRINESTONE_SHINGLE_SLAB = slab("orange_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.ORANGE)
     val ORANGE_BRINESTONE_SHINGLE_WALL = wall("orange_brinestone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.ORANGE)
 
+    val CRACKED_ORANGE_BRINESTONE_SHINGLES = simple("cracked_orange_brinestone_shingles", Blocks.NETHER_BRICKS)
+    val CRACKED_ORANGE_BRINESTONE_SHINGLE_STAIRS = stairs("cracked_orange_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val CRACKED_ORANGE_BRINESTONE_SHINGLE_SLAB = slab("cracked_orange_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+
+    val MOSSY_ORANGE_BRINESTONE_SHINGLES = simple("mossy_orange_brinestone_shingles", Blocks.NETHER_BRICKS)
+    val MOSSY_ORANGE_BRINESTONE_SHINGLE_STAIRS = stairs("mossy_orange_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MOSSY_ORANGE_BRINESTONE_SHINGLE_SLAB = slab("mossy_orange_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+
     //  mixed nether shingles
     val MIXED_ORANGE_BRINESTONE_SHINGLES = simple("mixed_orange_brinestone_shingles", Blocks.NETHER_BRICKS)
-    val MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS = stairs("mixed_orange_brinestone_shingle_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.ORANGE)
+    val MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS = stairs("mixed_orange_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.ORANGE)
     val MIXED_ORANGE_BRINESTONE_SHINGLE_SLAB = slab("mixed_orange_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.ORANGE)
     val MIXED_ORANGE_BRINESTONE_SHINGLE_WALL = wall("mixed_orange_brinestone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.ORANGE)
 
     val ORANGE_BRINESTONE_CHIMNEY = chimney("orange_brinestone_chimney", Blocks.NETHER_BRICKS, DyeColor.ORANGE)
 
-    val MEDIUM_YELLOW_BRINESTONE_BRICKS = simple("medium_yellow_brinestone_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("medium_yellow_brinestone_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB = slab("medium_yellow_brinestone_brick_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_YELLOW_BRINESTONE_BRICK_WALL = wall("medium_yellow_brinestone_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
+    val MEDIUM_YELLOW_BRINESTONE_BRICKS = simple("medium_yellow_brinestone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("medium_yellow_brinestone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB = slab("medium_yellow_brinestone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MEDIUM_YELLOW_BRINESTONE_BRICK_WALL = wall("medium_yellow_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
-    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS = simple("medium_mixed_yellow_brinestone_bricks", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("medium_mixed_yellow_brinestone_brick_stairs", Blocks.MUD_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = slab("medium_mixed_yellow_brinestone_brick_slab", Blocks.MUD_BRICKS, DyeColor.BROWN)
-    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_WALL = wall("medium_mixed_yellow_brinestone_brick_wall", Blocks.MUD_BRICK_WALL, DyeColor.BROWN)
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICKS = simple("medium_mixed_yellow_brinestone_bricks", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("medium_mixed_yellow_brinestone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.MUD_BRICKS, DyeColor.BROWN)
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = slab("medium_mixed_yellow_brinestone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.BROWN)
+    val MEDIUM_MIXED_YELLOW_BRINESTONE_BRICK_WALL = wall("medium_mixed_yellow_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.BROWN)
 
     // small nether bricks
     val SMALL_YELLOW_BRINESTONE_BRICKS = simple("small_yellow_brinestone_bricks", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
@@ -1989,7 +2205,7 @@ object HybridBlocksBlocks {
     val SMALL_YELLOW_BRINESTONE_BRICK_WALL = wall("small_yellow_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.YELLOW)
 
     // nether brick variants
-    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS = simple("cracked_medium_yellow_brinestone_bricks", Blocks.MUD_BRICKS)
+    val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICKS = simple("cracked_medium_yellow_brinestone_bricks", Blocks.NETHER_BRICKS)
     val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("cracked_medium_yellow_brinestone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_SLAB = slab("cracked_medium_yellow_brinestone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val CRACKED_MEDIUM_YELLOW_BRINESTONE_BRICK_WALL = wall("cracked_medium_yellow_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.YELLOW)
@@ -2012,7 +2228,7 @@ object HybridBlocksBlocks {
 
     //  mixed small nether bricks
     val SMALL_MIXED_YELLOW_BRINESTONE_BRICKS = simple("small_mixed_yellow_brinestone_bricks", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
-    val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("mixed_yellow_small_brinestone_brick_stairs", Blocks.BRICKS, Blocks.NETHER_BRICKS, DyeColor.YELLOW)
+    val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_STAIRS = stairs("mixed_yellow_small_brinestone_brick_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_SLAB = slab("mixed_yellow_small_brinestone_brick_slab", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val SMALL_MIXED_YELLOW_BRINESTONE_BRICK_WALL = wall("mixed_yellow_small_brinestone_brick_wall", Blocks.NETHER_BRICK_WALL, DyeColor.YELLOW)
 
@@ -2021,6 +2237,14 @@ object HybridBlocksBlocks {
     val YELLOW_BRINESTONE_SHINGLE_STAIRS = stairs("yellow_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val YELLOW_BRINESTONE_SHINGLE_SLAB = slab("yellow_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     val YELLOW_BRINESTONE_SHINGLE_WALL = wall("yellow_brinestone_shingle_wall", Blocks.NETHER_BRICK_WALL, DyeColor.YELLOW)
+
+    val CRACKED_YELLOW_BRINESTONE_SHINGLES = simple("cracked_yellow_brinestone_shingles", Blocks.NETHER_BRICKS)
+    val CRACKED_YELLOW_BRINESTONE_SHINGLE_STAIRS = stairs("cracked_yellow_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val CRACKED_YELLOW_BRINESTONE_SHINGLE_SLAB = slab("cracked_yellow_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
+
+    val MOSSY_YELLOW_BRINESTONE_SHINGLES = simple("mossy_yellow_brinestone_shingles", Blocks.NETHER_BRICKS)
+    val MOSSY_YELLOW_BRINESTONE_SHINGLE_STAIRS = stairs("mossy_yellow_brinestone_shingle_stairs", Blocks.NETHER_BRICKS, Blocks.BRICKS, DyeColor.GRAY)
+    val MOSSY_YELLOW_BRINESTONE_SHINGLE_SLAB = slab("mossy_yellow_brinestone_shingle_slab", Blocks.NETHER_BRICKS, DyeColor.GRAY)
 
     //  mixed nether shingles
     val MIXED_YELLOW_BRINESTONE_SHINGLES = simple("mixed_yellow_brinestone_shingles", Blocks.NETHER_BRICKS)

@@ -75,6 +75,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_NETHER_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_NETHER_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_NETHER_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_NETHER_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_NETHER_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_NETHER_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_STAIRS.get())
@@ -130,6 +144,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.RED_NETHER_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.RED_NETHER_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.RED_NETHER_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_RED_NETHER_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_RED_NETHER_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_SLAB.get())
             .family
     }
 
@@ -207,6 +235,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_SCHIST_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_SCHIST_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_SCHIST_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_SCHIST_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_STAIRS.get())
@@ -276,6 +318,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.CHIMNEYSTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_CHIMNEYSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_CHIMNEYSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -351,6 +407,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_RED_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_RED_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_RED_BRINESTONE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_STAIRS.get())
@@ -420,6 +490,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.ORANGE_BRINESTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_ORANGE_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_ORANGE_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -495,6 +579,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_YELLOW_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_YELLOW_BRINESTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_YELLOW_BRINESTONE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
@@ -562,6 +660,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_DEEPSLATE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_DEEPSLATE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_DEEPSLATE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLE_STAIRS.get())
@@ -626,6 +738,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_STONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_STONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_STONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_STONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_STONE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_STONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_STONE_SHINGLE_STAIRS.get())
@@ -687,6 +813,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.BLACKSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLACKSTONE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.BLACKSTONE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_BLACKSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_BLACKSTONE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -802,6 +942,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MUD_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MUD_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_MUD_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_MUD_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_MUD_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_MUD_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_MUD_SHINGLE_STAIRS.get())
@@ -815,6 +969,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_SHINGLE_SLAB.get())
             .family
     }
 
@@ -884,6 +1052,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_WHITE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_WHITE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_WHITE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_WHITE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_WHITE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_WHITE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_STAIRS.get())
@@ -947,6 +1129,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.ORANGE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.ORANGE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.ORANGE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_ORANGE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_ORANGE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1016,6 +1212,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_MAGENTA_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_MAGENTA_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_MAGENTA_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_STAIRS.get())
@@ -1079,6 +1289,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.LIGHT_BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_BLUE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.LIGHT_BLUE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_LIGHT_BLUE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_LIGHT_BLUE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1148,6 +1372,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_YELLOW_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_YELLOW_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_YELLOW_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_YELLOW_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_STAIRS.get())
@@ -1211,6 +1449,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.LIME_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIME_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.LIME_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_LIME_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIME_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_LIME_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIME_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1280,6 +1532,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_PINK_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_PINK_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_PINK_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_PINK_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_PINK_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_PINK_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_PINK_SHINGLE_STAIRS.get())
@@ -1343,6 +1609,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.GRAY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.GRAY_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.GRAY_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_GRAY_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_GRAY_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_GRAY_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_GRAY_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1412,6 +1692,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_LIGHT_GRAY_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_LIGHT_GRAY_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_LIGHT_GRAY_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_STAIRS.get())
@@ -1475,6 +1769,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.CYAN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CYAN_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.CYAN_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_CYAN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_CYAN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_CYAN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_CYAN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1544,6 +1852,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_PURPLE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_PURPLE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_PURPLE_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_PURPLE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_STAIRS.get())
@@ -1607,6 +1929,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLUE_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.BLUE_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_BLUE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLUE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_BLUE_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLUE_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1676,6 +2012,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_BROWN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BROWN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_BROWN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BROWN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_BROWN_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_BROWN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_STAIRS.get())
@@ -1739,6 +2089,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.GREEN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.GREEN_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.GREEN_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_GREEN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_GREEN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_GREEN_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_GREEN_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_SLAB.get())
             .family
     }
 
@@ -1808,6 +2172,20 @@ object HybridBlocksFamilies {
             .family
     }
 
+    val CRACKED_RED_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_RED_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_RED_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_RED_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_RED_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_RED_SHINGLE_SLAB.get())
+            .family
+    }
+
     val MIXED_RED_SHINGLES: BlockFamily by lazy {
         BlockFamily.Builder(HybridBlocksBlocks.MIXED_RED_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MIXED_RED_SHINGLE_STAIRS.get())
@@ -1871,6 +2249,20 @@ object HybridBlocksFamilies {
             .stairs(HybridBlocksBlocks.BLACK_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLACK_SHINGLE_SLAB.get())
             .wall(HybridBlocksBlocks.BLACK_SHINGLE_WALL.get())
+            .family
+    }
+
+    val CRACKED_BLACK_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLACK_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_SLAB.get())
+            .family
+    }
+
+    val MOSSY_BLACK_SHINGLES: BlockFamily by lazy {
+        BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLACK_SHINGLES.get())
+            .stairs(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_STAIRS.get())
+            .slab(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_SLAB.get())
             .family
     }
 
