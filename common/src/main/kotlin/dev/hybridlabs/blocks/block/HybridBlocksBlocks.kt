@@ -427,9 +427,7 @@ object HybridBlocksBlocks {
     val CRACKED_MEDIUM_STONE_BRICK_WALL = wall("cracked_medium_stone_brick_wall", Blocks.STONE_BRICK_WALL, DyeColor.LIGHT_GRAY)
 
     val BASKETWEAVE_STONE_BRICKS = simple("basketweave_stone_bricks", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
-
     val PINWHEEL_STONE_BRICKS = simple("pinwheel_stone_bricks", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
-
     val JACK_ON_JACK_STONE_BRICKS = simple("jack_on_jack_stone_bricks", Blocks.STONE_BRICKS, DyeColor.LIGHT_GRAY)
 
     // mixed stone bricks
