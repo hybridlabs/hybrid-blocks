@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "shingle_stairs",
+  "group": "plain_shingle_stairs",
   "key": {
     "#": {
       "item": "hybrid_blocks:brown_shingles"

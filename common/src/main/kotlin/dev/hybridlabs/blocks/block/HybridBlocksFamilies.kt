@@ -3146,6 +3146,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.WHITE_CONCRETE)
             .stairs(HybridBlocksBlocks.WHITE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.WHITE_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.WHITE_CONCRETE_WALL.get())
             .family
     }
 
@@ -3153,6 +3154,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.ORANGE_CONCRETE)
             .stairs(HybridBlocksBlocks.ORANGE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.ORANGE_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.ORANGE_CONCRETE_WALL.get())
             .family
     }
 
@@ -3160,6 +3162,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.MAGENTA_CONCRETE)
             .stairs(HybridBlocksBlocks.MAGENTA_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.MAGENTA_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.MAGENTA_CONCRETE_WALL.get())
             .family
     }
 
@@ -3167,6 +3170,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.LIGHT_BLUE_CONCRETE)
             .stairs(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_WALL.get())
             .family
     }
 
@@ -3174,6 +3178,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.YELLOW_CONCRETE)
             .stairs(HybridBlocksBlocks.YELLOW_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.YELLOW_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.YELLOW_CONCRETE_WALL.get())
             .family
     }
 
@@ -3181,6 +3186,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.LIME_CONCRETE)
             .stairs(HybridBlocksBlocks.LIME_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIME_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.LIME_CONCRETE_WALL.get())
             .family
     }
 
@@ -3188,6 +3194,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.PINK_CONCRETE)
             .stairs(HybridBlocksBlocks.PINK_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.PINK_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.PINK_CONCRETE_WALL.get())
             .family
     }
 
@@ -3195,6 +3202,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.GRAY_CONCRETE)
             .stairs(HybridBlocksBlocks.GRAY_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.GRAY_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.GRAY_CONCRETE_WALL.get())
             .family
     }
 
@@ -3202,6 +3210,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.LIGHT_GRAY_CONCRETE)
             .stairs(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_WALL.get())
             .family
     }
 
@@ -3209,6 +3218,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.CYAN_CONCRETE)
             .stairs(HybridBlocksBlocks.CYAN_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.CYAN_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.CYAN_CONCRETE_WALL.get())
             .family
     }
 
@@ -3216,6 +3226,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.PURPLE_CONCRETE)
             .stairs(HybridBlocksBlocks.PURPLE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.PURPLE_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.PURPLE_CONCRETE_WALL.get())
             .family
     }
 
@@ -3223,6 +3234,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.BLUE_CONCRETE)
             .stairs(HybridBlocksBlocks.BLUE_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLUE_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.BLUE_CONCRETE_WALL.get())
             .family
     }
 
@@ -3230,6 +3242,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.BROWN_CONCRETE)
             .stairs(HybridBlocksBlocks.BROWN_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.BROWN_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.BROWN_CONCRETE_WALL.get())
             .family
     }
 
@@ -3237,6 +3250,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.GREEN_CONCRETE)
             .stairs(HybridBlocksBlocks.GREEN_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.GREEN_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.GREEN_CONCRETE_WALL.get())
             .family
     }
 
@@ -3244,6 +3258,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.RED_CONCRETE)
             .stairs(HybridBlocksBlocks.RED_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.RED_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.RED_CONCRETE_WALL.get())
             .family
     }
 
@@ -3251,7 +3266,8 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(Blocks.BLACK_CONCRETE)
             .stairs(HybridBlocksBlocks.BLACK_CONCRETE_STAIRS.get())
             .slab(HybridBlocksBlocks.BLACK_CONCRETE_SLAB.get())
+            .wall(HybridBlocksBlocks.BLACK_CONCRETE_WALL.get())
             .family
     }
-    //#endregion
+//#endregion
 }

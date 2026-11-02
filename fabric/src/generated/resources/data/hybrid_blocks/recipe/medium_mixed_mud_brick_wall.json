@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "medium_mixed_brick_walls",
   "key": {
     "#": {
       "item": "hybrid_blocks:medium_mixed_mud_bricks"

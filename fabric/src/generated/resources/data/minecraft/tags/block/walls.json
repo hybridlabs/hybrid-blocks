@@ -264,6 +264,22 @@
     "hybrid_blocks:large_mixed_yellow_brinestone_brick_wall",
     "hybrid_blocks:mixed_yellow_small_brinestone_brick_wall",
     "hybrid_blocks:yellow_brinestone_shingle_wall",
-    "hybrid_blocks:mixed_yellow_brinestone_shingle_wall"
+    "hybrid_blocks:mixed_yellow_brinestone_shingle_wall",
+    "hybrid_blocks:white_concrete_wall",
+    "hybrid_blocks:orange_concrete_wall",
+    "hybrid_blocks:magenta_concrete_wall",
+    "hybrid_blocks:light_blue_concrete_wall",
+    "hybrid_blocks:yellow_concrete_wall",
+    "hybrid_blocks:lime_concrete_wall",
+    "hybrid_blocks:pink_concrete_wall",
+    "hybrid_blocks:gray_concrete_wall",
+    "hybrid_blocks:light_gray_concrete_wall",
+    "hybrid_blocks:cyan_concrete_wall",
+    "hybrid_blocks:purple_concrete_wall",
+    "hybrid_blocks:brown_concrete_wall",
+    "hybrid_blocks:green_concrete_wall",
+    "hybrid_blocks:blue_concrete_wall",
+    "hybrid_blocks:red_concrete_wall",
+    "hybrid_blocks:black_concrete_wall"
   ]
 }

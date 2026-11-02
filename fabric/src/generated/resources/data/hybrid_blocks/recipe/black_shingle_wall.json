@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "plain_shingle_walls",
   "key": {
     "#": {
       "item": "hybrid_blocks:black_shingles"

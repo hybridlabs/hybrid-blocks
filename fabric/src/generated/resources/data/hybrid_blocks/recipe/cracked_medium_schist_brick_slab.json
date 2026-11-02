@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "brick_slabs",
+  "group": "cracked_medium_brick_slabs",
   "key": {
     "#": {
       "item": "hybrid_blocks:cracked_medium_schist_bricks"

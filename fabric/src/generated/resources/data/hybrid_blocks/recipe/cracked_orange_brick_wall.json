@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "cracked_brick_walls",
   "key": {
     "#": {
       "item": "hybrid_blocks:cracked_orange_bricks"

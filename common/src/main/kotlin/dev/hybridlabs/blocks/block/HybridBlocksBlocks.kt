@@ -2306,52 +2306,68 @@ object HybridBlocksBlocks {
     //#region Concrete Sets
     val WHITE_CONCRETE_STAIRS = stairs("white_concrete_stairs", Blocks.WHITE_CONCRETE, Blocks.WHITE_CONCRETE, DyeColor.WHITE)
     val WHITE_CONCRETE_SLAB = slab("white_concrete_slab", Blocks.WHITE_CONCRETE, DyeColor.WHITE)
+    val WHITE_CONCRETE_WALL = wall("white_concrete_wall", Blocks.WHITE_CONCRETE, DyeColor.WHITE)
 
     val ORANGE_CONCRETE_STAIRS = stairs("orange_concrete_stairs", Blocks.ORANGE_CONCRETE, Blocks.ORANGE_CONCRETE, DyeColor.ORANGE)
     val ORANGE_CONCRETE_SLAB = slab("orange_concrete_slab", Blocks.ORANGE_CONCRETE, DyeColor.ORANGE)
+    val ORANGE_CONCRETE_WALL = wall("orange_concrete_wall", Blocks.ORANGE_CONCRETE, DyeColor.ORANGE)
 
     val MAGENTA_CONCRETE_STAIRS = stairs("magenta_concrete_stairs", Blocks.MAGENTA_CONCRETE, Blocks.MAGENTA_CONCRETE, DyeColor.MAGENTA)
     val MAGENTA_CONCRETE_SLAB = slab("magenta_concrete_slab", Blocks.MAGENTA_CONCRETE, DyeColor.MAGENTA)
+    val MAGENTA_CONCRETE_WALL = wall("magenta_concrete_wall", Blocks.MAGENTA_CONCRETE, DyeColor.MAGENTA)
 
     val LIGHT_BLUE_CONCRETE_STAIRS = stairs("light_blue_concrete_stairs", Blocks.LIGHT_BLUE_CONCRETE, Blocks.LIGHT_BLUE_CONCRETE, DyeColor.LIGHT_BLUE)
     val LIGHT_BLUE_CONCRETE_SLAB = slab("light_blue_concrete_slab", Blocks.LIGHT_BLUE_CONCRETE, DyeColor.LIGHT_BLUE)
+    val LIGHT_BLUE_CONCRETE_WALL = wall("light_blue_concrete_wall", Blocks.LIGHT_BLUE_CONCRETE, DyeColor.LIGHT_BLUE)
 
     val YELLOW_CONCRETE_STAIRS = stairs("yellow_concrete_stairs", Blocks.YELLOW_CONCRETE, Blocks.YELLOW_CONCRETE, DyeColor.YELLOW)
     val YELLOW_CONCRETE_SLAB = slab("yellow_concrete_slab", Blocks.YELLOW_CONCRETE, DyeColor.YELLOW)
+    val YELLOW_CONCRETE_WALL = wall("yellow_concrete_wall", Blocks.YELLOW_CONCRETE, DyeColor.YELLOW)
 
     val LIME_CONCRETE_STAIRS = stairs("lime_concrete_stairs", Blocks.LIME_CONCRETE, Blocks.LIME_CONCRETE, DyeColor.LIME)
     val LIME_CONCRETE_SLAB = slab("lime_concrete_slab", Blocks.LIME_CONCRETE, DyeColor.LIME)
+    val LIME_CONCRETE_WALL = wall("lime_concrete_wall", Blocks.LIME_CONCRETE, DyeColor.LIME)
 
     val PINK_CONCRETE_STAIRS = stairs("pink_concrete_stairs", Blocks.PINK_CONCRETE, Blocks.PINK_CONCRETE, DyeColor.PINK)
     val PINK_CONCRETE_SLAB = slab("pink_concrete_slab", Blocks.PINK_CONCRETE, DyeColor.PINK)
+    val PINK_CONCRETE_WALL = wall("pink_concrete_wall", Blocks.PINK_CONCRETE, DyeColor.PINK)
 
     val GRAY_CONCRETE_STAIRS = stairs("gray_concrete_stairs", Blocks.GRAY_CONCRETE, Blocks.GRAY_CONCRETE, DyeColor.GRAY)
     val GRAY_CONCRETE_SLAB = slab("gray_concrete_slab", Blocks.GRAY_CONCRETE, DyeColor.GRAY)
+    val GRAY_CONCRETE_WALL = wall("gray_concrete_wall", Blocks.GRAY_CONCRETE, DyeColor.GRAY)
 
     val LIGHT_GRAY_CONCRETE_STAIRS = stairs("light_gray_concrete_stairs", Blocks.LIGHT_GRAY_CONCRETE, Blocks.LIGHT_GRAY_CONCRETE, DyeColor.LIGHT_GRAY)
     val LIGHT_GRAY_CONCRETE_SLAB = slab("light_gray_concrete_slab", Blocks.LIGHT_GRAY_CONCRETE, DyeColor.LIGHT_GRAY)
+    val LIGHT_GRAY_CONCRETE_WALL = wall("light_gray_concrete_wall", Blocks.LIGHT_GRAY_CONCRETE, DyeColor.LIGHT_GRAY)
 
     val CYAN_CONCRETE_STAIRS = stairs("cyan_concrete_stairs", Blocks.CYAN_CONCRETE, Blocks.CYAN_CONCRETE, DyeColor.CYAN)
     val CYAN_CONCRETE_SLAB = slab("cyan_concrete_slab", Blocks.CYAN_CONCRETE, DyeColor.CYAN)
+    val CYAN_CONCRETE_WALL = wall("cyan_concrete_wall", Blocks.CYAN_CONCRETE, DyeColor.CYAN)
 
     val PURPLE_CONCRETE_STAIRS = stairs("purple_concrete_stairs", Blocks.PURPLE_CONCRETE, Blocks.PURPLE_CONCRETE, DyeColor.PURPLE)
     val PURPLE_CONCRETE_SLAB = slab("purple_concrete_slab", Blocks.PURPLE_CONCRETE, DyeColor.PURPLE)
+    val PURPLE_CONCRETE_WALL = wall("purple_concrete_wall", Blocks.PURPLE_CONCRETE, DyeColor.PURPLE)
 
     val BROWN_CONCRETE_STAIRS = stairs("brown_concrete_stairs", Blocks.BROWN_CONCRETE, Blocks.BROWN_CONCRETE, DyeColor.BROWN)
     val BROWN_CONCRETE_SLAB = slab("brown_concrete_slab", Blocks.BROWN_CONCRETE, DyeColor.BROWN)
+    val BROWN_CONCRETE_WALL = wall("brown_concrete_wall", Blocks.BROWN_CONCRETE, DyeColor.BROWN)
 
     val GREEN_CONCRETE_STAIRS = stairs("green_concrete_stairs", Blocks.GREEN_CONCRETE, Blocks.GREEN_CONCRETE, DyeColor.GREEN)
     val GREEN_CONCRETE_SLAB = slab("green_concrete_slab", Blocks.GREEN_CONCRETE, DyeColor.GREEN)
+    val GREEN_CONCRETE_WALL = wall("green_concrete_wall", Blocks.GREEN_CONCRETE, DyeColor.GREEN)
 
     val BLUE_CONCRETE_STAIRS = stairs("blue_concrete_stairs", Blocks.BLUE_CONCRETE, Blocks.BLUE_CONCRETE, DyeColor.BLUE)
     val BLUE_CONCRETE_SLAB = slab("blue_concrete_slab", Blocks.BLUE_CONCRETE, DyeColor.BLUE)
+    val BLUE_CONCRETE_WALL = wall("blue_concrete_wall", Blocks.BLUE_CONCRETE, DyeColor.BLUE)
 
     val RED_CONCRETE_STAIRS = stairs("red_concrete_stairs", Blocks.RED_CONCRETE, Blocks.RED_CONCRETE, DyeColor.RED)
     val RED_CONCRETE_SLAB = slab("red_concrete_slab", Blocks.RED_CONCRETE, DyeColor.RED)
+    val RED_CONCRETE_WALL = wall("red_concrete_wall", Blocks.RED_CONCRETE, DyeColor.RED)
 
     val BLACK_CONCRETE_STAIRS = stairs("black_concrete_stairs", Blocks.BLACK_CONCRETE, Blocks.BLACK_CONCRETE, DyeColor.BLACK)
     val BLACK_CONCRETE_SLAB = slab("black_concrete_slab", Blocks.BLACK_CONCRETE, DyeColor.BLACK)
-    //#endregion
+    val BLACK_CONCRETE_WALL = wall("black_concrete_wall", Blocks.BLACK_CONCRETE, DyeColor.BLACK)
+//#endregion
 
     // region Clear Glass
     val CLEAR_GLASS = register("clear_glass") { HBTransparentBlock(copyOf(Blocks.GLASS)) }

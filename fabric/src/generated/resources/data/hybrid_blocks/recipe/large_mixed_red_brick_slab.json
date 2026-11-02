@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "brick_slabs",
+  "group": "large_mixed_brick_slabs",
   "key": {
     "#": {
       "item": "hybrid_blocks:large_mixed_red_bricks"

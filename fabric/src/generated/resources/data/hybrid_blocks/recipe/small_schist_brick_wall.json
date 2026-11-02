@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "small_mixed_brick_walls",
   "key": {
     "#": {
       "item": "hybrid_blocks:small_schist_bricks"
