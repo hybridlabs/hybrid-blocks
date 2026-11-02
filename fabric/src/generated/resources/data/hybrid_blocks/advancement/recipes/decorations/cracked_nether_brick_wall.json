@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cracked_bricks": {
+    "has_cracked_nether_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "hybrid_blocks:cracked_bricks"
+            "items": "minecraft:cracked_nether_bricks"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cracked_bricks"
+      "has_cracked_nether_bricks"
     ]
   ],
   "rewards": {
