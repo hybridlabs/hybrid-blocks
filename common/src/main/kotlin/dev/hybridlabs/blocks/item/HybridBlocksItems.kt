@@ -446,10 +446,12 @@ object HybridBlocksItems {
     val CRACKED_MUD_SHINGLES = item(HybridBlocksBlocks.CRACKED_MUD_SHINGLES)
     val CRACKED_MUD_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_STAIRS)
     val CRACKED_MUD_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_SLAB)
+    val CRACKED_MUD_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_WALL)
 
     val MOSSY_MUD_SHINGLES = item(HybridBlocksBlocks.MOSSY_MUD_SHINGLES)
     val MOSSY_MUD_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_STAIRS)
     val MOSSY_MUD_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_SLAB)
+    val MOSSY_MUD_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_WALL)
 
     val MIXED_MUD_SHINGLES = item(HybridBlocksBlocks.MIXED_MUD_SHINGLES)
     val MIXED_MUD_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_MUD_SHINGLE_STAIRS)
@@ -510,10 +512,12 @@ object HybridBlocksItems {
     val CRACKED_SCHIST_SHINGLES = item(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLES)
     val CRACKED_SCHIST_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_STAIRS)
     val CRACKED_SCHIST_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_SLAB)
+    val CRACKED_SCHIST_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_WALL)
 
     val MOSSY_SCHIST_SHINGLES = item(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLES)
     val MOSSY_SCHIST_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_STAIRS)
     val MOSSY_SCHIST_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_SLAB)
+    val MOSSY_SCHIST_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_WALL)
 
     val MIXED_SCHIST_SHINGLES = item(HybridBlocksBlocks.MIXED_SCHIST_SHINGLES)
     val MIXED_SCHIST_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_SCHIST_SHINGLE_STAIRS)
@@ -574,10 +578,12 @@ object HybridBlocksItems {
     val CRACKED_CHIMNEYSTONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLES)
     val CRACKED_CHIMNEYSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_STAIRS)
     val CRACKED_CHIMNEYSTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_SLAB)
+    val CRACKED_CHIMNEYSTONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_WALL)
 
     val MOSSY_CHIMNEYSTONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLES)
     val MOSSY_CHIMNEYSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_STAIRS)
     val MOSSY_CHIMNEYSTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_SLAB)
+    val MOSSY_CHIMNEYSTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_WALL)
 
     val MIXED_CHIMNEYSTONE_SHINGLES = item(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLES)
     val MIXED_CHIMNEYSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_CHIMNEYSTONE_SHINGLE_STAIRS)
@@ -638,10 +644,12 @@ object HybridBlocksItems {
     val CRACKED_RED_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLES)
     val CRACKED_RED_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_STAIRS)
     val CRACKED_RED_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_SLAB)
+    val CRACKED_RED_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_WALL)
 
     val MOSSY_RED_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLES)
     val MOSSY_RED_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_STAIRS)
     val MOSSY_RED_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_SLAB)
+    val MOSSY_RED_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_WALL)
 
     val MIXED_RED_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLES)
     val MIXED_RED_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_RED_BRINESTONE_SHINGLE_STAIRS)
@@ -702,10 +710,12 @@ object HybridBlocksItems {
     val CRACKED_ORANGE_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLES)
     val CRACKED_ORANGE_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_STAIRS)
     val CRACKED_ORANGE_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_SLAB)
+    val CRACKED_ORANGE_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_WALL)
 
     val MOSSY_ORANGE_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLES)
     val MOSSY_ORANGE_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_STAIRS)
     val MOSSY_ORANGE_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_SLAB)
+    val MOSSY_ORANGE_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_WALL)
 
     val MIXED_ORANGE_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLES)
     val MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_ORANGE_BRINESTONE_SHINGLE_STAIRS)
@@ -766,10 +776,12 @@ object HybridBlocksItems {
     val CRACKED_YELLOW_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLES)
     val CRACKED_YELLOW_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_STAIRS)
     val CRACKED_YELLOW_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_SLAB)
+    val CRACKED_YELLOW_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_WALL)
 
     val MOSSY_YELLOW_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLES)
     val MOSSY_YELLOW_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_STAIRS)
     val MOSSY_YELLOW_BRINESTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_SLAB)
+    val MOSSY_YELLOW_BRINESTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_WALL)
 
     val MIXED_YELLOW_BRINESTONE_SHINGLES = item(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLES)
     val MIXED_YELLOW_BRINESTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLE_STAIRS)
@@ -830,10 +842,12 @@ object HybridBlocksItems {
     val CRACKED_SHINGLES = item(HybridBlocksBlocks.CRACKED_SHINGLES)
     val CRACKED_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_SHINGLE_STAIRS)
     val CRACKED_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_SHINGLE_SLAB)
+    val CRACKED_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_SHINGLE_WALL)
 
     val MOSSY_SHINGLES = item(HybridBlocksBlocks.MOSSY_SHINGLES)
     val MOSSY_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_SHINGLE_STAIRS)
     val MOSSY_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_SHINGLE_SLAB)
+    val MOSSY_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_SHINGLE_WALL)
 
     val MIXED_SHINGLES = item(HybridBlocksBlocks.MIXED_SHINGLES)
     val MIXED_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_SHINGLE_STAIRS)
@@ -841,7 +855,7 @@ object HybridBlocksItems {
     val MIXED_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_SHINGLE_WALL)
 
     val BRICK_CHIMNEY = item(HybridBlocksBlocks.BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //  normal deepslate bricks
     val SMALL_DEEPSLATE_BRICKS = item(HybridBlocksBlocks.SMALL_DEEPSLATE_BRICKS)
@@ -887,10 +901,12 @@ object HybridBlocksItems {
     val CRACKED_DEEPSLATE_SHINGLES = item(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLES)
     val CRACKED_DEEPSLATE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_STAIRS)
     val CRACKED_DEEPSLATE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_SLAB)
+    val CRACKED_DEEPSLATE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_WALL)
 
     val MOSSY_DEEPSLATE_SHINGLES = item(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLES)
     val MOSSY_DEEPSLATE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_STAIRS)
     val MOSSY_DEEPSLATE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_SLAB)
+    val MOSSY_DEEPSLATE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_WALL)
 
     val MIXED_DEEPSLATE_SHINGLES = item(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLES)
     val MIXED_DEEPSLATE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLE_STAIRS)
@@ -898,7 +914,7 @@ object HybridBlocksItems {
     val MIXED_DEEPSLATE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_DEEPSLATE_SHINGLE_WALL)
 
     val DEEPSLATE_BRICK_CHIMNEY = item(HybridBlocksBlocks.DEEPSLATE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //  normal stone bricks
     val SMALL_STONE_BRICKS = item(HybridBlocksBlocks.SMALL_STONE_BRICKS)
@@ -944,10 +960,12 @@ object HybridBlocksItems {
     val CRACKED_STONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_STONE_SHINGLES)
     val CRACKED_STONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_STAIRS)
     val CRACKED_STONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_SLAB)
+    val CRACKED_STONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_WALL)
 
     val MOSSY_STONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_STONE_SHINGLES)
     val MOSSY_STONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_STAIRS)
     val MOSSY_STONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_SLAB)
+    val MOSSY_STONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_WALL)
 
     val MIXED_STONE_SHINGLES = item(HybridBlocksBlocks.MIXED_STONE_SHINGLES)
     val MIXED_STONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_STONE_SHINGLE_STAIRS)
@@ -955,7 +973,7 @@ object HybridBlocksItems {
     val MIXED_STONE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_STONE_SHINGLE_WALL)
 
     val STONE_BRICK_CHIMNEY = item(HybridBlocksBlocks.STONE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //  normal polished_blackstone bricks
     val SMALL_POLISHED_BLACKSTONE_BRICKS = item(HybridBlocksBlocks.SMALL_POLISHED_BLACKSTONE_BRICKS)
@@ -1001,10 +1019,12 @@ object HybridBlocksItems {
     val CRACKED_BLACKSTONE_SHINGLES = item(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLES)
     val CRACKED_BLACKSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_STAIRS)
     val CRACKED_BLACKSTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_SLAB)
+    val CRACKED_BLACKSTONE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_WALL)
 
     val MOSSY_BLACKSTONE_SHINGLES = item(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLES)
     val MOSSY_BLACKSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_STAIRS)
     val MOSSY_BLACKSTONE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_SLAB)
+    val MOSSY_BLACKSTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_WALL)
 
     val MIXED_BLACKSTONE_SHINGLES = item(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLES)
     val MIXED_BLACKSTONE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLE_STAIRS)
@@ -1012,10 +1032,10 @@ object HybridBlocksItems {
     val MIXED_BLACKSTONE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_BLACKSTONE_SHINGLE_WALL)
 
     val POLISHED_BLACKSTONE_BRICK_CHIMNEY = item(HybridBlocksBlocks.POLISHED_BLACKSTONE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region White Bricks
-    //  normal white bricks
+//  normal white bricks
     val SMALL_WHITE_BRICKS = item(HybridBlocksBlocks.SMALL_WHITE_BRICKS)
     val SMALL_WHITE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_WHITE_BRICK_STAIRS)
     val SMALL_WHITE_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_WHITE_BRICK_SLAB)
@@ -1070,10 +1090,12 @@ object HybridBlocksItems {
     val CRACKED_WHITE_SHINGLES = item(HybridBlocksBlocks.CRACKED_WHITE_SHINGLES)
     val CRACKED_WHITE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_STAIRS)
     val CRACKED_WHITE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_SLAB)
+    val CRACKED_WHITE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_WALL)
 
     val MOSSY_WHITE_SHINGLES = item(HybridBlocksBlocks.MOSSY_WHITE_SHINGLES)
     val MOSSY_WHITE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_STAIRS)
     val MOSSY_WHITE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_SLAB)
+    val MOSSY_WHITE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_WALL)
 
     val MIXED_WHITE_SHINGLES = item(HybridBlocksBlocks.MIXED_WHITE_SHINGLES)
     val MIXED_WHITE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_STAIRS)
@@ -1081,10 +1103,10 @@ object HybridBlocksItems {
     val MIXED_WHITE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_WHITE_SHINGLE_WALL)
 
     val WHITE_BRICK_CHIMNEY = item(HybridBlocksBlocks.WHITE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Light_Gray Bricks
-    //  normal light_gray bricks
+//  normal light_gray bricks
     val SMALL_LIGHT_GRAY_BRICKS = item(HybridBlocksBlocks.SMALL_LIGHT_GRAY_BRICKS)
     val SMALL_LIGHT_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_LIGHT_GRAY_BRICK_STAIRS)
     val SMALL_LIGHT_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_LIGHT_GRAY_BRICK_SLAB)
@@ -1139,10 +1161,12 @@ object HybridBlocksItems {
     val CRACKED_LIGHT_GRAY_SHINGLES = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLES)
     val CRACKED_LIGHT_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_STAIRS)
     val CRACKED_LIGHT_GRAY_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_SLAB)
+    val CRACKED_LIGHT_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_WALL)
 
     val MOSSY_LIGHT_GRAY_SHINGLES = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLES)
     val MOSSY_LIGHT_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_STAIRS)
     val MOSSY_LIGHT_GRAY_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_SLAB)
+    val MOSSY_LIGHT_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_WALL)
 
     val MIXED_LIGHT_GRAY_SHINGLES = item(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLES)
     val MIXED_LIGHT_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_STAIRS)
@@ -1150,10 +1174,10 @@ object HybridBlocksItems {
     val MIXED_LIGHT_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_LIGHT_GRAY_SHINGLE_WALL)
 
     val LIGHT_GRAY_BRICK_CHIMNEY = item(HybridBlocksBlocks.LIGHT_GRAY_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Gray Bricks
-    //  normal gray bricks
+//  normal gray bricks
     val SMALL_GRAY_BRICKS = item(HybridBlocksBlocks.SMALL_GRAY_BRICKS)
     val SMALL_GRAY_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_GRAY_BRICK_STAIRS)
     val SMALL_GRAY_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_GRAY_BRICK_SLAB)
@@ -1208,10 +1232,12 @@ object HybridBlocksItems {
     val CRACKED_GRAY_SHINGLES = item(HybridBlocksBlocks.CRACKED_GRAY_SHINGLES)
     val CRACKED_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_STAIRS)
     val CRACKED_GRAY_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_SLAB)
+    val CRACKED_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_WALL)
 
     val MOSSY_GRAY_SHINGLES = item(HybridBlocksBlocks.MOSSY_GRAY_SHINGLES)
     val MOSSY_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_STAIRS)
     val MOSSY_GRAY_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_SLAB)
+    val MOSSY_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_WALL)
 
     val MIXED_GRAY_SHINGLES = item(HybridBlocksBlocks.MIXED_GRAY_SHINGLES)
     val MIXED_GRAY_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_GRAY_SHINGLE_STAIRS)
@@ -1219,10 +1245,10 @@ object HybridBlocksItems {
     val MIXED_GRAY_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_GRAY_SHINGLE_WALL)
 
     val GRAY_BRICK_CHIMNEY = item(HybridBlocksBlocks.GRAY_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Black Bricks
-    //  normal black bricks
+//  normal black bricks
     val SMALL_BLACK_BRICKS = item(HybridBlocksBlocks.SMALL_BLACK_BRICKS)
     val SMALL_BLACK_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_BLACK_BRICK_STAIRS)
     val SMALL_BLACK_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_BLACK_BRICK_SLAB)
@@ -1277,10 +1303,12 @@ object HybridBlocksItems {
     val CRACKED_BLACK_SHINGLES = item(HybridBlocksBlocks.CRACKED_BLACK_SHINGLES)
     val CRACKED_BLACK_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_STAIRS)
     val CRACKED_BLACK_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_SLAB)
+    val CRACKED_BLACK_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_WALL)
 
     val MOSSY_BLACK_SHINGLES = item(HybridBlocksBlocks.MOSSY_BLACK_SHINGLES)
     val MOSSY_BLACK_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_STAIRS)
     val MOSSY_BLACK_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_SLAB)
+    val MOSSY_BLACK_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_WALL)
 
     val MIXED_BLACK_SHINGLES = item(HybridBlocksBlocks.MIXED_BLACK_SHINGLES)
     val MIXED_BLACK_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_BLACK_SHINGLE_STAIRS)
@@ -1288,10 +1316,10 @@ object HybridBlocksItems {
     val MIXED_BLACK_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_BLACK_SHINGLE_WALL)
 
     val BLACK_BRICK_CHIMNEY = item(HybridBlocksBlocks.BLACK_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Brown Bricks
-    //  normal brown bricks
+//  normal brown bricks
     val SMALL_BROWN_BRICKS = item(HybridBlocksBlocks.SMALL_BROWN_BRICKS)
     val SMALL_BROWN_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_BROWN_BRICK_STAIRS)
     val SMALL_BROWN_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_BROWN_BRICK_SLAB)
@@ -1346,10 +1374,12 @@ object HybridBlocksItems {
     val CRACKED_BROWN_SHINGLES = item(HybridBlocksBlocks.CRACKED_BROWN_SHINGLES)
     val CRACKED_BROWN_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_STAIRS)
     val CRACKED_BROWN_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_SLAB)
+    val CRACKED_BROWN_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_WALL)
 
     val MOSSY_BROWN_SHINGLES = item(HybridBlocksBlocks.MOSSY_BROWN_SHINGLES)
     val MOSSY_BROWN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_STAIRS)
     val MOSSY_BROWN_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_SLAB)
+    val MOSSY_BROWN_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_WALL)
 
     val MIXED_BROWN_SHINGLES = item(HybridBlocksBlocks.MIXED_BROWN_SHINGLES)
     val MIXED_BROWN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_STAIRS)
@@ -1357,10 +1387,10 @@ object HybridBlocksItems {
     val MIXED_BROWN_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_BROWN_SHINGLE_WALL)
 
     val BROWN_BRICK_CHIMNEY = item(HybridBlocksBlocks.BROWN_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Red Bricks
-    //  normal red bricks
+//  normal red bricks
     val SMALL_RED_BRICKS = item(HybridBlocksBlocks.SMALL_RED_BRICKS)
     val SMALL_RED_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_RED_BRICK_STAIRS)
     val SMALL_RED_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_RED_BRICK_SLAB)
@@ -1415,10 +1445,12 @@ object HybridBlocksItems {
     val CRACKED_RED_SHINGLES = item(HybridBlocksBlocks.CRACKED_RED_SHINGLES)
     val CRACKED_RED_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_RED_SHINGLE_STAIRS)
     val CRACKED_RED_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_RED_SHINGLE_SLAB)
+    val CRACKED_RED_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_RED_SHINGLE_WALL)
 
     val MOSSY_RED_SHINGLES = item(HybridBlocksBlocks.MOSSY_RED_SHINGLES)
     val MOSSY_RED_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_RED_SHINGLE_STAIRS)
     val MOSSY_RED_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_RED_SHINGLE_SLAB)
+    val MOSSY_RED_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_RED_SHINGLE_WALL)
 
     val MIXED_RED_SHINGLES = item(HybridBlocksBlocks.MIXED_RED_SHINGLES)
     val MIXED_RED_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_RED_SHINGLE_STAIRS)
@@ -1426,10 +1458,10 @@ object HybridBlocksItems {
     val MIXED_RED_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_RED_SHINGLE_WALL)
 
     val RED_BRICK_CHIMNEY = item(HybridBlocksBlocks.RED_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Orange Bricks
-    //  normal orange bricks
+//  normal orange bricks
     val SMALL_ORANGE_BRICKS = item(HybridBlocksBlocks.SMALL_ORANGE_BRICKS)
     val SMALL_ORANGE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_ORANGE_BRICK_STAIRS)
     val SMALL_ORANGE_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_ORANGE_BRICK_SLAB)
@@ -1484,10 +1516,12 @@ object HybridBlocksItems {
     val CRACKED_ORANGE_SHINGLES = item(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLES)
     val CRACKED_ORANGE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_STAIRS)
     val CRACKED_ORANGE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_SLAB)
+    val CRACKED_ORANGE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_WALL)
 
     val MOSSY_ORANGE_SHINGLES = item(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLES)
     val MOSSY_ORANGE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_STAIRS)
     val MOSSY_ORANGE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_SLAB)
+    val MOSSY_ORANGE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_WALL)
 
     val MIXED_ORANGE_SHINGLES = item(HybridBlocksBlocks.MIXED_ORANGE_SHINGLES)
     val MIXED_ORANGE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_ORANGE_SHINGLE_STAIRS)
@@ -1495,10 +1529,10 @@ object HybridBlocksItems {
     val MIXED_ORANGE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_ORANGE_SHINGLE_WALL)
 
     val ORANGE_BRICK_CHIMNEY = item(HybridBlocksBlocks.ORANGE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Yellow Bricks
-    //  normal yellow bricks
+//  normal yellow bricks
     val SMALL_YELLOW_BRICKS = item(HybridBlocksBlocks.SMALL_YELLOW_BRICKS)
     val SMALL_YELLOW_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_YELLOW_BRICK_STAIRS)
     val SMALL_YELLOW_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_YELLOW_BRICK_SLAB)
@@ -1553,10 +1587,12 @@ object HybridBlocksItems {
     val CRACKED_YELLOW_SHINGLES = item(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLES)
     val CRACKED_YELLOW_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_STAIRS)
     val CRACKED_YELLOW_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_SLAB)
+    val CRACKED_YELLOW_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_WALL)
 
     val MOSSY_YELLOW_SHINGLES = item(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLES)
     val MOSSY_YELLOW_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_STAIRS)
     val MOSSY_YELLOW_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_SLAB)
+    val MOSSY_YELLOW_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_WALL)
 
     val MIXED_YELLOW_SHINGLES = item(HybridBlocksBlocks.MIXED_YELLOW_SHINGLES)
     val MIXED_YELLOW_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_STAIRS)
@@ -1564,10 +1600,10 @@ object HybridBlocksItems {
     val MIXED_YELLOW_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_YELLOW_SHINGLE_WALL)
 
     val YELLOW_BRICK_CHIMNEY = item(HybridBlocksBlocks.YELLOW_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Lime Bricks
-    //  normal lime bricks
+//  normal lime bricks
     val SMALL_LIME_BRICKS = item(HybridBlocksBlocks.SMALL_LIME_BRICKS)
     val SMALL_LIME_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_LIME_BRICK_STAIRS)
     val SMALL_LIME_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_LIME_BRICK_SLAB)
@@ -1622,10 +1658,12 @@ object HybridBlocksItems {
     val CRACKED_LIME_SHINGLES = item(HybridBlocksBlocks.CRACKED_LIME_SHINGLES)
     val CRACKED_LIME_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_STAIRS)
     val CRACKED_LIME_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_SLAB)
+    val CRACKED_LIME_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_WALL)
 
     val MOSSY_LIME_SHINGLES = item(HybridBlocksBlocks.MOSSY_LIME_SHINGLES)
     val MOSSY_LIME_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_STAIRS)
     val MOSSY_LIME_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_SLAB)
+    val MOSSY_LIME_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_WALL)
 
     val MIXED_LIME_SHINGLES = item(HybridBlocksBlocks.MIXED_LIME_SHINGLES)
     val MIXED_LIME_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_LIME_SHINGLE_STAIRS)
@@ -1633,10 +1671,10 @@ object HybridBlocksItems {
     val MIXED_LIME_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_LIME_SHINGLE_WALL)
 
     val LIME_BRICK_CHIMNEY = item(HybridBlocksBlocks.LIME_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Green Bricks
-    //  normal green bricks
+//  normal green bricks
     val SMALL_GREEN_BRICKS = item(HybridBlocksBlocks.SMALL_GREEN_BRICKS)
     val SMALL_GREEN_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_GREEN_BRICK_STAIRS)
     val SMALL_GREEN_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_GREEN_BRICK_SLAB)
@@ -1691,10 +1729,12 @@ object HybridBlocksItems {
     val CRACKED_GREEN_SHINGLES = item(HybridBlocksBlocks.CRACKED_GREEN_SHINGLES)
     val CRACKED_GREEN_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_STAIRS)
     val CRACKED_GREEN_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_SLAB)
+    val CRACKED_GREEN_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_WALL)
 
     val MOSSY_GREEN_SHINGLES = item(HybridBlocksBlocks.MOSSY_GREEN_SHINGLES)
     val MOSSY_GREEN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_STAIRS)
     val MOSSY_GREEN_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_SLAB)
+    val MOSSY_GREEN_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_WALL)
 
     val MIXED_GREEN_SHINGLES = item(HybridBlocksBlocks.MIXED_GREEN_SHINGLES)
     val MIXED_GREEN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_GREEN_SHINGLE_STAIRS)
@@ -1702,10 +1742,10 @@ object HybridBlocksItems {
     val MIXED_GREEN_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_GREEN_SHINGLE_WALL)
 
     val GREEN_BRICK_CHIMNEY = item(HybridBlocksBlocks.GREEN_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Cyan Bricks
-    //  normal cyan bricks
+//  normal cyan bricks
     val SMALL_CYAN_BRICKS = item(HybridBlocksBlocks.SMALL_CYAN_BRICKS)
     val SMALL_CYAN_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_CYAN_BRICK_STAIRS)
     val SMALL_CYAN_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_CYAN_BRICK_SLAB)
@@ -1760,10 +1800,12 @@ object HybridBlocksItems {
     val CRACKED_CYAN_SHINGLES = item(HybridBlocksBlocks.CRACKED_CYAN_SHINGLES)
     val CRACKED_CYAN_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_STAIRS)
     val CRACKED_CYAN_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_SLAB)
+    val CRACKED_CYAN_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_WALL)
 
     val MOSSY_CYAN_SHINGLES = item(HybridBlocksBlocks.MOSSY_CYAN_SHINGLES)
     val MOSSY_CYAN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_STAIRS)
     val MOSSY_CYAN_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_SLAB)
+    val MOSSY_CYAN_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_WALL)
 
     val MIXED_CYAN_SHINGLES = item(HybridBlocksBlocks.MIXED_CYAN_SHINGLES)
     val MIXED_CYAN_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_CYAN_SHINGLE_STAIRS)
@@ -1771,10 +1813,10 @@ object HybridBlocksItems {
     val MIXED_CYAN_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_CYAN_SHINGLE_WALL)
 
     val CYAN_BRICK_CHIMNEY = item(HybridBlocksBlocks.CYAN_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Light_Blue Bricks
-    //  normal light_blue bricks
+//  normal light_blue bricks
     val SMALL_LIGHT_BLUE_BRICKS = item(HybridBlocksBlocks.SMALL_LIGHT_BLUE_BRICKS)
     val SMALL_LIGHT_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_LIGHT_BLUE_BRICK_STAIRS)
     val SMALL_LIGHT_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_LIGHT_BLUE_BRICK_SLAB)
@@ -1829,10 +1871,12 @@ object HybridBlocksItems {
     val CRACKED_LIGHT_BLUE_SHINGLES = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLES)
     val CRACKED_LIGHT_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_STAIRS)
     val CRACKED_LIGHT_BLUE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_SLAB)
+    val CRACKED_LIGHT_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_WALL)
 
     val MOSSY_LIGHT_BLUE_SHINGLES = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLES)
     val MOSSY_LIGHT_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_STAIRS)
     val MOSSY_LIGHT_BLUE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_SLAB)
+    val MOSSY_LIGHT_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_WALL)
 
     val MIXED_LIGHT_BLUE_SHINGLES = item(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLES)
     val MIXED_LIGHT_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLE_STAIRS)
@@ -1840,10 +1884,10 @@ object HybridBlocksItems {
     val MIXED_LIGHT_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_LIGHT_BLUE_SHINGLE_WALL)
 
     val LIGHT_BLUE_BRICK_CHIMNEY = item(HybridBlocksBlocks.LIGHT_BLUE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Blue Bricks
-    //  normal blue bricks
+//  normal blue bricks
     val SMALL_BLUE_BRICKS = item(HybridBlocksBlocks.SMALL_BLUE_BRICKS)
     val SMALL_BLUE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_BLUE_BRICK_STAIRS)
     val SMALL_BLUE_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_BLUE_BRICK_SLAB)
@@ -1898,10 +1942,12 @@ object HybridBlocksItems {
     val CRACKED_BLUE_SHINGLES = item(HybridBlocksBlocks.CRACKED_BLUE_SHINGLES)
     val CRACKED_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_STAIRS)
     val CRACKED_BLUE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_SLAB)
+    val CRACKED_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_WALL)
 
     val MOSSY_BLUE_SHINGLES = item(HybridBlocksBlocks.MOSSY_BLUE_SHINGLES)
     val MOSSY_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_STAIRS)
     val MOSSY_BLUE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_SLAB)
+    val MOSSY_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_WALL)
 
     val MIXED_BLUE_SHINGLES = item(HybridBlocksBlocks.MIXED_BLUE_SHINGLES)
     val MIXED_BLUE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_BLUE_SHINGLE_STAIRS)
@@ -1909,10 +1955,10 @@ object HybridBlocksItems {
     val MIXED_BLUE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_BLUE_SHINGLE_WALL)
 
     val BLUE_BRICK_CHIMNEY = item(HybridBlocksBlocks.BLUE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Purple Bricks
-    //  normal purple bricks
+//  normal purple bricks
     val SMALL_PURPLE_BRICKS = item(HybridBlocksBlocks.SMALL_PURPLE_BRICKS)
     val SMALL_PURPLE_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_PURPLE_BRICK_STAIRS)
     val SMALL_PURPLE_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_PURPLE_BRICK_SLAB)
@@ -1967,10 +2013,12 @@ object HybridBlocksItems {
     val CRACKED_PURPLE_SHINGLES = item(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLES)
     val CRACKED_PURPLE_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_STAIRS)
     val CRACKED_PURPLE_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_SLAB)
+    val CRACKED_PURPLE_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_WALL)
 
     val MOSSY_PURPLE_SHINGLES = item(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLES)
     val MOSSY_PURPLE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_STAIRS)
     val MOSSY_PURPLE_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_SLAB)
+    val MOSSY_PURPLE_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_WALL)
 
     val MIXED_PURPLE_SHINGLES = item(HybridBlocksBlocks.MIXED_PURPLE_SHINGLES)
     val MIXED_PURPLE_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_STAIRS)
@@ -1978,10 +2026,10 @@ object HybridBlocksItems {
     val MIXED_PURPLE_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_PURPLE_SHINGLE_WALL)
 
     val PURPLE_BRICK_CHIMNEY = item(HybridBlocksBlocks.PURPLE_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Pink Bricks
-    //  normal pink bricks
+//  normal pink bricks
     val SMALL_PINK_BRICKS = item(HybridBlocksBlocks.SMALL_PINK_BRICKS)
     val SMALL_PINK_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_PINK_BRICK_STAIRS)
     val SMALL_PINK_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_PINK_BRICK_SLAB)
@@ -2036,10 +2084,12 @@ object HybridBlocksItems {
     val CRACKED_PINK_SHINGLES = item(HybridBlocksBlocks.CRACKED_PINK_SHINGLES)
     val CRACKED_PINK_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_STAIRS)
     val CRACKED_PINK_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_SLAB)
+    val CRACKED_PINK_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_WALL)
 
     val MOSSY_PINK_SHINGLES = item(HybridBlocksBlocks.MOSSY_PINK_SHINGLES)
     val MOSSY_PINK_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_STAIRS)
     val MOSSY_PINK_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_SLAB)
+    val MOSSY_PINK_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_WALL)
 
     val MIXED_PINK_SHINGLES = item(HybridBlocksBlocks.MIXED_PINK_SHINGLES)
     val MIXED_PINK_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_PINK_SHINGLE_STAIRS)
@@ -2047,10 +2097,10 @@ object HybridBlocksItems {
     val MIXED_PINK_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_PINK_SHINGLE_WALL)
 
     val PINK_BRICK_CHIMNEY = item(HybridBlocksBlocks.PINK_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Magenta Bricks
-    //  normal magenta bricks
+//  normal magenta bricks
     val SMALL_MAGENTA_BRICKS = item(HybridBlocksBlocks.SMALL_MAGENTA_BRICKS)
     val SMALL_MAGENTA_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_MAGENTA_BRICK_STAIRS)
     val SMALL_MAGENTA_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_MAGENTA_BRICK_SLAB)
@@ -2105,10 +2155,12 @@ object HybridBlocksItems {
     val CRACKED_MAGENTA_SHINGLES = item(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLES)
     val CRACKED_MAGENTA_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_STAIRS)
     val CRACKED_MAGENTA_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_SLAB)
+    val CRACKED_MAGENTA_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_WALL)
 
     val MOSSY_MAGENTA_SHINGLES = item(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLES)
     val MOSSY_MAGENTA_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_STAIRS)
     val MOSSY_MAGENTA_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_SLAB)
+    val MOSSY_MAGENTA_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_WALL)
 
     val MIXED_MAGENTA_SHINGLES = item(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLES)
     val MIXED_MAGENTA_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_STAIRS)
@@ -2116,10 +2168,10 @@ object HybridBlocksItems {
     val MIXED_MAGENTA_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_MAGENTA_SHINGLE_WALL)
 
     val MAGENTA_BRICK_CHIMNEY = item(HybridBlocksBlocks.MAGENTA_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Nether Bricks
-    //  normal nether bricks
+//  normal nether bricks
     val SMALL_NETHER_BRICKS = item(HybridBlocksBlocks.SMALL_NETHER_BRICKS)
     val SMALL_NETHER_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_NETHER_BRICK_STAIRS)
     val SMALL_NETHER_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_NETHER_BRICK_SLAB)
@@ -2162,10 +2214,12 @@ object HybridBlocksItems {
     val CRACKED_NETHER_SHINGLES = item(HybridBlocksBlocks.CRACKED_NETHER_SHINGLES)
     val CRACKED_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_STAIRS)
     val CRACKED_NETHER_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_SLAB)
+    val CRACKED_NETHER_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_WALL)
 
     val MOSSY_NETHER_SHINGLES = item(HybridBlocksBlocks.MOSSY_NETHER_SHINGLES)
     val MOSSY_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_STAIRS)
     val MOSSY_NETHER_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_SLAB)
+    val MOSSY_NETHER_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_WALL)
 
     val MIXED_NETHER_SHINGLES = item(HybridBlocksBlocks.MIXED_NETHER_SHINGLES)
     val MIXED_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_STAIRS)
@@ -2173,10 +2227,10 @@ object HybridBlocksItems {
     val MIXED_NETHER_SHINGLE_WALL = item(HybridBlocksBlocks.MIXED_NETHER_SHINGLE_WALL)
 
     val NETHER_BRICK_CHIMNEY = item(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY)
-    //#endregion
+//#endregion
 
     //#region Red_Nether Bricks
-    //  normal red_nether bricks
+//  normal red_nether bricks
     val SMALL_RED_NETHER_BRICKS = item(HybridBlocksBlocks.SMALL_RED_NETHER_BRICKS)
     val SMALL_RED_NETHER_BRICK_STAIRS = item(HybridBlocksBlocks.SMALL_RED_NETHER_BRICK_STAIRS)
     val SMALL_RED_NETHER_BRICK_SLAB = item(HybridBlocksBlocks.SMALL_RED_NETHER_BRICK_SLAB)
@@ -2220,10 +2274,12 @@ object HybridBlocksItems {
     val CRACKED_RED_NETHER_SHINGLES = item(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLES)
     val CRACKED_RED_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_STAIRS)
     val CRACKED_RED_NETHER_SHINGLE_SLAB = item(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_SLAB)
+    val CRACKED_RED_NETHER_SHINGLE_WALL = item(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_WALL)
 
     val MOSSY_RED_NETHER_SHINGLES = item(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLES)
     val MOSSY_RED_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_STAIRS)
     val MOSSY_RED_NETHER_SHINGLE_SLAB = item(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_SLAB)
+    val MOSSY_RED_NETHER_SHINGLE_WALL = item(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_WALL)
 
     val MIXED_RED_NETHER_SHINGLES = item(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLES)
     val MIXED_RED_NETHER_SHINGLE_STAIRS = item(HybridBlocksBlocks.MIXED_RED_NETHER_SHINGLE_STAIRS)

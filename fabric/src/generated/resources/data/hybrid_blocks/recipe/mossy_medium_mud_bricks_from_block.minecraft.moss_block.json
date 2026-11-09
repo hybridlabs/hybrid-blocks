@@ -4,7 +4,7 @@
   "group": "mossy_mud_bricks",
   "ingredients": [
     {
-      "item": "minecraft:bricks"
+      "item": "hybrid_blocks:medium_mud_bricks"
     },
     {
       "item": "minecraft:moss_block"

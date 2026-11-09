@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_shingle_slabs",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:mossy_orange_shingles"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "hybrid_blocks:mossy_orange_shingle_slab"
+  }
+}

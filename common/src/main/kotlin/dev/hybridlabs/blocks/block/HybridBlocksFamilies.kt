@@ -79,6 +79,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_NETHER_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_NETHER_SHINGLE_WALL.get())
             .family
     }
 
@@ -86,6 +87,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_NETHER_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_NETHER_SHINGLE_WALL.get())
             .family
     }
 
@@ -151,6 +153,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_RED_NETHER_SHINGLE_WALL.get())
             .family
     }
 
@@ -158,6 +161,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_RED_NETHER_SHINGLE_WALL.get())
             .family
     }
 
@@ -239,6 +243,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_SCHIST_SHINGLE_WALL.get())
             .family
     }
 
@@ -246,6 +251,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_SCHIST_SHINGLE_WALL.get())
             .family
     }
 
@@ -325,6 +331,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_CHIMNEYSTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -332,6 +339,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_CHIMNEYSTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -411,6 +419,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_RED_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -418,6 +427,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_RED_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -497,6 +507,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_ORANGE_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -504,6 +515,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_ORANGE_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -583,6 +595,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_YELLOW_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -590,6 +603,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_YELLOW_BRINESTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -664,6 +678,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_DEEPSLATE_SHINGLE_WALL.get())
             .family
     }
 
@@ -671,6 +686,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_DEEPSLATE_SHINGLE_WALL.get())
             .family
     }
 
@@ -742,6 +758,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_STONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_STONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -749,6 +766,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_STONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_STONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -820,6 +838,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_BLACKSTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -827,6 +846,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_BLACKSTONE_SHINGLE_WALL.get())
             .family
     }
 
@@ -946,6 +966,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MUD_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MUD_SHINGLE_WALL.get())
             .family
     }
 
@@ -953,6 +974,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_MUD_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_MUD_SHINGLE_WALL.get())
             .family
     }
 
@@ -976,6 +998,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_SHINGLE_WALL.get())
             .family
     }
 
@@ -983,6 +1006,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_SHINGLE_WALL.get())
             .family
     }
 
@@ -1056,6 +1080,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_WHITE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_WHITE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1063,6 +1088,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_WHITE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_WHITE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1136,6 +1162,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_ORANGE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1143,6 +1170,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_ORANGE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1216,6 +1244,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_MAGENTA_SHINGLE_WALL.get())
             .family
     }
 
@@ -1223,6 +1252,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_MAGENTA_SHINGLE_WALL.get())
             .family
     }
 
@@ -1296,6 +1326,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_LIGHT_BLUE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1303,6 +1334,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_LIGHT_BLUE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1376,6 +1408,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_YELLOW_SHINGLE_WALL.get())
             .family
     }
 
@@ -1383,6 +1416,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_YELLOW_SHINGLE_WALL.get())
             .family
     }
 
@@ -1456,6 +1490,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIME_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_LIME_SHINGLE_WALL.get())
             .family
     }
 
@@ -1463,6 +1498,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIME_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_LIME_SHINGLE_WALL.get())
             .family
     }
 
@@ -1536,6 +1572,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_PINK_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_PINK_SHINGLE_WALL.get())
             .family
     }
 
@@ -1543,6 +1580,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_PINK_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_PINK_SHINGLE_WALL.get())
             .family
     }
 
@@ -1616,6 +1654,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_GRAY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_GRAY_SHINGLE_WALL.get())
             .family
     }
 
@@ -1623,6 +1662,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_GRAY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_GRAY_SHINGLE_WALL.get())
             .family
     }
 
@@ -1696,6 +1736,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_LIGHT_GRAY_SHINGLE_WALL.get())
             .family
     }
 
@@ -1703,6 +1744,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_LIGHT_GRAY_SHINGLE_WALL.get())
             .family
     }
 
@@ -1776,6 +1818,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_CYAN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_CYAN_SHINGLE_WALL.get())
             .family
     }
 
@@ -1783,6 +1826,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_CYAN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_CYAN_SHINGLE_WALL.get())
             .family
     }
 
@@ -1856,6 +1900,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_PURPLE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1863,6 +1908,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_PURPLE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1936,6 +1982,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLUE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_BLUE_SHINGLE_WALL.get())
             .family
     }
 
@@ -1943,6 +1990,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLUE_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_BLUE_SHINGLE_WALL.get())
             .family
     }
 
@@ -2016,6 +2064,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BROWN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_BROWN_SHINGLE_WALL.get())
             .family
     }
 
@@ -2023,6 +2072,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BROWN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_BROWN_SHINGLE_WALL.get())
             .family
     }
 
@@ -2096,6 +2146,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_GREEN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_GREEN_SHINGLE_WALL.get())
             .family
     }
 
@@ -2103,6 +2154,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_GREEN_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_GREEN_SHINGLE_WALL.get())
             .family
     }
 
@@ -2176,6 +2228,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_RED_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_RED_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_RED_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_RED_SHINGLE_WALL.get())
             .family
     }
 
@@ -2183,6 +2236,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_RED_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_RED_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_RED_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_RED_SHINGLE_WALL.get())
             .family
     }
 
@@ -2256,6 +2310,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.CRACKED_BLACK_SHINGLES.get())
             .stairs(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.CRACKED_BLACK_SHINGLE_WALL.get())
             .family
     }
 
@@ -2263,6 +2318,7 @@ object HybridBlocksFamilies {
         BlockFamily.Builder(HybridBlocksBlocks.MOSSY_BLACK_SHINGLES.get())
             .stairs(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_STAIRS.get())
             .slab(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_SLAB.get())
+            .wall(HybridBlocksBlocks.MOSSY_BLACK_SHINGLE_WALL.get())
             .family
     }
 

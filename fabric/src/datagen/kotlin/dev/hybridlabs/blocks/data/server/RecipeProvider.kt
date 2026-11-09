@@ -295,7 +295,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
 
         // mossy bricks
         offerMossingRecipes(exporter, "mossy_bricks", HybridBlocksItems.MOSSY_BRICKS.get(), Items.BRICKS)
-        offerMossingRecipes(exporter, "mossy_mud_bricks", HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get(), Items.BRICKS)
+        offerMossingRecipes(exporter, "mossy_mud_bricks", HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get(), HybridBlocksItems.MEDIUM_MUD_BRICKS.get())
 
         offerMossingRecipes(exporter, "mossy_nether_shingles", HybridBlocksItems.MOSSY_NETHER_SHINGLES.get(), HybridBlocksItems.NETHER_SHINGLES.get())
         offerMossingRecipes(exporter, "mossy_red_nether_shingles", HybridBlocksItems.MOSSY_RED_NETHER_SHINGLES.get(), HybridBlocksItems.RED_NETHER_SHINGLES.get())
@@ -1815,6 +1815,12 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
 
             //#region Mossy Bricks
             StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICKS.get(),
+                HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_STAIRS,
+                HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_SLAB,
+                HybridBlocksItems.MOSSY_MEDIUM_MUD_BRICK_WALL
+            ),
+            StonetypeBlocksRecipeSets(
                 HybridBlocksItems.MOSSY_BLACK_BRICKS.get(),
                 HybridBlocksItems.MOSSY_BLACK_BRICK_STAIRS,
                 HybridBlocksItems.MOSSY_BLACK_BRICK_SLAB,
@@ -2155,6 +2161,251 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 HybridBlocksItems.MIXED_YELLOW_SHINGLE_STAIRS,
                 HybridBlocksItems.MIXED_YELLOW_SHINGLE_SLAB,
                 HybridBlocksItems.MIXED_YELLOW_SHINGLE_WALL
+            ),
+
+            //#region Mossy Shingles
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_MUD_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_MUD_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_MUD_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_MUD_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_NETHER_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_NETHER_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_NETHER_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_NETHER_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_RED_NETHER_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_RED_NETHER_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_RED_NETHER_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_RED_NETHER_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_BLACK_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_BLACK_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_BLACK_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_BLACK_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_BLUE_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_BLUE_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_BLUE_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_BLUE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_BROWN_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_BROWN_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_BROWN_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_BROWN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_CYAN_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_CYAN_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_CYAN_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_CYAN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_GRAY_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_GRAY_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_GRAY_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_GRAY_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_GREEN_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_GREEN_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_GREEN_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_GREEN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_LIME_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_LIME_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_LIME_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_LIME_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_MAGENTA_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_MAGENTA_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_MAGENTA_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_MAGENTA_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_ORANGE_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_ORANGE_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_ORANGE_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_ORANGE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_PINK_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_PINK_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_PINK_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_PINK_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_PURPLE_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_PURPLE_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_PURPLE_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_PURPLE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_RED_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_RED_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_RED_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_RED_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_WHITE_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_WHITE_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_WHITE_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_WHITE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.MOSSY_YELLOW_SHINGLES.get(),
+                HybridBlocksItems.MOSSY_YELLOW_SHINGLE_STAIRS,
+                HybridBlocksItems.MOSSY_YELLOW_SHINGLE_SLAB,
+                HybridBlocksItems.MOSSY_YELLOW_SHINGLE_WALL
+            ),
+            //#endregion
+
+            //#region Cracked Shingles
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_MUD_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_MUD_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_MUD_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_MUD_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_NETHER_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_NETHER_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_NETHER_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_NETHER_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_RED_NETHER_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_RED_NETHER_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_RED_NETHER_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_RED_NETHER_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_BLACK_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_BLACK_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_BLACK_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_BLACK_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_BLUE_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_BLUE_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_BLUE_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_BLUE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_BROWN_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_BROWN_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_BROWN_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_BROWN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_CYAN_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_CYAN_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_CYAN_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_CYAN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_GRAY_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_GRAY_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_GRAY_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_GRAY_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_GREEN_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_GREEN_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_GREEN_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_GREEN_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_LIME_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_LIME_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_LIME_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_LIME_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_MAGENTA_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_MAGENTA_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_MAGENTA_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_MAGENTA_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_ORANGE_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_ORANGE_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_ORANGE_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_ORANGE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_PINK_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_PINK_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_PINK_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_PINK_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_PURPLE_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_PURPLE_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_PURPLE_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_PURPLE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_RED_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_RED_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_RED_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_RED_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_WHITE_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_WHITE_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_WHITE_SHINGLE_WALL
+            ),
+            StonetypeBlocksRecipeSets(
+                HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(),
+                HybridBlocksItems.CRACKED_YELLOW_SHINGLE_STAIRS,
+                HybridBlocksItems.CRACKED_YELLOW_SHINGLE_SLAB,
+                HybridBlocksItems.CRACKED_YELLOW_SHINGLE_WALL
             )
         )
         //#endregion
