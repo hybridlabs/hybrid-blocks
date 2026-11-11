@@ -5,7 +5,7 @@ import dev.hybridlabs.blocks.item.HybridBlocksItems
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
-import net.minecraft.advancements.criterion.InventoryChangeTrigger
+import net.minecraft.advancements.triggers.InventoryChangeTrigger
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
@@ -83,40 +83,40 @@ private class HybridRecipes(
         stairBuilder(exporter,HybridBlocksItems.POLISHED_CALCITE_TILE_STAIRS.get(), HybridBlocksItems.POLISHED_CALCITE_TILES.get(), "calcite_stairs")
 
         //#region Quartz
-        offerStainedQuartzSetRecipes(exporter, WHITE_QUARTZ_SET, Items.WHITE_DYE)
-        offerStainedQuartzSetRecipes(exporter, ORANGE_QUARTZ_SET, Items.ORANGE_DYE)
-        offerStainedQuartzSetRecipes(exporter, MAGENTA_QUARTZ_SET, Items.MAGENTA_DYE)
-        offerStainedQuartzSetRecipes(exporter, LIGHT_BLUE_QUARTZ_SET, Items.LIGHT_BLUE_DYE)
-        offerStainedQuartzSetRecipes(exporter, YELLOW_QUARTZ_SET, Items.YELLOW_DYE)
-        offerStainedQuartzSetRecipes(exporter, LIME_QUARTZ_SET, Items.LIME_DYE)
-        offerStainedQuartzSetRecipes(exporter, PINK_QUARTZ_SET, Items.PINK_DYE)
-        offerStainedQuartzSetRecipes(exporter, GRAY_QUARTZ_SET, Items.GRAY_DYE)
-        offerStainedQuartzSetRecipes(exporter, LIGHT_GRAY_QUARTZ_SET, Items.LIGHT_GRAY_DYE)
-        offerStainedQuartzSetRecipes(exporter, CYAN_QUARTZ_SET, Items.CYAN_DYE)
-        offerStainedQuartzSetRecipes(exporter, PURPLE_QUARTZ_SET, Items.PURPLE_DYE)
-        offerStainedQuartzSetRecipes(exporter, BLUE_QUARTZ_SET, Items.BLUE_DYE)
-        offerStainedQuartzSetRecipes(exporter, BROWN_QUARTZ_SET, Items.BROWN_DYE)
-        offerStainedQuartzSetRecipes(exporter, GREEN_QUARTZ_SET, Items.GREEN_DYE)
-        offerStainedQuartzSetRecipes(exporter, RED_QUARTZ_SET, Items.RED_DYE)
-        offerStainedQuartzSetRecipes(exporter, BLACK_QUARTZ_SET, Items.BLACK_DYE)
+        offerStainedQuartzSetRecipes(exporter, WHITE_QUARTZ_SET, Items.DYE.white())
+        offerStainedQuartzSetRecipes(exporter, ORANGE_QUARTZ_SET, Items.DYE.orange())
+        offerStainedQuartzSetRecipes(exporter, MAGENTA_QUARTZ_SET, Items.DYE.magenta())
+        offerStainedQuartzSetRecipes(exporter, LIGHT_BLUE_QUARTZ_SET, Items.DYE.lightBlue())
+        offerStainedQuartzSetRecipes(exporter, YELLOW_QUARTZ_SET, Items.DYE.yellow())
+        offerStainedQuartzSetRecipes(exporter, LIME_QUARTZ_SET, Items.DYE.lime())
+        offerStainedQuartzSetRecipes(exporter, PINK_QUARTZ_SET, Items.DYE.pink())
+        offerStainedQuartzSetRecipes(exporter, GRAY_QUARTZ_SET, Items.DYE.gray())
+        offerStainedQuartzSetRecipes(exporter, LIGHT_GRAY_QUARTZ_SET, Items.DYE.lightGray())
+        offerStainedQuartzSetRecipes(exporter, CYAN_QUARTZ_SET, Items.DYE.cyan())
+        offerStainedQuartzSetRecipes(exporter, PURPLE_QUARTZ_SET, Items.DYE.purple())
+        offerStainedQuartzSetRecipes(exporter, BLUE_QUARTZ_SET, Items.DYE.blue())
+        offerStainedQuartzSetRecipes(exporter, BROWN_QUARTZ_SET, Items.DYE.brown())
+        offerStainedQuartzSetRecipes(exporter, GREEN_QUARTZ_SET, Items.DYE.green())
+        offerStainedQuartzSetRecipes(exporter, RED_QUARTZ_SET, Items.DYE.red())
+        offerStainedQuartzSetRecipes(exporter, BLACK_QUARTZ_SET, Items.DYE.black())
 
         //#region Wool
-        offerDyedWoolSetRecipes(exporter, WHITE_WOOL_SET, Items.WHITE_DYE)
-        offerDyedWoolSetRecipes(exporter, ORANGE_WOOL_SET, Items.ORANGE_DYE)
-        offerDyedWoolSetRecipes(exporter, MAGENTA_WOOL_SET, Items.MAGENTA_DYE)
-        offerDyedWoolSetRecipes(exporter, LIGHT_BLUE_WOOL_SET, Items.LIGHT_BLUE_DYE)
-        offerDyedWoolSetRecipes(exporter, YELLOW_WOOL_SET, Items.YELLOW_DYE)
-        offerDyedWoolSetRecipes(exporter, LIME_WOOL_SET, Items.LIME_DYE)
-        offerDyedWoolSetRecipes(exporter, PINK_WOOL_SET, Items.PINK_DYE)
-        offerDyedWoolSetRecipes(exporter, GRAY_WOOL_SET, Items.GRAY_DYE)
-        offerDyedWoolSetRecipes(exporter, LIGHT_GRAY_WOOL_SET, Items.LIGHT_GRAY_DYE)
-        offerDyedWoolSetRecipes(exporter, CYAN_WOOL_SET, Items.CYAN_DYE)
-        offerDyedWoolSetRecipes(exporter, PURPLE_WOOL_SET, Items.PURPLE_DYE)
-        offerDyedWoolSetRecipes(exporter, BLUE_WOOL_SET, Items.BLUE_DYE)
-        offerDyedWoolSetRecipes(exporter, BROWN_WOOL_SET, Items.BROWN_DYE)
-        offerDyedWoolSetRecipes(exporter, GREEN_WOOL_SET, Items.GREEN_DYE)
-        offerDyedWoolSetRecipes(exporter, RED_WOOL_SET, Items.RED_DYE)
-        offerDyedWoolSetRecipes(exporter, BLACK_WOOL_SET, Items.BLACK_DYE)
+        offerDyedWoolSetRecipes(exporter, WHITE_WOOL_SET, Items.DYE.white())
+        offerDyedWoolSetRecipes(exporter, ORANGE_WOOL_SET, Items.DYE.orange())
+        offerDyedWoolSetRecipes(exporter, MAGENTA_WOOL_SET, Items.DYE.magenta())
+        offerDyedWoolSetRecipes(exporter, LIGHT_BLUE_WOOL_SET, Items.DYE.lightBlue())
+        offerDyedWoolSetRecipes(exporter, YELLOW_WOOL_SET, Items.DYE.yellow())
+        offerDyedWoolSetRecipes(exporter, LIME_WOOL_SET, Items.DYE.lime())
+        offerDyedWoolSetRecipes(exporter, PINK_WOOL_SET, Items.DYE.pink())
+        offerDyedWoolSetRecipes(exporter, GRAY_WOOL_SET, Items.DYE.gray())
+        offerDyedWoolSetRecipes(exporter, LIGHT_GRAY_WOOL_SET, Items.DYE.lightGray())
+        offerDyedWoolSetRecipes(exporter, CYAN_WOOL_SET, Items.DYE.cyan())
+        offerDyedWoolSetRecipes(exporter, PURPLE_WOOL_SET, Items.DYE.purple())
+        offerDyedWoolSetRecipes(exporter, BLUE_WOOL_SET, Items.DYE.blue())
+        offerDyedWoolSetRecipes(exporter, BROWN_WOOL_SET, Items.DYE.brown())
+        offerDyedWoolSetRecipes(exporter, GREEN_WOOL_SET, Items.DYE.green())
+        offerDyedWoolSetRecipes(exporter, RED_WOOL_SET, Items.DYE.red())
+        offerDyedWoolSetRecipes(exporter, BLACK_WOOL_SET, Items.DYE.black())
 
         // vanilla quartz keeps its own recipes; only the added brick stairs and slab need them
         offerStairsAndSlabRecipes(
@@ -130,22 +130,22 @@ private class HybridRecipes(
         //#endregion
 
         //#region Shingles
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.BLACK_SHINGLE_STAIRS.get(), HybridBlocksItems.BLACK_SHINGLE_SLAB.get(), Items.BLACK_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.BLUE_SHINGLE_STAIRS.get(), HybridBlocksItems.BLUE_SHINGLE_SLAB.get(), Items.BLUE_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.BROWN_SHINGLE_STAIRS.get(), HybridBlocksItems.BROWN_SHINGLE_SLAB.get(), Items.BROWN_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CYAN_SHINGLE_STAIRS.get(), HybridBlocksItems.CYAN_SHINGLE_SLAB.get(), Items.CYAN_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.GRAY_SHINGLES.get(),  HybridBlocksItems.GRAY_SHINGLE_STAIRS.get(),  HybridBlocksItems.GRAY_SHINGLE_SLAB.get(), Items.GRAY_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.GREEN_SHINGLE_STAIRS.get(), HybridBlocksItems.GREEN_SHINGLE_SLAB.get(), Items.GREEN_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.LIGHT_BLUE_SHINGLE_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_SHINGLE_SLAB.get(), Items.LIGHT_BLUE_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(),HybridBlocksItems.LIGHT_GRAY_SHINGLE_STAIRS.get(),HybridBlocksItems.LIGHT_GRAY_SHINGLE_SLAB.get(), Items.LIGHT_GRAY_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.LIME_SHINGLE_STAIRS.get(), HybridBlocksItems.LIME_SHINGLE_SLAB.get(), Items.LIME_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MAGENTA_SHINGLE_STAIRS.get(), HybridBlocksItems.MAGENTA_SHINGLE_SLAB.get(), Items.MAGENTA_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.ORANGE_SHINGLE_STAIRS.get(), HybridBlocksItems.ORANGE_SHINGLE_SLAB.get(), Items.ORANGE_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.PINK_SHINGLE_STAIRS.get(), HybridBlocksItems.PINK_SHINGLE_SLAB.get(), Items.PINK_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(),HybridBlocksItems.PURPLE_SHINGLE_STAIRS.get(),HybridBlocksItems.PURPLE_SHINGLE_SLAB.get(), Items.PURPLE_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.RED_SHINGLES.get(),HybridBlocksItems.RED_SHINGLE_STAIRS.get(),HybridBlocksItems.RED_SHINGLE_SLAB.get(), Items.RED_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.WHITE_SHINGLE_STAIRS.get(),HybridBlocksItems.WHITE_SHINGLE_SLAB.get(), Items.WHITE_DYE)
-        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.YELLOW_SHINGLE_STAIRS.get(), HybridBlocksItems.YELLOW_SHINGLE_SLAB.get(), Items.YELLOW_DYE)
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.BLACK_SHINGLE_STAIRS.get(), HybridBlocksItems.BLACK_SHINGLE_SLAB.get(), Items.DYE.black())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.BLUE_SHINGLE_STAIRS.get(), HybridBlocksItems.BLUE_SHINGLE_SLAB.get(), Items.DYE.blue())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.BROWN_SHINGLE_STAIRS.get(), HybridBlocksItems.BROWN_SHINGLE_SLAB.get(), Items.DYE.brown())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CYAN_SHINGLE_STAIRS.get(), HybridBlocksItems.CYAN_SHINGLE_SLAB.get(), Items.DYE.cyan())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.GRAY_SHINGLES.get(),  HybridBlocksItems.GRAY_SHINGLE_STAIRS.get(),  HybridBlocksItems.GRAY_SHINGLE_SLAB.get(), Items.DYE.gray())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.GREEN_SHINGLE_STAIRS.get(), HybridBlocksItems.GREEN_SHINGLE_SLAB.get(), Items.DYE.green())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.LIGHT_BLUE_SHINGLE_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_SHINGLE_SLAB.get(), Items.DYE.lightBlue())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(),HybridBlocksItems.LIGHT_GRAY_SHINGLE_STAIRS.get(),HybridBlocksItems.LIGHT_GRAY_SHINGLE_SLAB.get(), Items.DYE.lightGray())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.LIME_SHINGLE_STAIRS.get(), HybridBlocksItems.LIME_SHINGLE_SLAB.get(), Items.DYE.lime())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MAGENTA_SHINGLE_STAIRS.get(), HybridBlocksItems.MAGENTA_SHINGLE_SLAB.get(), Items.DYE.magenta())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.ORANGE_SHINGLE_STAIRS.get(), HybridBlocksItems.ORANGE_SHINGLE_SLAB.get(), Items.DYE.orange())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.PINK_SHINGLE_STAIRS.get(), HybridBlocksItems.PINK_SHINGLE_SLAB.get(), Items.DYE.pink())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(),HybridBlocksItems.PURPLE_SHINGLE_STAIRS.get(),HybridBlocksItems.PURPLE_SHINGLE_SLAB.get(), Items.DYE.purple())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.RED_SHINGLES.get(),HybridBlocksItems.RED_SHINGLE_STAIRS.get(),HybridBlocksItems.RED_SHINGLE_SLAB.get(), Items.DYE.red())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.WHITE_SHINGLE_STAIRS.get(),HybridBlocksItems.WHITE_SHINGLE_SLAB.get(), Items.DYE.white())
+        offerShinglesDyeingRecipe(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.YELLOW_SHINGLE_STAIRS.get(), HybridBlocksItems.YELLOW_SHINGLE_SLAB.get(), Items.DYE.yellow())
 
         offerBrickAndShingleRecipes(exporter)
         offerVariantBrickRecipes(exporter)
@@ -182,22 +182,22 @@ private class HybridRecipes(
         //#endregion
 
         // stained bricks
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.BLACK_BRICK_STAIRS.get(), HybridBlocksItems.BLACK_BRICK_SLAB.get(), Items.BLACK_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.BLUE_BRICK_STAIRS.get(), HybridBlocksItems.BLUE_BRICK_SLAB.get(), Items.BLUE_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.BROWN_BRICK_STAIRS.get(), HybridBlocksItems.BROWN_BRICK_SLAB.get(), Items.BROWN_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.CYAN_BRICK_STAIRS.get(), HybridBlocksItems.CYAN_BRICK_SLAB.get(), Items.CYAN_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.GRAY_BRICK_STAIRS.get(), HybridBlocksItems.GRAY_BRICK_SLAB.get(), Items.GRAY_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.GREEN_BRICK_STAIRS.get(), HybridBlocksItems.GREEN_BRICK_SLAB.get(), Items.GREEN_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.LIGHT_BLUE_BRICK_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_BRICK_SLAB.get(), Items.LIGHT_BLUE_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.LIGHT_GRAY_BRICK_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_BRICK_SLAB.get(), Items.LIGHT_GRAY_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.LIME_BRICK_STAIRS.get(), HybridBlocksItems.LIME_BRICK_SLAB.get(), Items.LIME_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.MAGENTA_BRICK_STAIRS.get(), HybridBlocksItems.MAGENTA_BRICK_SLAB.get(), Items.MAGENTA_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.ORANGE_BRICK_STAIRS.get(), HybridBlocksItems.ORANGE_BRICK_SLAB.get(), Items.ORANGE_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.PINK_BRICK_STAIRS.get(), HybridBlocksItems.PINK_BRICK_SLAB.get(), Items.PINK_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.PURPLE_BRICK_STAIRS.get(), HybridBlocksItems.PURPLE_BRICK_SLAB.get(), Items.PURPLE_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.RED_BRICK_STAIRS.get(), HybridBlocksItems.RED_BRICK_SLAB.get(), Items.RED_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.WHITE_BRICK_STAIRS.get(), HybridBlocksItems.WHITE_BRICK_SLAB.get(), Items.WHITE_DYE)
-        offerBricksDyeingRecipe(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.YELLOW_BRICK_STAIRS.get(), HybridBlocksItems.YELLOW_BRICK_SLAB.get(), Items.YELLOW_DYE)
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.BLACK_BRICK_STAIRS.get(), HybridBlocksItems.BLACK_BRICK_SLAB.get(), Items.DYE.black())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.BLUE_BRICK_STAIRS.get(), HybridBlocksItems.BLUE_BRICK_SLAB.get(), Items.DYE.blue())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.BROWN_BRICK_STAIRS.get(), HybridBlocksItems.BROWN_BRICK_SLAB.get(), Items.DYE.brown())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.CYAN_BRICK_STAIRS.get(), HybridBlocksItems.CYAN_BRICK_SLAB.get(), Items.DYE.cyan())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.GRAY_BRICK_STAIRS.get(), HybridBlocksItems.GRAY_BRICK_SLAB.get(), Items.DYE.gray())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.GREEN_BRICK_STAIRS.get(), HybridBlocksItems.GREEN_BRICK_SLAB.get(), Items.DYE.green())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.LIGHT_BLUE_BRICK_STAIRS.get(), HybridBlocksItems.LIGHT_BLUE_BRICK_SLAB.get(), Items.DYE.lightBlue())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.LIGHT_GRAY_BRICK_STAIRS.get(), HybridBlocksItems.LIGHT_GRAY_BRICK_SLAB.get(), Items.DYE.lightGray())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.LIME_BRICK_STAIRS.get(), HybridBlocksItems.LIME_BRICK_SLAB.get(), Items.DYE.lime())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.MAGENTA_BRICK_STAIRS.get(), HybridBlocksItems.MAGENTA_BRICK_SLAB.get(), Items.DYE.magenta())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.ORANGE_BRICK_STAIRS.get(), HybridBlocksItems.ORANGE_BRICK_SLAB.get(), Items.DYE.orange())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.PINK_BRICK_STAIRS.get(), HybridBlocksItems.PINK_BRICK_SLAB.get(), Items.DYE.pink())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.PURPLE_BRICK_STAIRS.get(), HybridBlocksItems.PURPLE_BRICK_SLAB.get(), Items.DYE.purple())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.RED_BRICK_STAIRS.get(), HybridBlocksItems.RED_BRICK_SLAB.get(), Items.DYE.red())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.WHITE_BRICK_STAIRS.get(), HybridBlocksItems.WHITE_BRICK_SLAB.get(), Items.DYE.white())
+        offerBricksDyeingRecipe(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.YELLOW_BRICK_STAIRS.get(), HybridBlocksItems.YELLOW_BRICK_SLAB.get(), Items.DYE.yellow())
 
         // cracked bricks
         offerCrackedSmeltingRecipe(exporter,
@@ -256,77 +256,77 @@ private class HybridRecipes(
         )
 
         // stained cracked bricks
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.CRACKED_BLACK_BRICKS.get(), Items.BLACK_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.CRACKED_BLUE_BRICKS.get(), Items.BLUE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.CRACKED_BROWN_BRICKS.get(), Items.BROWN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.CRACKED_CYAN_BRICKS.get(), Items.CYAN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.CRACKED_GRAY_BRICKS.get(), Items.GRAY_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.CRACKED_GREEN_BRICKS.get(), Items.GREEN_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_BRICKS.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_BRICKS.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.CRACKED_LIME_BRICKS.get(), Items.LIME_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.CRACKED_MAGENTA_BRICKS.get(), Items.MAGENTA_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.CRACKED_ORANGE_BRICKS.get(), Items.ORANGE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.CRACKED_PINK_BRICKS.get(), Items.PINK_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.CRACKED_PURPLE_BRICKS.get(), Items.PURPLE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.CRACKED_RED_BRICKS.get(), Items.RED_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.CRACKED_WHITE_BRICKS.get(), Items.WHITE_DYE)
-        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.CRACKED_YELLOW_BRICKS.get(), Items.YELLOW_DYE)
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.CRACKED_BLACK_BRICKS.get(), Items.DYE.black())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.CRACKED_BLUE_BRICKS.get(), Items.DYE.blue())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.CRACKED_BROWN_BRICKS.get(), Items.DYE.brown())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.CRACKED_CYAN_BRICKS.get(), Items.DYE.cyan())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.CRACKED_GRAY_BRICKS.get(), Items.DYE.gray())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.CRACKED_GREEN_BRICKS.get(), Items.DYE.green())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_BRICKS.get(), Items.DYE.lightBlue())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_BRICKS.get(), Items.DYE.lightGray())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.CRACKED_LIME_BRICKS.get(), Items.DYE.lime())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.CRACKED_MAGENTA_BRICKS.get(), Items.DYE.magenta())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.CRACKED_ORANGE_BRICKS.get(), Items.DYE.orange())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.CRACKED_PINK_BRICKS.get(), Items.DYE.pink())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.CRACKED_PURPLE_BRICKS.get(), Items.DYE.purple())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.CRACKED_RED_BRICKS.get(), Items.DYE.red())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.CRACKED_WHITE_BRICKS.get(), Items.DYE.white())
+        offerStainedCrackedBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.CRACKED_YELLOW_BRICKS.get(), Items.DYE.yellow())
 
         // stained cracked shingles
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.CRACKED_BLACK_SHINGLES.get(), Items.BLACK_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_BLUE_SHINGLES.get(), Items.BLUE_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.CRACKED_BROWN_SHINGLES.get(), Items.BROWN_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CRACKED_CYAN_SHINGLES.get(), Items.CYAN_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_GRAY_SHINGLES.get(), Items.GRAY_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.CRACKED_GREEN_SHINGLES.get(), Items.GREEN_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.CRACKED_LIME_SHINGLES.get(), Items.LIME_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.CRACKED_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.CRACKED_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.CRACKED_PINK_SHINGLES.get(), Items.PINK_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.CRACKED_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.CRACKED_RED_SHINGLES.get(), Items.RED_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(), Items.WHITE_DYE)
-        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.CRACKED_BLACK_SHINGLES.get(), Items.DYE.black())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_BLUE_SHINGLES.get(), Items.DYE.blue())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.CRACKED_BROWN_SHINGLES.get(), Items.DYE.brown())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.CRACKED_CYAN_SHINGLES.get(), Items.DYE.cyan())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_GRAY_SHINGLES.get(), Items.DYE.gray())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.CRACKED_GREEN_SHINGLES.get(), Items.DYE.green())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_BLUE_SHINGLES.get(), Items.DYE.lightBlue())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.CRACKED_LIGHT_GRAY_SHINGLES.get(), Items.DYE.lightGray())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.CRACKED_LIME_SHINGLES.get(), Items.DYE.lime())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.CRACKED_MAGENTA_SHINGLES.get(), Items.DYE.magenta())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.CRACKED_ORANGE_SHINGLES.get(), Items.DYE.orange())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.CRACKED_PINK_SHINGLES.get(), Items.DYE.pink())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.CRACKED_PURPLE_SHINGLES.get(), Items.DYE.purple())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.CRACKED_RED_SHINGLES.get(), Items.DYE.red())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(), Items.DYE.white())
+        offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(), Items.DYE.yellow())
 
         simpleCookingRecipe(exporter, "smelting", 200, Items.GLASS, HybridBlocksItems.CLEAR_GLASS.get(), 0.15f)
-        offerStainedClearGlassRecipes(exporter, Items.BLACK_STAINED_GLASS, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.BLUE_STAINED_GLASS, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.BLUE_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.BROWN_STAINED_GLASS, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.BROWN_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.CYAN_STAINED_GLASS, HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS.get(), Items.CYAN_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.GRAY_STAINED_GLASS, HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS.get(), Items.GRAY_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.GREEN_STAINED_GLASS, HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS.get(), Items.GREEN_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.LIGHT_BLUE_STAINED_GLASS, HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.LIGHT_GRAY_STAINED_GLASS, HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.LIME_STAINED_GLASS, HybridBlocksItems.LIME_STAINED_CLEAR_GLASS.get(), Items.LIME_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.MAGENTA_STAINED_GLASS, HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS.get(), Items.MAGENTA_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.ORANGE_STAINED_GLASS, HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS.get(), Items.ORANGE_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.PINK_STAINED_GLASS, HybridBlocksItems.PINK_STAINED_CLEAR_GLASS.get(), Items.PINK_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.PURPLE_STAINED_GLASS, HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS.get(), Items.PURPLE_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.RED_STAINED_GLASS, HybridBlocksItems.RED_STAINED_CLEAR_GLASS.get(), Items.RED_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.WHITE_STAINED_GLASS, HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.WHITE_DYE)
-        offerStainedClearGlassRecipes(exporter, Items.YELLOW_STAINED_GLASS, HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.YELLOW_DYE)
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.black(), HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.DYE.black())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.blue(), HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.DYE.blue())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.brown(), HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.DYE.brown())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.cyan(), HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS.get(), Items.DYE.cyan())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.gray(), HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS.get(), Items.DYE.gray())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.green(), HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS.get(), Items.DYE.green())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.lightBlue(), HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS.get(), Items.DYE.lightBlue())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.lightGray(), HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS.get(), Items.DYE.lightGray())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.lime(), HybridBlocksItems.LIME_STAINED_CLEAR_GLASS.get(), Items.DYE.lime())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.magenta(), HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS.get(), Items.DYE.magenta())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.orange(), HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS.get(), Items.DYE.orange())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.pink(), HybridBlocksItems.PINK_STAINED_CLEAR_GLASS.get(), Items.DYE.pink())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.purple(), HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS.get(), Items.DYE.purple())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.red(), HybridBlocksItems.RED_STAINED_CLEAR_GLASS.get(), Items.DYE.red())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.white(), HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.DYE.white())
+        offerStainedClearGlassRecipes(exporter, Items.STAINED_GLASS.yellow(), HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.DYE.yellow())
 
         // clear glass panes
         offerPaneRecipe(exporter, "clear_glass_pane", HybridBlocksItems.CLEAR_GLASS_PANE.get(), HybridBlocksItems.CLEAR_GLASS.get())
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.BLUE_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.BROWN_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS.get(), Items.CYAN_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS.get(), Items.GRAY_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS.get(), Items.GREEN_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIME_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIME_STAINED_CLEAR_GLASS.get(), Items.LIME_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS.get(), Items.MAGENTA_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS.get(), Items.ORANGE_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PINK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PINK_STAINED_CLEAR_GLASS.get(), Items.PINK_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS.get(), Items.PURPLE_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.RED_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.RED_STAINED_CLEAR_GLASS.get(), Items.RED_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.WHITE_DYE)
-        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.YELLOW_DYE)
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.DYE.black())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.DYE.blue())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.DYE.brown())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.CYAN_STAINED_CLEAR_GLASS.get(), Items.DYE.cyan())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GRAY_STAINED_CLEAR_GLASS.get(), Items.DYE.gray())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.GREEN_STAINED_CLEAR_GLASS.get(), Items.DYE.green())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_BLUE_STAINED_CLEAR_GLASS.get(), Items.DYE.lightBlue())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIGHT_GRAY_STAINED_CLEAR_GLASS.get(), Items.DYE.lightGray())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.LIME_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.LIME_STAINED_CLEAR_GLASS.get(), Items.DYE.lime())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.MAGENTA_STAINED_CLEAR_GLASS.get(), Items.DYE.magenta())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.ORANGE_STAINED_CLEAR_GLASS.get(), Items.DYE.orange())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PINK_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PINK_STAINED_CLEAR_GLASS.get(), Items.DYE.pink())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.PURPLE_STAINED_CLEAR_GLASS.get(), Items.DYE.purple())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.RED_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.RED_STAINED_CLEAR_GLASS.get(), Items.DYE.red())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.WHITE_STAINED_CLEAR_GLASS.get(), Items.DYE.white())
+        offerStainedClearGlassPaneRecipes(exporter, HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS_PANE.get(), HybridBlocksItems.YELLOW_STAINED_CLEAR_GLASS.get(), Items.DYE.yellow())
 
         // mossy bricks
         offerMossingRecipes(exporter, "mossy_bricks", HybridBlocksItems.MOSSY_BRICKS.get(), Items.BRICKS)
@@ -345,39 +345,39 @@ private class HybridRecipes(
         offerMossingRecipes(exporter, "mossy_chimneystone_shingles", HybridBlocksItems.MOSSY_CHIMNEYSTONE_SHINGLES.get(), HybridBlocksItems.CHIMNEYSTONE_SHINGLES.get())
 
         // stained mossy bricks
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get(), Items.BLACK_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get(), Items.BLUE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.MOSSY_BROWN_BRICKS.get(), Items.BROWN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.MOSSY_CYAN_BRICKS.get(), Items.CYAN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.MOSSY_GRAY_BRICKS.get(), Items.GRAY_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.MOSSY_GREEN_BRICKS.get(), Items.GREEN_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_BRICKS.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_BRICKS.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.MOSSY_LIME_BRICKS.get(), Items.LIME_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.MOSSY_MAGENTA_BRICKS.get(), Items.MAGENTA_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.MOSSY_ORANGE_BRICKS.get(), Items.ORANGE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.MOSSY_PINK_BRICKS.get(), Items.PINK_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.MOSSY_PURPLE_BRICKS.get(), Items.PURPLE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.MOSSY_RED_BRICKS.get(), Items.RED_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get(), Items.WHITE_DYE)
-        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get(), Items.YELLOW_DYE)
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLACK_BRICKS.get(), HybridBlocksItems.MOSSY_BLACK_BRICKS.get(), Items.DYE.black())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BLUE_BRICKS.get(), HybridBlocksItems.MOSSY_BLUE_BRICKS.get(), Items.DYE.blue())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.BROWN_BRICKS.get(), HybridBlocksItems.MOSSY_BROWN_BRICKS.get(), Items.DYE.brown())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.CYAN_BRICKS.get(), HybridBlocksItems.MOSSY_CYAN_BRICKS.get(), Items.DYE.cyan())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GRAY_BRICKS.get(), HybridBlocksItems.MOSSY_GRAY_BRICKS.get(), Items.DYE.gray())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.GREEN_BRICKS.get(), HybridBlocksItems.MOSSY_GREEN_BRICKS.get(), Items.DYE.green())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_BRICKS.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_BRICKS.get(), Items.DYE.lightBlue())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_BRICKS.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_BRICKS.get(), Items.DYE.lightGray())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.LIME_BRICKS.get(), HybridBlocksItems.MOSSY_LIME_BRICKS.get(), Items.DYE.lime())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.MAGENTA_BRICKS.get(), HybridBlocksItems.MOSSY_MAGENTA_BRICKS.get(), Items.DYE.magenta())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.ORANGE_BRICKS.get(), HybridBlocksItems.MOSSY_ORANGE_BRICKS.get(), Items.DYE.orange())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PINK_BRICKS.get(), HybridBlocksItems.MOSSY_PINK_BRICKS.get(), Items.DYE.pink())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.PURPLE_BRICKS.get(), HybridBlocksItems.MOSSY_PURPLE_BRICKS.get(), Items.DYE.purple())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.RED_BRICKS.get(), HybridBlocksItems.MOSSY_RED_BRICKS.get(), Items.DYE.red())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.WHITE_BRICKS.get(), HybridBlocksItems.MOSSY_WHITE_BRICKS.get(), Items.DYE.white())
+        offerStainedMossyBricksRecipes(exporter, HybridBlocksItems.YELLOW_BRICKS.get(), HybridBlocksItems.MOSSY_YELLOW_BRICKS.get(), Items.DYE.yellow())
 
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.MOSSY_BLACK_SHINGLES.get(), Items.BLACK_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_BLUE_SHINGLES.get(), Items.BLUE_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.MOSSY_BROWN_SHINGLES.get(), Items.BROWN_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.MOSSY_CYAN_SHINGLES.get(), Items.CYAN_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_GRAY_SHINGLES.get(), Items.GRAY_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.MOSSY_GREEN_SHINGLES.get(), Items.GREEN_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLES.get(), Items.LIGHT_BLUE_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLES.get(), Items.LIGHT_GRAY_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.MOSSY_LIME_SHINGLES.get(), Items.LIME_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MOSSY_MAGENTA_SHINGLES.get(), Items.MAGENTA_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.MOSSY_ORANGE_SHINGLES.get(), Items.ORANGE_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.MOSSY_PINK_SHINGLES.get(), Items.PINK_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.MOSSY_PURPLE_SHINGLES.get(), Items.PURPLE_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.MOSSY_RED_SHINGLES.get(), Items.RED_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.MOSSY_WHITE_SHINGLES.get(), Items.WHITE_DYE)
-        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.MOSSY_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLACK_SHINGLES.get(), HybridBlocksItems.MOSSY_BLACK_SHINGLES.get(), Items.DYE.black())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_BLUE_SHINGLES.get(), Items.DYE.blue())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.BROWN_SHINGLES.get(), HybridBlocksItems.MOSSY_BROWN_SHINGLES.get(), Items.DYE.brown())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.CYAN_SHINGLES.get(), HybridBlocksItems.MOSSY_CYAN_SHINGLES.get(), Items.DYE.cyan())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_GRAY_SHINGLES.get(), Items.DYE.gray())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.GREEN_SHINGLES.get(), HybridBlocksItems.MOSSY_GREEN_SHINGLES.get(), Items.DYE.green())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_BLUE_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_BLUE_SHINGLES.get(), Items.DYE.lightBlue())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIGHT_GRAY_SHINGLES.get(), HybridBlocksItems.MOSSY_LIGHT_GRAY_SHINGLES.get(), Items.DYE.lightGray())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.LIME_SHINGLES.get(), HybridBlocksItems.MOSSY_LIME_SHINGLES.get(), Items.DYE.lime())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.MAGENTA_SHINGLES.get(), HybridBlocksItems.MOSSY_MAGENTA_SHINGLES.get(), Items.DYE.magenta())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.ORANGE_SHINGLES.get(), HybridBlocksItems.MOSSY_ORANGE_SHINGLES.get(), Items.DYE.orange())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PINK_SHINGLES.get(), HybridBlocksItems.MOSSY_PINK_SHINGLES.get(), Items.DYE.pink())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.PURPLE_SHINGLES.get(), HybridBlocksItems.MOSSY_PURPLE_SHINGLES.get(), Items.DYE.purple())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.RED_SHINGLES.get(), HybridBlocksItems.MOSSY_RED_SHINGLES.get(), Items.DYE.red())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.MOSSY_WHITE_SHINGLES.get(), Items.DYE.white())
+        offerStainedMossyShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.MOSSY_YELLOW_SHINGLES.get(), Items.DYE.yellow())
     }
 
     private fun convertBetween(to: Item, from: Item): String {
@@ -709,97 +709,97 @@ private class HybridRecipes(
         //#region Concrete
 
         StonetypeBlocksRecipeSets(
-            Items.BLACK_CONCRETE,
+            Items.CONCRETE.black(),
             HybridBlocksItems.BLACK_CONCRETE_STAIRS,
             HybridBlocksItems.BLACK_CONCRETE_SLAB,
             HybridBlocksItems.BLACK_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.BLUE_CONCRETE,
+            Items.CONCRETE.blue(),
             HybridBlocksItems.BLUE_CONCRETE_STAIRS,
             HybridBlocksItems.BLUE_CONCRETE_SLAB,
             HybridBlocksItems.BLUE_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.BROWN_CONCRETE,
+            Items.CONCRETE.brown(),
             HybridBlocksItems.BROWN_CONCRETE_STAIRS,
             HybridBlocksItems.BROWN_CONCRETE_SLAB,
             HybridBlocksItems.BROWN_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.CYAN_CONCRETE,
+            Items.CONCRETE.cyan(),
             HybridBlocksItems.CYAN_CONCRETE_STAIRS,
             HybridBlocksItems.CYAN_CONCRETE_SLAB,
             HybridBlocksItems.CYAN_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.GRAY_CONCRETE,
+            Items.CONCRETE.gray(),
             HybridBlocksItems.GRAY_CONCRETE_STAIRS,
             HybridBlocksItems.GRAY_CONCRETE_SLAB,
             HybridBlocksItems.GRAY_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.GREEN_CONCRETE,
+            Items.CONCRETE.green(),
             HybridBlocksItems.GREEN_CONCRETE_STAIRS,
             HybridBlocksItems.GREEN_CONCRETE_SLAB,
             HybridBlocksItems.GREEN_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.LIGHT_BLUE_CONCRETE,
+            Items.CONCRETE.lightBlue(),
             HybridBlocksItems.LIGHT_BLUE_CONCRETE_STAIRS,
             HybridBlocksItems.LIGHT_BLUE_CONCRETE_SLAB,
             HybridBlocksItems.LIGHT_BLUE_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.LIGHT_GRAY_CONCRETE,
+            Items.CONCRETE.lightGray(),
             HybridBlocksItems.LIGHT_GRAY_CONCRETE_STAIRS,
             HybridBlocksItems.LIGHT_GRAY_CONCRETE_SLAB,
             HybridBlocksItems.LIGHT_GRAY_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.LIME_CONCRETE,
+            Items.CONCRETE.lime(),
             HybridBlocksItems.LIME_CONCRETE_STAIRS,
             HybridBlocksItems.LIME_CONCRETE_SLAB,
             HybridBlocksItems.LIME_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.MAGENTA_CONCRETE,
+            Items.CONCRETE.magenta(),
             HybridBlocksItems.MAGENTA_CONCRETE_STAIRS,
             HybridBlocksItems.MAGENTA_CONCRETE_SLAB,
             HybridBlocksItems.MAGENTA_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.ORANGE_CONCRETE,
+            Items.CONCRETE.orange(),
             HybridBlocksItems.ORANGE_CONCRETE_STAIRS,
             HybridBlocksItems.ORANGE_CONCRETE_SLAB,
             HybridBlocksItems.ORANGE_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.PINK_CONCRETE,
+            Items.CONCRETE.pink(),
             HybridBlocksItems.PINK_CONCRETE_STAIRS,
             HybridBlocksItems.PINK_CONCRETE_SLAB,
             HybridBlocksItems.PINK_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.PURPLE_CONCRETE,
+            Items.CONCRETE.purple(),
             HybridBlocksItems.PURPLE_CONCRETE_STAIRS,
             HybridBlocksItems.PURPLE_CONCRETE_SLAB,
             HybridBlocksItems.PURPLE_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.RED_CONCRETE,
+            Items.CONCRETE.red(),
             HybridBlocksItems.RED_CONCRETE_STAIRS,
             HybridBlocksItems.RED_CONCRETE_SLAB,
             HybridBlocksItems.RED_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.WHITE_CONCRETE,
+            Items.CONCRETE.white(),
             HybridBlocksItems.WHITE_CONCRETE_STAIRS,
             HybridBlocksItems.WHITE_CONCRETE_SLAB,
             HybridBlocksItems.WHITE_CONCRETE_WALL
         ),
         StonetypeBlocksRecipeSets(
-            Items.YELLOW_CONCRETE,
+            Items.CONCRETE.yellow(),
             HybridBlocksItems.YELLOW_CONCRETE_STAIRS,
             HybridBlocksItems.YELLOW_CONCRETE_SLAB,
             HybridBlocksItems.YELLOW_CONCRETE_WALL
@@ -3478,97 +3478,97 @@ private class HybridRecipes(
     )
 
     private val WHITE_WOOL_SET = WoolRecipeSet(
-        Items.WHITE_WOOL,
+        Items.WOOL.white(),
         HybridBlocksItems.WHITE_WOOL_STAIRS,
         HybridBlocksItems.WHITE_WOOL_SLAB,
     )
 
     private val ORANGE_WOOL_SET = WoolRecipeSet(
-        Items.ORANGE_WOOL,
+        Items.WOOL.orange(),
         HybridBlocksItems.ORANGE_WOOL_STAIRS,
         HybridBlocksItems.ORANGE_WOOL_SLAB,
     )
 
     private val MAGENTA_WOOL_SET = WoolRecipeSet(
-        Items.MAGENTA_WOOL,
+        Items.WOOL.magenta(),
         HybridBlocksItems.MAGENTA_WOOL_STAIRS,
         HybridBlocksItems.MAGENTA_WOOL_SLAB,
     )
 
     private val LIGHT_BLUE_WOOL_SET = WoolRecipeSet(
-        Items.LIGHT_BLUE_WOOL,
+        Items.WOOL.lightBlue(),
         HybridBlocksItems.LIGHT_BLUE_WOOL_STAIRS,
         HybridBlocksItems.LIGHT_BLUE_WOOL_SLAB,
     )
 
     private val YELLOW_WOOL_SET = WoolRecipeSet(
-        Items.YELLOW_WOOL,
+        Items.WOOL.yellow(),
         HybridBlocksItems.YELLOW_WOOL_STAIRS,
         HybridBlocksItems.YELLOW_WOOL_SLAB,
     )
 
     private val LIME_WOOL_SET = WoolRecipeSet(
-        Items.LIME_WOOL,
+        Items.WOOL.lime(),
         HybridBlocksItems.LIME_WOOL_STAIRS,
         HybridBlocksItems.LIME_WOOL_SLAB,
     )
 
     private val PINK_WOOL_SET = WoolRecipeSet(
-        Items.PINK_WOOL,
+        Items.WOOL.pink(),
         HybridBlocksItems.PINK_WOOL_STAIRS,
         HybridBlocksItems.PINK_WOOL_SLAB,
     )
 
     private val GRAY_WOOL_SET = WoolRecipeSet(
-        Items.GRAY_WOOL,
+        Items.WOOL.gray(),
         HybridBlocksItems.GRAY_WOOL_STAIRS,
         HybridBlocksItems.GRAY_WOOL_SLAB,
     )
 
     private val LIGHT_GRAY_WOOL_SET = WoolRecipeSet(
-        Items.LIGHT_GRAY_WOOL,
+        Items.WOOL.lightGray(),
         HybridBlocksItems.LIGHT_GRAY_WOOL_STAIRS,
         HybridBlocksItems.LIGHT_GRAY_WOOL_SLAB,
     )
 
     private val CYAN_WOOL_SET = WoolRecipeSet(
-        Items.CYAN_WOOL,
+        Items.WOOL.cyan(),
         HybridBlocksItems.CYAN_WOOL_STAIRS,
         HybridBlocksItems.CYAN_WOOL_SLAB,
     )
 
     private val PURPLE_WOOL_SET = WoolRecipeSet(
-        Items.PURPLE_WOOL,
+        Items.WOOL.purple(),
         HybridBlocksItems.PURPLE_WOOL_STAIRS,
         HybridBlocksItems.PURPLE_WOOL_SLAB,
     )
 
     private val BLUE_WOOL_SET = WoolRecipeSet(
-        Items.BLUE_WOOL,
+        Items.WOOL.blue(),
         HybridBlocksItems.BLUE_WOOL_STAIRS,
         HybridBlocksItems.BLUE_WOOL_SLAB,
     )
 
     private val BROWN_WOOL_SET = WoolRecipeSet(
-        Items.BROWN_WOOL,
+        Items.WOOL.brown(),
         HybridBlocksItems.BROWN_WOOL_STAIRS,
         HybridBlocksItems.BROWN_WOOL_SLAB,
     )
 
     private val GREEN_WOOL_SET = WoolRecipeSet(
-        Items.GREEN_WOOL,
+        Items.WOOL.green(),
         HybridBlocksItems.GREEN_WOOL_STAIRS,
         HybridBlocksItems.GREEN_WOOL_SLAB,
     )
 
     private val RED_WOOL_SET = WoolRecipeSet(
-        Items.RED_WOOL,
+        Items.WOOL.red(),
         HybridBlocksItems.RED_WOOL_STAIRS,
         HybridBlocksItems.RED_WOOL_SLAB,
     )
 
     private val BLACK_WOOL_SET = WoolRecipeSet(
-        Items.BLACK_WOOL,
+        Items.WOOL.black(),
         HybridBlocksItems.BLACK_WOOL_STAIRS,
         HybridBlocksItems.BLACK_WOOL_SLAB,
     )

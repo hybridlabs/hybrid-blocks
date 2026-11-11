@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "plain_concrete_walls",
   "key": {
     "#": "minecraft:yellow_concrete"

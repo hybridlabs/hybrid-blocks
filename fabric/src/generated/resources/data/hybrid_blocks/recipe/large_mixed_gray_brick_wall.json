@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "large_mixed_brick_walls",
   "key": {
     "#": "hybrid_blocks:large_mixed_gray_bricks"

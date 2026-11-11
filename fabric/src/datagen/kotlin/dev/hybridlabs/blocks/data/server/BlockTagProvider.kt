@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.core.registries.Registries
+import net.minecraft.resources.ResourceKey
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.level.block.Block
 import java.util.concurrent.CompletableFuture
@@ -27,21 +29,21 @@ class BlockTagProvider(
             if (setOf(
                     "wall"
                 ).any { wallPath.endsWith(it) }) {
-                valueLookupBuilder(BlockTags.WALLS).add(block)
+                builder(BlockTags.WALLS).add(ResourceKey.create(Registries.BLOCK, id))
             }
 
             val slabPath = id.path
             if (setOf(
                     "slab"
                 ).any { slabPath.endsWith(it) }) {
-                valueLookupBuilder(BlockTags.SLABS).add(block)
+                builder(BlockTags.SLABS).add(ResourceKey.create(Registries.BLOCK, id))
             }
 
             val stairsPath = id.path
             if (setOf(
                     "stairs"
                 ).any { stairsPath.endsWith(it) }) {
-                valueLookupBuilder(BlockTags.STAIRS).add(block)
+                builder(BlockTags.STAIRS).add(ResourceKey.create(Registries.BLOCK, id))
             }
 
             val pickaxePath = id.path
@@ -59,14 +61,14 @@ class BlockTagProvider(
                     "polished",
                     "concrete",
                 ).any { pickaxePath.contains(it) }) {
-                valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(block)
+                builder(BlockTags.MINEABLE_WITH_PICKAXE).add(ResourceKey.create(Registries.BLOCK, id))
             }
 
             val shearsPath = id.path
             if (setOf(
                     "wool",
                 ).any { shearsPath.contains(it) }) {
-                valueLookupBuilder(BlockTags.WOOL).add(block)
+                builder(BlockTags.WOOL).add(ResourceKey.create(Registries.BLOCK, id))
             }
         }
     }

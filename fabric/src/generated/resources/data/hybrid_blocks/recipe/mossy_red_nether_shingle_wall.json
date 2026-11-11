@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "mossy_shingle_walls",
   "key": {
     "#": "hybrid_blocks:mossy_red_nether_shingles"

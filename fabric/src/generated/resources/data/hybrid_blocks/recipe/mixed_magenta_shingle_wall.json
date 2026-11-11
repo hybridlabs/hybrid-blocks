@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "mixed_shingle_walls",
   "key": {
     "#": "hybrid_blocks:mixed_magenta_shingles"

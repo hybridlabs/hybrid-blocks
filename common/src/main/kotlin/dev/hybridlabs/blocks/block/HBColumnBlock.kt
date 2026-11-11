@@ -10,7 +10,7 @@ import net.minecraft.world.level.ScheduledTickAccess
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
-import net.minecraft.world.level.block.state.properties.DripstoneThickness
+import net.minecraft.world.level.block.state.properties.SpeleothemThickness
 import net.minecraft.world.level.block.state.properties.EnumProperty
 import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.VoxelShape
@@ -23,7 +23,7 @@ class HBColumnBlock(
     init {
         this.registerDefaultState(
             stateDefinition.any()
-                .setValue(THICKNESS, DripstoneThickness.TIP)
+                .setValue(THICKNESS, SpeleothemThickness.TIP)
         )
     }
 
@@ -58,18 +58,18 @@ class HBColumnBlock(
         }
     }
 
-    private fun getThickness(world: LevelReader, currentPos: BlockPos): DripstoneThickness {
+    private fun getThickness(world: LevelReader, currentPos: BlockPos): SpeleothemThickness {
         val blockAbove = world.getBlockState(currentPos.above())
 
         return if (blockAbove.`is`(this)) {
             val blockBelow = world.getBlockState(currentPos.below())
             if (blockBelow.`is`(this)) {
-                DripstoneThickness.MIDDLE
+                SpeleothemThickness.MIDDLE
             } else {
-                DripstoneThickness.BASE
+                SpeleothemThickness.BASE
             }
         } else {
-            DripstoneThickness.TIP
+            SpeleothemThickness.TIP
         }
     }
 
@@ -99,12 +99,12 @@ class HBColumnBlock(
     }
 
     companion object {
-        val THICKNESS: EnumProperty<DripstoneThickness> = EnumProperty.create(
+        val THICKNESS: EnumProperty<SpeleothemThickness> = EnumProperty.create(
             "thickness",
-            DripstoneThickness::class.java,
-            DripstoneThickness.TIP,
-            DripstoneThickness.MIDDLE,
-            DripstoneThickness.BASE
+            SpeleothemThickness::class.java,
+            SpeleothemThickness.TIP,
+            SpeleothemThickness.MIDDLE,
+            SpeleothemThickness.BASE
         )
 
         private val SHAPE = box(2.5, 0.0, 2.5, 13.5, 16.0, 13.5)

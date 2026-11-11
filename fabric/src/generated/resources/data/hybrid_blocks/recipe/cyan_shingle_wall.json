@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "plain_shingle_walls",
   "key": {
     "#": "hybrid_blocks:cyan_shingles"

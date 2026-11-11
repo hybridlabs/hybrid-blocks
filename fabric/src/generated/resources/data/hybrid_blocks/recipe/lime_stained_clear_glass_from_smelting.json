@@ -1,7 +1,5 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
-  "cookingtime": 200,
   "experience": 0.1,
   "group": "stained_clear_glass",
   "ingredient": "minecraft:lime_stained_glass",

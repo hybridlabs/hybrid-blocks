@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "cracked_brick_walls",
   "key": {
     "#": "hybrid_blocks:cracked_green_bricks"
