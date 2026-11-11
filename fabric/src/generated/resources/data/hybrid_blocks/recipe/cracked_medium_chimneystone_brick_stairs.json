@@ -3,9 +3,7 @@
   "category": "building",
   "group": "cracked_medium_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_medium_chimneystone_bricks"
-    }
+    "#": "hybrid_blocks:cracked_medium_chimneystone_bricks"
   },
   "pattern": [
     "#  ",

@@ -2,6 +2,7 @@ package dev.hybridlabs.blocks.block.entity
 
 import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
+import dev.hybridlabs.blocks.platform.services.BlockEntityTypeFactory
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.entity.BlockEntity
@@ -43,15 +44,13 @@ object HBBlockEntityTypes {
             HybridBlocksBlocks.CHIMNEYSTONE_CHIMNEY,
         )
 
-    fun <T : BlockEntity?> register(
+    fun <T : BlockEntity> register(
         id: String,
-        factory: BlockEntityType.BlockEntitySupplier<T>, vararg validBlocks: RegistryObject<Block>?,
-    ): RegistryObject<BlockEntityType<T?>> {
+        factory: BlockEntityType.BlockEntitySupplier<T>, vararg validBlocks: RegistryObject<Block>,
+    ): RegistryObject<BlockEntityType<T>> {
 
         return CommonClass.BLOCK_ENTITY_TYPES.register(id) {
-            val blocks = validBlocks.map { block -> block?.get() }.toTypedArray()
-            val builder = BlockEntityType.Builder.of(factory, *blocks)
-            builder.build(null)
+            BlockEntityTypeFactory.INSTANCE.create(factory, *validBlocks.map { block -> block.get() }.toTypedArray())
         }
     }
 }

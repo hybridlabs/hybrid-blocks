@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:block/template_glass_pane_side_alt",
   "textures": {
-    "edge": "hybrid_blocks:block/clear_glass_pane_top",
-    "pane": "hybrid_blocks:block/clear_glass"
+    "edge": {
+      "force_translucent": true,
+      "sprite": "hybrid_blocks:block/clear_glass_pane_top"
+    },
+    "pane": {
+      "force_translucent": true,
+      "sprite": "hybrid_blocks:block/clear_glass"
+    }
   }
 }

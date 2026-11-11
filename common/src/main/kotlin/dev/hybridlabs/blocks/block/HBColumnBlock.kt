@@ -2,10 +2,11 @@ package dev.hybridlabs.blocks.block
 
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
+import net.minecraft.util.RandomSource
 import net.minecraft.world.item.context.BlockPlaceContext
 import net.minecraft.world.level.BlockGetter
-import net.minecraft.world.level.LevelAccessor
 import net.minecraft.world.level.LevelReader
+import net.minecraft.world.level.ScheduledTickAccess
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.StateDefinition
@@ -41,11 +42,13 @@ class HBColumnBlock(
 
     override fun updateShape(
         state: BlockState,
-        direction: Direction,
-        neighborState: BlockState,
-        world: LevelAccessor,
+        world: LevelReader,
+        scheduledTickAccess: ScheduledTickAccess,
         pos: BlockPos,
+        direction: Direction,
         neighborPos: BlockPos,
+        neighborState: BlockState,
+        random: RandomSource,
     ): BlockState {
 
         return if (direction != Direction.DOWN && direction != Direction.UP) {
@@ -76,7 +79,7 @@ class HBColumnBlock(
         pos: BlockPos,
         context: CollisionContext,
     ): VoxelShape {
-        val offset = state.getOffset(world, pos)
+        val offset = state.getOffset(pos)
         return SHAPE.move(offset.x, 0.0, offset.z)
     }
 
@@ -86,12 +89,12 @@ class HBColumnBlock(
         pos: BlockPos,
         context: CollisionContext,
     ): VoxelShape {
-        val offset = state.getOffset(world, pos)
+        val offset = state.getOffset(pos)
         return SHAPE.move(offset.x, 0.0, offset.z)
     }
 
 
-    override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block?, BlockState?>) {
+    override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {
         builder.add(THICKNESS)
     }
 

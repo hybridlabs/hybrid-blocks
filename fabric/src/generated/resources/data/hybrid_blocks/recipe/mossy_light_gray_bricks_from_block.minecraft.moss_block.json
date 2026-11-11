@@ -3,15 +3,10 @@
   "category": "building",
   "group": "stained_mossy_bricks_from_moss",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:light_gray_bricks"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "hybrid_blocks:light_gray_bricks",
+    "minecraft:moss_block"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_light_gray_bricks"
   }
 }

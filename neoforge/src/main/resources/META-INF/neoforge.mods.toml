@@ -1,6 +1,6 @@
 modLoader = "kotlinforforge"
 
-loaderVersion = "[4,)"
+loaderVersion = "[6,)"
 license = "${license}"
 issueTrackerURL="https://github.com/hybridlabs/hybrid-blocks/issues"
 

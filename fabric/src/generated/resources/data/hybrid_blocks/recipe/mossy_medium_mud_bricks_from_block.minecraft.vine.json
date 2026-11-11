@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_mud_bricks",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:medium_mud_bricks"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:medium_mud_bricks",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_medium_mud_bricks"
   }
 }

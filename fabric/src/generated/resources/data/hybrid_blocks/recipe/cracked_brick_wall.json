@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "cracked_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_bricks"
-    }
+    "#": "hybrid_blocks:cracked_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:cracked_brick_wall"
   }
 }

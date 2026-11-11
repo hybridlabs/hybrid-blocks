@@ -2,16 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:blue_quartz_slab"
-    }
+    "#": "hybrid_blocks:blue_quartz_slab"
   },
   "pattern": [
     "#",
     "#"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:chiseled_blue_quartz_block"
   }
 }

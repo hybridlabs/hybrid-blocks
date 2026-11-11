@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_quartz_pillar",
   "key": {
-    "#": {
-      "item": "minecraft:quartz_pillar"
-    },
-    "X": {
-      "item": "minecraft:lime_dye"
-    }
+    "#": "minecraft:quartz_pillar",
+    "X": "minecraft:lime_dye"
   },
   "pattern": [
     "###",

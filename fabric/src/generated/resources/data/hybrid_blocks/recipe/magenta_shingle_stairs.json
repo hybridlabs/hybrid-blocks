@@ -3,9 +3,7 @@
   "category": "building",
   "group": "plain_shingle_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:magenta_shingles"
-    }
+    "#": "hybrid_blocks:magenta_shingles"
   },
   "pattern": [
     "#  ",

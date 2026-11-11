@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_shingle_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:shingle_stairs"
-    },
-    "X": {
-      "item": "minecraft:orange_dye"
-    }
+    "#": "hybrid_blocks:shingle_stairs",
+    "X": "minecraft:orange_dye"
   },
   "pattern": [
     "###",

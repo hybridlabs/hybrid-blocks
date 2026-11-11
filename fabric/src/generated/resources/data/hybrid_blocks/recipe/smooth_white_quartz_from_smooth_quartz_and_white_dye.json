@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_smooth_quartz",
   "key": {
-    "#": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "X": {
-      "item": "minecraft:white_dye"
-    }
+    "#": "minecraft:smooth_quartz",
+    "X": "minecraft:white_dye"
   },
   "pattern": [
     "###",

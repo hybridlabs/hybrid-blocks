@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_yellow_brinestone_shingles",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:yellow_brinestone_shingles"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:yellow_brinestone_shingles",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_yellow_brinestone_shingles"
   }
 }

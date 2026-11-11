@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_cracked_shingles",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_shingles"
-    },
-    "X": {
-      "item": "minecraft:yellow_dye"
-    }
+    "#": "hybrid_blocks:cracked_shingles",
+    "X": "minecraft:yellow_dye"
   },
   "pattern": [
     "###",

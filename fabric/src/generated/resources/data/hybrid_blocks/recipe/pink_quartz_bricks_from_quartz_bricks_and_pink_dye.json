@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_quartz_bricks",
   "key": {
-    "#": {
-      "item": "minecraft:quartz_bricks"
-    },
-    "X": {
-      "item": "minecraft:pink_dye"
-    }
+    "#": "minecraft:quartz_bricks",
+    "X": "minecraft:pink_dye"
   },
   "pattern": [
     "###",

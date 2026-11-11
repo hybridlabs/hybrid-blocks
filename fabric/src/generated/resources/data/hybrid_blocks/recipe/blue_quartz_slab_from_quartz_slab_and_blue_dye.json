@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_quartz_slab",
   "key": {
-    "#": {
-      "item": "minecraft:quartz_slab"
-    },
-    "X": {
-      "item": "minecraft:blue_dye"
-    }
+    "#": "minecraft:quartz_slab",
+    "X": "minecraft:blue_dye"
   },
   "pattern": [
     "###",

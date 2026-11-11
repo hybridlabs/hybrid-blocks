@@ -3,9 +3,7 @@
   "category": "building",
   "group": "chimney",
   "key": {
-    "#": {
-      "item": "minecraft:polished_blackstone"
-    }
+    "#": "minecraft:polished_blackstone"
   },
   "pattern": [
     "# #",
@@ -13,7 +11,6 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:polished_blackstone_brick_chimney"
   }
 }

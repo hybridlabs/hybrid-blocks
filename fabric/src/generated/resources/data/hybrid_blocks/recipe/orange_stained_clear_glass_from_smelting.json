@@ -1,12 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "blocks",
+  "category": "misc",
   "cookingtime": 200,
   "experience": 0.1,
   "group": "stained_clear_glass",
-  "ingredient": {
-    "item": "minecraft:orange_stained_glass"
-  },
+  "ingredient": "minecraft:orange_stained_glass",
   "result": {
     "id": "hybrid_blocks:orange_stained_clear_glass"
   }

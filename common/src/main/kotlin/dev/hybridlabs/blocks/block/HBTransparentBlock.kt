@@ -33,8 +33,6 @@ open class HBTransparentBlock(properties: Properties) : HalfTransparentBlock(pro
 
     override fun propagatesSkylightDown(
         blockState: BlockState,
-        blockGetter: BlockGetter,
-        blockPos: BlockPos,
     ): Boolean {
         return true
     }

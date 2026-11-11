@@ -4,6 +4,8 @@ import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import java.util.function.Supplier
+import net.minecraft.core.registries.Registries
+import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
@@ -2332,7 +2334,12 @@ object HybridBlocksItems {
     //#endregion
 
     private fun item(block: RegistryObject<Block>, id: String = block.id.path): RegistryObject<BlockItem> =
-        register(id) { BlockItem(block.get(), Item.Properties()) }
+        register(id) {
+            BlockItem(
+                block.get(),
+                Item.Properties().setId(ResourceKey.create(Registries.ITEM, CommonClass.locate(id)))
+            )
+        }
 
     private fun <T : Item> register(id: String, item: Supplier<T>): RegistryObject<T> {
         return CommonClass.ITEMS.register(id, item)

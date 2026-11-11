@@ -3,9 +3,7 @@
   "category": "building",
   "group": "smooth_quartz_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:smooth_cyan_quartz"
-    }
+    "#": "hybrid_blocks:smooth_cyan_quartz"
   },
   "pattern": [
     "###"

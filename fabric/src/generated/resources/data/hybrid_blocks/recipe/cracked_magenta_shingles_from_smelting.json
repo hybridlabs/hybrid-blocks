@@ -1,12 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "blocks",
+  "category": "misc",
   "cookingtime": 200,
   "experience": 0.1,
   "group": "stained_cracked_shingles",
-  "ingredient": {
-    "item": "hybrid_blocks:magenta_shingles"
-  },
+  "ingredient": "hybrid_blocks:magenta_shingles",
   "result": {
     "id": "hybrid_blocks:cracked_magenta_shingles"
   }

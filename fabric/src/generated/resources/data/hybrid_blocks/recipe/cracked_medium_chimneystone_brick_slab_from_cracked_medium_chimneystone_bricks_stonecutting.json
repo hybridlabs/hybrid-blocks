@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "hybrid_blocks:cracked_medium_chimneystone_bricks"
-  },
+  "ingredient": "hybrid_blocks:cracked_medium_chimneystone_bricks",
   "result": {
     "count": 2,
     "id": "hybrid_blocks:cracked_medium_chimneystone_brick_slab"

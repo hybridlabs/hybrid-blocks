@@ -3,9 +3,7 @@
   "category": "building",
   "group": "plain_brick_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:black_bricks"
-    }
+    "#": "hybrid_blocks:black_bricks"
   },
   "pattern": [
     "###"

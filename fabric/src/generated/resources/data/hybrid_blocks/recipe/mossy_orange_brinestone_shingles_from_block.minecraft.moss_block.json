@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_orange_brinestone_shingles",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:orange_brinestone_shingles"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "hybrid_blocks:orange_brinestone_shingles",
+    "minecraft:moss_block"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_orange_brinestone_shingles"
   }
 }

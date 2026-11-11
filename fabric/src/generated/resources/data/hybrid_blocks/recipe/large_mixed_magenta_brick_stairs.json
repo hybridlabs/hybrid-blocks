@@ -3,9 +3,7 @@
   "category": "building",
   "group": "large_mixed_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:large_mixed_magenta_bricks"
-    }
+    "#": "hybrid_blocks:large_mixed_magenta_bricks"
   },
   "pattern": [
     "#  ",

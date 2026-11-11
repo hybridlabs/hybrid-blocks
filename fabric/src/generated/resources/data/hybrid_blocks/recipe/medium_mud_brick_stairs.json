@@ -3,9 +3,7 @@
   "category": "building",
   "group": "medium_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:medium_mud_bricks"
-    }
+    "#": "hybrid_blocks:medium_mud_bricks"
   },
   "pattern": [
     "#  ",

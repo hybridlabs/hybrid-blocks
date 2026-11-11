@@ -3,15 +3,10 @@
   "category": "building",
   "group": "stained_mossy_bricks_from_vines",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:yellow_bricks"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:yellow_bricks",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_yellow_bricks"
   }
 }

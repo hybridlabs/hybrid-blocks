@@ -3,15 +3,10 @@
   "category": "building",
   "group": "stained_mossy_shingles_from_vines",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:brown_shingles"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:brown_shingles",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_brown_shingles"
   }
 }

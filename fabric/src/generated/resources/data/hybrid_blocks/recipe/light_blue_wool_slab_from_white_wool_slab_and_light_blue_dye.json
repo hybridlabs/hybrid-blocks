@@ -3,12 +3,8 @@
   "category": "building",
   "group": "dyed_wool_slab",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:white_wool_slab"
-    },
-    "X": {
-      "item": "minecraft:light_blue_dye"
-    }
+    "#": "hybrid_blocks:white_wool_slab",
+    "X": "minecraft:light_blue_dye"
   },
   "pattern": [
     "###",

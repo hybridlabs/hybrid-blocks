@@ -4,9 +4,9 @@ plugins {
 }
 
 dependencies {
-    modApi("com.terraformersmc:modmenu:${modmenu_version}")
+    api("com.terraformersmc:modmenu:${modmenu_version}")
 
-    modRuntimeOnly "io.github.flemmli97:debugutils:$minecraft_version-$debug_utils_version-fabric"
+    runtimeOnly "io.github.flemmli97:debugutils:$minecraft_version-$debug_utils_version-fabric"
 }
 
 fabricApi {
@@ -27,17 +27,17 @@ loom.mods.named("$mod_id") {
 }
 
 dependencies {
-    // Datagen-only mods. These are on the datagen source set alone: they are absent from the
-    // main compile classpath, from remapJar, and from the published POM.
-    modDatagenImplementation "maven.modrinth:hybrid-aquatic:${hybrid_aquatic_version}"
-
-    // Their hard dependencies. Loader refuses to start the datagen run without these.
-    modDatagenRuntimeOnly "maven.modrinth:geckolib:${geckolib_version}"
-    modDatagenRuntimeOnly "maven.modrinth:biolith:${biolith_version}"
-    modDatagenRuntimeOnly "maven.modrinth:trinkets:${trinkets_version}"
-    modDatagenRuntimeOnly "maven.modrinth:lithostitched:${lithostitched_version}"
-    modDatagenRuntimeOnly "org.ladysnake.cardinal-components-api:cardinal-components-base:${cardinal_components_version}"
-    modDatagenRuntimeOnly "org.ladysnake.cardinal-components-api:cardinal-components-entity:${cardinal_components_version}"
+    // Datagen-only mods are dormant: hybrid-aquatic and trinkets (and their hard deps
+    // geckolib, biolith, lithostitched, cardinal-components) have no 26.1 releases yet.
+    // Keep their Modrinth version IDs updated in gradle.properties and re-enable here
+    // once they update. None of these are needed by Hybrid Blocks' own datagen.
+    //modDatagenImplementation "maven.modrinth:hybrid-aquatic:${hybrid_aquatic_version}"
+    //modDatagenRuntimeOnly "maven.modrinth:geckolib:${geckolib_version}"
+    //modDatagenRuntimeOnly "maven.modrinth:biolith:${biolith_version}"
+    //modDatagenRuntimeOnly "maven.modrinth:trinkets:${trinkets_version}"
+    //modDatagenRuntimeOnly "maven.modrinth:lithostitched:${lithostitched_version}"
+    //modDatagenRuntimeOnly "org.ladysnake.cardinal-components-api:cardinal-components-base:${cardinal_components_version}"
+    //modDatagenRuntimeOnly "org.ladysnake.cardinal-components-api:cardinal-components-entity:${cardinal_components_version}"
 }
 
 publishMods.platforms.configureEach {

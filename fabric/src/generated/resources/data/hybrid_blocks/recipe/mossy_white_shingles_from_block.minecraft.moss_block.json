@@ -3,15 +3,10 @@
   "category": "building",
   "group": "stained_mossy_shingles_from_moss",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:white_shingles"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "hybrid_blocks:white_shingles",
+    "minecraft:moss_block"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_white_shingles"
   }
 }

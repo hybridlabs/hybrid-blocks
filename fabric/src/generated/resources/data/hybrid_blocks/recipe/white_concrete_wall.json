@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "plain_concrete_walls",
   "key": {
-    "#": {
-      "item": "minecraft:white_concrete"
-    }
+    "#": "minecraft:white_concrete"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:white_concrete_wall"
   }
 }

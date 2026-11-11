@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "cracked_medium_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_medium_polished_blackstone_bricks"
-    }
+    "#": "hybrid_blocks:cracked_medium_polished_blackstone_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:cracked_medium_polished_blackstone_brick_wall"
   }
 }

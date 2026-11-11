@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_brick_stairs",
   "key": {
-    "#": {
-      "item": "minecraft:brick_stairs"
-    },
-    "X": {
-      "item": "minecraft:purple_dye"
-    }
+    "#": "minecraft:brick_stairs",
+    "X": "minecraft:purple_dye"
   },
   "pattern": [
     "###",

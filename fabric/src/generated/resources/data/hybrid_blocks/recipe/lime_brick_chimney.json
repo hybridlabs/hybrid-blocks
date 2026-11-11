@@ -3,9 +3,7 @@
   "category": "building",
   "group": "chimney",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:lime_bricks"
-    }
+    "#": "hybrid_blocks:lime_bricks"
   },
   "pattern": [
     "# #",
@@ -13,7 +11,6 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:lime_brick_chimney"
   }
 }

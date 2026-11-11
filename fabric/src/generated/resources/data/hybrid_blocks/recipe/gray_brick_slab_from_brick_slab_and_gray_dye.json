@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_shingle_slab",
   "key": {
-    "#": {
-      "item": "minecraft:brick_slab"
-    },
-    "X": {
-      "item": "minecraft:gray_dye"
-    }
+    "#": "minecraft:brick_slab",
+    "X": "minecraft:gray_dye"
   },
   "pattern": [
     "###",

@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "cracked_brick_walls",
   "key": {
-    "#": {
-      "item": "minecraft:cracked_nether_bricks"
-    }
+    "#": "minecraft:cracked_nether_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:cracked_nether_brick_wall"
   }
 }

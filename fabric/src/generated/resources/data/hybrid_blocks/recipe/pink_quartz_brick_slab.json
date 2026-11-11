@@ -3,9 +3,7 @@
   "category": "building",
   "group": "quartz_brick_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:pink_quartz_bricks"
-    }
+    "#": "hybrid_blocks:pink_quartz_bricks"
   },
   "pattern": [
     "###"

@@ -3,9 +3,7 @@
   "category": "building",
   "group": "mossy_shingle_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:mossy_shingles"
-    }
+    "#": "hybrid_blocks:mossy_shingles"
   },
   "pattern": [
     "###"

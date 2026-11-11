@@ -3,9 +3,7 @@
   "category": "building",
   "group": "medium_brick_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:mossy_medium_mud_bricks"
-    }
+    "#": "hybrid_blocks:mossy_medium_mud_bricks"
   },
   "pattern": [
     "###"

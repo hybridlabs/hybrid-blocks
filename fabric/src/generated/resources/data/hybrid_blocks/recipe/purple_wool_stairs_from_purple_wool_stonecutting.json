@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:purple_wool"
-  },
+  "ingredient": "minecraft:purple_wool",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:purple_wool_stairs"
   }
 }

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "hybrid_blocks:mossy_orange_shingles"
-  },
+  "ingredient": "hybrid_blocks:mossy_orange_shingles",
   "result": {
     "count": 2,
     "id": "hybrid_blocks:mossy_orange_shingle_slab"

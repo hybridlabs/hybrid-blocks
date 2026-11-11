@@ -3,9 +3,7 @@
   "category": "building",
   "group": "large_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:large_blue_bricks"
-    }
+    "#": "hybrid_blocks:large_blue_bricks"
   },
   "pattern": [
     "#  ",

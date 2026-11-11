@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "plain_shingle_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:gray_shingles"
-    }
+    "#": "hybrid_blocks:gray_shingles"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:gray_shingle_wall"
   }
 }

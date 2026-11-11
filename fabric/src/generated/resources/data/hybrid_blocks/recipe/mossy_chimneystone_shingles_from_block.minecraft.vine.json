@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_chimneystone_shingles",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:chimneystone_shingles"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:chimneystone_shingles",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_chimneystone_shingles"
   }
 }

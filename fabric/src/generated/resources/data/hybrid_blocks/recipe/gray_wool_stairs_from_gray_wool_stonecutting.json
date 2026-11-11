@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:gray_wool"
-  },
+  "ingredient": "minecraft:gray_wool",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:gray_wool_stairs"
   }
 }

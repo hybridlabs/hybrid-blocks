@@ -5,7 +5,7 @@
   "minVersion": "0.8.5",
   "refmap": "hybrid_blocks.refmap.json",
   "mixins": [
-    "ResourceLocationMixin"
+    "IdentifierMixin"
   ],
   "injectors": {
     "defaultRequire": 1

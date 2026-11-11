@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "hybrid_blocks:cracked_magenta_shingles"
-  },
+  "ingredient": "hybrid_blocks:cracked_magenta_shingles",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:cracked_magenta_shingle_stairs"
   }
 }

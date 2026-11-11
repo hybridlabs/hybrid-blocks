@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_schist_shingles",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:schist_shingles"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "hybrid_blocks:schist_shingles",
+    "minecraft:moss_block"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_schist_shingles"
   }
 }

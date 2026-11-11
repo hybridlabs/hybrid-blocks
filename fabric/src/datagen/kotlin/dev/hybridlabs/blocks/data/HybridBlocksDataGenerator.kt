@@ -16,14 +16,14 @@ import net.minecraft.core.Registry
 object HybridBlocksDataGenerator : DataGeneratorEntrypoint {
     override fun onInitializeDataGenerator(generator: FabricDataGenerator) {
         val pack = generator.createPack()
-        pack.addProvider(::ModelProvider)
-        pack.addProvider(::LanguageProvider)
-        pack.addProvider(::BlockLootTableProvider)
-        pack.addProvider(::BlockTagProvider)
-        pack.addProvider(::RecipeProvider)
+        pack.addProvider(FabricDataGenerator.Pack.Factory(::ModelProvider))
+        pack.addProvider(FabricDataGenerator.Pack.RegistryDependentFactory(::LanguageProvider))
+        pack.addProvider(FabricDataGenerator.Pack.RegistryDependentFactory(::BlockLootTableProvider))
+        pack.addProvider(FabricDataGenerator.Pack.RegistryDependentFactory(::BlockTagProvider))
+        pack.addProvider(FabricDataGenerator.Pack.RegistryDependentFactory(::RecipeProvider))
     }
 
-    fun <T> filterHybridBlocks(registry: Registry<T>): (T & Any) -> Boolean {
+    fun <T : Any> filterHybridBlocks(registry: Registry<T>): (T) -> Boolean {
         return { o ->
             val id = registry.getKey(o)
             id!!.namespace == Constants.MOD_ID

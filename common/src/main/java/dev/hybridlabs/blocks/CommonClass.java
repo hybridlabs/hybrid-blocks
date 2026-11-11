@@ -3,7 +3,7 @@ package dev.hybridlabs.blocks;
 import dev.hybridlabs.blocks.platform.Services;
 import dev.hybridlabs.blocks.platform.registration.RegistrationProvider;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -23,8 +23,8 @@ public class CommonClass {
     public static final RegistrationProvider<CreativeModeTab> CREATIVE_MODE_TABS =
             RegistrationProvider.get(BuiltInRegistries.CREATIVE_MODE_TAB, MOD_ID);
 
-    public static ResourceLocation locate(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier locate(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 
     public static void init() {

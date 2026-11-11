@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_chiseled_quartz_block",
   "key": {
-    "#": {
-      "item": "minecraft:chiseled_quartz_block"
-    },
-    "X": {
-      "item": "minecraft:pink_dye"
-    }
+    "#": "minecraft:chiseled_quartz_block",
+    "X": "minecraft:pink_dye"
   },
   "pattern": [
     "###",

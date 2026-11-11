@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_mud_shingles",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:mud_shingles"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "hybrid_blocks:mud_shingles",
+    "minecraft:vine"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_mud_shingles"
   }
 }

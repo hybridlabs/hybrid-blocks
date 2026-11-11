@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "stained_clear_glass_pane",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:magenta_stained_clear_glass"
-    }
+    "#": "hybrid_blocks:magenta_stained_clear_glass"
   },
   "pattern": [
     "###",

@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "plain_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cyan_bricks"
-    }
+    "#": "hybrid_blocks:cyan_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:cyan_brick_wall"
   }
 }

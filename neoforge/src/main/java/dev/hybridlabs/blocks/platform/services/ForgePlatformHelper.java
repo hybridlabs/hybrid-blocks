@@ -32,16 +32,11 @@ public class ForgePlatformHelper implements PlatformHelper {
     @Override
     public boolean isDevelopmentEnvironment() {
 
-        return !FMLLoader.isProduction();
+        return !FMLLoader.getCurrent().isProduction();
     }
 
     @Override
     public Path getConfigDir() {
         return FMLPaths.CONFIGDIR.get();
-    }
-
-    @Override
-    public BlockBehaviour.Properties getBlockSettings() {
-        return BlockBehaviour.Properties.of();
     }
 }

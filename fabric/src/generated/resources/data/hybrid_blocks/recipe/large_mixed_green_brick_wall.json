@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "large_mixed_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:large_mixed_green_bricks"
-    }
+    "#": "hybrid_blocks:large_mixed_green_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:large_mixed_green_brick_wall"
   }
 }

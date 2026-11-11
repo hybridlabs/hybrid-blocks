@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "hybrid_blocks:small_cyan_bricks"
-  },
+  "ingredient": "hybrid_blocks:small_cyan_bricks",
   "result": {
     "count": 2,
     "id": "hybrid_blocks:small_cyan_brick_slab"

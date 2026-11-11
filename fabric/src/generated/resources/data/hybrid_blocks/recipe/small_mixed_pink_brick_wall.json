@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "small_mixed_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:small_mixed_pink_bricks"
-    }
+    "#": "hybrid_blocks:small_mixed_pink_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:small_mixed_pink_brick_wall"
   }
 }

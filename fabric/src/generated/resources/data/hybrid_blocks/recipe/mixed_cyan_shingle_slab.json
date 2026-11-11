@@ -3,9 +3,7 @@
   "category": "building",
   "group": "mixed_shingle_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:mixed_cyan_shingles"
-    }
+    "#": "hybrid_blocks:mixed_cyan_shingles"
   },
   "pattern": [
     "###"

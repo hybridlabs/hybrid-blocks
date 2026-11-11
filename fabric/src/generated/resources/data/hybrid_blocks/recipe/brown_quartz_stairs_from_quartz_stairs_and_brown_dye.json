@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_quartz_stairs",
   "key": {
-    "#": {
-      "item": "minecraft:quartz_stairs"
-    },
-    "X": {
-      "item": "minecraft:brown_dye"
-    }
+    "#": "minecraft:quartz_stairs",
+    "X": "minecraft:brown_dye"
   },
   "pattern": [
     "###",

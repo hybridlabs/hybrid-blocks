@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_clear_glass",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:clear_glass"
-    },
-    "X": {
-      "item": "minecraft:red_dye"
-    }
+    "#": "hybrid_blocks:clear_glass",
+    "X": "minecraft:red_dye"
   },
   "pattern": [
     "###",

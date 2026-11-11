@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_cracked_bricks",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_bricks"
-    },
-    "X": {
-      "item": "minecraft:black_dye"
-    }
+    "#": "hybrid_blocks:cracked_bricks",
+    "X": "minecraft:black_dye"
   },
   "pattern": [
     "###",

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "C": {
-      "item": "minecraft:calcite"
-    }
+    "C": "minecraft:calcite"
   },
   "pattern": [
     "CC ",

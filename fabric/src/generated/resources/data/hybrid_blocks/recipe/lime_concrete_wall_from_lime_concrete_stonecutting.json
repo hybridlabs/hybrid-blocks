@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lime_concrete"
-  },
+  "ingredient": "minecraft:lime_concrete",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:lime_concrete_wall"
   }
 }

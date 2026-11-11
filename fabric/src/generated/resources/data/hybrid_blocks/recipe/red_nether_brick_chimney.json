@@ -3,9 +3,7 @@
   "category": "building",
   "group": "chimney",
   "key": {
-    "#": {
-      "item": "minecraft:red_nether_bricks"
-    }
+    "#": "minecraft:red_nether_bricks"
   },
   "pattern": [
     "# #",
@@ -13,7 +11,6 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:red_nether_brick_chimney"
   }
 }

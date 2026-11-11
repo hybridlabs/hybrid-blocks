@@ -3,19 +3,21 @@ package dev.hybridlabs.blocks.data.client
 import dev.hybridlabs.blocks.block.HybridBlocksBlocks
 import dev.hybridlabs.blocks.block.HybridBlocksFamilies
 import dev.hybridlabs.client.HBModelTemplates
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
-import net.minecraft.data.models.BlockModelGenerators
-import net.minecraft.data.models.ItemModelGenerators
-import net.minecraft.data.models.model.*
-import net.minecraft.resources.ResourceLocation
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
+import net.minecraft.client.data.models.BlockModelGenerators
+import net.minecraft.client.data.models.ItemModelGenerators
+import net.minecraft.client.data.models.model.*
+import net.minecraft.client.renderer.item.ClientItem
+import net.minecraft.client.resources.model.sprite.Material
+import net.minecraft.resources.Identifier
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 
 /**
  * Generates all models.
  */
-class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
+class ModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     override fun generateBlockStateModels(generator: BlockModelGenerators) {
         generator.run {
             // generate simple cube all
@@ -1069,16 +1071,20 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 val textures = TextureMapping()
                     .put(
                         TextureSlot.TEXTURE,
-                        ResourceLocation.fromNamespaceAndPath(
-                            namespace,
-                            "block/$textureName"
+                        Material(
+                            Identifier.fromNamespaceAndPath(
+                                namespace,
+                                "block/$textureName"
+                            )
                         )
                     )
                     .put(
                         TextureSlot.PARTICLE,
-                        ResourceLocation.fromNamespaceAndPath(
-                            namespace,
-                            "block/$textureName"
+                        Material(
+                            Identifier.fromNamespaceAndPath(
+                                namespace,
+                                "block/$textureName"
+                            )
                         )
                     )
 
@@ -1089,10 +1095,14 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 )
 
                 blockStateOutput.accept(
-                    BlockModelGenerators.createSimpleBlock(block, model)
+                    BlockModelGenerators.createSimpleBlock(block, BlockModelGenerators.plainVariant(model))
                 )
 
-                this.delegateItemModel(block, model)
+                itemModelOutput.accept(
+                    block.asItem(),
+                    ItemModelUtils.plainModel(model),
+                    ClientItem.Properties.DEFAULT
+                )
             }
 
             createChimney(HybridBlocksBlocks.WHITE_BRICK_CHIMNEY.get(), "hybrid_blocks", "white_bricks")
@@ -1135,23 +1145,23 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
     }
 
     companion object {
-        fun createMapping(block: Block, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)): TextureMapping? {
-            return TextureMapping.defaultTexture(block).also {
-                if (particleLocation != null) {
-                    it.put(TextureSlot.PARTICLE, particleLocation)
-                }
+        fun createMapping(block: Block, particleLocation: Material? = null): TextureMapping {
+            val mapping = TextureMapping.defaultTexture(block)
+            if (particleLocation != null) {
+                mapping.put(TextureSlot.PARTICLE, particleLocation)
             }
+            return mapping
         }
 
-        fun BlockModelGenerators.createModel(block: Block, template: ModelTemplate, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)): ResourceLocation {
+        fun BlockModelGenerators.createModel(block: Block, template: ModelTemplate, particleLocation: Material? = null): Identifier {
             val mapping = createMapping(block, particleLocation)
 
             return template.create(block, mapping, modelOutput)
         }
 
-        fun BlockModelGenerators.create(block: Block, template: ModelTemplate, particleLocation: ResourceLocation? = TextureMapping.getBlockTexture(block)) {
+        fun BlockModelGenerators.create(block: Block, template: ModelTemplate, particleLocation: Material? = null) {
             val location = createModel(block, template, particleLocation)
-            blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, location))
+            blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, BlockModelGenerators.plainVariant(location)))
         }
 
         fun BlockModelGenerators.createParticle(block: Block, template: ModelTemplate) {
@@ -1172,13 +1182,27 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             val inner = ModelTemplates.STAIRS_INNER.create(stairs, mapping, modelOutput)
             val straight = ModelTemplates.STAIRS_STRAIGHT.create(stairs, mapping, modelOutput)
             val outer = ModelTemplates.STAIRS_OUTER.create(stairs, mapping, modelOutput)
-            blockStateOutput.accept(BlockModelGenerators.createStairs(stairs, inner, straight, outer))
-            delegateItemModel(stairs, straight)
+            blockStateOutput.accept(
+                BlockModelGenerators.createStairs(
+                    stairs,
+                    BlockModelGenerators.plainVariant(inner),
+                    BlockModelGenerators.plainVariant(straight),
+                    BlockModelGenerators.plainVariant(outer)
+                )
+            )
+            itemModelOutput.accept(stairs.asItem(), ItemModelUtils.plainModel(straight), ClientItem.Properties.DEFAULT)
 
             val bottom = ModelTemplates.SLAB_BOTTOM.create(slab, mapping, modelOutput)
             val top = ModelTemplates.SLAB_TOP.create(slab, mapping, modelOutput)
-            blockStateOutput.accept(BlockModelGenerators.createSlab(slab, bottom, top, fullBlock))
-            delegateItemModel(slab, bottom)
+            blockStateOutput.accept(
+                BlockModelGenerators.createSlab(
+                    slab,
+                    BlockModelGenerators.plainVariant(bottom),
+                    BlockModelGenerators.plainVariant(top),
+                    BlockModelGenerators.plainVariant(fullBlock)
+                )
+            )
+            itemModelOutput.accept(slab.asItem(), ItemModelUtils.plainModel(bottom), ClientItem.Properties.DEFAULT)
         }
 
         fun TextureMapping.put(slot: TextureSlot, block: Block): TextureMapping {

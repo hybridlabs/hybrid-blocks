@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "large_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:large_lime_bricks"
-    }
+    "#": "hybrid_blocks:large_lime_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:large_lime_brick_wall"
   }
 }

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:polished_calcite"
-    }
+    "#": "hybrid_blocks:polished_calcite"
   },
   "pattern": [
     "###"

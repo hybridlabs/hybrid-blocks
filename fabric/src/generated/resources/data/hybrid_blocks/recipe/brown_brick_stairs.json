@@ -3,9 +3,7 @@
   "category": "building",
   "group": "plain_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:brown_bricks"
-    }
+    "#": "hybrid_blocks:brown_bricks"
   },
   "pattern": [
     "#  ",

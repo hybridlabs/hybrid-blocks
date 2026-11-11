@@ -3,9 +3,7 @@
   "category": "building",
   "group": "cracked_brick_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_light_blue_bricks"
-    }
+    "#": "hybrid_blocks:cracked_light_blue_bricks"
   },
   "pattern": [
     "###"

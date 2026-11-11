@@ -32,12 +32,7 @@
                 "adapter": "kotlin"
             }
         ],
-        "client": [
-            {
-                "value": "dev.hybridlabs.blocks.HybridBlocksClient",
-                "adapter": "kotlin"
-            }
-        ],
+        "client": [],
         "fabric-datagen": [
             {
                 "value": "dev.hybridlabs.blocks.data.HybridBlocksDataGenerator",
@@ -56,9 +51,9 @@
     "accessWidener": "hybrid_blocks.accesswidener",
 
   "depends": {
-    "minecraft": "~1.21.1",
-    "java": ">=21",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
     "fabric-language-kotlin": "*",
-    "fabric-api": ">=0.116"
+    "fabric-api": ">=0.155"
   }
 }

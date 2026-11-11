@@ -3,9 +3,7 @@
   "category": "building",
   "group": "plain_shingle_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:brown_shingles"
-    }
+    "#": "hybrid_blocks:brown_shingles"
   },
   "pattern": [
     "###"

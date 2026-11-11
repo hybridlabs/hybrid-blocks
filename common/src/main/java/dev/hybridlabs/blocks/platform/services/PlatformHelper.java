@@ -1,7 +1,5 @@
 package dev.hybridlabs.blocks.platform.services;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
-
 import java.nio.file.Path;
 
 public interface PlatformHelper {
@@ -18,7 +16,5 @@ public interface PlatformHelper {
     }
 
     Path getConfigDir();
-
-    BlockBehaviour.Properties getBlockSettings();
 
 }

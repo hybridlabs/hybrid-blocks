@@ -3,9 +3,7 @@
   "category": "building",
   "group": "cracked_medium_brick_slabs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:cracked_medium_mud_bricks"
-    }
+    "#": "hybrid_blocks:cracked_medium_mud_bricks"
   },
   "pattern": [
     "###"

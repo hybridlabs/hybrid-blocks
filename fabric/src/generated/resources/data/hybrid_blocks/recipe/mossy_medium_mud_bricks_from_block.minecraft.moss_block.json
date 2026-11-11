@@ -3,15 +3,10 @@
   "category": "building",
   "group": "mossy_mud_bricks",
   "ingredients": [
-    {
-      "item": "hybrid_blocks:medium_mud_bricks"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "hybrid_blocks:medium_mud_bricks",
+    "minecraft:moss_block"
   ],
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:mossy_medium_mud_bricks"
   }
 }

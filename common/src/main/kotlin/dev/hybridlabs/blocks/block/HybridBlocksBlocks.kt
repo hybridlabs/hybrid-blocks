@@ -3,6 +3,8 @@ package dev.hybridlabs.blocks.block
 import dev.hybridlabs.blocks.CommonClass
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import java.util.function.Supplier
+import net.minecraft.core.registries.Registries
+import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
@@ -2444,7 +2446,7 @@ object HybridBlocksBlocks {
 //#endregion
 
     // region Clear Glass
-    val CLEAR_GLASS = register("clear_glass") { HBTransparentBlock(copyOf(Blocks.GLASS)) }
+    val CLEAR_GLASS = register("clear_glass") { HBTransparentBlock(props("clear_glass", Blocks.GLASS)) }
 
     val WHITE_STAINED_CLEAR_GLASS = stainedGlass("white_stained_clear_glass", DyeColor.WHITE, Blocks.WHITE_STAINED_GLASS)
     val ORANGE_STAINED_CLEAR_GLASS = stainedGlass("orange_stained_clear_glass", DyeColor.ORANGE, Blocks.ORANGE_STAINED_GLASS)
@@ -2463,7 +2465,7 @@ object HybridBlocksBlocks {
     val RED_STAINED_CLEAR_GLASS = stainedGlass("red_stained_clear_glass", DyeColor.RED, Blocks.RED_STAINED_GLASS)
     val BLACK_STAINED_CLEAR_GLASS = stainedGlass("black_stained_clear_glass", DyeColor.BLACK, Blocks.BLACK_STAINED_GLASS)
 
-    val CLEAR_GLASS_PANE = register("clear_glass_pane") { HBBarsBlock(copyOf(Blocks.GLASS_PANE)) }
+    val CLEAR_GLASS_PANE = register("clear_glass_pane") { HBBarsBlock(props("clear_glass_pane", Blocks.GLASS_PANE)) }
 
     val WHITE_STAINED_CLEAR_GLASS_PANE = stainedGlassPane("white_stained_clear_glass_pane", DyeColor.WHITE, Blocks.WHITE_STAINED_GLASS_PANE)
     val ORANGE_STAINED_CLEAR_GLASS_PANE = stainedGlassPane("orange_stained_clear_glass_pane", DyeColor.ORANGE, Blocks.ORANGE_STAINED_GLASS_PANE)
@@ -2483,17 +2485,28 @@ object HybridBlocksBlocks {
     val BLACK_STAINED_CLEAR_GLASS_PANE = stainedGlassPane("black_stained_clear_glass_pane", DyeColor.BLACK, Blocks.BLACK_STAINED_GLASS_PANE)
     // endregion
 
-    private fun copyOf(base: Block): BlockBehaviour.Properties = BlockBehaviour.Properties.ofFullCopy(base)
-    private fun copyOf(base: Block, color: DyeColor): BlockBehaviour.Properties = BlockBehaviour.Properties.ofFullCopy(base).mapColor(color)
+    /**
+     * Copies a base block's properties and binds them to the to-be-registered block id.
+     * In 26.1 [BlockBehaviour] eagerly resolves its loot table and description id from
+     * [BlockBehaviour.Properties.setId], so the id must be set before construction.
+     */
+    private fun props(id: String, base: Block, color: DyeColor? = null): BlockBehaviour.Properties {
+        val properties = BlockBehaviour.Properties.ofFullCopy(base)
+            .setId(ResourceKey.create(Registries.BLOCK, CommonClass.locate(id)))
+        if (color != null) {
+            properties.mapColor(color)
+        }
+        return properties
+    }
 
-    private fun simple(id: String, base: Block, color: DyeColor? = null) = register(id) { Block(if (color != null) copyOf(base, color) else copyOf(base)) }
-    private fun slab(id: String, base: Block, color: DyeColor? = null) = register(id) { SlabBlock(if (color != null) copyOf(base, color) else copyOf(base)) }
-    private fun wall(id: String, base: Block, color: DyeColor? = null) = register(id) { WallBlock(if (color != null) copyOf(base, color) else copyOf(base)) }
-    private fun pillar(id: String, base: Block, color: DyeColor? = null) = register(id) { RotatedPillarBlock(if (color != null) copyOf(base, color) else copyOf(base)) }
-    private fun stairs(id: String, copyState: Block, base: Block, color: DyeColor? = null) = register(id) { HBStairBlock(copyState.defaultBlockState(), if (color != null) copyOf(base, color) else copyOf(base)) }
-    private fun stainedGlass(id: String, color: DyeColor, base: Block) = register(id) { StainedGlassBlock(color, copyOf(base)) }
-    private fun stainedGlassPane(id: String, color: DyeColor, base: Block) = register(id) { StainedGlassPaneBlock(color, copyOf(base)) }
-    private fun chimney(id: String, base: Block, color: DyeColor? = null) = register(id) { ChimneyBlock(2, if (color != null) copyOf(base, color) else copyOf(base)) }
+    private fun simple(id: String, base: Block, color: DyeColor? = null) = register(id) { Block(props(id, base, color)) }
+    private fun slab(id: String, base: Block, color: DyeColor? = null) = register(id) { SlabBlock(props(id, base, color)) }
+    private fun wall(id: String, base: Block, color: DyeColor? = null) = register(id) { WallBlock(props(id, base, color)) }
+    private fun pillar(id: String, base: Block, color: DyeColor? = null) = register(id) { RotatedPillarBlock(props(id, base, color)) }
+    private fun stairs(id: String, copyState: Block, base: Block, color: DyeColor? = null) = register(id) { HBStairBlock(copyState.defaultBlockState(), props(id, base, color)) }
+    private fun stainedGlass(id: String, color: DyeColor, base: Block) = register(id) { StainedGlassBlock(color, props(id, base)) }
+    private fun stainedGlassPane(id: String, color: DyeColor, base: Block) = register(id) { StainedGlassPaneBlock(color, props(id, base)) }
+    private fun chimney(id: String, base: Block, color: DyeColor? = null) = register(id) { ChimneyBlock(2, props(id, base, color)) }
 
     private fun register(id: String, block: Supplier<Block>): RegistryObject<Block> {
         return CommonClass.BLOCKS.register(id, block)

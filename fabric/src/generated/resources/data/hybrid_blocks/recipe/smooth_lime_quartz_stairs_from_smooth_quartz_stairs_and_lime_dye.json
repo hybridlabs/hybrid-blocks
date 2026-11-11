@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_smooth_quartz_stairs",
   "key": {
-    "#": {
-      "item": "minecraft:smooth_quartz_stairs"
-    },
-    "X": {
-      "item": "minecraft:lime_dye"
-    }
+    "#": "minecraft:smooth_quartz_stairs",
+    "X": "minecraft:lime_dye"
   },
   "pattern": [
     "###",

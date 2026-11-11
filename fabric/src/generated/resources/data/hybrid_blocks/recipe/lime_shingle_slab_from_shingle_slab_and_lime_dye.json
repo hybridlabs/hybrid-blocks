@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_shingle_slab",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:shingle_slab"
-    },
-    "X": {
-      "item": "minecraft:lime_dye"
-    }
+    "#": "hybrid_blocks:shingle_slab",
+    "X": "minecraft:lime_dye"
   },
   "pattern": [
     "###",

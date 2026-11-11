@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "mixed_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:mixed_black_bricks"
-    }
+    "#": "hybrid_blocks:mixed_black_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:mixed_black_brick_wall"
   }
 }

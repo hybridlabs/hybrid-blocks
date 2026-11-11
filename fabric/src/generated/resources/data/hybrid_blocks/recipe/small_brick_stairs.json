@@ -3,9 +3,7 @@
   "category": "building",
   "group": "small_mixed_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:small_bricks"
-    }
+    "#": "hybrid_blocks:small_bricks"
   },
   "pattern": [
     "#  ",

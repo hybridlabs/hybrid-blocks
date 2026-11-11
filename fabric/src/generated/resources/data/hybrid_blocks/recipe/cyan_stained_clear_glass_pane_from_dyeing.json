@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "stained_clear_glass_pane",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:clear_glass_pane"
-    },
-    "X": {
-      "item": "minecraft:cyan_dye"
-    }
+    "#": "hybrid_blocks:clear_glass_pane",
+    "X": "minecraft:cyan_dye"
   },
   "pattern": [
     "###",

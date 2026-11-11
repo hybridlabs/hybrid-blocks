@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:lime_wool"
-  },
+  "ingredient": "minecraft:lime_wool",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:lime_wool_stairs"
   }
 }

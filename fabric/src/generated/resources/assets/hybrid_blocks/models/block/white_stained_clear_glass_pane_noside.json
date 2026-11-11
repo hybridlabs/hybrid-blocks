@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/template_glass_pane_noside",
   "textures": {
-    "pane": "hybrid_blocks:block/white_stained_clear_glass"
+    "pane": {
+      "force_translucent": true,
+      "sprite": "hybrid_blocks:block/white_stained_clear_glass"
+    }
   }
 }

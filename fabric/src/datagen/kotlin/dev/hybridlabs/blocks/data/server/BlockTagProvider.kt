@@ -1,11 +1,10 @@
 package dev.hybridlabs.blocks.data.server
 
 import dev.hybridlabs.blocks.HybridBlocks
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
-import net.minecraft.core.registries.Registries
 import net.minecraft.tags.BlockTags
 import net.minecraft.world.level.block.Block
 import java.util.concurrent.CompletableFuture
@@ -14,9 +13,9 @@ import java.util.concurrent.CompletableFuture
  * Generates all block tags.
  */
 class BlockTagProvider(
-    output: FabricDataOutput,
+    output: FabricPackOutput,
     registriesFuture: CompletableFuture<HolderLookup.Provider>
-) : FabricTagProvider<Block>(output, Registries.BLOCK, registriesFuture) {
+) : FabricTagsProvider.BlockTagsProvider(output, registriesFuture) {
     override fun addTags(arg: HolderLookup.Provider) {
         BuiltInRegistries.BLOCK.forEach { block ->
             val id = BuiltInRegistries.BLOCK.getKey(block)
@@ -28,21 +27,21 @@ class BlockTagProvider(
             if (setOf(
                     "wall"
                 ).any { wallPath.endsWith(it) }) {
-                getOrCreateTagBuilder(BlockTags.WALLS).add(block)
+                valueLookupBuilder(BlockTags.WALLS).add(block)
             }
 
             val slabPath = id.path
             if (setOf(
                     "slab"
                 ).any { slabPath.endsWith(it) }) {
-                getOrCreateTagBuilder(BlockTags.SLABS).add(block)
+                valueLookupBuilder(BlockTags.SLABS).add(block)
             }
 
             val stairsPath = id.path
             if (setOf(
                     "stairs"
                 ).any { stairsPath.endsWith(it) }) {
-                getOrCreateTagBuilder(BlockTags.STAIRS).add(block)
+                valueLookupBuilder(BlockTags.STAIRS).add(block)
             }
 
             val pickaxePath = id.path
@@ -60,14 +59,14 @@ class BlockTagProvider(
                     "polished",
                     "concrete",
                 ).any { pickaxePath.contains(it) }) {
-                getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(block)
+                valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(block)
             }
 
             val shearsPath = id.path
             if (setOf(
                     "wool",
                 ).any { shearsPath.contains(it) }) {
-                getOrCreateTagBuilder(BlockTags.WOOL).add(block)
+                valueLookupBuilder(BlockTags.WOOL).add(block)
             }
         }
     }

@@ -3,9 +3,7 @@
   "category": "building",
   "group": "quartz_brick_stairs",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:white_quartz_bricks"
-    }
+    "#": "hybrid_blocks:white_quartz_bricks"
   },
   "pattern": [
     "#  ",

@@ -3,16 +3,14 @@
   "category": "misc",
   "group": "medium_brick_walls",
   "key": {
-    "#": {
-      "item": "hybrid_blocks:medium_mud_bricks"
-    }
+    "#": "hybrid_blocks:medium_mud_bricks"
   },
   "pattern": [
     "###",
+    "# #",
     "###"
   ],
   "result": {
-    "count": 6,
     "id": "hybrid_blocks:medium_mud_brick_wall"
   }
 }

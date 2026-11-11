@@ -1,10 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "hybrid_blocks:shingles"
-  },
+  "ingredient": "hybrid_blocks:shingles",
   "result": {
-    "count": 1,
     "id": "hybrid_blocks:shingle_stairs"
   }
 }
