@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "stained_quartz_stairs",
+  "group": "stained_quartz_brick_stairs",
   "key": {
     "#": {
       "item": "hybrid_blocks:quartz_brick_stairs"

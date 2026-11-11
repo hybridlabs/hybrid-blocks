@@ -3320,7 +3320,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 exporter,
                 Items.QUARTZ_BRICKS,
                 "has_quartz_block",
-                "stained_quartz_block",
+                "stained_quartz_bricks",
                 outputBlock,
                 dye
             )
@@ -3329,7 +3329,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 exporter,
                 HybridBlocksItems.QUARTZ_BRICK_STAIRS.get(),
                 "has_quartz_brick_stairs",
-                "stained_quartz_stairs",
+                "stained_quartz_brick_stairs",
                 outputStairs,
                 dye
             )
@@ -3338,7 +3338,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 exporter,
                 HybridBlocksItems.QUARTZ_BRICK_SLAB.get(),
                 "has_quartz_brick_slab",
-                "stained_quartz_slab",
+                "stained_quartz_brick_slab",
                 outputSlab,
                 dye
             )
