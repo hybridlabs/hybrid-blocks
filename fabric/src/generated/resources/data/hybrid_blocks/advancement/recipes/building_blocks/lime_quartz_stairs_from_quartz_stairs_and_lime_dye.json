@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:lime_quartz_stairs_from_quartz_stairs_and_lime_dye"
+        "recipes": "hybrid_blocks:lime_quartz_stairs_from_quartz_stairs_and_lime_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

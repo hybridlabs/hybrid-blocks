@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_brown_shingles_from_shingles_and_brown_dye"
+        "recipes": "hybrid_blocks:mossy_brown_shingles_from_shingles_and_brown_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

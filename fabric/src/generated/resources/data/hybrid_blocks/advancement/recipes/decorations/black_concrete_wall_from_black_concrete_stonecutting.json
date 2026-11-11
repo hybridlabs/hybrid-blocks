@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:black_concrete_wall_from_black_concrete_stonecutting"
+        "recipes": "hybrid_blocks:black_concrete_wall_from_black_concrete_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

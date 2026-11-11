@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:lime_quartz_tiles"
+        "recipes": "hybrid_blocks:lime_quartz_tiles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

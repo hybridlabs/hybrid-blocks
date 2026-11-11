@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:red_quartz_pillar_from_quartz_pillar_and_red_dye"
+        "recipes": "hybrid_blocks:red_quartz_pillar_from_quartz_pillar_and_red_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

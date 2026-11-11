@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mixed_yellow_bricks_from_yellow_bricks_stonecutting"
+        "recipes": "hybrid_blocks:mixed_yellow_bricks_from_yellow_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:gray_shingle_slab_from_shingle_slab_and_gray_dye"
+        "recipes": "hybrid_blocks:gray_shingle_slab_from_shingle_slab_and_gray_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

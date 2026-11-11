@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:red_shingle_slab_from_shingle_slab_and_red_dye"
+        "recipes": "hybrid_blocks:red_shingle_slab_from_shingle_slab_and_red_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

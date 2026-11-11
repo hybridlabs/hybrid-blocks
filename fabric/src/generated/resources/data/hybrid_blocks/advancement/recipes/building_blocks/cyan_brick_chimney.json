@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cyan_brick_chimney"
+        "recipes": "hybrid_blocks:cyan_brick_chimney"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:yellow_quartz_brick_stairs_from_yellow_quartz_bricks_stonecutting"
+        "recipes": "hybrid_blocks:yellow_quartz_brick_stairs_from_yellow_quartz_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

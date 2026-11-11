@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mixed_yellow_brinestone_brick_wall_from_mixed_yellow_brinestone_bricks_stonecutting"
+        "recipes": "hybrid_blocks:mixed_yellow_brinestone_brick_wall_from_mixed_yellow_brinestone_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

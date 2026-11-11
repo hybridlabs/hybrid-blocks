@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_magenta_brick_slab_from_mossy_magenta_bricks_stonecutting"
+        "recipes": "hybrid_blocks:mossy_magenta_brick_slab_from_mossy_magenta_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

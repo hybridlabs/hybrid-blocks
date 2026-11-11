@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_purple_bricks_from_mossy_bricks_and_purple_dye"
+        "recipes": "hybrid_blocks:mossy_purple_bricks_from_mossy_bricks_and_purple_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:large_mud_brick_stairs_from_large_mud_bricks_stonecutting"
+        "recipes": "hybrid_blocks:large_mud_brick_stairs_from_large_mud_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

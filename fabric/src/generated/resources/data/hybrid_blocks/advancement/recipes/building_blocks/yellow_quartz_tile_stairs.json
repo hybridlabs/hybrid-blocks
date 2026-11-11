@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:yellow_quartz_tile_stairs"
+        "recipes": "hybrid_blocks:yellow_quartz_tile_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

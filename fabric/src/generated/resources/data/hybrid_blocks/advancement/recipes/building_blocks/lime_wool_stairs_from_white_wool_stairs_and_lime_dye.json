@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:lime_wool_stairs_from_white_wool_stairs_and_lime_dye"
+        "recipes": "hybrid_blocks:lime_wool_stairs_from_white_wool_stairs_and_lime_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:purple_wool_slab_from_white_wool_slab_and_purple_dye"
+        "recipes": "hybrid_blocks:purple_wool_slab_from_white_wool_slab_and_purple_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

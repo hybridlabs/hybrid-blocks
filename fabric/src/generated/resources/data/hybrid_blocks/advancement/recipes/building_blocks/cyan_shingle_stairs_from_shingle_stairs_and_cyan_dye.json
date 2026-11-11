@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cyan_shingle_stairs_from_shingle_stairs_and_cyan_dye"
+        "recipes": "hybrid_blocks:cyan_shingle_stairs_from_shingle_stairs_and_cyan_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

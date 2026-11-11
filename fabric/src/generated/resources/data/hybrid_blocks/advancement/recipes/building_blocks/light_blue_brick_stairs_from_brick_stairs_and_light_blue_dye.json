@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:light_blue_brick_stairs_from_brick_stairs_and_light_blue_dye"
+        "recipes": "hybrid_blocks:light_blue_brick_stairs_from_brick_stairs_and_light_blue_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

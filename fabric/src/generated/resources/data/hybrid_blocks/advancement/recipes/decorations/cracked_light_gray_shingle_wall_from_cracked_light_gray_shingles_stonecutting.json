@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cracked_light_gray_shingle_wall_from_cracked_light_gray_shingles_stonecutting"
+        "recipes": "hybrid_blocks:cracked_light_gray_shingle_wall_from_cracked_light_gray_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

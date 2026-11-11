@@ -6,7 +6,9 @@ plugins {
 dependencies {
     api("com.terraformersmc:modmenu:${modmenu_version}")
 
-    runtimeOnly "io.github.flemmli97:debugutils:$minecraft_version-$debug_utils_version-fabric"
+    // The debugutils artifact is named after the MC version it was built for; the 26.2 build
+    // covers 26.3 as well, so the prefix is decoupled from minecraft_version.
+    runtimeOnly "io.github.flemmli97:debugutils:${debug_utils_minecraft_version}-$debug_utils_version-fabric"
 }
 
 fabricApi {

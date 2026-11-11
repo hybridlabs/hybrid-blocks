@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:smooth_purple_quartz_slab_from_smooth_purple_quartz_stonecutting"
+        "recipes": "hybrid_blocks:smooth_purple_quartz_slab_from_smooth_purple_quartz_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

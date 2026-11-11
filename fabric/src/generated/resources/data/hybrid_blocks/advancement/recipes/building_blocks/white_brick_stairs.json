@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:white_brick_stairs"
+        "recipes": "hybrid_blocks:white_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

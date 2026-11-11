@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cracked_magenta_shingles_from_cracked_shingles_and_magenta_dye"
+        "recipes": "hybrid_blocks:cracked_magenta_shingles_from_cracked_shingles_and_magenta_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

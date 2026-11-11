@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cyan_wool_stairs_from_white_wool_stairs_and_cyan_dye"
+        "recipes": "hybrid_blocks:cyan_wool_stairs_from_white_wool_stairs_and_cyan_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

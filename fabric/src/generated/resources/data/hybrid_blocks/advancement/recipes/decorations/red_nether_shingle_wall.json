@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:red_nether_shingle_wall"
+        "recipes": "hybrid_blocks:red_nether_shingle_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

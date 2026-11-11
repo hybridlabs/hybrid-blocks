@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:black_quartz_pillar_from_quartz_pillar_and_black_dye"
+        "recipes": "hybrid_blocks:black_quartz_pillar_from_quartz_pillar_and_black_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

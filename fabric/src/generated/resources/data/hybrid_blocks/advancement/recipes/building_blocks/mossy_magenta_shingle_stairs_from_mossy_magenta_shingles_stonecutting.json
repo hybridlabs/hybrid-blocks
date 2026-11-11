@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_magenta_shingle_stairs_from_mossy_magenta_shingles_stonecutting"
+        "recipes": "hybrid_blocks:mossy_magenta_shingle_stairs_from_mossy_magenta_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

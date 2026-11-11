@@ -10,12 +10,15 @@ import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.recipes.*
+import net.minecraft.data.worldgen.BootstrapContext
 import net.minecraft.resources.ResourceKey
+import net.minecraft.advancements.Advancement
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.CookingBookCategory
 import net.minecraft.world.item.crafting.Ingredient
+import net.minecraft.world.item.crafting.Recipe
 import net.minecraft.world.level.ItemLike
 import net.minecraft.world.level.block.Blocks
 import java.util.concurrent.CompletableFuture
@@ -29,18 +32,19 @@ class RecipeProvider(output: FabricPackOutput, lookupProvider: CompletableFuture
 
     override fun createRecipeProvider(
         registries: HolderLookup.Provider,
-        output: RecipeOutput,
+        recipeOutput: BootstrapContext<Recipe<*>>,
+        advancementOutput: BootstrapContext<Advancement>,
     ): net.minecraft.data.recipes.RecipeProvider {
-        return HybridRecipes(registries, output)
+        return HybridRecipes(recipeOutput, advancementOutput)
     }
 
     override fun getName(): String = "Hybrid Blocks Recipes"
 }
 
 private class HybridRecipes(
-    registries: HolderLookup.Provider,
-    output: RecipeOutput,
-) : net.minecraft.data.recipes.RecipeProvider(registries, output) {
+    recipeOutput: BootstrapContext<Recipe<*>>,
+    advancementOutput: BootstrapContext<Advancement>,
+) : net.minecraft.data.recipes.RecipeProvider(recipeOutput, advancementOutput) {
 
     override fun buildRecipes() {
         buildRecipes(this.output)

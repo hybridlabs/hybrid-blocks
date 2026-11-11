@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:magenta_wool_slab_from_white_wool_slab_and_magenta_dye"
+        "recipes": "hybrid_blocks:magenta_wool_slab_from_white_wool_slab_and_magenta_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mixed_blue_shingle_stairs_from_mixed_blue_shingles_stonecutting"
+        "recipes": "hybrid_blocks:mixed_blue_shingle_stairs_from_mixed_blue_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

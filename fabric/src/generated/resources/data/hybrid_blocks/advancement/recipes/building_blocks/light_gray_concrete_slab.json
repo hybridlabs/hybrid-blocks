@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:light_gray_concrete_slab"
+        "recipes": "hybrid_blocks:light_gray_concrete_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

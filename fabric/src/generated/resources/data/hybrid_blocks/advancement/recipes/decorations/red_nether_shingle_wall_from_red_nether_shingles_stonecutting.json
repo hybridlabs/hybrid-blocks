@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:red_nether_shingle_wall_from_red_nether_shingles_stonecutting"
+        "recipes": "hybrid_blocks:red_nether_shingle_wall_from_red_nether_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

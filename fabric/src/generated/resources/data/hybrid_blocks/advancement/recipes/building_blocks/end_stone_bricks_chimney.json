@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:end_stone_bricks_chimney"
+        "recipes": "hybrid_blocks:end_stone_bricks_chimney"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

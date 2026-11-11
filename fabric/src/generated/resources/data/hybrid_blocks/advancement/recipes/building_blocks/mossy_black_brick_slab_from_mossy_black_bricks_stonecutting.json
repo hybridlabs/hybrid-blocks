@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_black_brick_slab_from_mossy_black_bricks_stonecutting"
+        "recipes": "hybrid_blocks:mossy_black_brick_slab_from_mossy_black_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

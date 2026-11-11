@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:small_mixed_light_blue_brick_wall_from_small_mixed_light_blue_bricks_stonecutting"
+        "recipes": "hybrid_blocks:small_mixed_light_blue_brick_wall_from_small_mixed_light_blue_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

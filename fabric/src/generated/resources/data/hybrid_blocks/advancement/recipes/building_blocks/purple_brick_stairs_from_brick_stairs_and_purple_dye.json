@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:purple_brick_stairs_from_brick_stairs_and_purple_dye"
+        "recipes": "hybrid_blocks:purple_brick_stairs_from_brick_stairs_and_purple_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

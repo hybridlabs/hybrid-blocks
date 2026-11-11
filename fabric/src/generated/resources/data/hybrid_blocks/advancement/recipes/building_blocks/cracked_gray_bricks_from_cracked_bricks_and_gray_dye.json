@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cracked_gray_bricks_from_cracked_bricks_and_gray_dye"
+        "recipes": "hybrid_blocks:cracked_gray_bricks_from_cracked_bricks_and_gray_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

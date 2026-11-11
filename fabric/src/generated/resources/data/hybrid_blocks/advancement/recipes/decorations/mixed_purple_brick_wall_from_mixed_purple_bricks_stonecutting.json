@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mixed_purple_brick_wall_from_mixed_purple_bricks_stonecutting"
+        "recipes": "hybrid_blocks:mixed_purple_brick_wall_from_mixed_purple_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

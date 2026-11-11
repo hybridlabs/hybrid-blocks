@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:black_quartz_brick_stairs_from_black_quartz_bricks_stonecutting"
+        "recipes": "hybrid_blocks:black_quartz_brick_stairs_from_black_quartz_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

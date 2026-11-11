@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:white_shingle_slab"
+        "recipes": "hybrid_blocks:white_shingle_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

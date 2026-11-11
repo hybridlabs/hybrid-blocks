@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:red_bricks_from_bricks_and_red_dye"
+        "recipes": "hybrid_blocks:red_bricks_from_bricks_and_red_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

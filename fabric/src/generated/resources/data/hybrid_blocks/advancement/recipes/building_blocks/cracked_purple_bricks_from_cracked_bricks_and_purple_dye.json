@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:cracked_purple_bricks_from_cracked_bricks_and_purple_dye"
+        "recipes": "hybrid_blocks:cracked_purple_bricks_from_cracked_bricks_and_purple_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:smooth_cyan_quartz_stairs_from_smooth_quartz_stairs_and_cyan_dye"
+        "recipes": "hybrid_blocks:smooth_cyan_quartz_stairs_from_smooth_quartz_stairs_and_cyan_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

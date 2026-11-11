@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "cookingtime": 200,
   "experience": 0.1,
   "group": "stained_cracked_shingles",
   "ingredient": "hybrid_blocks:brown_shingles",

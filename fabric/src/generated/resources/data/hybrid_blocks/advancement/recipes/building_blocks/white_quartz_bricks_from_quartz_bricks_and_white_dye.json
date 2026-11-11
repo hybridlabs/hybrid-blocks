@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:white_quartz_bricks_from_quartz_bricks_and_white_dye"
+        "recipes": "hybrid_blocks:white_quartz_bricks_from_quartz_bricks_and_white_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

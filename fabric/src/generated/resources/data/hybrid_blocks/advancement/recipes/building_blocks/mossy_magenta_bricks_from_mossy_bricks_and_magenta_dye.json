@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_magenta_bricks_from_mossy_bricks_and_magenta_dye"
+        "recipes": "hybrid_blocks:mossy_magenta_bricks_from_mossy_bricks_and_magenta_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

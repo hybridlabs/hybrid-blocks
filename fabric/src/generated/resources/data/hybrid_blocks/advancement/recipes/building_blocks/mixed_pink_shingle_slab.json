@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mixed_pink_shingle_slab"
+        "recipes": "hybrid_blocks:mixed_pink_shingle_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

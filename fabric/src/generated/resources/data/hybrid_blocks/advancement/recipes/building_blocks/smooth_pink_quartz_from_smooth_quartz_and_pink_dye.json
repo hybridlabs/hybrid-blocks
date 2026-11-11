@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:smooth_pink_quartz_from_smooth_quartz_and_pink_dye"
+        "recipes": "hybrid_blocks:smooth_pink_quartz_from_smooth_quartz_and_pink_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

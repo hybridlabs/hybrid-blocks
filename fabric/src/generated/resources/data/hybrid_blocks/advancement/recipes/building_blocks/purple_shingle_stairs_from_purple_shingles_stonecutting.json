@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:purple_shingle_stairs_from_purple_shingles_stonecutting"
+        "recipes": "hybrid_blocks:purple_shingle_stairs_from_purple_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

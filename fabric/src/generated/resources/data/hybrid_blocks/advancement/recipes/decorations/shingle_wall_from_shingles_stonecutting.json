@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:shingle_wall_from_shingles_stonecutting"
+        "recipes": "hybrid_blocks:shingle_wall_from_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

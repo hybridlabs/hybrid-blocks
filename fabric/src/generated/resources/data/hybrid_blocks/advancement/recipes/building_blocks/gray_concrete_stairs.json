@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:gray_concrete_stairs"
+        "recipes": "hybrid_blocks:gray_concrete_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:smooth_gray_quartz_slab"
+        "recipes": "hybrid_blocks:smooth_gray_quartz_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

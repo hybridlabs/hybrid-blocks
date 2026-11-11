@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:orange_concrete_stairs_from_orange_concrete_stonecutting"
+        "recipes": "hybrid_blocks:orange_concrete_stairs_from_orange_concrete_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

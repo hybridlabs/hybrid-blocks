@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:chiseled_red_quartz_block_from_chiseled_quartz_block_and_red_dye"
+        "recipes": "hybrid_blocks:chiseled_red_quartz_block_from_chiseled_quartz_block_and_red_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

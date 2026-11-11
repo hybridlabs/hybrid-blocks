@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:chiseled_white_quartz_block"
+        "recipes": "hybrid_blocks:chiseled_white_quartz_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

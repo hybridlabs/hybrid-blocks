@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:large_red_brick_wall_from_large_red_bricks_stonecutting"
+        "recipes": "hybrid_blocks:large_red_brick_wall_from_large_red_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

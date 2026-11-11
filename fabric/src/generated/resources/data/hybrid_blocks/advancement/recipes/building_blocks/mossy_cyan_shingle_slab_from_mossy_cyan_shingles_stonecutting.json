@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_cyan_shingle_slab_from_mossy_cyan_shingles_stonecutting"
+        "recipes": "hybrid_blocks:mossy_cyan_shingle_slab_from_mossy_cyan_shingles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_blackstone_shingles_from_block.minecraft.moss_block"
+        "recipes": "hybrid_blocks:mossy_blackstone_shingles_from_block.minecraft.moss_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

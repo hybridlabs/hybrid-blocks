@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "hybrid_blocks:mossy_yellow_shingles_from_block.minecraft.vine"
+        "recipes": "hybrid_blocks:mossy_yellow_shingles_from_block.minecraft.vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
