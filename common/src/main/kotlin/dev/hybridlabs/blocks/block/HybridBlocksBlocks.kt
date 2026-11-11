@@ -2329,119 +2329,38 @@ object HybridBlocksBlocks {
     val YELLOW_BRINESTONE_CHIMNEY = chimney("yellow_brinestone_chimney", Blocks.NETHER_BRICKS, DyeColor.YELLOW)
     //#endregion
 
-    //#region Wool Sets
-    val WHITE_WOOL_STAIRS = stairs("white_wool_stairs", Blocks.WOOL.white(), Blocks.WOOL.white(), DyeColor.WHITE)
-    val WHITE_WOOL_SLAB = slab("white_wool_slab", Blocks.WOOL.white(), DyeColor.WHITE)
-
-    val ORANGE_WOOL_STAIRS = stairs("orange_wool_stairs", Blocks.WOOL.orange(), Blocks.WOOL.orange(), DyeColor.ORANGE)
-    val ORANGE_WOOL_SLAB = slab("orange_wool_slab", Blocks.WOOL.orange(), DyeColor.ORANGE)
-
-    val MAGENTA_WOOL_STAIRS = stairs("magenta_wool_stairs", Blocks.WOOL.magenta(), Blocks.WOOL.magenta(), DyeColor.MAGENTA)
-    val MAGENTA_WOOL_SLAB = slab("magenta_wool_slab", Blocks.WOOL.magenta(), DyeColor.MAGENTA)
-
-    val LIGHT_BLUE_WOOL_STAIRS = stairs("light_blue_wool_stairs", Blocks.WOOL.lightBlue(), Blocks.WOOL.lightBlue(), DyeColor.LIGHT_BLUE)
-    val LIGHT_BLUE_WOOL_SLAB = slab("light_blue_wool_slab", Blocks.WOOL.lightBlue(), DyeColor.LIGHT_BLUE)
-
-    val YELLOW_WOOL_STAIRS = stairs("yellow_wool_stairs", Blocks.WOOL.yellow(), Blocks.WOOL.yellow(), DyeColor.YELLOW)
-    val YELLOW_WOOL_SLAB = slab("yellow_wool_slab", Blocks.WOOL.yellow(), DyeColor.YELLOW)
-
-    val LIME_WOOL_STAIRS = stairs("lime_wool_stairs", Blocks.WOOL.lime(), Blocks.WOOL.lime(), DyeColor.LIME)
-    val LIME_WOOL_SLAB = slab("lime_wool_slab", Blocks.WOOL.lime(), DyeColor.LIME)
-
-    val PINK_WOOL_STAIRS = stairs("pink_wool_stairs", Blocks.WOOL.pink(), Blocks.WOOL.pink(), DyeColor.PINK)
-    val PINK_WOOL_SLAB = slab("pink_wool_slab", Blocks.WOOL.pink(), DyeColor.PINK)
-
-    val GRAY_WOOL_STAIRS = stairs("gray_wool_stairs", Blocks.WOOL.gray(), Blocks.WOOL.gray(), DyeColor.GRAY)
-    val GRAY_WOOL_SLAB = slab("gray_wool_slab", Blocks.WOOL.gray(), DyeColor.GRAY)
-
-    val LIGHT_GRAY_WOOL_STAIRS = stairs("light_gray_wool_stairs", Blocks.WOOL.lightGray(), Blocks.WOOL.lightGray(), DyeColor.LIGHT_GRAY)
-    val LIGHT_GRAY_WOOL_SLAB = slab("light_gray_wool_slab", Blocks.WOOL.lightGray(), DyeColor.LIGHT_GRAY)
-
-    val CYAN_WOOL_STAIRS = stairs("cyan_wool_stairs", Blocks.WOOL.cyan(), Blocks.WOOL.cyan(), DyeColor.CYAN)
-    val CYAN_WOOL_SLAB = slab("cyan_wool_slab", Blocks.WOOL.cyan(), DyeColor.CYAN)
-
-    val PURPLE_WOOL_STAIRS = stairs("purple_wool_stairs", Blocks.WOOL.purple(), Blocks.WOOL.purple(), DyeColor.PURPLE)
-    val PURPLE_WOOL_SLAB = slab("purple_wool_slab", Blocks.WOOL.purple(), DyeColor.PURPLE)
-
-    val BROWN_WOOL_STAIRS = stairs("brown_wool_stairs", Blocks.WOOL.brown(), Blocks.WOOL.brown(), DyeColor.BROWN)
-    val BROWN_WOOL_SLAB = slab("brown_wool_slab", Blocks.WOOL.brown(), DyeColor.BROWN)
-
-    val GREEN_WOOL_STAIRS = stairs("green_wool_stairs", Blocks.WOOL.green(), Blocks.WOOL.green(), DyeColor.GREEN)
-    val GREEN_WOOL_SLAB = slab("green_wool_slab", Blocks.WOOL.green(), DyeColor.GREEN)
-
-    val BLUE_WOOL_STAIRS = stairs("blue_wool_stairs", Blocks.WOOL.blue(), Blocks.WOOL.blue(), DyeColor.BLUE)
-    val BLUE_WOOL_SLAB = slab("blue_wool_slab", Blocks.WOOL.blue(), DyeColor.BLUE)
-
-    val RED_WOOL_STAIRS = stairs("red_wool_stairs", Blocks.WOOL.red(), Blocks.WOOL.red(), DyeColor.RED)
-    val RED_WOOL_SLAB = slab("red_wool_slab", Blocks.WOOL.red(), DyeColor.RED)
-
-    val BLACK_WOOL_STAIRS = stairs("black_wool_stairs", Blocks.WOOL.black(), Blocks.WOOL.black(), DyeColor.BLACK)
-    val BLACK_WOOL_SLAB = slab("black_wool_slab", Blocks.WOOL.black(), DyeColor.BLACK)
-    //#endregion
 
     //#region Concrete Sets
-    val WHITE_CONCRETE_STAIRS = stairs("white_concrete_stairs", Blocks.CONCRETE.white(), Blocks.CONCRETE.white(), DyeColor.WHITE)
-    val WHITE_CONCRETE_SLAB = slab("white_concrete_slab", Blocks.CONCRETE.white(), DyeColor.WHITE)
     val WHITE_CONCRETE_WALL = wall("white_concrete_wall", Blocks.CONCRETE.white(), DyeColor.WHITE)
 
-    val ORANGE_CONCRETE_STAIRS = stairs("orange_concrete_stairs", Blocks.CONCRETE.orange(), Blocks.CONCRETE.orange(), DyeColor.ORANGE)
-    val ORANGE_CONCRETE_SLAB = slab("orange_concrete_slab", Blocks.CONCRETE.orange(), DyeColor.ORANGE)
     val ORANGE_CONCRETE_WALL = wall("orange_concrete_wall", Blocks.CONCRETE.orange(), DyeColor.ORANGE)
 
-    val MAGENTA_CONCRETE_STAIRS = stairs("magenta_concrete_stairs", Blocks.CONCRETE.magenta(), Blocks.CONCRETE.magenta(), DyeColor.MAGENTA)
-    val MAGENTA_CONCRETE_SLAB = slab("magenta_concrete_slab", Blocks.CONCRETE.magenta(), DyeColor.MAGENTA)
     val MAGENTA_CONCRETE_WALL = wall("magenta_concrete_wall", Blocks.CONCRETE.magenta(), DyeColor.MAGENTA)
 
-    val LIGHT_BLUE_CONCRETE_STAIRS = stairs("light_blue_concrete_stairs", Blocks.CONCRETE.lightBlue(), Blocks.CONCRETE.lightBlue(), DyeColor.LIGHT_BLUE)
-    val LIGHT_BLUE_CONCRETE_SLAB = slab("light_blue_concrete_slab", Blocks.CONCRETE.lightBlue(), DyeColor.LIGHT_BLUE)
     val LIGHT_BLUE_CONCRETE_WALL = wall("light_blue_concrete_wall", Blocks.CONCRETE.lightBlue(), DyeColor.LIGHT_BLUE)
 
-    val YELLOW_CONCRETE_STAIRS = stairs("yellow_concrete_stairs", Blocks.CONCRETE.yellow(), Blocks.CONCRETE.yellow(), DyeColor.YELLOW)
-    val YELLOW_CONCRETE_SLAB = slab("yellow_concrete_slab", Blocks.CONCRETE.yellow(), DyeColor.YELLOW)
     val YELLOW_CONCRETE_WALL = wall("yellow_concrete_wall", Blocks.CONCRETE.yellow(), DyeColor.YELLOW)
 
-    val LIME_CONCRETE_STAIRS = stairs("lime_concrete_stairs", Blocks.CONCRETE.lime(), Blocks.CONCRETE.lime(), DyeColor.LIME)
-    val LIME_CONCRETE_SLAB = slab("lime_concrete_slab", Blocks.CONCRETE.lime(), DyeColor.LIME)
     val LIME_CONCRETE_WALL = wall("lime_concrete_wall", Blocks.CONCRETE.lime(), DyeColor.LIME)
 
-    val PINK_CONCRETE_STAIRS = stairs("pink_concrete_stairs", Blocks.CONCRETE.pink(), Blocks.CONCRETE.pink(), DyeColor.PINK)
-    val PINK_CONCRETE_SLAB = slab("pink_concrete_slab", Blocks.CONCRETE.pink(), DyeColor.PINK)
     val PINK_CONCRETE_WALL = wall("pink_concrete_wall", Blocks.CONCRETE.pink(), DyeColor.PINK)
 
-    val GRAY_CONCRETE_STAIRS = stairs("gray_concrete_stairs", Blocks.CONCRETE.gray(), Blocks.CONCRETE.gray(), DyeColor.GRAY)
-    val GRAY_CONCRETE_SLAB = slab("gray_concrete_slab", Blocks.CONCRETE.gray(), DyeColor.GRAY)
     val GRAY_CONCRETE_WALL = wall("gray_concrete_wall", Blocks.CONCRETE.gray(), DyeColor.GRAY)
 
-    val LIGHT_GRAY_CONCRETE_STAIRS = stairs("light_gray_concrete_stairs", Blocks.CONCRETE.lightGray(), Blocks.CONCRETE.lightGray(), DyeColor.LIGHT_GRAY)
-    val LIGHT_GRAY_CONCRETE_SLAB = slab("light_gray_concrete_slab", Blocks.CONCRETE.lightGray(), DyeColor.LIGHT_GRAY)
     val LIGHT_GRAY_CONCRETE_WALL = wall("light_gray_concrete_wall", Blocks.CONCRETE.lightGray(), DyeColor.LIGHT_GRAY)
 
-    val CYAN_CONCRETE_STAIRS = stairs("cyan_concrete_stairs", Blocks.CONCRETE.cyan(), Blocks.CONCRETE.cyan(), DyeColor.CYAN)
-    val CYAN_CONCRETE_SLAB = slab("cyan_concrete_slab", Blocks.CONCRETE.cyan(), DyeColor.CYAN)
     val CYAN_CONCRETE_WALL = wall("cyan_concrete_wall", Blocks.CONCRETE.cyan(), DyeColor.CYAN)
 
-    val PURPLE_CONCRETE_STAIRS = stairs("purple_concrete_stairs", Blocks.CONCRETE.purple(), Blocks.CONCRETE.purple(), DyeColor.PURPLE)
-    val PURPLE_CONCRETE_SLAB = slab("purple_concrete_slab", Blocks.CONCRETE.purple(), DyeColor.PURPLE)
     val PURPLE_CONCRETE_WALL = wall("purple_concrete_wall", Blocks.CONCRETE.purple(), DyeColor.PURPLE)
 
-    val BROWN_CONCRETE_STAIRS = stairs("brown_concrete_stairs", Blocks.CONCRETE.brown(), Blocks.CONCRETE.brown(), DyeColor.BROWN)
-    val BROWN_CONCRETE_SLAB = slab("brown_concrete_slab", Blocks.CONCRETE.brown(), DyeColor.BROWN)
     val BROWN_CONCRETE_WALL = wall("brown_concrete_wall", Blocks.CONCRETE.brown(), DyeColor.BROWN)
 
-    val GREEN_CONCRETE_STAIRS = stairs("green_concrete_stairs", Blocks.CONCRETE.green(), Blocks.CONCRETE.green(), DyeColor.GREEN)
-    val GREEN_CONCRETE_SLAB = slab("green_concrete_slab", Blocks.CONCRETE.green(), DyeColor.GREEN)
     val GREEN_CONCRETE_WALL = wall("green_concrete_wall", Blocks.CONCRETE.green(), DyeColor.GREEN)
 
-    val BLUE_CONCRETE_STAIRS = stairs("blue_concrete_stairs", Blocks.CONCRETE.blue(), Blocks.CONCRETE.blue(), DyeColor.BLUE)
-    val BLUE_CONCRETE_SLAB = slab("blue_concrete_slab", Blocks.CONCRETE.blue(), DyeColor.BLUE)
     val BLUE_CONCRETE_WALL = wall("blue_concrete_wall", Blocks.CONCRETE.blue(), DyeColor.BLUE)
 
-    val RED_CONCRETE_STAIRS = stairs("red_concrete_stairs", Blocks.CONCRETE.red(), Blocks.CONCRETE.red(), DyeColor.RED)
-    val RED_CONCRETE_SLAB = slab("red_concrete_slab", Blocks.CONCRETE.red(), DyeColor.RED)
     val RED_CONCRETE_WALL = wall("red_concrete_wall", Blocks.CONCRETE.red(), DyeColor.RED)
 
-    val BLACK_CONCRETE_STAIRS = stairs("black_concrete_stairs", Blocks.CONCRETE.black(), Blocks.CONCRETE.black(), DyeColor.BLACK)
-    val BLACK_CONCRETE_SLAB = slab("black_concrete_slab", Blocks.CONCRETE.black(), DyeColor.BLACK)
     val BLACK_CONCRETE_WALL = wall("black_concrete_wall", Blocks.CONCRETE.black(), DyeColor.BLACK)
 //#endregion
 

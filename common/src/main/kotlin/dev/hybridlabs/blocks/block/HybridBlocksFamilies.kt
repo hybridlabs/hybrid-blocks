@@ -3083,245 +3083,100 @@ object HybridBlocksFamilies {
             .family
     }
 
-    //#region Wool Families
-    val WHITE_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.white())
-            .stairs(HybridBlocksBlocks.WHITE_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.WHITE_WOOL_SLAB.get())
-            .family
-    }
-
-    val ORANGE_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.orange())
-            .stairs(HybridBlocksBlocks.ORANGE_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.ORANGE_WOOL_SLAB.get())
-            .family
-    }
-
-    val MAGENTA_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.magenta())
-            .stairs(HybridBlocksBlocks.MAGENTA_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.MAGENTA_WOOL_SLAB.get())
-            .family
-    }
-
-    val LIGHT_BLUE_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.lightBlue())
-            .stairs(HybridBlocksBlocks.LIGHT_BLUE_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIGHT_BLUE_WOOL_SLAB.get())
-            .family
-    }
-
-    val YELLOW_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.yellow())
-            .stairs(HybridBlocksBlocks.YELLOW_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.YELLOW_WOOL_SLAB.get())
-            .family
-    }
-
-    val LIME_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.lime())
-            .stairs(HybridBlocksBlocks.LIME_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIME_WOOL_SLAB.get())
-            .family
-    }
-
-    val PINK_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.pink())
-            .stairs(HybridBlocksBlocks.PINK_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.PINK_WOOL_SLAB.get())
-            .family
-    }
-
-    val GRAY_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.gray())
-            .stairs(HybridBlocksBlocks.GRAY_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.GRAY_WOOL_SLAB.get())
-            .family
-    }
-
-    val LIGHT_GRAY_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.lightGray())
-            .stairs(HybridBlocksBlocks.LIGHT_GRAY_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIGHT_GRAY_WOOL_SLAB.get())
-            .family
-    }
-
-    val CYAN_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.cyan())
-            .stairs(HybridBlocksBlocks.CYAN_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.CYAN_WOOL_SLAB.get())
-            .family
-    }
-
-    val PURPLE_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.purple())
-            .stairs(HybridBlocksBlocks.PURPLE_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.PURPLE_WOOL_SLAB.get())
-            .family
-    }
-
-    val BLUE_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.blue())
-            .stairs(HybridBlocksBlocks.BLUE_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.BLUE_WOOL_SLAB.get())
-            .family
-    }
-
-    val BROWN_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.brown())
-            .stairs(HybridBlocksBlocks.BROWN_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.BROWN_WOOL_SLAB.get())
-            .family
-    }
-
-    val GREEN_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.green())
-            .stairs(HybridBlocksBlocks.GREEN_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.GREEN_WOOL_SLAB.get())
-            .family
-    }
-
-    val RED_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.red())
-            .stairs(HybridBlocksBlocks.RED_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.RED_WOOL_SLAB.get())
-            .family
-    }
-
-    val BLACK_WOOL: BlockFamily by lazy {
-        BlockFamily.Builder(Blocks.WOOL.black())
-            .stairs(HybridBlocksBlocks.BLACK_WOOL_STAIRS.get())
-            .slab(HybridBlocksBlocks.BLACK_WOOL_SLAB.get())
-            .family
-    }
-    //#endregion
 
     //#region Concrete Families
     val WHITE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.white())
-            .stairs(HybridBlocksBlocks.WHITE_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.WHITE_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.WHITE_CONCRETE_WALL.get())
             .family
     }
 
     val ORANGE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.orange())
-            .stairs(HybridBlocksBlocks.ORANGE_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.ORANGE_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.ORANGE_CONCRETE_WALL.get())
             .family
     }
 
     val MAGENTA_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.magenta())
-            .stairs(HybridBlocksBlocks.MAGENTA_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.MAGENTA_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.MAGENTA_CONCRETE_WALL.get())
             .family
     }
 
     val LIGHT_BLUE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.lightBlue())
-            .stairs(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_WALL.get())
             .family
     }
 
     val YELLOW_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.yellow())
-            .stairs(HybridBlocksBlocks.YELLOW_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.YELLOW_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.YELLOW_CONCRETE_WALL.get())
             .family
     }
 
     val LIME_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.lime())
-            .stairs(HybridBlocksBlocks.LIME_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIME_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.LIME_CONCRETE_WALL.get())
             .family
     }
 
     val PINK_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.pink())
-            .stairs(HybridBlocksBlocks.PINK_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.PINK_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.PINK_CONCRETE_WALL.get())
             .family
     }
 
     val GRAY_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.gray())
-            .stairs(HybridBlocksBlocks.GRAY_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.GRAY_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.GRAY_CONCRETE_WALL.get())
             .family
     }
 
     val LIGHT_GRAY_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.lightGray())
-            .stairs(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_WALL.get())
             .family
     }
 
     val CYAN_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.cyan())
-            .stairs(HybridBlocksBlocks.CYAN_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.CYAN_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.CYAN_CONCRETE_WALL.get())
             .family
     }
 
     val PURPLE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.purple())
-            .stairs(HybridBlocksBlocks.PURPLE_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.PURPLE_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.PURPLE_CONCRETE_WALL.get())
             .family
     }
 
     val BLUE_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.blue())
-            .stairs(HybridBlocksBlocks.BLUE_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.BLUE_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.BLUE_CONCRETE_WALL.get())
             .family
     }
 
     val BROWN_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.brown())
-            .stairs(HybridBlocksBlocks.BROWN_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.BROWN_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.BROWN_CONCRETE_WALL.get())
             .family
     }
 
     val GREEN_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.green())
-            .stairs(HybridBlocksBlocks.GREEN_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.GREEN_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.GREEN_CONCRETE_WALL.get())
             .family
     }
 
     val RED_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.red())
-            .stairs(HybridBlocksBlocks.RED_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.RED_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.RED_CONCRETE_WALL.get())
             .family
     }
 
     val BLACK_CONCRETE: BlockFamily by lazy {
         BlockFamily.Builder(Blocks.CONCRETE.black())
-            .stairs(HybridBlocksBlocks.BLACK_CONCRETE_STAIRS.get())
-            .slab(HybridBlocksBlocks.BLACK_CONCRETE_SLAB.get())
             .wall(HybridBlocksBlocks.BLACK_CONCRETE_WALL.get())
             .family
     }

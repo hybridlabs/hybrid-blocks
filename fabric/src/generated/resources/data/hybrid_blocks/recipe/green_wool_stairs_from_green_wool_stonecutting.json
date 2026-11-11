@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:green_wool",
-  "result": {
-    "id": "hybrid_blocks:green_wool_stairs"
-  }
-}

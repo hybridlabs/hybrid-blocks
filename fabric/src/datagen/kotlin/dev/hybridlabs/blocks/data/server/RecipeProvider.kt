@@ -3,16 +3,19 @@ package dev.hybridlabs.blocks.data.server
 
 import dev.hybridlabs.blocks.item.HybridBlocksItems
 import dev.hybridlabs.blocks.platform.registration.RegistryObject
+import java.util.concurrent.CompletableFuture
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.minecraft.advancements.Advancement
 import net.minecraft.advancements.triggers.InventoryChangeTrigger
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
-import net.minecraft.data.recipes.*
+import net.minecraft.data.recipes.RecipeCategory
+import net.minecraft.data.recipes.RecipeOutput
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder
 import net.minecraft.data.worldgen.BootstrapContext
 import net.minecraft.resources.ResourceKey
-import net.minecraft.advancements.Advancement
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
@@ -21,7 +24,6 @@ import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.item.crafting.Recipe
 import net.minecraft.world.level.ItemLike
 import net.minecraft.world.level.block.Blocks
-import java.util.concurrent.CompletableFuture
 
 /**
  * Generates all recipes.
@@ -104,24 +106,7 @@ private class HybridRecipes(
         offerStainedQuartzSetRecipes(exporter, RED_QUARTZ_SET, Items.DYE.red())
         offerStainedQuartzSetRecipes(exporter, BLACK_QUARTZ_SET, Items.DYE.black())
 
-        //#region Wool
-        offerDyedWoolSetRecipes(exporter, WHITE_WOOL_SET, Items.DYE.white())
-        offerDyedWoolSetRecipes(exporter, ORANGE_WOOL_SET, Items.DYE.orange())
-        offerDyedWoolSetRecipes(exporter, MAGENTA_WOOL_SET, Items.DYE.magenta())
-        offerDyedWoolSetRecipes(exporter, LIGHT_BLUE_WOOL_SET, Items.DYE.lightBlue())
-        offerDyedWoolSetRecipes(exporter, YELLOW_WOOL_SET, Items.DYE.yellow())
-        offerDyedWoolSetRecipes(exporter, LIME_WOOL_SET, Items.DYE.lime())
-        offerDyedWoolSetRecipes(exporter, PINK_WOOL_SET, Items.DYE.pink())
-        offerDyedWoolSetRecipes(exporter, GRAY_WOOL_SET, Items.DYE.gray())
-        offerDyedWoolSetRecipes(exporter, LIGHT_GRAY_WOOL_SET, Items.DYE.lightGray())
-        offerDyedWoolSetRecipes(exporter, CYAN_WOOL_SET, Items.DYE.cyan())
-        offerDyedWoolSetRecipes(exporter, PURPLE_WOOL_SET, Items.DYE.purple())
-        offerDyedWoolSetRecipes(exporter, BLUE_WOOL_SET, Items.DYE.blue())
-        offerDyedWoolSetRecipes(exporter, BROWN_WOOL_SET, Items.DYE.brown())
-        offerDyedWoolSetRecipes(exporter, GREEN_WOOL_SET, Items.DYE.green())
-        offerDyedWoolSetRecipes(exporter, RED_WOOL_SET, Items.DYE.red())
-        offerDyedWoolSetRecipes(exporter, BLACK_WOOL_SET, Items.DYE.black())
-
+        //#region Quartz
         // vanilla quartz keeps its own recipes; only the added brick stairs and slab need them
         offerStairsAndSlabRecipes(
             exporter,
@@ -152,6 +137,7 @@ private class HybridRecipes(
         offerShinglesDyeingRecipe(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.YELLOW_SHINGLE_STAIRS.get(), HybridBlocksItems.YELLOW_SHINGLE_SLAB.get(), Items.DYE.yellow())
 
         offerBrickAndShingleRecipes(exporter)
+        offerConcreteWallRecipes(exporter)
         offerVariantBrickRecipes(exporter)
         //#endregion
         //#endregion
@@ -709,107 +695,7 @@ private class HybridRecipes(
         val walls: RegistryObject<BlockItem>,
     )
 
-    private val BRICK_AND_SHINGLE_AND_CONCRETE_SETS = listOf(
-        //#region Concrete
-
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.black(),
-            HybridBlocksItems.BLACK_CONCRETE_STAIRS,
-            HybridBlocksItems.BLACK_CONCRETE_SLAB,
-            HybridBlocksItems.BLACK_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.blue(),
-            HybridBlocksItems.BLUE_CONCRETE_STAIRS,
-            HybridBlocksItems.BLUE_CONCRETE_SLAB,
-            HybridBlocksItems.BLUE_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.brown(),
-            HybridBlocksItems.BROWN_CONCRETE_STAIRS,
-            HybridBlocksItems.BROWN_CONCRETE_SLAB,
-            HybridBlocksItems.BROWN_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.cyan(),
-            HybridBlocksItems.CYAN_CONCRETE_STAIRS,
-            HybridBlocksItems.CYAN_CONCRETE_SLAB,
-            HybridBlocksItems.CYAN_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.gray(),
-            HybridBlocksItems.GRAY_CONCRETE_STAIRS,
-            HybridBlocksItems.GRAY_CONCRETE_SLAB,
-            HybridBlocksItems.GRAY_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.green(),
-            HybridBlocksItems.GREEN_CONCRETE_STAIRS,
-            HybridBlocksItems.GREEN_CONCRETE_SLAB,
-            HybridBlocksItems.GREEN_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.lightBlue(),
-            HybridBlocksItems.LIGHT_BLUE_CONCRETE_STAIRS,
-            HybridBlocksItems.LIGHT_BLUE_CONCRETE_SLAB,
-            HybridBlocksItems.LIGHT_BLUE_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.lightGray(),
-            HybridBlocksItems.LIGHT_GRAY_CONCRETE_STAIRS,
-            HybridBlocksItems.LIGHT_GRAY_CONCRETE_SLAB,
-            HybridBlocksItems.LIGHT_GRAY_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.lime(),
-            HybridBlocksItems.LIME_CONCRETE_STAIRS,
-            HybridBlocksItems.LIME_CONCRETE_SLAB,
-            HybridBlocksItems.LIME_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.magenta(),
-            HybridBlocksItems.MAGENTA_CONCRETE_STAIRS,
-            HybridBlocksItems.MAGENTA_CONCRETE_SLAB,
-            HybridBlocksItems.MAGENTA_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.orange(),
-            HybridBlocksItems.ORANGE_CONCRETE_STAIRS,
-            HybridBlocksItems.ORANGE_CONCRETE_SLAB,
-            HybridBlocksItems.ORANGE_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.pink(),
-            HybridBlocksItems.PINK_CONCRETE_STAIRS,
-            HybridBlocksItems.PINK_CONCRETE_SLAB,
-            HybridBlocksItems.PINK_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.purple(),
-            HybridBlocksItems.PURPLE_CONCRETE_STAIRS,
-            HybridBlocksItems.PURPLE_CONCRETE_SLAB,
-            HybridBlocksItems.PURPLE_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.red(),
-            HybridBlocksItems.RED_CONCRETE_STAIRS,
-            HybridBlocksItems.RED_CONCRETE_SLAB,
-            HybridBlocksItems.RED_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.white(),
-            HybridBlocksItems.WHITE_CONCRETE_STAIRS,
-            HybridBlocksItems.WHITE_CONCRETE_SLAB,
-            HybridBlocksItems.WHITE_CONCRETE_WALL
-        ),
-        StonetypeBlocksRecipeSets(
-            Items.CONCRETE.yellow(),
-            HybridBlocksItems.YELLOW_CONCRETE_STAIRS,
-            HybridBlocksItems.YELLOW_CONCRETE_SLAB,
-            HybridBlocksItems.YELLOW_CONCRETE_WALL
-        ),
-        //#endregion
-
+    private val BRICK_AND_SHINGLE_SETS = listOf(
         //#region Bricks
         StonetypeBlocksRecipeSets(
             HybridBlocksItems.MEDIUM_MUD_BRICKS.get(),
@@ -2449,7 +2335,7 @@ private class HybridRecipes(
     //#endregion
 
     private fun offerBrickAndShingleRecipes(exporter: RecipeOutput) {
-        BRICK_AND_SHINGLE_AND_CONCRETE_SETS.forEach { set ->
+        BRICK_AND_SHINGLE_SETS.forEach { set ->
             val base = set.base
             val path = BuiltInRegistries.ITEM.getKey(base.asItem()).path
             val stairBuilders = set.stairBuilders.get()
@@ -2457,7 +2343,6 @@ private class HybridRecipes(
             val walls = set.walls.get()
 
             val isShingle = path.contains("shingle")
-            val isConcrete = path.contains("concrete")
 
             val isMixed = path.contains("mixed_")
             val isSmall = path.contains("small_mixed_")
@@ -2486,7 +2371,6 @@ private class HybridRecipes(
 
             val groupSuffix = when {
                 isShingle -> "shingle_"
-                isConcrete -> "concrete_"
                 else -> "brick_"
             }
 
@@ -2498,6 +2382,35 @@ private class HybridRecipes(
 
             stonecutterResultFromBase(exporter, RecipeCategory.DECORATIONS, walls, base)
             wallBuilder(exporter, walls, base,"${groupPrefix}${groupSuffix}walls")
+        }
+    }
+    /**
+     * Vanilla 26.3 added concrete stairs and slabs, so only the walls are still ours; their
+     * recipes are generated from the dyed concrete directly.
+     */
+    private val CONCRETE_WALLS = listOf(
+        Items.CONCRETE.black() to HybridBlocksItems.BLACK_CONCRETE_WALL,
+        Items.CONCRETE.blue() to HybridBlocksItems.BLUE_CONCRETE_WALL,
+        Items.CONCRETE.brown() to HybridBlocksItems.BROWN_CONCRETE_WALL,
+        Items.CONCRETE.cyan() to HybridBlocksItems.CYAN_CONCRETE_WALL,
+        Items.CONCRETE.gray() to HybridBlocksItems.GRAY_CONCRETE_WALL,
+        Items.CONCRETE.green() to HybridBlocksItems.GREEN_CONCRETE_WALL,
+        Items.CONCRETE.lightBlue() to HybridBlocksItems.LIGHT_BLUE_CONCRETE_WALL,
+        Items.CONCRETE.lightGray() to HybridBlocksItems.LIGHT_GRAY_CONCRETE_WALL,
+        Items.CONCRETE.lime() to HybridBlocksItems.LIME_CONCRETE_WALL,
+        Items.CONCRETE.magenta() to HybridBlocksItems.MAGENTA_CONCRETE_WALL,
+        Items.CONCRETE.orange() to HybridBlocksItems.ORANGE_CONCRETE_WALL,
+        Items.CONCRETE.pink() to HybridBlocksItems.PINK_CONCRETE_WALL,
+        Items.CONCRETE.purple() to HybridBlocksItems.PURPLE_CONCRETE_WALL,
+        Items.CONCRETE.red() to HybridBlocksItems.RED_CONCRETE_WALL,
+        Items.CONCRETE.white() to HybridBlocksItems.WHITE_CONCRETE_WALL,
+        Items.CONCRETE.yellow() to HybridBlocksItems.YELLOW_CONCRETE_WALL,
+    )
+
+    private fun offerConcreteWallRecipes(exporter: RecipeOutput) {
+        CONCRETE_WALLS.forEach { (base, wall) ->
+            stonecutterResultFromBase(exporter, RecipeCategory.DECORATIONS, wall.get(), base)
+            wallBuilder(exporter, wall.get(), base, "plain_concrete_walls")
         }
     }
     //#endregion
@@ -3454,159 +3367,6 @@ private class HybridRecipes(
     //#endregion
 
 
-    /**
-     * Emits every crafting and stonecutting recipe inside a quartz set. Colour agnostic: it only
-     * ever walks from a set's own base block outwards, so nothing here depends on a dye.
-     */
-    private fun offerWoolSetRecipes(exporter: RecipeOutput, set: WoolRecipeSet) {
-        val block = set.block
-
-        // base block -> stairs, slab
-        offerStairsAndSlabRecipes(exporter, block, set.stairs.get(), set.slab.get(), "wool_stairs", "wool_slabs")
-    }
-
-    /**
-     * [offerWoolSetRecipes] plus the dyeing recipes that turn vanilla quartz into this colour.
-     * Only the three blocks with a vanilla counterpart are dyed; everything else in the set is
-     * reached from the stained base block.
-     */
-
-
-    /**
-     * Every block variant a single wool colour ships with.
-     */
-    private data class WoolRecipeSet(
-        val block: Item,
-        val stairs: RegistryObject<BlockItem>,
-        val slab: RegistryObject<BlockItem>,
-    )
-
-    private val WHITE_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.white(),
-        HybridBlocksItems.WHITE_WOOL_STAIRS,
-        HybridBlocksItems.WHITE_WOOL_SLAB,
-    )
-
-    private val ORANGE_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.orange(),
-        HybridBlocksItems.ORANGE_WOOL_STAIRS,
-        HybridBlocksItems.ORANGE_WOOL_SLAB,
-    )
-
-    private val MAGENTA_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.magenta(),
-        HybridBlocksItems.MAGENTA_WOOL_STAIRS,
-        HybridBlocksItems.MAGENTA_WOOL_SLAB,
-    )
-
-    private val LIGHT_BLUE_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.lightBlue(),
-        HybridBlocksItems.LIGHT_BLUE_WOOL_STAIRS,
-        HybridBlocksItems.LIGHT_BLUE_WOOL_SLAB,
-    )
-
-    private val YELLOW_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.yellow(),
-        HybridBlocksItems.YELLOW_WOOL_STAIRS,
-        HybridBlocksItems.YELLOW_WOOL_SLAB,
-    )
-
-    private val LIME_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.lime(),
-        HybridBlocksItems.LIME_WOOL_STAIRS,
-        HybridBlocksItems.LIME_WOOL_SLAB,
-    )
-
-    private val PINK_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.pink(),
-        HybridBlocksItems.PINK_WOOL_STAIRS,
-        HybridBlocksItems.PINK_WOOL_SLAB,
-    )
-
-    private val GRAY_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.gray(),
-        HybridBlocksItems.GRAY_WOOL_STAIRS,
-        HybridBlocksItems.GRAY_WOOL_SLAB,
-    )
-
-    private val LIGHT_GRAY_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.lightGray(),
-        HybridBlocksItems.LIGHT_GRAY_WOOL_STAIRS,
-        HybridBlocksItems.LIGHT_GRAY_WOOL_SLAB,
-    )
-
-    private val CYAN_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.cyan(),
-        HybridBlocksItems.CYAN_WOOL_STAIRS,
-        HybridBlocksItems.CYAN_WOOL_SLAB,
-    )
-
-    private val PURPLE_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.purple(),
-        HybridBlocksItems.PURPLE_WOOL_STAIRS,
-        HybridBlocksItems.PURPLE_WOOL_SLAB,
-    )
-
-    private val BLUE_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.blue(),
-        HybridBlocksItems.BLUE_WOOL_STAIRS,
-        HybridBlocksItems.BLUE_WOOL_SLAB,
-    )
-
-    private val BROWN_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.brown(),
-        HybridBlocksItems.BROWN_WOOL_STAIRS,
-        HybridBlocksItems.BROWN_WOOL_SLAB,
-    )
-
-    private val GREEN_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.green(),
-        HybridBlocksItems.GREEN_WOOL_STAIRS,
-        HybridBlocksItems.GREEN_WOOL_SLAB,
-    )
-
-    private val RED_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.red(),
-        HybridBlocksItems.RED_WOOL_STAIRS,
-        HybridBlocksItems.RED_WOOL_SLAB,
-    )
-
-    private val BLACK_WOOL_SET = WoolRecipeSet(
-        Items.WOOL.black(),
-        HybridBlocksItems.BLACK_WOOL_STAIRS,
-        HybridBlocksItems.BLACK_WOOL_SLAB,
-    )
-
-    private fun offerDyedWoolSetRecipes(exporter: RecipeOutput, set: WoolRecipeSet, dye: Item) {
-        offerWoolSetRecipes(exporter, set)
-
-        offerWoolSetDyeingRecipe(exporter, set.stairs.get(), set.slab.get(), dye)
-    }
-
-    private fun offerWoolSetDyeingRecipe(
-        exporter: RecipeOutput,
-        outputStairs: Item,
-        outputSlab: Item,
-        dye: Item
-    ) {
-        offerDyeingRecipe(
-            exporter,
-            HybridBlocksItems.WHITE_WOOL_STAIRS.get(),
-            "has_wool_stairs",
-            "dyed_wool_stairs",
-            outputStairs,
-            dye
-        )
-
-        offerDyeingRecipe(
-            exporter,
-            HybridBlocksItems.WHITE_WOOL_SLAB.get(),
-            "has_wool_slab",
-            "dyed_wool_slab",
-            outputSlab,
-            dye
-        )
-    }
 
     //#region 26.1 adapters
 

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:pink_wool",
-  "result": {
-    "id": "hybrid_blocks:pink_wool_stairs"
-  }
-}

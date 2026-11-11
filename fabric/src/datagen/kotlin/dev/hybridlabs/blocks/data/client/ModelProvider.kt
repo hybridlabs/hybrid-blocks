@@ -7,7 +7,13 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.minecraft.client.data.models.BlockModelGenerators
 import net.minecraft.client.data.models.ItemModelGenerators
-import net.minecraft.client.data.models.model.*
+import net.minecraft.client.data.models.model.ItemModelUtils
+import net.minecraft.client.data.models.model.ModelLocationUtils
+import net.minecraft.client.data.models.model.ModelTemplate
+import net.minecraft.client.data.models.model.ModelTemplates
+import net.minecraft.client.data.models.model.TextureMapping
+import net.minecraft.client.data.models.model.TextureSlot
+import net.minecraft.client.data.models.model.TexturedModel
 import net.minecraft.client.renderer.item.ClientItem
 import net.minecraft.client.resources.model.sprite.Material
 import net.minecraft.resources.Identifier
@@ -867,23 +873,6 @@ class ModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
                 .generateFor(HybridBlocksFamilies.MOSSY_YELLOW_BRINESTONE_SHINGLES)
             generator.family(HybridBlocksBlocks.MIXED_YELLOW_BRINESTONE_SHINGLES.get())
                 .generateFor(HybridBlocksFamilies.MIXED_YELLOW_BRINESTONE_SHINGLES)
-
-            generator.family(Blocks.WOOL.white()).generateFor(HybridBlocksFamilies.WHITE_WOOL)
-            generator.family(Blocks.WOOL.orange()).generateFor(HybridBlocksFamilies.ORANGE_WOOL)
-            generator.family(Blocks.WOOL.magenta()).generateFor(HybridBlocksFamilies.MAGENTA_WOOL)
-            generator.family(Blocks.WOOL.lightBlue()).generateFor(HybridBlocksFamilies.LIGHT_BLUE_WOOL)
-            generator.family(Blocks.WOOL.yellow()).generateFor(HybridBlocksFamilies.YELLOW_WOOL)
-            generator.family(Blocks.WOOL.lime()).generateFor(HybridBlocksFamilies.LIME_WOOL)
-            generator.family(Blocks.WOOL.pink()).generateFor(HybridBlocksFamilies.PINK_WOOL)
-            generator.family(Blocks.WOOL.gray()).generateFor(HybridBlocksFamilies.GRAY_WOOL)
-            generator.family(Blocks.WOOL.lightGray()).generateFor(HybridBlocksFamilies.LIGHT_GRAY_WOOL)
-            generator.family(Blocks.WOOL.cyan()).generateFor(HybridBlocksFamilies.CYAN_WOOL)
-            generator.family(Blocks.WOOL.purple()).generateFor(HybridBlocksFamilies.PURPLE_WOOL)
-            generator.family(Blocks.WOOL.blue()).generateFor(HybridBlocksFamilies.BLUE_WOOL)
-            generator.family(Blocks.WOOL.brown()).generateFor(HybridBlocksFamilies.BROWN_WOOL)
-            generator.family(Blocks.WOOL.green()).generateFor(HybridBlocksFamilies.GREEN_WOOL)
-            generator.family(Blocks.WOOL.red()).generateFor(HybridBlocksFamilies.RED_WOOL)
-            generator.family(Blocks.WOOL.black()).generateFor(HybridBlocksFamilies.BLACK_WOOL)
 
             generator.family(Blocks.CONCRETE.white()).generateFor(HybridBlocksFamilies.WHITE_CONCRETE)
             generator.family(Blocks.CONCRETE.orange()).generateFor(HybridBlocksFamilies.ORANGE_CONCRETE)

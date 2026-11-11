@@ -272,118 +272,54 @@ object HybridBlocksItems {
     //#endregion
 
     //#region Wool
-    val WHITE_WOOL_STAIRS = item(HybridBlocksBlocks.WHITE_WOOL_STAIRS)
-    val WHITE_WOOL_SLAB = item(HybridBlocksBlocks.WHITE_WOOL_SLAB)
 
-    val LIGHT_GRAY_WOOL_STAIRS = item(HybridBlocksBlocks.LIGHT_GRAY_WOOL_STAIRS)
-    val LIGHT_GRAY_WOOL_SLAB = item(HybridBlocksBlocks.LIGHT_GRAY_WOOL_SLAB)
 
-    val GRAY_WOOL_STAIRS = item(HybridBlocksBlocks.GRAY_WOOL_STAIRS)
-    val GRAY_WOOL_SLAB = item(HybridBlocksBlocks.GRAY_WOOL_SLAB)
 
-    val BLACK_WOOL_STAIRS = item(HybridBlocksBlocks.BLACK_WOOL_STAIRS)
-    val BLACK_WOOL_SLAB = item(HybridBlocksBlocks.BLACK_WOOL_SLAB)
 
-    val BROWN_WOOL_STAIRS = item(HybridBlocksBlocks.BROWN_WOOL_STAIRS)
-    val BROWN_WOOL_SLAB = item(HybridBlocksBlocks.BROWN_WOOL_SLAB)
 
-    val RED_WOOL_STAIRS = item(HybridBlocksBlocks.RED_WOOL_STAIRS)
-    val RED_WOOL_SLAB = item(HybridBlocksBlocks.RED_WOOL_SLAB)
 
-    val ORANGE_WOOL_STAIRS = item(HybridBlocksBlocks.ORANGE_WOOL_STAIRS)
-    val ORANGE_WOOL_SLAB = item(HybridBlocksBlocks.ORANGE_WOOL_SLAB)
 
-    val YELLOW_WOOL_STAIRS = item(HybridBlocksBlocks.YELLOW_WOOL_STAIRS)
-    val YELLOW_WOOL_SLAB = item(HybridBlocksBlocks.YELLOW_WOOL_SLAB)
 
-    val LIME_WOOL_STAIRS = item(HybridBlocksBlocks.LIME_WOOL_STAIRS)
-    val LIME_WOOL_SLAB = item(HybridBlocksBlocks.LIME_WOOL_SLAB)
 
-    val GREEN_WOOL_STAIRS = item(HybridBlocksBlocks.GREEN_WOOL_STAIRS)
-    val GREEN_WOOL_SLAB = item(HybridBlocksBlocks.GREEN_WOOL_SLAB)
 
-    val CYAN_WOOL_STAIRS = item(HybridBlocksBlocks.CYAN_WOOL_STAIRS)
-    val CYAN_WOOL_SLAB = item(HybridBlocksBlocks.CYAN_WOOL_SLAB)
 
-    val LIGHT_BLUE_WOOL_STAIRS = item(HybridBlocksBlocks.LIGHT_BLUE_WOOL_STAIRS)
-    val LIGHT_BLUE_WOOL_SLAB = item(HybridBlocksBlocks.LIGHT_BLUE_WOOL_SLAB)
 
-    val BLUE_WOOL_STAIRS = item(HybridBlocksBlocks.BLUE_WOOL_STAIRS)
-    val BLUE_WOOL_SLAB = item(HybridBlocksBlocks.BLUE_WOOL_SLAB)
 
-    val PURPLE_WOOL_STAIRS = item(HybridBlocksBlocks.PURPLE_WOOL_STAIRS)
-    val PURPLE_WOOL_SLAB = item(HybridBlocksBlocks.PURPLE_WOOL_SLAB)
 
-    val MAGENTA_WOOL_STAIRS = item(HybridBlocksBlocks.MAGENTA_WOOL_STAIRS)
-    val MAGENTA_WOOL_SLAB = item(HybridBlocksBlocks.MAGENTA_WOOL_SLAB)
 
-    val PINK_WOOL_STAIRS = item(HybridBlocksBlocks.PINK_WOOL_STAIRS)
-    val PINK_WOOL_SLAB = item(HybridBlocksBlocks.PINK_WOOL_SLAB)
     //#endregion
 
     //#region Concrete
-    val WHITE_CONCRETE_STAIRS = item(HybridBlocksBlocks.WHITE_CONCRETE_STAIRS)
-    val WHITE_CONCRETE_SLAB = item(HybridBlocksBlocks.WHITE_CONCRETE_SLAB)
     val WHITE_CONCRETE_WALL = item(HybridBlocksBlocks.WHITE_CONCRETE_WALL)
 
-    val LIGHT_GRAY_CONCRETE_STAIRS = item(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_STAIRS)
-    val LIGHT_GRAY_CONCRETE_SLAB = item(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_SLAB)
     val LIGHT_GRAY_CONCRETE_WALL = item(HybridBlocksBlocks.LIGHT_GRAY_CONCRETE_WALL)
 
-    val GRAY_CONCRETE_STAIRS = item(HybridBlocksBlocks.GRAY_CONCRETE_STAIRS)
-    val GRAY_CONCRETE_SLAB = item(HybridBlocksBlocks.GRAY_CONCRETE_SLAB)
     val GRAY_CONCRETE_WALL = item(HybridBlocksBlocks.GRAY_CONCRETE_WALL)
 
-    val BLACK_CONCRETE_STAIRS = item(HybridBlocksBlocks.BLACK_CONCRETE_STAIRS)
-    val BLACK_CONCRETE_SLAB = item(HybridBlocksBlocks.BLACK_CONCRETE_SLAB)
     val BLACK_CONCRETE_WALL = item(HybridBlocksBlocks.BLACK_CONCRETE_WALL)
 
-    val BROWN_CONCRETE_STAIRS = item(HybridBlocksBlocks.BROWN_CONCRETE_STAIRS)
-    val BROWN_CONCRETE_SLAB = item(HybridBlocksBlocks.BROWN_CONCRETE_SLAB)
     val BROWN_CONCRETE_WALL = item(HybridBlocksBlocks.BROWN_CONCRETE_WALL)
 
-    val RED_CONCRETE_STAIRS = item(HybridBlocksBlocks.RED_CONCRETE_STAIRS)
-    val RED_CONCRETE_SLAB = item(HybridBlocksBlocks.RED_CONCRETE_SLAB)
     val RED_CONCRETE_WALL = item(HybridBlocksBlocks.RED_CONCRETE_WALL)
 
-    val ORANGE_CONCRETE_STAIRS = item(HybridBlocksBlocks.ORANGE_CONCRETE_STAIRS)
-    val ORANGE_CONCRETE_SLAB = item(HybridBlocksBlocks.ORANGE_CONCRETE_SLAB)
     val ORANGE_CONCRETE_WALL = item(HybridBlocksBlocks.ORANGE_CONCRETE_WALL)
 
-    val YELLOW_CONCRETE_STAIRS = item(HybridBlocksBlocks.YELLOW_CONCRETE_STAIRS)
-    val YELLOW_CONCRETE_SLAB = item(HybridBlocksBlocks.YELLOW_CONCRETE_SLAB)
     val YELLOW_CONCRETE_WALL = item(HybridBlocksBlocks.YELLOW_CONCRETE_WALL)
 
-    val LIME_CONCRETE_STAIRS = item(HybridBlocksBlocks.LIME_CONCRETE_STAIRS)
-    val LIME_CONCRETE_SLAB = item(HybridBlocksBlocks.LIME_CONCRETE_SLAB)
     val LIME_CONCRETE_WALL = item(HybridBlocksBlocks.LIME_CONCRETE_WALL)
 
-    val GREEN_CONCRETE_STAIRS = item(HybridBlocksBlocks.GREEN_CONCRETE_STAIRS)
-    val GREEN_CONCRETE_SLAB = item(HybridBlocksBlocks.GREEN_CONCRETE_SLAB)
     val GREEN_CONCRETE_WALL = item(HybridBlocksBlocks.GREEN_CONCRETE_WALL)
 
-    val CYAN_CONCRETE_STAIRS = item(HybridBlocksBlocks.CYAN_CONCRETE_STAIRS)
-    val CYAN_CONCRETE_SLAB = item(HybridBlocksBlocks.CYAN_CONCRETE_SLAB)
     val CYAN_CONCRETE_WALL = item(HybridBlocksBlocks.CYAN_CONCRETE_WALL)
 
-    val LIGHT_BLUE_CONCRETE_STAIRS = item(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_STAIRS)
-    val LIGHT_BLUE_CONCRETE_SLAB = item(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_SLAB)
     val LIGHT_BLUE_CONCRETE_WALL = item(HybridBlocksBlocks.LIGHT_BLUE_CONCRETE_WALL)
 
-    val BLUE_CONCRETE_STAIRS = item(HybridBlocksBlocks.BLUE_CONCRETE_STAIRS)
-    val BLUE_CONCRETE_SLAB = item(HybridBlocksBlocks.BLUE_CONCRETE_SLAB)
     val BLUE_CONCRETE_WALL = item(HybridBlocksBlocks.BLUE_CONCRETE_WALL)
 
-    val PURPLE_CONCRETE_STAIRS = item(HybridBlocksBlocks.PURPLE_CONCRETE_STAIRS)
-    val PURPLE_CONCRETE_SLAB = item(HybridBlocksBlocks.PURPLE_CONCRETE_SLAB)
     val PURPLE_CONCRETE_WALL = item(HybridBlocksBlocks.PURPLE_CONCRETE_WALL)
 
-    val MAGENTA_CONCRETE_STAIRS = item(HybridBlocksBlocks.MAGENTA_CONCRETE_STAIRS)
-    val MAGENTA_CONCRETE_SLAB = item(HybridBlocksBlocks.MAGENTA_CONCRETE_SLAB)
     val MAGENTA_CONCRETE_WALL = item(HybridBlocksBlocks.MAGENTA_CONCRETE_WALL)
 
-    val PINK_CONCRETE_STAIRS = item(HybridBlocksBlocks.PINK_CONCRETE_STAIRS)
-    val PINK_CONCRETE_SLAB = item(HybridBlocksBlocks.PINK_CONCRETE_SLAB)
     val PINK_CONCRETE_WALL = item(HybridBlocksBlocks.PINK_CONCRETE_WALL)
 //#endregion
 
