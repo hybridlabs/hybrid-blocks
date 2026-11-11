@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "hybrid_blocks:large_bricks"
+  },
+  "result": "hybrid_blocks:large_brick_slab"
+}

@@ -1069,14 +1069,14 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
                 val textures = TextureMapping()
                     .put(
                         TextureSlot.TEXTURE,
-                        ResourceLocation.fromNamespaceAndPath(
+                        ResourceLocation(
                             namespace,
                             "block/$textureName"
                         )
                     )
                     .put(
                         TextureSlot.PARTICLE,
-                        ResourceLocation.fromNamespaceAndPath(
+                        ResourceLocation(
                             namespace,
                             "block/$textureName"
                         )
@@ -1125,7 +1125,6 @@ class ModelProvider(output: FabricDataOutput) : FabricModelProvider(output) {
             createChimney(HybridBlocksBlocks.NETHER_BRICK_CHIMNEY.get(), "minecraft", "nether_bricks")
             createChimney(HybridBlocksBlocks.RED_NETHER_BRICK_CHIMNEY.get(), "minecraft", "red_nether_bricks")
             createChimney(HybridBlocksBlocks.MUD_BRICK_CHIMNEY.get(), "minecraft", "mud_bricks")
-            createChimney(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY.get(), "minecraft", "tuff_bricks")
             createChimney(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY.get(), "minecraft", "end_stone_bricks")
             createChimney(HybridBlocksBlocks.COBBLESTONE_CHIMNEY.get(), "minecraft", "cobblestone")
         }

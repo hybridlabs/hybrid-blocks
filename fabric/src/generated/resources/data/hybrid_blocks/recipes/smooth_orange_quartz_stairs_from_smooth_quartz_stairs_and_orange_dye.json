@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_smooth_quartz_stairs",
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_quartz_stairs"
+    },
+    "X": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid_blocks:smooth_orange_quartz_stairs"
+  },
+  "show_notification": true
+}

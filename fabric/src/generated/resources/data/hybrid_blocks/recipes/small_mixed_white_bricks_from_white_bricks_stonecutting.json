@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:white_bricks"
+  },
+  "result": "hybrid_blocks:small_mixed_white_bricks"
+}

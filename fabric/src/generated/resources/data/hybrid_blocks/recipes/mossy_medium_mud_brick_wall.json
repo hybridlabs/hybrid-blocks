@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "medium_brick_walls",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:mossy_medium_mud_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hybrid_blocks:mossy_medium_mud_brick_wall"
+  },
+  "show_notification": true
+}

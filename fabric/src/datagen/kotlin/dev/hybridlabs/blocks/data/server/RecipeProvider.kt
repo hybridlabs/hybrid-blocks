@@ -6,30 +6,23 @@ import dev.hybridlabs.blocks.platform.registration.RegistryObject
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.advancements.critereon.InventoryChangeTrigger
-import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
-import net.minecraft.data.recipes.RecipeCategory
-import net.minecraft.data.recipes.RecipeOutput
-import net.minecraft.data.recipes.ShapedRecipeBuilder
-import net.minecraft.data.recipes.ShapelessRecipeBuilder
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder
+import net.minecraft.data.recipes.*
 import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.item.crafting.RecipeSerializer
-import net.minecraft.world.item.crafting.SmeltingRecipe
 import net.minecraft.world.level.ItemLike
 import net.minecraft.world.level.block.Blocks
-import java.util.concurrent.CompletableFuture
+import java.util.function.Consumer
 
 /**
  * Generates all recipes.
  */
-@Suppress("SameParameterValue")
-class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture<HolderLookup.Provider>) :
-    FabricRecipeProvider(output, lookupProvider) {
-    override fun buildRecipes(exporter: RecipeOutput) {
+@Suppress("SameParameterValue", "SpellCheckingInspection")
+class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
+    override fun buildRecipes(exporter: Consumer<FinishedRecipe>) {
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HybridBlocksItems.POLISHED_CALCITE.get(), 4)
             .pattern("CC ")
@@ -141,7 +134,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerChimneyRecipe(exporter, Items.STONE_BRICKS, getHasName(Items.STONE_BRICKS), HybridBlocksItems.STONE_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.DEEPSLATE_BRICKS, getHasName(Items.DEEPSLATE_BRICKS), HybridBlocksItems.DEEPSLATE_BRICK_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.POLISHED_BLACKSTONE, getHasName(Items.POLISHED_BLACKSTONE_BRICKS), HybridBlocksItems.POLISHED_BLACKSTONE_BRICK_CHIMNEY.get())
-        offerChimneyRecipe(exporter, Items.TUFF_BRICKS, getHasName(Items.TUFF_BRICKS), HybridBlocksItems.TUFF_BRICKS_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.COBBLESTONE, getHasName(Items.COBBLESTONE), HybridBlocksItems.COBBLESTONE_CHIMNEY.get())
         offerChimneyRecipe(exporter, Items.END_STONE_BRICKS, getHasName(Items.END_STONE_BRICKS), HybridBlocksItems.END_STONE_BRICKS_CHIMNEY.get())
         //#endregion
@@ -256,7 +248,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.WHITE_SHINGLES.get(), HybridBlocksItems.CRACKED_WHITE_SHINGLES.get(), Items.WHITE_DYE)
         offerStainedCrackedShinglesRecipes(exporter, HybridBlocksItems.YELLOW_SHINGLES.get(), HybridBlocksItems.CRACKED_YELLOW_SHINGLES.get(), Items.YELLOW_DYE)
 
-        simpleCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING_RECIPE, ::SmeltingRecipe, 200, Items.GLASS, HybridBlocksItems.CLEAR_GLASS.get(), 0.15f)
+        simpleCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING_RECIPE, 200, Items.GLASS, HybridBlocksItems.CLEAR_GLASS.get(), 0.15f)
         offerStainedClearGlassRecipes(exporter, Items.BLACK_STAINED_GLASS, HybridBlocksItems.BLACK_STAINED_CLEAR_GLASS.get(), Items.BLACK_DYE)
         offerStainedClearGlassRecipes(exporter, Items.BLUE_STAINED_GLASS, HybridBlocksItems.BLUE_STAINED_CLEAR_GLASS.get(), Items.BLUE_DYE)
         offerStainedClearGlassRecipes(exporter, Items.BROWN_STAINED_GLASS, HybridBlocksItems.BROWN_STAINED_CLEAR_GLASS.get(), Items.BROWN_DYE)
@@ -351,7 +343,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerShinglesDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             outputBlock: Item,
             outputStairs: Item,
             outputSlab: Item,
@@ -592,7 +584,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
             )
         )
 
-        private fun offerVariantBrickRecipes(exporter: RecipeOutput) {
+        private fun offerVariantBrickRecipes(exporter: Consumer<FinishedRecipe>) {
             VARIANT_BRICK_RECIPE_SETS.forEach { set ->
                 val base = set.base.get()
 
@@ -2410,7 +2402,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         )
         //#endregion
 
-        private fun offerBrickAndShingleRecipes(exporter: RecipeOutput) {
+        private fun offerBrickAndShingleRecipes(exporter: Consumer<FinishedRecipe>) {
             BRICK_AND_SHINGLE_AND_CONCRETE_SETS.forEach { set ->
                 val base = set.base
                 val path = BuiltInRegistries.ITEM.getKey(base.asItem()).path
@@ -2419,7 +2411,6 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
                 val walls = set.walls.get()
 
                 val isShingle = path.contains("shingle")
-                val isBrick = path.contains("brick")
                 val isConcrete = path.contains("concrete")
 
                 val isMixed = path.contains("mixed_")
@@ -2466,7 +2457,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         //#endregion
 
         private fun stairBuilder(
-            finishedRecipeConsumer: RecipeOutput,
+            finishedRecipeConsumer: Consumer<FinishedRecipe>,
             stairBuilders: ItemLike,
             material: ItemLike,
             group: String,
@@ -2478,7 +2469,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun slabBuilder(
-            finishedRecipeConsumer: RecipeOutput,
+            finishedRecipeConsumer: Consumer<FinishedRecipe>,
             slabBuilders: ItemLike,
             material: ItemLike,
             group: String,
@@ -2490,7 +2481,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun wallBuilder(
-            finishedRecipeConsumer: RecipeOutput,
+            finishedRecipeConsumer: Consumer<FinishedRecipe>,
             wallBuilders: ItemLike,
             material: ItemLike,
             group: String,
@@ -2502,7 +2493,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerChimneyRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             output: Item,
@@ -2521,7 +2512,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerQuartzTilesRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             output: Item,
@@ -2541,7 +2532,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             group: String,
@@ -2574,7 +2565,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerBrickRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             group: String,
@@ -2594,7 +2585,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerBricksDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             outputBlock: Item,
             outputStairs: Item,
             outputSlab: Item,
@@ -2627,7 +2618,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerCrackedSmeltingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             group: String,
@@ -2647,7 +2638,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedCrackedBricksRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             cracked: Item,
             dye: Item
@@ -2672,7 +2663,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedCrackedShinglesRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             cracked: Item,
             dye: Item
@@ -2697,7 +2688,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerQuartzBricksRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             brick: Item,
         ) {
@@ -2718,7 +2709,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerClearGlassSmeltingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             unlockedBy: String,
             group: String,
@@ -2738,7 +2729,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedClearGlassRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             output: Item,
             dye: Item
@@ -2766,7 +2757,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          * Six blocks make sixteen panes, the same rate as vanilla glass.
          */
         private fun offerPaneRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             group: String,
             output: Item,
             input: Item,
@@ -2791,7 +2782,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          * panes the way vanilla stains its own. Two routes means the second needs its own id.
          */
         private fun offerStainedClearGlassPaneRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             output: Item,
             base: Item,
             dye: Item
@@ -2814,7 +2805,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedMossyBricksRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             mossy: Item,
             dye: Item
@@ -2838,7 +2829,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedMossyShinglesRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             mossy: Item,
             dye: Item
@@ -2862,7 +2853,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerStainedMossingRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             vineGroup: String,
             mossGroup: String,
             output: Item,
@@ -2888,7 +2879,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerMossingRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             group: String,
             output: Item,
             input: Item
@@ -3209,7 +3200,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          * Emits every crafting and stonecutting recipe inside a quartz set. Colour agnostic: it only
          * ever walks from a set's own base block outwards, so nothing here depends on a dye.
          */
-        private fun offerQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet) {
+        private fun offerQuartzSetRecipes(exporter: Consumer<FinishedRecipe>, set: QuartzRecipeSet) {
             val block = set.block.get()
             val slab = set.slab.get()
             val smooth = set.smooth.get()
@@ -3246,7 +3237,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          * Only the three blocks with a vanilla counterpart are dyed; everything else in the set is
          * reached from the stained base block.
          */
-        private fun offerStainedQuartzSetRecipes(exporter: RecipeOutput, set: QuartzRecipeSet, dye: Item) {
+        private fun offerStainedQuartzSetRecipes(exporter: Consumer<FinishedRecipe>, set: QuartzRecipeSet, dye: Item) {
             offerQuartzSetRecipes(exporter, set)
 
             offerQuartzBlockDyeingRecipe(exporter, set.block.get(), set.stairs.get(), set.slab.get(), dye)
@@ -3260,7 +3251,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
          * Crafting and stonecutting for the stairs and slab cut from [base].
          */
         private fun offerStairsAndSlabRecipes(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             base: Item,
             stairs: Item,
             slab: Item,
@@ -3275,7 +3266,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerQuartzBlockDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             outputBlock: Item,
             outputStairs: Item,
             outputSlab: Item,
@@ -3310,7 +3301,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerQuartzBrickDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             outputBlock: Item,
             outputStairs: Item,
             outputSlab: Item,
@@ -3345,7 +3336,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerQuartzPillarDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             output: Item,
             dye: Item
         ) {
@@ -3360,7 +3351,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerSmoothQuartzDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             outputBlock: Item,
             outputStairs: Item,
             outputSlab: Item,
@@ -3395,7 +3386,7 @@ class RecipeProvider(output: FabricDataOutput, lookupProvider: CompletableFuture
         }
 
         private fun offerChiseledQuartzBrickDyeingRecipe(
-            exporter: RecipeOutput,
+            exporter: Consumer<FinishedRecipe>,
             output: Item,
             dye: Item
         ) {

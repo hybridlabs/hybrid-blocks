@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_cracked_shingles",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:cracked_shingles"
+    },
+    "X": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid_blocks:cracked_purple_shingles"
+  },
+  "show_notification": true
+}

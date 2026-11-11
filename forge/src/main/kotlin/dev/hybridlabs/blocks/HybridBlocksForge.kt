@@ -14,10 +14,10 @@ import thedarkcolour.kotlinforforge.forge.runForDist
 @Suppress("UnusedExpression")
 @Mod(Constants.MOD_ID)
 object HybridBlocksForge {
-    private val LOGGER = Constants.LOG
+    private val LOGGER = Constants.LOGGER
 
     init {
-        HybridBlocksCommon.init()
+        CommonClass.init()
 
         HybridBlocksBlocks
         HBBlockEntityTypes

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_medium_brick_slabs",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:cracked_medium_stone_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hybrid_blocks:cracked_medium_stone_brick_slab"
+  },
+  "show_notification": true
+}

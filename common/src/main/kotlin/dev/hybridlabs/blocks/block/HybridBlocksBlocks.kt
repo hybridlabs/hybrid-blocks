@@ -6,6 +6,7 @@ import java.util.function.Supplier
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.GlassBlock
 import net.minecraft.world.level.block.RotatedPillarBlock
 import net.minecraft.world.level.block.SlabBlock
 import net.minecraft.world.level.block.StainedGlassBlock
@@ -546,7 +547,6 @@ object HybridBlocksBlocks {
     //#endregion
 
     val COBBLESTONE_CHIMNEY = chimney("cobblestone_chimney", Blocks.COBBLESTONE, DyeColor.GRAY)
-    val TUFF_BRICKS_CHIMNEY = chimney("tuff_bricks_chimney", Blocks.TUFF_BRICKS, DyeColor.GRAY)
     val END_STONE_BRICKS_CHIMNEY = chimney("end_stone_bricks_chimney", Blocks.END_STONE_BRICKS, DyeColor.YELLOW)
 
     //#region Nether Bricks
@@ -2444,7 +2444,7 @@ object HybridBlocksBlocks {
 //#endregion
 
     // region Clear Glass
-    val CLEAR_GLASS = register("clear_glass") { HBTransparentBlock(copyOf(Blocks.GLASS)) }
+    val CLEAR_GLASS = register("clear_glass") { GlassBlock(copyOf(Blocks.GLASS)) }
 
     val WHITE_STAINED_CLEAR_GLASS = stainedGlass("white_stained_clear_glass", DyeColor.WHITE, Blocks.WHITE_STAINED_GLASS)
     val ORANGE_STAINED_CLEAR_GLASS = stainedGlass("orange_stained_clear_glass", DyeColor.ORANGE, Blocks.ORANGE_STAINED_GLASS)
@@ -2483,8 +2483,8 @@ object HybridBlocksBlocks {
     val BLACK_STAINED_CLEAR_GLASS_PANE = stainedGlassPane("black_stained_clear_glass_pane", DyeColor.BLACK, Blocks.BLACK_STAINED_GLASS_PANE)
     // endregion
 
-    private fun copyOf(base: Block): BlockBehaviour.Properties = BlockBehaviour.Properties.ofFullCopy(base)
-    private fun copyOf(base: Block, color: DyeColor): BlockBehaviour.Properties = BlockBehaviour.Properties.ofFullCopy(base).mapColor(color)
+    private fun copyOf(base: Block): BlockBehaviour.Properties = BlockBehaviour.Properties.copy(base)
+    private fun copyOf(base: Block, color: DyeColor): BlockBehaviour.Properties = BlockBehaviour.Properties.copy(base).mapColor(color)
 
     private fun simple(id: String, base: Block, color: DyeColor? = null) = register(id) { Block(if (color != null) copyOf(base, color) else copyOf(base)) }
     private fun slab(id: String, base: Block, color: DyeColor? = null) = register(id) { SlabBlock(if (color != null) copyOf(base, color) else copyOf(base)) }

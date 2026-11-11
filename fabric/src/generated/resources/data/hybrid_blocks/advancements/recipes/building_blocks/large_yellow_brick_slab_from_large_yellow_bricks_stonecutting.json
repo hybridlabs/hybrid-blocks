@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_large_yellow_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hybrid_blocks:large_yellow_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:large_yellow_brick_slab_from_large_yellow_bricks_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_large_yellow_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:large_yellow_brick_slab_from_large_yellow_bricks_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

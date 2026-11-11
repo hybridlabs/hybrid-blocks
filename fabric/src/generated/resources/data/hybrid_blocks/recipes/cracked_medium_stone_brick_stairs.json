@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_medium_brick_stairs",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:cracked_medium_stone_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hybrid_blocks:cracked_medium_stone_brick_stairs"
+  },
+  "show_notification": true
+}

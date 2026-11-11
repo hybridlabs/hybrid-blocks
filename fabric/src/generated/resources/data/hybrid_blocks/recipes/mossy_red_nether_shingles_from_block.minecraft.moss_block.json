@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_red_nether_shingles",
+  "ingredients": [
+    {
+      "item": "hybrid_blocks:red_nether_shingles"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "item": "hybrid_blocks:mossy_red_nether_shingles"
+  }
+}

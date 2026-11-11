@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "hybrid_blocks:cracked_cyan_shingles"
+  },
+  "result": "hybrid_blocks:cracked_cyan_shingle_wall"
+}

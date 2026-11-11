@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_mossy_shingles_from_vines",
+  "ingredients": [
+    {
+      "item": "hybrid_blocks:green_shingles"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "hybrid_blocks:mossy_green_shingles"
+  }
+}

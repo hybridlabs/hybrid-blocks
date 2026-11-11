@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_brick_stairs",
+  "key": {
+    "#": {
+      "item": "minecraft:brick_stairs"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid_blocks:blue_brick_stairs"
+  },
+  "show_notification": true
+}

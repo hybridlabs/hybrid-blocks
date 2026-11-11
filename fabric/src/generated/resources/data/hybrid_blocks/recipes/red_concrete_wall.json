@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "plain_concrete_walls",
+  "key": {
+    "#": {
+      "item": "minecraft:red_concrete"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hybrid_blocks:red_concrete_wall"
+  },
+  "show_notification": true
+}

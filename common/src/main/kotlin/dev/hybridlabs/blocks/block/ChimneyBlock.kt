@@ -54,7 +54,7 @@ class ChimneyBlock(
         if (world.isClientSide) return
 
         if (entity is Player && !entity.isInvulnerableTo(world.damageSources().hotFloor())) {
-                entity.hurt(world.damageSources().hotFloor(), fireDamage.toFloat())
+            entity.hurt(world.damageSources().hotFloor(), fireDamage.toFloat())
         }
 
         super.stepOn(world, pos, state, entity)
@@ -79,7 +79,7 @@ class ChimneyBlock(
     }
 
     companion object {
-        
+
         private val SHAPE: VoxelShape = box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
 
         fun makeParticles(

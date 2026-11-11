@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stained_clear_glass_pane",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:red_stained_clear_glass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 16,
+    "item": "hybrid_blocks:red_stained_clear_glass_pane"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_mossy_shingles_from_moss",
+  "ingredients": [
+    {
+      "item": "hybrid_blocks:orange_shingles"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "item": "hybrid_blocks:mossy_orange_shingles"
+  }
+}

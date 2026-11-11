@@ -2290,7 +2290,6 @@ object HybridBlocksItems {
     //#endregion
 
     val COBBLESTONE_CHIMNEY = item(HybridBlocksBlocks.COBBLESTONE_CHIMNEY)
-    val TUFF_BRICKS_CHIMNEY = item(HybridBlocksBlocks.TUFF_BRICKS_CHIMNEY)
     val END_STONE_BRICKS_CHIMNEY = item(HybridBlocksBlocks.END_STONE_BRICKS_CHIMNEY)
 
     //#region Clear Glass

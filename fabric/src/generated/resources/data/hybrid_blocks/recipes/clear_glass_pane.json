@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "clear_glass_pane",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:clear_glass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 16,
+    "item": "hybrid_blocks:clear_glass_pane"
+  },
+  "show_notification": true
+}

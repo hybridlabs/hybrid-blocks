@@ -11,7 +11,7 @@ object HBModelTemplates {
 
     private fun create(id: String, vararg slots: TextureSlot): ModelTemplate {
         return ModelTemplate(Optional.of(
-            ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, id)),
+            ResourceLocation(Constants.MOD_ID, id)),
             Optional.empty(), *slots)
     }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "hybrid_blocks:cracked_pink_shingles"
+  },
+  "result": "hybrid_blocks:cracked_pink_shingle_slab"
+}
