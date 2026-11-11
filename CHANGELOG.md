@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added deepslate brick blockset
 - Added stone brick blockset
+- Added wool blockset
+- Added concrete blockset
 - Added more chimneys
 - Added brinestone, chimneystone, and schist blocksets. Craftable in survival when Hybrid Aquatic is installed, but still obtainable in creative mode as well
 - Added more blocks to nether brick and red nether brick blocksets
