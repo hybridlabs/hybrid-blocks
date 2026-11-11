@@ -2337,7 +2337,9 @@ object HybridBlocksItems {
         register(id) {
             BlockItem(
                 block.get(),
-                Item.Properties().setId(ResourceKey.create(Registries.ITEM, CommonClass.locate(id)))
+                Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, CommonClass.locate(id)))
+                    .useBlockDescriptionPrefix()
             )
         }
 
