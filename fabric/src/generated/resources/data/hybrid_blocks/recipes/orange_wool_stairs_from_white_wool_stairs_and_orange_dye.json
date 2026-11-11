@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dyed_wool_stairs",
+  "key": {
+    "#": {
+      "item": "hybrid_blocks:white_wool_stairs"
+    },
+    "X": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "hybrid_blocks:orange_wool_stairs"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:purple_wool"
+  },
+  "result": "hybrid_blocks:purple_wool_slab"
+}

@@ -76,6 +76,24 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
         offerStainedQuartzSetRecipes(exporter, RED_QUARTZ_SET, Items.RED_DYE)
         offerStainedQuartzSetRecipes(exporter, BLACK_QUARTZ_SET, Items.BLACK_DYE)
 
+        //#region Wool
+        offerDyedWoolSetRecipes(exporter, WHITE_WOOL_SET, Items.WHITE_DYE)
+        offerDyedWoolSetRecipes(exporter, ORANGE_WOOL_SET, Items.ORANGE_DYE)
+        offerDyedWoolSetRecipes(exporter, MAGENTA_WOOL_SET, Items.MAGENTA_DYE)
+        offerDyedWoolSetRecipes(exporter, LIGHT_BLUE_WOOL_SET, Items.LIGHT_BLUE_DYE)
+        offerDyedWoolSetRecipes(exporter, YELLOW_WOOL_SET, Items.YELLOW_DYE)
+        offerDyedWoolSetRecipes(exporter, LIME_WOOL_SET, Items.LIME_DYE)
+        offerDyedWoolSetRecipes(exporter, PINK_WOOL_SET, Items.PINK_DYE)
+        offerDyedWoolSetRecipes(exporter, GRAY_WOOL_SET, Items.GRAY_DYE)
+        offerDyedWoolSetRecipes(exporter, LIGHT_GRAY_WOOL_SET, Items.LIGHT_GRAY_DYE)
+        offerDyedWoolSetRecipes(exporter, CYAN_WOOL_SET, Items.CYAN_DYE)
+        offerDyedWoolSetRecipes(exporter, PURPLE_WOOL_SET, Items.PURPLE_DYE)
+        offerDyedWoolSetRecipes(exporter, BLUE_WOOL_SET, Items.BLUE_DYE)
+        offerDyedWoolSetRecipes(exporter, BROWN_WOOL_SET, Items.BROWN_DYE)
+        offerDyedWoolSetRecipes(exporter, GREEN_WOOL_SET, Items.GREEN_DYE)
+        offerDyedWoolSetRecipes(exporter, RED_WOOL_SET, Items.RED_DYE)
+        offerDyedWoolSetRecipes(exporter, BLACK_WOOL_SET, Items.BLACK_DYE)
+
         // vanilla quartz keeps its own recipes; only the added brick stairs and slab need them
         offerStairsAndSlabRecipes(
             exporter,
@@ -3400,5 +3418,159 @@ class RecipeProvider(output: FabricDataOutput) : FabricRecipeProvider(output) {
             )
         }
         //#endregion
+
+        /**
+         * Emits every crafting and stonecutting recipe inside a quartz set. Colour agnostic: it only
+         * ever walks from a set's own base block outwards, so nothing here depends on a dye.
+         */
+        private fun offerWoolSetRecipes(exporter: Consumer<FinishedRecipe>, set: WoolRecipeSet) {
+            val block = set.block
+
+            // base block -> stairs, slab
+            offerStairsAndSlabRecipes(exporter, block, set.stairs.get(), set.slab.get(), "wool_stairs", "wool_slabs")
+        }
+
+        /**
+         * [offerWoolSetRecipes] plus the dyeing recipes that turn vanilla quartz into this colour.
+         * Only the three blocks with a vanilla counterpart are dyed; everything else in the set is
+         * reached from the stained base block.
+         */
+
+
+        /**
+         * Every block variant a single wool colour ships with.
+         */
+        private data class WoolRecipeSet(
+            val block: Item,
+            val stairs: RegistryObject<BlockItem>,
+            val slab: RegistryObject<BlockItem>,
+        )
+
+        private val WHITE_WOOL_SET = WoolRecipeSet(
+            Items.WHITE_WOOL,
+            HybridBlocksItems.WHITE_WOOL_STAIRS,
+            HybridBlocksItems.WHITE_WOOL_SLAB,
+        )
+
+        private val ORANGE_WOOL_SET = WoolRecipeSet(
+            Items.ORANGE_WOOL,
+            HybridBlocksItems.ORANGE_WOOL_STAIRS,
+            HybridBlocksItems.ORANGE_WOOL_SLAB,
+        )
+
+        private val MAGENTA_WOOL_SET = WoolRecipeSet(
+            Items.MAGENTA_WOOL,
+            HybridBlocksItems.MAGENTA_WOOL_STAIRS,
+            HybridBlocksItems.MAGENTA_WOOL_SLAB,
+        )
+
+        private val LIGHT_BLUE_WOOL_SET = WoolRecipeSet(
+            Items.LIGHT_BLUE_WOOL,
+            HybridBlocksItems.LIGHT_BLUE_WOOL_STAIRS,
+            HybridBlocksItems.LIGHT_BLUE_WOOL_SLAB,
+        )
+
+        private val YELLOW_WOOL_SET = WoolRecipeSet(
+            Items.YELLOW_WOOL,
+            HybridBlocksItems.YELLOW_WOOL_STAIRS,
+            HybridBlocksItems.YELLOW_WOOL_SLAB,
+        )
+
+        private val LIME_WOOL_SET = WoolRecipeSet(
+            Items.LIME_WOOL,
+            HybridBlocksItems.LIME_WOOL_STAIRS,
+            HybridBlocksItems.LIME_WOOL_SLAB,
+        )
+
+        private val PINK_WOOL_SET = WoolRecipeSet(
+            Items.PINK_WOOL,
+            HybridBlocksItems.PINK_WOOL_STAIRS,
+            HybridBlocksItems.PINK_WOOL_SLAB,
+        )
+
+        private val GRAY_WOOL_SET = WoolRecipeSet(
+            Items.GRAY_WOOL,
+            HybridBlocksItems.GRAY_WOOL_STAIRS,
+            HybridBlocksItems.GRAY_WOOL_SLAB,
+        )
+
+        private val LIGHT_GRAY_WOOL_SET = WoolRecipeSet(
+            Items.LIGHT_GRAY_WOOL,
+            HybridBlocksItems.LIGHT_GRAY_WOOL_STAIRS,
+            HybridBlocksItems.LIGHT_GRAY_WOOL_SLAB,
+        )
+
+        private val CYAN_WOOL_SET = WoolRecipeSet(
+            Items.CYAN_WOOL,
+            HybridBlocksItems.CYAN_WOOL_STAIRS,
+            HybridBlocksItems.CYAN_WOOL_SLAB,
+        )
+
+        private val PURPLE_WOOL_SET = WoolRecipeSet(
+            Items.PURPLE_WOOL,
+            HybridBlocksItems.PURPLE_WOOL_STAIRS,
+            HybridBlocksItems.PURPLE_WOOL_SLAB,
+        )
+
+        private val BLUE_WOOL_SET = WoolRecipeSet(
+            Items.BLUE_WOOL,
+            HybridBlocksItems.BLUE_WOOL_STAIRS,
+            HybridBlocksItems.BLUE_WOOL_SLAB,
+        )
+
+        private val BROWN_WOOL_SET = WoolRecipeSet(
+            Items.BROWN_WOOL,
+            HybridBlocksItems.BROWN_WOOL_STAIRS,
+            HybridBlocksItems.BROWN_WOOL_SLAB,
+        )
+
+        private val GREEN_WOOL_SET = WoolRecipeSet(
+            Items.GREEN_WOOL,
+            HybridBlocksItems.GREEN_WOOL_STAIRS,
+            HybridBlocksItems.GREEN_WOOL_SLAB,
+        )
+
+        private val RED_WOOL_SET = WoolRecipeSet(
+            Items.RED_WOOL,
+            HybridBlocksItems.RED_WOOL_STAIRS,
+            HybridBlocksItems.RED_WOOL_SLAB,
+        )
+
+        private val BLACK_WOOL_SET = WoolRecipeSet(
+            Items.BLACK_WOOL,
+            HybridBlocksItems.BLACK_WOOL_STAIRS,
+            HybridBlocksItems.BLACK_WOOL_SLAB,
+        )
+
+        private fun offerDyedWoolSetRecipes(exporter: Consumer<FinishedRecipe>, set: WoolRecipeSet, dye: Item) {
+            offerWoolSetRecipes(exporter, set)
+
+            offerWoolSetDyeingRecipe(exporter, set.stairs.get(), set.slab.get(), dye)
+        }
+
+        private fun offerWoolSetDyeingRecipe(
+            exporter: Consumer<FinishedRecipe>,
+            outputStairs: Item,
+            outputSlab: Item,
+            dye: Item
+        ) {
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksItems.WHITE_WOOL_STAIRS.get(),
+                "has_wool_stairs",
+                "dyed_wool_stairs",
+                outputStairs,
+                dye
+            )
+
+            offerDyeingRecipe(
+                exporter,
+                HybridBlocksItems.WHITE_WOOL_SLAB.get(),
+                "has_wool_slab",
+                "dyed_wool_slab",
+                outputSlab,
+                dye
+            )
+        }
     }
 }
